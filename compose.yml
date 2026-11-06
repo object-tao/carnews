@@ -1,0 +1,23 @@
+name: kunteng-truck
+services:
+  web:
+    image: ${APP_IMAGE:?APP_IMAGE must reference a versioned image}
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "127.0.0.1:18086:8000"
+    volumes:
+      - ./data:/app/data
+    security_opt:
+      - no-new-privileges:true
+    cap_drop: [ALL]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen(urllib.request.Request('http://127.0.0.1:8000/healthz/',headers={'Host':'truck.diwuzhou.cn','X-Forwarded-Proto':'https'}),timeout=5)"]
+      interval: 20s
+      timeout: 7s
+      retries: 3
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
