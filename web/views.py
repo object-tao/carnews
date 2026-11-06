@@ -110,6 +110,13 @@ def freight_rate(request,slug):
 def resource_image(request,slug):
     item = get_object_or_404(public_articles(),slug=slug)
     if not item.image: raise Http404
-    response = FileResponse(item.image.open('rb'))
+    variant=request.GET.get('size','')
+    from .image_variants import SIZES,display_image
+    from PIL import Image,UnidentifiedImageError
+    if variant and variant not in SIZES: raise Http404
+    try:
+        response = HttpResponse(display_image(item.image,variant),content_type='image/webp') if variant else FileResponse(item.image.open('rb'))
+    except (OSError,UnidentifiedImageError,Image.DecompressionBombError):
+        raise Http404 from None
     response['Cache-Control'] = 'no-store'
     return response
