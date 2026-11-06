@@ -5,7 +5,7 @@ from django.db.models import Q
 from django.core.paginator import Paginator
 from django.utils import timezone
 from django.conf import settings
-from .models import Route, Article
+from .models import Route, Article, Country, ResourceType, FreightRate
 
 def public_articles():
     return Article.objects.filter(published=True, published_at__lte=timezone.now())
@@ -20,21 +20,46 @@ def routes(request):
     return render(request,'routes.html',{'title':'运输线路','routes':items,'regions':Route.REGIONS,'region':region})
 def route(request, slug):
     item=get_object_or_404(Route,published=True,slug=slug)
-    return render(request,'route.html',{'title':item.title,'description':item.summary,'item':item})
+    return render(request,'route.html',{'title':item.title,'description':item.summary,'item':item,'related_resources':item.resources.filter(published=True,published_at__lte=timezone.now()),'rates':public_rates().filter(route=item)[:3]})
 def articles(request, kind):
     if kind not in ['news','resources']: raise Http404
-    items=public_articles().filter(kind=kind)
-    categories=list(items.values_list('category',flat=True).distinct())
-    q=request.GET.get('q','').strip()[:100]
-    category=request.GET.get('category','')
-    if q: items=items.filter(Q(title__icontains=q)|Q(body__icontains=q)|Q(summary__icontains=q))
-    if category: items=items.filter(category=category)
-    page=Paginator(items,9).get_page(request.GET.get('page'))
-    return render(request,'articles.html',{'title':'行业资讯' if kind=='news' else '资源库','page':page,'q':q,'kind':kind,'category':category,'categories':sorted(set(categories))})
+    items = public_articles().filter(kind=kind).select_related('resource_type').prefetch_related('countries')
+    categories = sorted(set(items.values_list('category',flat=True)))
+    q = request.GET.get('q','').strip()[:100]
+    category = request.GET.get('category','')
+    country = request.GET.get('country','')
+    resource_type = request.GET.get('type','') if kind == 'resources' else ''
+    route_items = Route.objects.filter(published=True).prefetch_related('country_tags')
+    if q:
+        items = items.filter(Q(title__icontains=q)|Q(body__icontains=q)|Q(summary__icontains=q)|Q(location__icontains=q)|Q(countries__name__icontains=q)).distinct()
+        route_items = route_items.filter(Q(title__icontains=q)|Q(body__icontains=q)|Q(countries__icontains=q)|Q(country_tags__name__icontains=q)).distinct()
+    if country:
+        items = items.filter(countries__slug=country)
+        route_items = route_items.filter(country_tags__slug=country)
+    if category: items = items.filter(category=category)
+    if resource_type and resource_type != 'routes': items = items.filter(resource_type__slug=resource_type)
+    # Routes are shared records, not copied into resource articles.
+    if resource_type == 'routes': items = route_items
+    params = request.GET.copy()
+    params.pop('page', None)
+    params.pop('type', None)
+    filter_params = params.copy()
+    filter_params.pop('category', None)
+    filter_query = filter_params.urlencode()
+    params['type'] = resource_type
+    page_query = params.urlencode()
+    page = Paginator(items,9).get_page(request.GET.get('page'))
+    return render(request,'articles.html',{
+        'title':'行业资讯' if kind=='news' else '资源库', 'page':page,'q':q,'kind':kind,
+        'category':category,'categories':categories,'countries':Country.objects.all(),'country':country,
+        'resource_types':ResourceType.objects.all(),'resource_type':resource_type,
+        'route_preview':route_items[:3] if kind == 'resources' and not resource_type and not category else [],
+        'filter_query':filter_query,'page_query':page_query,
+    })
 def article(request,slug):
     item=get_object_or_404(public_articles(),slug=slug)
     schema={'@context':'https://schema.org','@type':'Article','headline':item.title,'description':item.summary,'datePublished':item.published_at.isoformat(),'dateModified':item.updated_at.isoformat(),'author':{'@type':'Organization','name':item.author},'mainEntityOfPage':settings.SITE_URL+item.get_absolute_url()}
-    return render(request,'article.html',{'title':item.title,'description':item.summary,'item':item,'schema':json.dumps(schema,ensure_ascii=False).replace(chr(60),chr(92)+'u003c')})
+    return render(request,'article.html',{'title':item.title,'description':item.summary,'item':item,'related_resources':item.related_resources.filter(published=True,published_at__lte=timezone.now()),'related_routes':item.related_routes.filter(published=True),'schema':json.dumps(schema,ensure_ascii=False).replace(chr(60),chr(92)+'u003c')})
 def download(request,slug):
     item=get_object_or_404(public_articles(),slug=slug)
     if not item.attachment: raise Http404
@@ -51,3 +76,25 @@ def contact_qr(request):
     site = SiteSettings.objects.first()
     if not site or not site.qr: raise Http404
     return FileResponse(site.qr.open('rb'))
+
+def public_rates():
+    return FreightRate.objects.filter(published=True, published_at__lte=timezone.now(), route__published=True).select_related('route')
+
+def freight_rates(request):
+    items = public_rates()
+    q = request.GET.get('q','').strip()[:100]
+    country = request.GET.get('country','')
+    status = request.GET.get('status','')
+    today = timezone.localdate()
+    if q: items = items.filter(Q(origin__icontains=q)|Q(destination__icontains=q)|Q(vehicle__icontains=q)|Q(cargo__icontains=q)|Q(route__title__icontains=q))
+    if country: items = items.filter(route__country_tags__slug=country)
+    if status == 'valid': items = items.filter(valid_from__lte=today, valid_until__gte=today)
+    elif status == 'expired': items = items.filter(valid_until__lt=today)
+    elif status == 'upcoming': items = items.filter(valid_from__gt=today)
+    params = request.GET.copy()
+    params.pop('page',None)
+    return render(request,'rates.html',{'title':'参考运价','page':Paginator(items,9).get_page(request.GET.get('page')),'q':q,'country':country,'countries':Country.objects.all(),'status':status,'page_query':params.urlencode()})
+
+def freight_rate(request,slug):
+    item = get_object_or_404(public_rates(),slug=slug)
+    return render(request,'rate.html',{'title':str(item),'item':item,'description':'管理员维护的整车运输参考运价；请核对有效期与适用条件。'})
