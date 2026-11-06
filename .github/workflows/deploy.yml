@@ -33,7 +33,7 @@ jobs:
           result=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/ci.yml/runs?head_sha=$RELEASE_SHA&branch=main&event=push&status=success" --jq '.total_count')
           test "$result" -gt 0
           echo "sha=$RELEASE_SHA" >> "$GITHUB_OUTPUT"
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ steps.release.outputs.sha }}
           persist-credentials: false
