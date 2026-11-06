@@ -175,6 +175,27 @@ class LibraryAndRateTests(TestCase):
         self.assertIsNotNone(rate.published_at)
         self.assertEqual(self.client.get(rate.get_absolute_url()).status_code,200)
 
+    def test_resource_image_publish_permissions(self):
+        import io
+        from PIL import Image
+        with TemporaryDirectory() as media, override_settings(MEDIA_ROOT=media):
+            buffer=io.BytesIO();Image.new('RGB',(8,8)).save(buffer,format='PNG')
+            self.resource.image=SimpleUploadedFile('vehicle.png',buffer.getvalue(),content_type='image/png')
+            self.resource.save()
+            response=self.client.get('/article-images/'+self.resource.slug+'/')
+            self.assertEqual(response.status_code,200)
+            self.assertEqual(response['Content-Type'],'image/png')
+            self.assertEqual(response['Cache-Control'],'no-store')
+            response.close()
+            self.resource.published=False;self.resource.save()
+            self.assertEqual(self.client.get('/article-images/'+self.resource.slug+'/').status_code,404)
+    def test_upload_rejects_fake_image(self):
+        from django import forms
+        class ImageUpload(forms.Form):
+            image=forms.ImageField()
+        form=ImageUpload(files={'image':SimpleUploadedFile('fake.png',b'<script>bad()</script>',content_type='image/png')})
+        self.assertFalse(form.is_valid())
+
 
 from django.test import TransactionTestCase
 
@@ -196,4 +217,5 @@ class ResourceMigrationTests(TransactionTestCase):
             self.assertEqual(saved.category,'原分类')
             self.assertEqual(saved.resource_type.slug,'knowledge')
         finally:
-            MigrationExecutor(connection).migrate([('web','0003_resource_foundations')])
+            executor=MigrationExecutor(connection)
+            executor.migrate(executor.loader.graph.leaf_nodes())

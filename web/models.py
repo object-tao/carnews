@@ -77,6 +77,7 @@ class Article(models.Model):
     restrictions = models.TextField('限制条件与注意事项', blank=True)
     summary = models.CharField('摘要', max_length=300)
     body = models.TextField('正文', help_text='纯文本分段，自动安全排版。')
+    image = models.ImageField('资料图片', upload_to='resource-images/', blank=True, validators=[FileExtensionValidator(['png','jpg','jpeg','webp'])])
     author = models.CharField('作者或审核人', max_length=80, default='深圳昆腾编辑部')
     source = models.URLField('参考来源链接', blank=True)
     attachment = models.FileField('下载附件（PDF/DOCX/XLSX）', upload_to='resources/', blank=True, validators=[FileExtensionValidator(['pdf','docx','xlsx'])])

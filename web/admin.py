@@ -34,7 +34,7 @@ class ArticleAdmin(admin.ModelAdmin):
         ('基本内容', {'fields': ['title','slug','kind','category','resource_type','summary','body']}),
         ('国家与关联资料', {'fields':['countries','related_routes','related_resources']}),
         ('口岸、车型、桥梁资料（按需填写）', {'fields':['location','specifications','access_info','requirements','restrictions']}),
-        ('来源与附件', {'fields':['author','source','attachment']}),
+        ('来源与附件', {'fields':['image','author','source','attachment']}),
         ('发布设置', {'fields':['published','published_at']}),
     ]
     def save_model(self, request, obj, form, change):

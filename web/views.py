@@ -98,3 +98,10 @@ def freight_rates(request):
 def freight_rate(request,slug):
     item = get_object_or_404(public_rates(),slug=slug)
     return render(request,'rate.html',{'title':str(item),'item':item,'description':'管理员维护的整车运输参考运价；请核对有效期与适用条件。'})
+
+def resource_image(request,slug):
+    item = get_object_or_404(public_articles(),slug=slug)
+    if not item.image: raise Http404
+    response = FileResponse(item.image.open('rb'))
+    response['Cache-Control'] = 'no-store'
+    return response
