@@ -66,7 +66,7 @@ class PortReviewTests(TestCase):
         self.assertIn('2025年3月31日',self.entries['port-0510']['body'])
         self.assertIn('不能直接作为已恢复运营',self.entries['port-0307']['body'])
         self.assertIn('不能直接把铁路口岸作为货车过境点',self.entries['port-0402']['body'])
-        self.assertEqual(sum(bool(entry.get('photo')) for entry in self.entries.values()),12)
+        self.assertEqual(sum(bool(entry.get('photo')) for entry in self.entries.values()),66)
 
     def test_upgrade_all_50_preserves_original_media_tags_and_other_articles(self):
         drafts=[self.make_draft(slug) for slug in sorted(self.targets)]

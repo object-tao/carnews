@@ -1,0 +1,1400 @@
+{
+  "version": 1,
+  "prepared_on": "2026-11-07",
+  "notes": "Only fills empty images; pre-existing photos and administrator content are preserved. Diagrams are original code-native illustrations, not photographs or geographic maps.",
+  "entries": [
+    {
+      "id": "0103",
+      "slug": "port-0103",
+      "kind": "diagram",
+      "file": "images/0103-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "都拉塔口岸关系示意：中国—哈萨克斯坦。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0103.svg",
+      "references": [
+        {
+          "title": "新疆交通运输厅：新疆国际道路运输",
+          "url": "https://jtyst.xinjiang.gov.cn/xjjtysj/gjdlys/202405/074f2d0ae89744b39f146a0852449e37.shtml",
+          "note": "2024年资料；核对中哈、中吉、中塔、中蒙口岸配对及当期资料状态，不能证明本次车辆已获受理。"
+        }
+      ],
+      "labels": [
+        "科里扎特",
+        "公路",
+        "伊犁河谷整车运输的边境衔接"
+      ],
+      "sha256": "0a3086198783381d64833b53027b5b0b1b295455b3ce9d06eda56c56c6b183ed"
+    },
+    {
+      "id": "0104",
+      "slug": "port-0104",
+      "kind": "diagram",
+      "file": "images/0104-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "巴克图口岸关系示意：中国—哈萨克斯坦。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0104.svg",
+      "references": [
+        {
+          "title": "新疆交通运输厅：新疆国际道路运输",
+          "url": "https://jtyst.xinjiang.gov.cn/xjjtysj/gjdlys/202405/074f2d0ae89744b39f146a0852449e37.shtml",
+          "note": "2024年资料；核对中哈、中吉、中塔、中蒙口岸配对及当期资料状态，不能证明本次车辆已获受理。"
+        }
+      ],
+      "labels": [
+        "巴克特",
+        "公路",
+        "塔城方向的车辆与货物交接"
+      ],
+      "sha256": "a1a22d9f863cd605d5a032aa368a21c2879b1ac55b62cf929845d2bcbd2b990f"
+    },
+    {
+      "id": "0105",
+      "slug": "port-0105",
+      "kind": "photo",
+      "file": "images/0105.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:%E5%90%89%E6%9C%A8%E4%B9%83%E5%8F%A3%E5%B2%B8_-_panoramio.jpg",
+      "creator": "余华峰",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "taken_on": "2008-10-24",
+      "caption": "吉木乃口岸历史实景。",
+      "note": "历史实景资料图，不代表当前设施或通关状态；使用 Commons 提供的图像版本，未另行裁切或修饰。",
+      "description": "吉木乃口岸",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/%E5%90%89%E6%9C%A8%E4%B9%83%E5%8F%A3%E5%B2%B8_-_panoramio.jpg/1280px-%E5%90%89%E6%9C%A8%E4%B9%83%E5%8F%A3%E5%B2%B8_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_date_text": "Taken on 24 October 2008",
+      "sha256": "0ba116724a541d3670247185313500d645f754c05e113c33588ff54ccde03292"
+    },
+    {
+      "id": "0106",
+      "slug": "port-0106",
+      "kind": "diagram",
+      "file": "images/0106-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "木扎尔特口岸关系示意：中国—哈萨克斯坦。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0106.svg",
+      "references": [
+        {
+          "title": "新疆交通运输厅：国际道路运输口岸资料",
+          "url": "https://jtyst.xinjiang.gov.cn/xjjtysj/gjdlys/202405/074f2d0ae89744b39f146a0852449e37.shtml",
+          "note": "2024年资料，用于口岸名称、毗邻国家与对应口岸辨识；不能据此确认2026年当天通关安排。"
+        }
+      ],
+      "labels": [
+        "纳林果勒",
+        "公路口岸资料",
+        "未确认常态货运受理；开放依据需另核"
+      ],
+      "sha256": "205282866b6aee89b80e9e594657a894bc8b3ca172dafa83a895c9b64379ebbc"
+    },
+    {
+      "id": "0107",
+      "slug": "port-0107",
+      "kind": "diagram",
+      "file": "images/0107-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "阿黑土别克口岸关系示意：中国—哈萨克斯坦。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0107.svg",
+      "references": [
+        {
+          "title": "新疆交通运输厅：新疆国际道路运输",
+          "url": "https://jtyst.xinjiang.gov.cn/xjjtysj/gjdlys/202405/074f2d0ae89744b39f146a0852449e37.shtml",
+          "note": "2024年资料；核对中哈、中吉、中塔、中蒙口岸配对及当期资料状态，不能证明本次车辆已获受理。"
+        }
+      ],
+      "labels": [
+        "阿连谢夫卡",
+        "公路口岸资料",
+        "未确认常态货运受理；开放依据需另核"
+      ],
+      "sha256": "01b15b1bb504ec77110253fff1ccc7f2c82e5da007397a6eb81e98925d3d7e26"
+    },
+    {
+      "id": "0108",
+      "slug": "port-0108",
+      "kind": "photo",
+      "file": "images/0108.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:China_border_pass_Torugart_IGP3490.jpg",
+      "creator": "w0zny",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "taken_on": "2015-09-23",
+      "caption": "吐尔尕特边境通道历史实景。",
+      "note": "历史实景资料图，不代表当前设施或通关状态；使用 Commons 提供的图像版本，未另行裁切或修饰。",
+      "description": "The making of this document was supported by Wikimedia Polska.",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/China_border_pass_Torugart_IGP3490.jpg/1280px-China_border_pass_Torugart_IGP3490.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_date_text": "2015-09-23",
+      "sha256": "3c23c1a33ef8d89b3f5c3e542ced8f2bf746fa9dabb4418b9997374413bf8f21"
+    },
+    {
+      "id": "0110",
+      "slug": "port-0110",
+      "kind": "diagram",
+      "file": "images/0110-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "别迭里口岸关系示意：中国—吉尔吉斯斯坦。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0110.svg",
+      "references": [
+        {
+          "title": "中国驻吉尔吉斯斯坦使馆：别迭里口岸相关信息",
+          "url": "https://kg.china-embassy.gov.cn/zjsbwl/202410/t20241017_11509279.htm",
+          "note": "2024年临时开放背景。"
+        },
+        {
+          "title": "新疆商务厅：别迭里口岸货运通关信息",
+          "url": "https://swt.xinjiang.gov.cn/xjswt/c114941/202603/b3c7801b28814d8db7ed5664d9053e43.shtml",
+          "note": "2026年3月资料；须区分临时安排与永久设施建设进度。"
+        }
+      ],
+      "labels": [
+        "别迭里方向",
+        "公路",
+        "临时通关与永久设施建设须分别核实"
+      ],
+      "sha256": "2d6798b85bbf6410c8575f9054826d36611ea7fb86cc5b6d5fb49600c539ffcd"
+    },
+    {
+      "id": "0111",
+      "slug": "port-0111",
+      "kind": "diagram",
+      "file": "images/0111-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "卡拉苏口岸关系示意：中国—塔吉克斯坦。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0111.svg",
+      "references": [
+        {
+          "title": "新疆交通运输厅：新疆国际道路运输",
+          "url": "https://jtyst.xinjiang.gov.cn/xjjtysj/gjdlys/202405/074f2d0ae89744b39f146a0852449e37.shtml",
+          "note": "2024年资料；核对中哈、中吉、中塔、中蒙口岸配对及当期资料状态，不能证明本次车辆已获受理。"
+        }
+      ],
+      "labels": [
+        "阔勒买",
+        "公路",
+        "高原车组适配与塔方后续运输"
+      ],
+      "sha256": "5d07654f0f1386496463cec507a21e954afbff063c91b36e0e151a4074ee90ed"
+    },
+    {
+      "id": "0113",
+      "slug": "port-0113",
+      "kind": "diagram",
+      "file": "images/0113-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "老爷庙口岸关系示意：中国—蒙古国。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0113.svg",
+      "references": [
+        {
+          "title": "新疆交通运输厅：国际道路运输口岸资料",
+          "url": "https://jtyst.xinjiang.gov.cn/xjjtysj/gjdlys/202405/074f2d0ae89744b39f146a0852449e37.shtml",
+          "note": "2024年资料，用于口岸名称、毗邻国家与对应口岸辨识；不能据此确认2026年当天通关安排。"
+        },
+        {
+          "title": "哈密市政府：老爷庙口岸资料",
+          "url": "https://www.hami.gov.cn/hami/c119977/202404/8fc18554b1c549b8bc47e9e691f70317.shtml",
+          "note": "2024年资料，用于位置及对应口岸核对。"
+        }
+      ],
+      "labels": [
+        "布尔嘎斯台",
+        "公路",
+        "巴里坤方向的中蒙货运衔接"
+      ],
+      "sha256": "78f894508fc6b7fa98a1c2d88ce79b9c5a987047bcf8549996668187c07074e2"
+    },
+    {
+      "id": "0114",
+      "slug": "port-0114",
+      "kind": "diagram",
+      "file": "images/0114-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "塔克什肯口岸关系示意：中国—蒙古国。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0114.svg",
+      "references": [
+        {
+          "title": "新疆交通运输厅：新疆国际道路运输",
+          "url": "https://jtyst.xinjiang.gov.cn/xjjtysj/gjdlys/202405/074f2d0ae89744b39f146a0852449e37.shtml",
+          "note": "2024年资料；核对中哈、中吉、中塔、中蒙口岸配对及当期资料状态，不能证明本次车辆已获受理。"
+        },
+        {
+          "title": "外交部：中蒙边境口岸及其管理制度协定",
+          "url": "https://www.fmprc.gov.cn/ziliao_674904/tytj_674911/tyfg_674913/200904/t20090402_9867368.shtml",
+          "note": "2009年公开的协定文本；用于名称配对及历史制度辨识，不将附件历史工作时段直接写成现行安排。"
+        }
+      ],
+      "labels": [
+        "布尔干",
+        "公路",
+        "中蒙西部通道的设备与货物交接"
+      ],
+      "sha256": "a611aaf84a8ab70489197289ec7bb77a56c1db63b929e91409ce8d58ad1e60b2"
+    },
+    {
+      "id": "0202",
+      "slug": "port-0202",
+      "kind": "photo",
+      "file": "images/0202.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Erenhot_port.jpg",
+      "creator": "Ken Marshall",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "taken_on": "2012-10-23",
+      "caption": "二连浩特公路口岸历史实景，非铁路国门。",
+      "note": "历史实景资料图，不代表当前设施或通关状态；使用 Commons 提供的图像版本，未另行裁切或修饰。",
+      "description": "Erenhot port, 二连浩特口岸",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Erenhot_port.jpg/1280px-Erenhot_port.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_date_text": "2012-10-23 01:08:08",
+      "sha256": "a07b7dbdeef3796a59cba271208d6b3061dd6cbd72f6bcd3c7cb7e13c6557f75"
+    },
+    {
+      "id": "0203",
+      "slug": "port-0203",
+      "kind": "diagram",
+      "file": "images/0203-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "甘其毛都口岸关系示意：中国—蒙古国。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0203.svg",
+      "references": [
+        {
+          "title": "中国驻扎门乌德总领馆：领区基本情况",
+          "url": "https://zamynuud.china-consulate.gov.cn/lqgk/202508/t20250806_11683603.htm",
+          "note": "2025年8月资料；核对中蒙口岸配对与区域关系，临时开放、延时和后续调整仍须另核。"
+        },
+        {
+          "title": "福建省商务厅：跨境能源通道的智能升级",
+          "url": "https://swt.fujian.gov.cn/xxgk/jgzn/jgcs/kaglc/zwdt/202505/t20250527_6918391.htm",
+          "note": "2025年5月现场报道；区分公路、AGV专用通道与当时开工的铁路项目，不引用预测能力作为现值。"
+        }
+      ],
+      "labels": [
+        "嘎舒苏海图",
+        "公路 / 特定 AGV 系统",
+        "专用货流系统与一般整车条件须区分"
+      ],
+      "sha256": "326de1fc43cdb384ff24b6a587e12dc9d489d2e756479564ea6c49034cee8ea4"
+    },
+    {
+      "id": "0204",
+      "slug": "port-0204",
+      "kind": "diagram",
+      "file": "images/0204-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "策克口岸关系示意：中国—蒙古国。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0204.svg",
+      "references": [
+        {
+          "title": "中国驻扎门乌德总领馆：领区基本情况",
+          "url": "https://zamynuud.china-consulate.gov.cn/lqgk/202508/t20250806_11683603.htm",
+          "note": "2025年8月资料；核对中蒙口岸配对与区域关系，临时开放、延时和后续调整仍须另核。"
+        },
+        {
+          "title": "内蒙古自治区“十四五”口岸发展规划（政府公开文本）",
+          "url": "https://www.sntzq.gov.cn/sntzq/zfxxgk/zfxxgkzl/fdzdgknr/ghjh/zxgh32/b9fc4809b0894d6a8a5376c3aaf1e8c8/index.html",
+          "note": "2021年规划；用于口岸运输方式和功能定位。规划铁路、桥梁和场站不作为已经投用设施。"
+        }
+      ],
+      "labels": [
+        "西伯库伦",
+        "公路",
+        "矿业通道中的普通货物与设备运输"
+      ],
+      "sha256": "d5315b1862f6f71aa494f4ac5e1679a55666f387f8124d9d8900dd04c3129cf6"
+    },
+    {
+      "id": "0205",
+      "slug": "port-0205",
+      "kind": "diagram",
+      "file": "images/0205-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "满都拉口岸关系示意：中国—蒙古国。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0205.svg",
+      "references": [
+        {
+          "title": "外交部：中蒙边境口岸及其管理制度协定",
+          "url": "https://www.fmprc.gov.cn/ziliao_674904/tytj_674911/tyfg_674913/200904/t20090402_9867368.shtml",
+          "note": "2009年公开的协定文本；用于名称配对及历史制度辨识，不将附件历史工作时段直接写成现行安排。"
+        },
+        {
+          "title": "中国驻扎门乌德总领馆：领区基本情况",
+          "url": "https://zamynuud.china-consulate.gov.cn/lqgk/202508/t20250806_11683603.htm",
+          "note": "2025年8月资料；核对中蒙口岸配对与区域关系，临时开放、延时和后续调整仍须另核。"
+        },
+        {
+          "title": "内蒙古自治区“十四五”口岸发展规划（政府公开文本）",
+          "url": "https://www.sntzq.gov.cn/sntzq/zfxxgk/zfxxgkzl/fdzdgknr/ghjh/zxgh32/b9fc4809b0894d6a8a5376c3aaf1e8c8/index.html",
+          "note": "2021年规划；用于口岸运输方式和功能定位。规划铁路、桥梁和场站不作为已经投用设施。"
+        }
+      ],
+      "labels": [
+        "杭吉",
+        "公路",
+        "包头方向与蒙古侧后续运输"
+      ],
+      "sha256": "01e0290b321ac99dfaccdbe94a80bb8e7d669782a9ec5a22028aa5b1a7a9cd8d"
+    },
+    {
+      "id": "0206",
+      "slug": "port-0206",
+      "kind": "diagram",
+      "file": "images/0206-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "珠恩嘎达布其口岸关系示意：中国—蒙古国。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0206.svg",
+      "references": [
+        {
+          "title": "外交部：中蒙边境口岸及其管理制度协定",
+          "url": "https://www.fmprc.gov.cn/ziliao_674904/tytj_674911/tyfg_674913/200904/t20090402_9867368.shtml",
+          "note": "2009年公开的协定文本；用于名称配对及历史制度辨识，不将附件历史工作时段直接写成现行安排。"
+        },
+        {
+          "title": "内蒙古自治区“十四五”口岸发展规划（政府公开文本）",
+          "url": "https://www.sntzq.gov.cn/sntzq/zfxxgk/zfxxgkzl/fdzdgknr/ghjh/zxgh32/b9fc4809b0894d6a8a5376c3aaf1e8c8/index.html",
+          "note": "2021年规划；用于口岸运输方式和功能定位。规划铁路、桥梁和场站不作为已经投用设施。"
+        }
+      ],
+      "labels": [
+        "毕其格图",
+        "公路",
+        "东乌旗出境与蒙古东部交付"
+      ],
+      "sha256": "a2752a7b41a3bd966cb71baaa04142dfa8d112afb4d8104c2385f5d659b3ee2a"
+    },
+    {
+      "id": "0207",
+      "slug": "port-0207",
+      "kind": "diagram",
+      "file": "images/0207-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "阿日哈沙特口岸关系示意：中国—蒙古国。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0207.svg",
+      "references": [
+        {
+          "title": "外交部：中蒙边境口岸及其管理制度协定",
+          "url": "https://www.fmprc.gov.cn/ziliao_674904/tytj_674911/tyfg_674913/200904/t20090402_9867368.shtml",
+          "note": "2009年公开的协定文本；用于名称配对及历史制度辨识，不将附件历史工作时段直接写成现行安排。"
+        },
+        {
+          "title": "中国驻扎门乌德总领馆：领区基本情况",
+          "url": "https://zamynuud.china-consulate.gov.cn/lqgk/202508/t20250806_11683603.htm",
+          "note": "2025年8月资料；核对中蒙口岸配对与区域关系，临时开放、延时和后续调整仍须另核。"
+        },
+        {
+          "title": "呼伦贝尔市：2016年计划执行情况与2017年计划报告",
+          "url": "https://www.hlbe.gov.cn/OpennessContent/show/340798.html",
+          "note": "历史报告记载额布都格、阿日哈沙特常年临时性开放；仅用于说明开放口径曾调整。"
+        },
+        {
+          "title": "呼伦贝尔市：2025年经济社会发展计划",
+          "url": "https://www.hlbe.gov.cn/Elderly/OpennessContent/show/489978.html",
+          "note": "2025年项目安排；区分口岸、互市点、专用通道和拟建桥梁，不能据规划证明项目完工。"
+        }
+      ],
+      "labels": [
+        "哈比日嘎",
+        "公路",
+        "开放安排与蒙古侧交接条件"
+      ],
+      "sha256": "9a26f79f5895ceee4716767be54049ce8a87ab5ce7cda774c5e1b38bdc4d8842"
+    },
+    {
+      "id": "0208",
+      "slug": "port-0208",
+      "kind": "diagram",
+      "file": "images/0208-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "额布都格口岸关系示意：中国—蒙古国。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0208.svg",
+      "references": [
+        {
+          "title": "外交部：中蒙边境口岸及其管理制度协定",
+          "url": "https://www.fmprc.gov.cn/ziliao_674904/tytj_674911/tyfg_674913/200904/t20090402_9867368.shtml",
+          "note": "2009年公开的协定文本；用于名称配对及历史制度辨识，不将附件历史工作时段直接写成现行安排。"
+        },
+        {
+          "title": "中国驻扎门乌德总领馆：领区基本情况",
+          "url": "https://zamynuud.china-consulate.gov.cn/lqgk/202508/t20250806_11683603.htm",
+          "note": "2025年8月资料；核对中蒙口岸配对与区域关系，临时开放、延时和后续调整仍须另核。"
+        },
+        {
+          "title": "呼伦贝尔市：2016年计划执行情况与2017年计划报告",
+          "url": "https://www.hlbe.gov.cn/OpennessContent/show/340798.html",
+          "note": "历史报告记载额布都格、阿日哈沙特常年临时性开放；仅用于说明开放口径曾调整。"
+        },
+        {
+          "title": "呼伦贝尔市：2025年经济社会发展计划",
+          "url": "https://www.hlbe.gov.cn/Elderly/OpennessContent/show/489978.html",
+          "note": "2025年项目安排；区分口岸、互市点、专用通道和拟建桥梁，不能据规划证明项目完工。"
+        }
+      ],
+      "labels": [
+        "巴彦呼舒",
+        "公路 / 界河桥",
+        "桥梁、专用货流与一般整车条件"
+      ],
+      "sha256": "1097d9f897108435707e54bf0f88d0e5a6402b992e69cac2c982ad91cc7c3428"
+    },
+    {
+      "id": "0209",
+      "slug": "port-0209",
+      "kind": "photo",
+      "file": "images/0209.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:%E9%A2%9D%E5%B0%94%E5%8F%A4%E7%BA%B3_%E9%BB%91%E5%B1%B1%E5%A4%B4%E5%8F%A3%E5%B2%B8%E5%8F%8A%E5%85%B6%E5%91%A8%E9%81%AD%E7%8E%AF%E5%A2%83_05.jpg",
+      "creator": "Liuxingy",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "taken_on": "2025-07-16",
+      "caption": "黑山头口岸及周边环境实景。",
+      "note": "历史实景资料图，不代表当前设施或通关状态；使用 Commons 提供的图像版本，未另行裁切或修饰。",
+      "description": "​呼伦贝尔市额尔古纳市黑山头口岸及其周遭环境",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/%E9%A2%9D%E5%B0%94%E5%8F%A4%E7%BA%B3_%E9%BB%91%E5%B1%B1%E5%A4%B4%E5%8F%A3%E5%B2%B8%E5%8F%8A%E5%85%B6%E5%91%A8%E9%81%AD%E7%8E%AF%E5%A2%83_05.jpg/1280px-%E9%A2%9D%E5%B0%94%E5%8F%A4%E7%BA%B3_%E9%BB%91%E5%B1%B1%E5%A4%B4%E5%8F%A3%E5%B2%B8%E5%8F%8A%E5%85%B6%E5%91%A8%E9%81%AD%E7%8E%AF%E5%A2%83_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_date_text": "2025-07-16 14:12:59",
+      "sha256": "56eb1cc8988a09a8587d1bc53408926e086a9ae7115f1b58e295bdf5c6fea797"
+    },
+    {
+      "id": "0210",
+      "slug": "port-0210",
+      "kind": "photo",
+      "file": "images/0210.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:%E9%A2%9D%E5%B0%94%E5%8F%A4%E7%BA%B3_%E5%AE%A4%E9%9F%A6%E5%8F%A3%E5%B2%B8_02.jpg",
+      "creator": "Liuxingy",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "taken_on": "2025-07-14",
+      "caption": "室韦口岸历史实景。",
+      "note": "历史实景资料图，不代表当前设施或通关状态；使用 Commons 提供的图像版本，未另行裁切或修饰。",
+      "description": "​呼伦贝尔市额尔古纳市室韦口岸",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/%E9%A2%9D%E5%B0%94%E5%8F%A4%E7%BA%B3_%E5%AE%A4%E9%9F%A6%E5%8F%A3%E5%B2%B8_02.jpg/1280px-%E9%A2%9D%E5%B0%94%E5%8F%A4%E7%BA%B3_%E5%AE%A4%E9%9F%A6%E5%8F%A3%E5%B2%B8_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_date_text": "2025-07-14 19:11:23",
+      "sha256": "7c11fa3e31d8ad8658614b3c14cc8c61d84bb590cfd3f6d7f4fcc3220a8491ec"
+    },
+    {
+      "id": "0211",
+      "slug": "port-0211",
+      "kind": "photo",
+      "file": "images/0211.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:%E9%98%BF%E5%B0%94%E5%B1%B1%E5%8F%A3%E5%B2%B8.jpg",
+      "creator": "HCCB3947",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "taken_on": "2025-02-05",
+      "caption": "阿尔山口岸历史实景。",
+      "note": "历史实景资料图，不代表当前设施或通关状态；使用 Commons 提供的图像版本，未另行裁切或修饰。",
+      "description": "Aershan Port / Arxan Port",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/3/35/%E9%98%BF%E5%B0%94%E5%B1%B1%E5%8F%A3%E5%B2%B8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "source_date_text": "2025-02-05",
+      "sha256": "e79321ad65d0d5db8cfa71f7609dedec32a3897841dc29a87c06f330a13293a2"
+    },
+    {
+      "id": "0302",
+      "slug": "port-0302",
+      "kind": "photo",
+      "file": "images/0302.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:View_Heihe-Blagoveshchensk_Bridge_from_the_Sightseeing_tower_of_Heilongjiang_bridge_Park.jpg",
+      "creator": "HCCB3947",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "taken_on": "2024-09-07",
+      "caption": "从黑龙江大桥公园观光塔眺望黑河—布拉戈维申斯克公路大桥。",
+      "note": "历史实景资料图，不代表当前设施或通关状态；使用 Commons 提供的图像版本，未另行裁切或修饰。",
+      "description": "​从黑龙江大桥公园观光塔上眺望黑龙江大桥",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/View_Heihe-Blagoveshchensk_Bridge_from_the_Sightseeing_tower_of_Heilongjiang_bridge_Park.jpg/1280px-View_Heihe-Blagoveshchensk_Bridge_from_the_Sightseeing_tower_of_Heilongjiang_bridge_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_date_text": "2024-09-07",
+      "sha256": "40bd5b019d7b06b1618d9d8f70aa822b37886cf5108b733a049aef5a4427737b"
+    },
+    {
+      "id": "0303",
+      "slug": "port-0303",
+      "kind": "photo",
+      "file": "images/0303.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%BE%D1%81%D1%82_%D0%B2_%D0%9A%D0%B8%D1%82%D0%B0%D0%B9_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_%D0%90%D0%BC%D1%83%D1%80.jpg",
+      "creator": "Пресс-центр Полпреда Президента России в ДвФО",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "taken_on": "2022-04-27",
+      "caption": "同江—下列宁斯阔耶跨境铁路大桥历史实景。",
+      "note": "历史实景资料图，不代表当前设施或通关状态；使用 Commons 提供的图像版本，未另行裁切或修饰。",
+      "description": "Мост Нижнеленинское - Тунцзян",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/%D0%9C%D0%BE%D1%81%D1%82_%D0%B2_%D0%9A%D0%B8%D1%82%D0%B0%D0%B9_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_%D0%90%D0%BC%D1%83%D1%80.jpg/1280px-%D0%9C%D0%BE%D1%81%D1%82_%D0%B2_%D0%9A%D0%B8%D1%82%D0%B0%D0%B9_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_%D0%90%D0%BC%D1%83%D1%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_date_text": "2022-04-27 06:08:42",
+      "sha256": "80d9ab756cf9402d412c0e7b44da20872df941d9a1620ab4f2aadbafa6ba8b85"
+    },
+    {
+      "id": "0304",
+      "slug": "port-0304",
+      "kind": "photo",
+      "file": "images/0304.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%91%E9%BE%99%E6%B1%9F%E4%B8%8A%E7%9A%84%E6%8A%9A%E8%BF%9C%E6%B8%AF%EF%BC%88%E6%8A%9A%E8%BF%9C%E5%8F%A3%E5%B2%B8%EF%BC%89.jpg",
+      "creator": "HCCB3947",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "taken_on": "2024-09-03",
+      "caption": "黑龙江上的抚远港（抚远水运口岸）实景。",
+      "note": "历史实景资料图，不代表当前设施或通关状态；使用 Commons 提供的图像版本，未另行裁切或修饰。",
+      "description": "Fuyuan Port on Heilongjiang / Amur",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/%E9%BB%91%E9%BE%99%E6%B1%9F%E4%B8%8A%E7%9A%84%E6%8A%9A%E8%BF%9C%E6%B8%AF%EF%BC%88%E6%8A%9A%E8%BF%9C%E5%8F%A3%E5%B2%B8%EF%BC%89.jpg/1280px-%E9%BB%91%E9%BE%99%E6%B1%9F%E4%B8%8A%E7%9A%84%E6%8A%9A%E8%BF%9C%E6%B8%AF%EF%BC%88%E6%8A%9A%E8%BF%9C%E5%8F%A3%E5%B2%B8%EF%BC%89.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_date_text": "2024-09-03",
+      "sha256": "f180c732a32daea251d042230ac741d164f3317f4a8c79b4cd9e3731c3f579ed"
+    },
+    {
+      "id": "0305",
+      "slug": "port-0305",
+      "kind": "diagram",
+      "file": "images/0305-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "东宁口岸关系示意：中国—俄罗斯。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0305.svg",
+      "references": [
+        {
+          "title": "黑龙江省政府：口岸建设",
+          "url": "https://www.hlj.gov.cn/hlj/c108516/list_left_tt.shtml",
+          "note": "正文统计截至2024年；区分公路、水运、铁路及未运行口岸。限于资料时点，后续变化另列来源。"
+        },
+        {
+          "title": "外交部：中俄边境口岸协定",
+          "url": "https://www.mfa.gov.cn/web/wjb_673085/zzjg_673183/bjhysws_674671/bhgjty/kaglty/202303/P020230320567195538909.pdf",
+          "note": "历史协定，用于边境口岸名称与类型辨识；不作为现时货运受理和开放时段公告。"
+        }
+      ],
+      "labels": [
+        "波尔塔夫卡",
+        "公路",
+        "双侧场站交接与境外交付"
+      ],
+      "sha256": "554f2bf8af1fde07014676c87c96069d9a86c95bd4cac122098cb4a8b82a926c"
+    },
+    {
+      "id": "0306",
+      "slug": "port-0306",
+      "kind": "diagram",
+      "file": "images/0306-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "密山口岸关系示意：中国—俄罗斯。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0306.svg",
+      "references": [
+        {
+          "title": "密山市政府：密山口岸优势条件",
+          "url": "https://www.hljms.gov.cn/mss/c100672/202507/c06_335621.shtml",
+          "note": "2025年7月资料；用于密山—图里罗格公路口岸关系与区位核对，不照搬历史里程或能力。"
+        },
+        {
+          "title": "黑龙江省政府：口岸建设",
+          "url": "https://www.hlj.gov.cn/hlj/c108516/list_left_tt.shtml",
+          "note": "正文统计截至2024年；区分公路、水运、铁路及未运行口岸。限于资料时点，后续变化另列来源。"
+        }
+      ],
+      "labels": [
+        "图里罗格",
+        "公路",
+        "兴凯湖地区的车组与境外交接"
+      ],
+      "sha256": "4418e15b94bc6b709b91c84baac2fbfb7e0eb69576de310b141bce25efa62cfd"
+    },
+    {
+      "id": "0307",
+      "slug": "port-0307",
+      "kind": "diagram",
+      "file": "images/0307-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "虎林口岸关系示意：中国—俄罗斯。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0307.svg",
+      "references": [
+        {
+          "title": "虎林市政府：2025年政府工作报告",
+          "url": "https://hljhulin.gov.cn/hls/c100705/202501/c06_320250.shtml",
+          "note": "2025年报告仍提出协调俄方加快马尔科沃建设、争取恢复通关；建设完成与恢复受理须分别确认。"
+        },
+        {
+          "title": "鸡西市政府：“十五五”规划纲要",
+          "url": "https://www.jixi.gov.cn/jixi/c100328/202605/c06_374817.shtml",
+          "note": "2026年5月规划；提及密山、虎林能力建设，规划指标不是现有通关能力或复关证明。"
+        },
+        {
+          "title": "黑龙江省政府：口岸建设",
+          "url": "https://www.hlj.gov.cn/hlj/c108516/list_left_tt.shtml",
+          "note": "正文统计截至2024年；区分公路、水运、铁路及未运行口岸。限于资料时点，后续变化另列来源。"
+        }
+      ],
+      "labels": [
+        "马尔科沃",
+        "公路口岸资料",
+        "恢复货运受理须取得当期有效依据"
+      ],
+      "sha256": "7169cf5f0591fdcc8cb9d2fddd41b0da288e0da630f1238aff074dad24f5e819"
+    },
+    {
+      "id": "0308",
+      "slug": "port-0308",
+      "kind": "diagram",
+      "file": "images/0308-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "饶河口岸关系示意：中国—俄罗斯。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0308.svg",
+      "references": [
+        {
+          "title": "黑龙江省政府：口岸建设",
+          "url": "https://www.hlj.gov.cn/hlj/c108516/list_left_tt.shtml",
+          "note": "正文统计截至2024年；区分公路、水运、铁路及未运行口岸。限于资料时点，后续变化另列来源。"
+        },
+        {
+          "title": "外交部：中俄地区合作规划纲要",
+          "url": "https://www.fmprc.gov.cn/gjhdq_676201/gj_676203/oz_678770/1206_679110/1207_679122/201006/t20100618_9337134.shtml",
+          "note": "2010年公开规划；仅核对室韦、黑山头、萝北、嘉荫、饶河等配对，不将历史项目目标当作当前设施。"
+        }
+      ],
+      "labels": [
+        "波克罗夫卡",
+        "水运",
+        "季节性通道按当期依据另行核验"
+      ],
+      "sha256": "d0aed20132982081021877098e99a92e3e8f8c7030c15307d9816987c786456a"
+    },
+    {
+      "id": "0309",
+      "slug": "port-0309",
+      "kind": "diagram",
+      "file": "images/0309-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "萝北口岸关系示意：中国—俄罗斯。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0309.svg",
+      "references": [
+        {
+          "title": "黑龙江省政府：口岸建设",
+          "url": "https://www.hlj.gov.cn/hlj/c108516/list_left_tt.shtml",
+          "note": "正文统计截至2024年；区分公路、水运、铁路及未运行口岸。限于资料时点，后续变化另列来源。"
+        },
+        {
+          "title": "外交部：中俄地区合作规划纲要",
+          "url": "https://www.fmprc.gov.cn/gjhdq_676201/gj_676203/oz_678770/1206_679110/1207_679122/201006/t20100618_9337134.shtml",
+          "note": "2010年公开规划；仅核对室韦、黑山头、萝北、嘉荫、饶河等配对，不将历史项目目标当作当前设施。"
+        }
+      ],
+      "labels": [
+        "阿穆尔泽特",
+        "水运",
+        "名山方向的港口换装与境外提货"
+      ],
+      "sha256": "1f96ced7a727a17dd9cc39213b30e87bb59ebad1853060d48b904ba527c15458"
+    },
+    {
+      "id": "0310",
+      "slug": "port-0310",
+      "kind": "diagram",
+      "file": "images/0310-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "嘉荫口岸关系示意：中国—俄罗斯。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0310.svg",
+      "references": [
+        {
+          "title": "黑龙江省政府：口岸建设",
+          "url": "https://www.hlj.gov.cn/hlj/c108516/list_left_tt.shtml",
+          "note": "正文统计截至2024年；区分公路、水运、铁路及未运行口岸。限于资料时点，后续变化另列来源。"
+        },
+        {
+          "title": "外交部：中俄地区合作规划纲要",
+          "url": "https://www.fmprc.gov.cn/gjhdq_676201/gj_676203/oz_678770/1206_679110/1207_679122/201006/t20100618_9337134.shtml",
+          "note": "2010年公开规划；仅核对室韦、黑山头、萝北、嘉荫、饶河等配对，不将历史项目目标当作当前设施。"
+        }
+      ],
+      "labels": [
+        "帕什科沃",
+        "水运配对资料",
+        "历史配对与实际明水航线须分别核验"
+      ],
+      "sha256": "2b6e20ebe0c5606a2a4b7077d594d686f646db953f7c9878238738197f157598"
+    },
+    {
+      "id": "0311",
+      "slug": "port-0311",
+      "kind": "diagram",
+      "file": "images/0311-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "逊克口岸关系示意：中国—俄罗斯。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0311.svg",
+      "references": [
+        {
+          "title": "逊克县政府：逊克概况",
+          "url": "https://www.xunke.gov.cn/xkx/c100941/202502/c11_155403.shtml",
+          "note": "2025年县情资料；核对逊克与波亚尔科沃港口方向、水路衔接，不引用资源储量作承运依据。"
+        },
+        {
+          "title": "黑龙江省政府：口岸建设",
+          "url": "https://www.hlj.gov.cn/hlj/c108516/list_left_tt.shtml",
+          "note": "正文统计截至2024年；区分公路、水运、铁路及未运行口岸。限于资料时点，后续变化另列来源。"
+        }
+      ],
+      "labels": [
+        "波亚尔科沃",
+        "水运",
+        "港口换装与后续铁路接续须分别确认"
+      ],
+      "sha256": "a518fab4d10cb9a5b21ee9fcfe4f1097cb7eeccc8145e73456f58310316867a0"
+    },
+    {
+      "id": "0312",
+      "slug": "port-0312",
+      "kind": "diagram",
+      "file": "images/0312-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "呼玛口岸关系示意：中国—俄罗斯。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0312.svg",
+      "references": [
+        {
+          "title": "黑龙江省政府：口岸建设",
+          "url": "https://www.hlj.gov.cn/hlj/c108516/list_left_tt.shtml",
+          "note": "正文统计截至2024年；区分公路、水运、铁路及未运行口岸。限于资料时点，后续变化另列来源。"
+        }
+      ],
+      "labels": [
+        "对应点待核实",
+        "口岸研究资料",
+        "对应作业点及货运开放情况需另行核实"
+      ],
+      "sha256": "21fb3676ea98bb063ca0c055d40417d7556c26e2df6560ade7e17aa0e4af48fa"
+    },
+    {
+      "id": "0313",
+      "slug": "port-0313",
+      "kind": "diagram",
+      "file": "images/0313-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "漠河口岸关系示意：中国—俄罗斯。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0313.svg",
+      "references": [
+        {
+          "title": "黑龙江省政府：口岸建设",
+          "url": "https://www.hlj.gov.cn/hlj/c108516/list_left_tt.shtml",
+          "note": "正文统计截至2024年；区分公路、水运、铁路及未运行口岸。限于资料时点，后续变化另列来源。"
+        },
+        {
+          "title": "大兴安岭地区商务局：开放合作新闻发布",
+          "url": "https://www.dxal.gov.cn/dxal/c100234/202511/c13_323366.shtml",
+          "note": "2025年11月资料；区分连崟相关恢复通关记录、兴安作业区和公铁大桥前期工作。"
+        },
+        {
+          "title": "大兴安岭行署公开的漠河市2025年政府工作报告",
+          "url": "https://www.dxal.gov.cn/dxal/c100037/202603/c13_330399.shtml",
+          "note": "网页2026年3月发布，报告标题为2025年；仍提出常态化复关，须区分网页发布日期与报告内容年度。"
+        }
+      ],
+      "labels": [
+        "加林达",
+        "水运 / 特定作业",
+        "图示为连崟方向；不同作业区分别核实"
+      ],
+      "sha256": "9433bca9ace15bdc1f2a9547d8bbbf7f5efa5c1f2b87ab518556988b0e6a9a34"
+    },
+    {
+      "id": "0314",
+      "slug": "port-0314",
+      "kind": "photo",
+      "file": "images/0314.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:%E7%90%BF%E6%98%A5%E5%8F%A3%E5%B2%B8%E6%AD%A3%E9%96%80.jpg",
+      "creator": "Senkaku Islands",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "taken_on": "2018-09-16",
+      "caption": "珲春对俄公路口岸正门历史实景，非铁路口岸。",
+      "note": "历史实景资料图，不代表当前设施或通关状态；使用 Commons 提供的图像版本，未另行裁切或修饰。",
+      "description": "琿春口岸正門",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/%E7%90%BF%E6%98%A5%E5%8F%A3%E5%B2%B8%E6%AD%A3%E9%96%80.jpg/1280px-%E7%90%BF%E6%98%A5%E5%8F%A3%E5%B2%B8%E6%AD%A3%E9%96%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_date_text": "2018-09-16",
+      "sha256": "eedffbf0cb04b45def6b240f6af4b0529a8fe686e5b328e5caf39d0ef73e513a"
+    },
+    {
+      "id": "0315",
+      "slug": "port-0315",
+      "kind": "photo",
+      "file": "images/0315.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:%E5%9C%8F%E6%B2%B3%E5%8F%A3%E5%B2%B8%E3%81%AB%E6%96%B0%E3%81%9F%E3%81%AB%E5%BB%BA%E9%80%A0%E3%81%95%E3%82%8C%E3%81%9F%E6%A9%8B_(cropped).jpg",
+      "creator": "User:Senkaku Islands",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "taken_on": "2018-10-20",
+      "caption": "圈河—元汀跨境通道新旧桥历史实景。",
+      "note": "历史实景资料图，不代表当前设施或通关状态；使用 Commons 提供的图像版本，未另行裁切或修饰。",
+      "description": "Old and new Quanhe Wonjong Bridge",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/%E5%9C%8F%E6%B2%B3%E5%8F%A3%E5%B2%B8%E3%81%AB%E6%96%B0%E3%81%9F%E3%81%AB%E5%BB%BA%E9%80%A0%E3%81%95%E3%82%8C%E3%81%9F%E6%A9%8B_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "source_date_text": "2018-10-20",
+      "sha256": "e2fe6b15da8c0a1985a95e2abf9b9d0cb210bd729b0053a75d202c9bd0737b3a"
+    },
+    {
+      "id": "0316",
+      "slug": "port-0316",
+      "kind": "photo",
+      "file": "images/0316.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:%E5%B7%A1%E9%81%93%E5%B7%A5%E5%87%BA%E5%93%81_photo_by_Xundaogong_%E6%B2%99%E5%9D%A8%E5%AD%90%E5%8F%A3%E5%B2%B8%E7%9A%84%E4%B8%AD%E6%9C%9D%E5%85%AC%E8%B7%AF%E5%A4%A7%E6%A1%A5_-_panoramio.jpg",
+      "creator": "xue siyang (df45086)",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "taken_on": "2012-05-07",
+      "caption": "沙坨子口岸中朝公路大桥历史实景。",
+      "note": "历史实景资料图，不代表当前设施或通关状态；使用 Commons 提供的图像版本，未另行裁切或修饰。",
+      "description": "​巡道工出品 photo by Xundaogong 沙坨子口岸的中朝公路大桥",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/%E5%B7%A1%E9%81%93%E5%B7%A5%E5%87%BA%E5%93%81_photo_by_Xundaogong_%E6%B2%99%E5%9D%A8%E5%AD%90%E5%8F%A3%E5%B2%B8%E7%9A%84%E4%B8%AD%E6%9C%9D%E5%85%AC%E8%B7%AF%E5%A4%A7%E6%A1%A5_-_panoramio.jpg/1280px-%E5%B7%A1%E9%81%93%E5%B7%A5%E5%87%BA%E5%93%81_photo_by_Xundaogong_%E6%B2%99%E5%9D%A8%E5%AD%90%E5%8F%A3%E5%B2%B8%E7%9A%84%E4%B8%AD%E6%9C%9D%E5%85%AC%E8%B7%AF%E5%A4%A7%E6%A1%A5_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_date_text": "Taken on 7 May 2012",
+      "sha256": "5d819ab075f7148a845bf825e0fe2511d736838a9efe3953369231b3eacc97e2"
+    },
+    {
+      "id": "0317",
+      "slug": "port-0317",
+      "kind": "photo",
+      "file": "images/0317.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:%E5%B7%A1%E9%81%93%E5%B7%A5%E5%87%BA%E5%93%81_photo_by_Xundaogong%E2%80%94%E2%80%94%E5%BC%80%E5%B1%B1%E5%B1%AF_%E4%B8%AD%E6%9C%9D%E5%9B%BD%E5%A2%83%E6%A1%A5_%E5%AF%B9%E9%9D%A2%E6%98%AF%E4%B8%89%E5%B3%B0%E5%8C%BA_-_panoramio.jpg",
+      "creator": "xue siyang (df45086)",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "taken_on": "2012-05-04",
+      "caption": "开山屯中朝国境桥历史实景，对岸为三峰地区。",
+      "note": "历史实景资料图，不代表当前设施或通关状态；使用 Commons 提供的图像版本，未另行裁切或修饰。",
+      "description": "巡道工出品 photo by Xundaogong——开山屯 中朝国境桥 对面是三峰区",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/%E5%B7%A1%E9%81%93%E5%B7%A5%E5%87%BA%E5%93%81_photo_by_Xundaogong%E2%80%94%E2%80%94%E5%BC%80%E5%B1%B1%E5%B1%AF_%E4%B8%AD%E6%9C%9D%E5%9B%BD%E5%A2%83%E6%A1%A5_%E5%AF%B9%E9%9D%A2%E6%98%AF%E4%B8%89%E5%B3%B0%E5%8C%BA_-_panoramio.jpg/1280px-%E5%B7%A1%E9%81%93%E5%B7%A5%E5%87%BA%E5%93%81_photo_by_Xundaogong%E2%80%94%E2%80%94%E5%BC%80%E5%B1%B1%E5%B1%AF_%E4%B8%AD%E6%9C%9D%E5%9B%BD%E5%A2%83%E6%A1%A5_%E5%AF%B9%E9%9D%A2%E6%98%AF%E4%B8%89%E5%B3%B0%E5%8C%BA_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_date_text": "Taken on 4 May 2012",
+      "sha256": "0465cc81fb9e0523cc6ab10e84a649d3011fd95e65feb61d47c2bd11194f04a5"
+    },
+    {
+      "id": "0318",
+      "slug": "port-0318",
+      "kind": "photo",
+      "file": "images/0318.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:%E5%B7%A1%E9%81%93%E5%B7%A5%E5%87%BA%E5%93%81_photo_by_Xundaogong%E2%80%94%E2%80%94%E5%92%B8%E9%95%9C%E5%8C%97%E9%81%93%E4%BC%9A%E5%AE%81%E5%8F%A3%E5%B2%B8_%ED%9A%8C%EB%A0%B9%EC%8B%9C_Hoery%C5%8Fng-si_port_-_panoramio.jpg",
+      "creator": "xue siyang (df45086)",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "taken_on": "2012-05-04",
+      "caption": "三合口岸对岸的朝鲜会宁口岸历史实景。",
+      "note": "历史实景资料图，不代表当前设施或通关状态；使用 Commons 提供的图像版本，未另行裁切或修饰。",
+      "description": "巡道工出品 photo by Xundaogong——咸镜北道会宁口岸 회령시 Hoeryŏng-si port",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/%E5%B7%A1%E9%81%93%E5%B7%A5%E5%87%BA%E5%93%81_photo_by_Xundaogong%E2%80%94%E2%80%94%E5%92%B8%E9%95%9C%E5%8C%97%E9%81%93%E4%BC%9A%E5%AE%81%E5%8F%A3%E5%B2%B8_%ED%9A%8C%EB%A0%B9%EC%8B%9C_Hoery%C5%8Fng-si_port_-_panoramio.jpg/1280px-%E5%B7%A1%E9%81%93%E5%B7%A5%E5%87%BA%E5%93%81_photo_by_Xundaogong%E2%80%94%E2%80%94%E5%92%B8%E9%95%9C%E5%8C%97%E9%81%93%E4%BC%9A%E5%AE%81%E5%8F%A3%E5%B2%B8_%ED%9A%8C%EB%A0%B9%EC%8B%9C_Hoery%C5%8Fng-si_port_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_date_text": "Taken on 4 May 2012",
+      "sha256": "1875ca9a113d96c4979858e27accb110f236cd97389b8716c24a8390dda19643"
+    },
+    {
+      "id": "0319",
+      "slug": "port-0319",
+      "kind": "diagram",
+      "file": "images/0319-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "南坪口岸关系示意：中国—朝鲜。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0319.svg",
+      "references": [
+        {
+          "title": "商务部全球法规网：中朝边境口岸及其管理制度协定",
+          "url": "https://policy.mofcom.gov.cn/pact/pactContent.shtml?id=859",
+          "note": "历史协定用于口岸配对和运输方式，不将历史功能及工作时间视作现行接单或货物准入证明。"
+        },
+        {
+          "title": "联合国安理会1718委员会：相关决议",
+          "url": "https://main.un.org/securitycouncil/zh/sanctions/1718/resolutions",
+          "note": "用于说明涉朝交易应单独核验适用限制；本页不提供特定货物、交易对手或豁免的批准结论。"
+        }
+      ],
+      "labels": [
+        "茂山",
+        "公路",
+        "双侧受理条件与货物适用范围"
+      ],
+      "sha256": "25d14112511c87083dba14a35e458f721d7f4b1029f853dda70e423e3c8156dd"
+    },
+    {
+      "id": "0320",
+      "slug": "port-0320",
+      "kind": "diagram",
+      "file": "images/0320-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "临江口岸关系示意：中国—朝鲜。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0320.svg",
+      "references": [
+        {
+          "title": "商务部全球法规网：中朝边境口岸及其管理制度协定",
+          "url": "https://policy.mofcom.gov.cn/pact/pactContent.shtml?id=859",
+          "note": "历史协定用于口岸配对和运输方式，不将历史功能及工作时间视作现行接单或货物准入证明。"
+        },
+        {
+          "title": "联合国安理会1718委员会：相关决议",
+          "url": "https://main.un.org/securitycouncil/zh/sanctions/1718/resolutions",
+          "note": "用于说明涉朝交易应单独核验适用限制；本页不提供特定货物、交易对手或豁免的批准结论。"
+        }
+      ],
+      "labels": [
+        "中江",
+        "公路",
+        "实际公路交接与货物受理条件"
+      ],
+      "sha256": "bfa8251732397febb8e3051c4b1299795f956ceead08427923d3cc8643b9b61f"
+    },
+    {
+      "id": "0321",
+      "slug": "port-0321",
+      "kind": "photo",
+      "file": "images/0321.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:%E9%95%B7%E6%81%B5%E5%9B%BD%E9%9A%9B%E5%A4%A7%E6%A9%8B.jpg",
+      "creator": "Ffggss",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "taken_on": "2017-02-08",
+      "caption": "长白—惠山跨境通道长惠国际大桥历史实景。",
+      "note": "历史实景资料图，不代表当前设施或通关状态；使用 Commons 提供的图像版本，未另行裁切或修饰。",
+      "description": "長恵国際大橋",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/%E9%95%B7%E6%81%B5%E5%9B%BD%E9%9A%9B%E5%A4%A7%E6%A9%8B.jpg/1280px-%E9%95%B7%E6%81%B5%E5%9B%BD%E9%9A%9B%E5%A4%A7%E6%A9%8B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_date_text": "2017-02-08",
+      "sha256": "1f0e9b40d1a1cf6c01081164877647dc9ca2bb830914cb91b18692e6e5ec2c58"
+    },
+    {
+      "id": "0322",
+      "slug": "port-0322",
+      "kind": "photo",
+      "file": "images/0322.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cargo_trucks_crossing_the_Sino-Korean_Friendship_Bridge_20260330114559.jpg",
+      "creator": "TurnOnTheNight",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "taken_on": "2026-03-30",
+      "caption": "货运卡车通过丹东—新义州中朝友谊桥实景。",
+      "note": "历史实景资料图，不代表当前设施或通关状态；使用 Commons 提供的图像版本，未另行裁切或修饰。",
+      "description": "​货运卡车正在通过中朝友谊桥",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Cargo_trucks_crossing_the_Sino-Korean_Friendship_Bridge_20260330114559.jpg/1280px-Cargo_trucks_crossing_the_Sino-Korean_Friendship_Bridge_20260330114559.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_date_text": "2026-03-30 11:45:59",
+      "sha256": "9a0fc583e3402f0272f4dc0884ed612c75cc00fe8ee1a73b45df74652a3ccddc"
+    },
+    {
+      "id": "0402",
+      "slug": "port-0402",
+      "kind": "photo",
+      "file": "images/0402.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:201908_Platform_1_of_Pingxiang_Station.jpg",
+      "creator": "MNXANL",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "taken_on": "2019-08-10",
+      "caption": "广西凭祥站一站台历史实景；对应铁路运输节点，非友谊关公路口岸。",
+      "note": "历史实景资料图，不代表当前设施或通关状态；使用 Commons 提供的图像版本，未另行裁切或修饰。",
+      "description": "201908 Platform 1 of Pingxiang Station",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/201908_Platform_1_of_Pingxiang_Station.jpg/1280px-201908_Platform_1_of_Pingxiang_Station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_date_text": "2019-08-10 06:10:49",
+      "sha256": "db031317416ac34b72e3e25e357be28f523c5b9568ae9701d24538e3db1ee6c4"
+    },
+    {
+      "id": "0404",
+      "slug": "port-0404",
+      "kind": "photo",
+      "file": "images/0404.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Bang_River_at_Ta_Lung_-_Suikou_border_gates_in_Vietnam_-_China_border.JPG",
+      "creator": "Phó Nháy (talk) 19:23, 19 October 2013 (UTC)",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "taken_on": "2013-10-14",
+      "caption": "水口—驮隆口岸附近的平而河（Bằng Giang）界河实景，非查验场地照片。",
+      "note": "历史实景资料图，不代表当前设施或通关状态；使用 Commons 提供的图像版本，未另行裁切或修饰。",
+      "description": "Bang River at Ta Lung (Cao Bang, Vietnam) - Suikou (Chongzuo, Longzhou, Guangxi, China)",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Bang_River_at_Ta_Lung_-_Suikou_border_gates_in_Vietnam_-_China_border.JPG/1280px-Bang_River_at_Ta_Lung_-_Suikou_border_gates_in_Vietnam_-_China_border.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_date_text": "2013-10-14",
+      "sha256": "ac948fbbdf3c8ad404dad05f18c2c4290cb032b757863ff1c86fe9eeb445517d"
+    },
+    {
+      "id": "0405",
+      "slug": "port-0405",
+      "kind": "photo",
+      "file": "images/0405.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Tra_Linh_checkpoint_(Sep_23,_2018).jpg",
+      "creator": "Yhxc57082",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "taken_on": "2018-09-23",
+      "caption": "龙邦口岸对应的越南茶岭边检设施历史实景。",
+      "note": "历史实景资料图，不代表当前设施或通关状态；使用 Commons 提供的图像版本，未另行裁切或修饰。",
+      "description": "Tra Linh checkpoint adjacent to the border of China and Vietnam",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Tra_Linh_checkpoint_%28Sep_23%2C_2018%29.jpg/1280px-Tra_Linh_checkpoint_%28Sep_23%2C_2018%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_date_text": "2018-09-23 17:44:51",
+      "sha256": "0a1e282506b7a8a2ca987f12c6d6ae2ca559c286fa19b930d2427a454df945d9"
+    },
+    {
+      "id": "0406",
+      "slug": "port-0406",
+      "kind": "diagram",
+      "file": "images/0406-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "峒中口岸关系示意：中国—越南。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0406.svg",
+      "references": [
+        {
+          "title": "越南政府新闻网：横模—峒中及北风生—里火通道安排",
+          "url": "https://cn.baochinhphu.vn/越南横模中国峒中口岸准备开通-116240511153519397.htm",
+          "note": "2024年5月资料，用于主通道和里火通道配对辨识；筹备报道本身不作为正式开通日期证明。"
+        },
+        {
+          "title": "防城港市发展改革委信用平台：跨境互联互通进展",
+          "url": "https://xy.fgw.fcgs.gov.cn/ArticleNew/Index/2608312215571473088e56c29cac5",
+          "note": "2026年8月公开资料确认峒中—横模正式开放背景；不由客运线路推定货运资格。"
+        },
+        {
+          "title": "广西政协：广西陆路边境口岸资料",
+          "url": "https://www.gxzx.gov.cn/index.php?a=show&c=index&id=3075&m=special",
+          "note": "2021年公开资料；用于识别广西口岸及峒中所含通道，不延用当时防疫和通关规则。"
+        }
+      ],
+      "labels": [
+        "横模 / 北风生",
+        "公路",
+        "主通道对应横模；里火通道对应北风生"
+      ],
+      "sha256": "81b544fd462bb6e415c6f4b4f221b79de8806eaba43449d20e002b2b4b88072f"
+    },
+    {
+      "id": "0407",
+      "slug": "port-0407",
+      "kind": "diagram",
+      "file": "images/0407-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "爱店口岸关系示意：中国—越南。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0407.svg",
+      "references": [
+        {
+          "title": "外交部：中越陆地边境口岸及其管理制度协定",
+          "url": "https://www.fmprc.gov.cn/ziliao_674904/tytj_674911/tyfg_674913/201104/t20110402_9867646.shtml",
+          "note": "2011年公开的2009年协定；用于口岸配对，后续开通、升级、区划和运营安排以另行公告为准。"
+        },
+        {
+          "title": "广西政协：广西陆路边境口岸资料",
+          "url": "https://www.gxzx.gov.cn/index.php?a=show&c=index&id=3075&m=special",
+          "note": "2021年公开资料；用于识别广西口岸及峒中所含通道，不延用当时防疫和通关规则。"
+        }
+      ],
+      "labels": [
+        "峙马",
+        "公路",
+        "宁明方向的货类与边境换装"
+      ],
+      "sha256": "0a3bcb7c86e8cbe7f09cfb1d1c8c9f7b951ddf5a4d1445f90dd761cc953ebeda"
+    },
+    {
+      "id": "0408",
+      "slug": "port-0408",
+      "kind": "diagram",
+      "file": "images/0408-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "平孟口岸关系示意：中国—越南。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0408.svg",
+      "references": [
+        {
+          "title": "外交部：中越陆地边境口岸及其管理制度协定",
+          "url": "https://www.fmprc.gov.cn/ziliao_674904/tytj_674911/tyfg_674913/201104/t20110402_9867646.shtml",
+          "note": "2011年公开的2009年协定；用于口岸配对，后续开通、升级、区划和运营安排以另行公告为准。"
+        },
+        {
+          "title": "广西政协：广西陆路边境口岸资料",
+          "url": "https://www.gxzx.gov.cn/index.php?a=show&c=index&id=3075&m=special",
+          "note": "2021年公开资料；用于识别广西口岸及峒中所含通道，不延用当时防疫和通关规则。"
+        }
+      ],
+      "labels": [
+        "朔江",
+        "公路",
+        "口岸制度与本批货物实际受理"
+      ],
+      "sha256": "3d79c0a57c6b7219be23f54df51861fb4bb020fac54d486e49cfac87188d12b8"
+    },
+    {
+      "id": "0409",
+      "slug": "port-0409",
+      "kind": "diagram",
+      "file": "images/0409-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "硕龙口岸关系示意：中国—越南。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0409.svg",
+      "references": [
+        {
+          "title": "国家移民管理局：中国硕龙至越南里板双边口岸开通",
+          "url": "https://www.nia.gov.cn/n741435/n741532/c1706072/content.html",
+          "note": "2025年3月发布，核对硕龙—里板名称及开通信息；不据旅检报道承诺整车货运能力。"
+        },
+        {
+          "title": "广西政协：大新县口岸开放与边贸建设",
+          "url": "https://www.gxzx.gov.cn/index.php?a=show&c=index&catid=70&id=59096&m=content",
+          "note": "2026年公开回顾资料记载硕龙通道2025年2月27日通关；文中预计吞吐量不作为实际运能。"
+        }
+      ],
+      "labels": [
+        "里板",
+        "公路双边口岸",
+        "口岸开通信息与具体货运受理须区分"
+      ],
+      "sha256": "ed0b57ade8c620f6a860cb00c5850ce6f42497b7dcc9cb22048649b88697ba81"
+    },
+    {
+      "id": "0503",
+      "slug": "port-0503",
+      "kind": "photo",
+      "file": "images/0503.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:%E7%95%B9%E7%94%BA%E5%8F%A3%E5%B2%B8-%E5%8F%A3%E5%B2%B8%E5%A4%A7%E6%A5%BC01.jpg",
+      "creator": "瑞丽江的河水",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "taken_on": "2018-06-23",
+      "caption": "畹町口岸大楼历史实景。",
+      "note": "历史实景资料图，不代表当前设施或通关状态；使用 Commons 提供的图像版本，未另行裁切或修饰。",
+      "description": "​畹町口岸大楼",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/%E7%95%B9%E7%94%BA%E5%8F%A3%E5%B2%B8-%E5%8F%A3%E5%B2%B8%E5%A4%A7%E6%A5%BC01.jpg/1280px-%E7%95%B9%E7%94%BA%E5%8F%A3%E5%B2%B8-%E5%8F%A3%E5%B2%B8%E5%A4%A7%E6%A5%BC01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_date_text": "2018-06-23 11:02:36",
+      "sha256": "4ac692d50017dbed31ec56ee794efbed6f5ddd98fee3c2b08c191ad9f68f51d6"
+    },
+    {
+      "id": "0504",
+      "slug": "port-0504",
+      "kind": "photo",
+      "file": "images/0504.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%E5%8B%90%E6%B5%B7%E5%8E%BF%E6%89%93%E6%B4%9B%E5%8F%A3%E5%B2%B8_01.jpg",
+      "creator": "Liuxingy",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "taken_on": "2016-02-11",
+      "caption": "西双版纳勐海县打洛口岸实景。",
+      "note": "历史实景资料图，不代表当前设施或通关状态；使用 Commons 提供的图像版本，未另行裁切或修饰。",
+      "description": "​西双版纳勐海县打洛口岸，用iphone5拍摄。编辑请注意，之所以该文件没有exif且大小较小，是因为该文件在先前传输过程中被压缩了。",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%E5%8B%90%E6%B5%B7%E5%8E%BF%E6%89%93%E6%B4%9B%E5%8F%A3%E5%B2%B8_01.jpg/1280px-%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%E5%8B%90%E6%B5%B7%E5%8E%BF%E6%89%93%E6%B4%9B%E5%8F%A3%E5%B2%B8_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_date_text": "2016-02-11",
+      "sha256": "994d0588b6eca32acbab8ed44d5f6159248213c97380aa85bd3225d23cb676af"
+    },
+    {
+      "id": "0506",
+      "slug": "port-0506",
+      "kind": "photo",
+      "file": "images/0506.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:%E5%AD%9F%E5%AE%9A%E6%B8%85%E6%B0%B4%E6%B2%B3%E5%8F%A3%E5%B2%B8_-_%E6%96%B0%E5%9B%BD%E9%97%A8_-_%E8%81%94%E6%A3%80%E6%A5%BC_-_%E4%B8%9C%E4%BE%A7_-_2024-10-16_01.jpg",
+      "creator": "瑞丽江的河水",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "taken_on": "2024-10-16",
+      "caption": "孟定清水河口岸新国门联检楼东侧实景，摄于2024年。",
+      "note": "历史实景资料图，不代表当前设施或通关状态；使用 Commons 提供的图像版本，未另行裁切或修饰。",
+      "description": "​孟定清水河口岸新国门联检楼东侧",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/%E5%AD%9F%E5%AE%9A%E6%B8%85%E6%B0%B4%E6%B2%B3%E5%8F%A3%E5%B2%B8_-_%E6%96%B0%E5%9B%BD%E9%97%A8_-_%E8%81%94%E6%A3%80%E6%A5%BC_-_%E4%B8%9C%E4%BE%A7_-_2024-10-16_01.jpg/1280px-%E5%AD%9F%E5%AE%9A%E6%B8%85%E6%B0%B4%E6%B2%B3%E5%8F%A3%E5%B2%B8_-_%E6%96%B0%E5%9B%BD%E9%97%A8_-_%E8%81%94%E6%A3%80%E6%A5%BC_-_%E4%B8%9C%E4%BE%A7_-_2024-10-16_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_date_text": "2024-10-16 14:33:59",
+      "sha256": "702f68ae9f633e7bab9b997438bf865b4de9cb016e5c2d6dd6b555393abda2f9"
+    },
+    {
+      "id": "0508",
+      "slug": "port-0508",
+      "kind": "photo",
+      "file": "images/0508.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:ThanhthuyCK.JPG",
+      "creator": "Saigon punkid at Vietnamese Wikipedia",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "taken_on": "",
+      "caption": "天保—清水跨境通道历史实景；图源标注为中越边检设施。",
+      "note": "历史实景资料图，不代表当前设施或通关状态；使用 Commons 提供的图像版本，未另行裁切或修饰。拍摄日期未核实，图源上传日期不作为拍摄日期。",
+      "description": "Checkpoints at Thanh Thủy International Border Gate (Hà Giang, Vietnam) and Tienbao International Border Gate (Yunnan, China)",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/ThanhthuyCK.JPG/1280px-ThanhthuyCK.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_date_text": "10 February 2009 (original upload date)",
+      "sha256": "81cd7761894b7aca009ba9148bfecd3fea18d4bab6cc767979d11417b55bcb41"
+    },
+    {
+      "id": "0509",
+      "slug": "port-0509",
+      "kind": "diagram",
+      "file": "images/0509-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "金水河口岸关系示意：中国—越南。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0509.svg",
+      "references": [
+        {
+          "title": "外交部：中越陆地边境口岸及其管理制度协定",
+          "url": "https://www.fmprc.gov.cn/ziliao_674904/tytj_674911/tyfg_674913/201104/t20110402_9867646.shtml",
+          "note": "2011年公开的2009年协定；用于口岸配对，后续开通、升级、区划和运营安排以另行公告为准。"
+        },
+        {
+          "title": "红河州交通运输局：金水河—马鹿塘多功能大桥项目答复",
+          "url": "https://www.hh.gov.cn/info/203432/1213722.htm",
+          "note": "2025年9月答复、10月公开；区分项目前期研究与桥梁已经建成投入使用。"
+        }
+      ],
+      "labels": [
+        "马鹿塘",
+        "公路",
+        "现有通道与新桥项目须分别核验"
+      ],
+      "sha256": "82d0aa870a3a9c0543457221c56dbda165b0cf0e9b09a899d75035ed0d68430e"
+    },
+    {
+      "id": "0510",
+      "slug": "port-0510",
+      "kind": "diagram",
+      "file": "images/0510-diagram.png",
+      "source": "",
+      "creator": "深圳昆腾 · 根据正文来源整理绘制",
+      "license": "",
+      "license_url": "",
+      "taken_on": "",
+      "caption": "田蓬口岸关系示意：中国—越南。",
+      "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
+      "editable_source": "diagrams/0510.svg",
+      "references": [
+        {
+          "title": "越南政府新闻网：上蓬—田蓬正式货运通关",
+          "url": "https://cn.baochinhphu.vn/越南上蓬中国田蓬口岸正式进行货运通关-116250401145204378.htm",
+          "note": "2025年4月1日报道3月31日货运开通，区别于2023年人员通关；不引用首批车辆载重作为通用限值。"
+        },
+        {
+          "title": "外交部：中越陆地边境口岸及其管理制度协定",
+          "url": "https://www.fmprc.gov.cn/ziliao_674904/tytj_674911/tyfg_674913/201104/t20110402_9867646.shtml",
+          "note": "2011年公开的2009年协定；用于口岸配对，后续开通、升级、区划和运营安排以另行公告为准。"
+        }
+      ],
+      "labels": [
+        "上蓬",
+        "公路",
+        "人员通行与货运开通须分别识别"
+      ],
+      "sha256": "e8b46b757f5634a532d3b72d4e655b468bcb39081cb7fb87f7deef2756427390"
+    }
+  ]
+}

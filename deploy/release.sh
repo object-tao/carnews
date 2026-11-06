@@ -24,6 +24,7 @@ docker compose run --rm web python manage.py migrate --noinput
 docker compose run --rm web python manage.py seed_content
 docker compose run --rm web python manage.py import_ports --publish-reviewed
 docker compose run --rm web python manage.py publish_reviewed_ports
+docker compose run --rm web python manage.py backfill_port_images
 docker compose run --rm web python manage.py import_knowledge --publish
 docker compose run --rm web python manage.py import_vehicles --publish
 docker compose up -d --no-deps web

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img">
+<title>都拉塔口岸：中国与哈萨克斯坦口岸关系示意</title>
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif}</style>
+<rect width="1600" height="900" fill="#f3f5f8"/>
+<path d="M1120 0H1600V286Z" fill="#e7ebf1"/>
+<path d="M0 0H14V900H0Z" fill="#ca1831"/>
+<text x="76" y="80" fill="#67758b" font-size="26" font-weight="500" text-anchor="start">深圳昆腾  /  资源库 · 口岸档案</text>
+<text x="76" y="178" fill="#182650" font-size="68" font-weight="700" text-anchor="start">都拉塔口岸</text>
+<text x="76" y="231" fill="#596a83" font-size="28" font-weight="400" text-anchor="start">中国—哈萨克斯坦  ·  连接关系与运输方式</text>
+<rect x="1090" y="47" width="438" height="65" rx="32" fill="#ffffff" stroke="#cbd3df"/>
+<text x="1309" y="90" fill="#596a83" font-size="23" font-weight="500" text-anchor="middle">关系示意  ·  非实景  ·  不按比例</text>
+<rect x="76" y="295" width="570" height="290" rx="22" fill="#182650"/>
+<rect x="954" y="295" width="570" height="290" rx="22" fill="#fff" stroke="#cbd3df" stroke-width="2"/>
+<text x="112" y="354" fill="#c6d0e0" font-size="28" font-weight="500" text-anchor="start">中国侧</text>
+<text x="112" y="444" fill="#fff" font-size="58" font-weight="700" text-anchor="start">都拉塔</text>
+<text x="112" y="531" fill="#c6d0e0" font-size="24" font-weight="400" text-anchor="start">新疆伊犁哈萨克自治州察布查尔锡伯自治县</text>
+<text x="990" y="354" fill="#6b7890" font-size="28" font-weight="500" text-anchor="start">哈萨克斯坦方向</text>
+<text x="990" y="444" fill="#182650" font-size="58" font-weight="700" text-anchor="start">科里扎特</text>
+<text x="990" y="531" fill="#6b7890" font-size="24" font-weight="400" text-anchor="start">对应口岸 / 作业方向</text>
+<path d="M666 440H934" stroke="#ca1831" stroke-width="5" stroke-dasharray="12 12"/>
+<circle cx="666" cy="440" r="9" fill="#ca1831"/><circle cx="934" cy="440" r="9" fill="#ca1831"/>
+<text x="800" y="401" fill="#9b2336" font-size="24" font-weight="500" text-anchor="middle">资料所载关系</text>
+<rect x="690" y="482" width="220" height="48" rx="24" fill="#e9edf3"/>
+<text x="800" y="514" fill="#627188" font-size="23" font-weight="400" text-anchor="middle">不作通行证明</text>
+<rect x="76" y="626" width="1448" height="155" rx="18" fill="#fff"/>
+<rect x="102" y="653" width="426" height="98" rx="12" fill="#f3f5f8"/>
+<text x="126" y="685" fill="#78859a" font-size="21" font-weight="400" text-anchor="start">运输方式 / 资料类型</text>
+<text x="126" y="728" fill="#182650" font-size="28" font-weight="600" text-anchor="start">公路</text>
+<text x="568" y="684" fill="#78859a" font-size="22" font-weight="400" text-anchor="start">业务辨识</text>
+<text x="568" y="733" fill="#243456" font-size="29" font-weight="500" text-anchor="start">伊犁河谷整车运输的边境衔接</text>
+<text x="76" y="840" fill="#6b7890" font-size="24" font-weight="400" text-anchor="start">非地理地图；不表示路线、距离、开放状态或本票货物获准通行。</text>
+<text x="1524" y="840" fill="#9aa4b4" font-size="24" font-weight="500" text-anchor="end">PORT 0103</text>
+</svg>

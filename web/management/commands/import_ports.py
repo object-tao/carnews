@@ -8,9 +8,9 @@ from django.core.files.base import ContentFile
 from django.core.management.base import BaseCommand, CommandError
 from django.db import transaction
 from django.utils import timezone
-from PIL import Image
 
 from web.models import Article, ArticleReference, Country, ResourceType, Route
+from web.port_images import apply_port_image_metadata, validate_port_image
 
 
 def contained_file(root, relative):
@@ -51,11 +51,7 @@ class Command(BaseCommand):
                     item['_original'] = contained_file(options['original_dir'], item['source_file']).read_text(encoding='utf-8-sig')
                 if item.get('photo'):
                     photo = item['photo']
-                    if not all(photo.get(k) for k in ('creator', 'source', 'license', 'license_url', 'caption')):
-                        raise ValueError('Photo attribution is incomplete')
-                    photo['_path'] = contained_file(catalog.parent, photo['file'])
-                    with Image.open(photo['_path']) as image:
-                        image.verify()
+                    photo['_path'] = validate_port_image(photo, catalog.parent)
         except (OSError, ValueError, KeyError, TypeError) as exc:
             raise CommandError(f'Invalid port catalog: {exc}') from exc
 
@@ -84,13 +80,7 @@ class Command(BaseCommand):
                     )
                     photo = item.get('photo')
                     if photo:
-                        article.image_caption = photo['caption']
-                        article.image_note = '历史实景资料图，不代表当前设施或通关状态；使用 Commons 缩略版本，未改动图像内容。'
-                        article.image_creator = photo['creator']
-                        article.image_source = photo['source']
-                        article.image_license = photo['license']
-                        article.image_license_url = photo['license_url']
-                        article.image_taken_on = photo['taken_on']
+                        apply_port_image_metadata(article, photo)
                     article.full_clean()
                     article.save()
                     country, _ = Country.objects.get_or_create(slug=item['country']['slug'], defaults={'name':item['country']['name']})
@@ -104,7 +94,7 @@ class Command(BaseCommand):
                         reference.full_clean()
                         reference.save()
                     if photo:
-                        article.image.save(item['slug']+'.jpg', ContentFile(photo['_path'].read_bytes()), save=False)
+                        article.image.save(item['slug']+photo['_path'].suffix.lower(), ContentFile(photo['_path'].read_bytes()), save=False)
                         saved_files.append((article.image.storage, article.image.name))
                         article.save(update_fields=['image'])
                     created += 1

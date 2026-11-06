@@ -34,7 +34,7 @@ class PortImportTests(TestCase):
         self.assertEqual(Article.objects.filter(published=True).count(), 66)
         call_command('publish_reviewed_ports', stdout=StringIO())
         self.assertEqual(Article.objects.filter(published=True).count(), 66)
-        self.assertEqual(Article.objects.exclude(image='').count(), 12)
+        self.assertEqual(Article.objects.exclude(image='').count(), 66)
         item = Article.objects.get(slug='port-0106')
         self.assertSetEqual(set(item.countries.values_list('slug', flat=True)), {'china', 'kazakhstan'})
         self.assertIn('巴里坤', Article.objects.get(slug='port-0113').location)
