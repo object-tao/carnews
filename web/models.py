@@ -76,8 +76,18 @@ class Article(models.Model):
     requirements = models.TextField('单证与操作要求', blank=True)
     restrictions = models.TextField('限制条件与注意事项', blank=True)
     summary = models.CharField('摘要', max_length=300)
-    body = models.TextField('正文', help_text='纯文本分段，自动安全排版。')
+    body = models.TextField('正文', help_text='可选纯文本或 Markdown；支持标题、表格和列表。')
+    body_format = models.CharField('正文格式', max_length=12, choices=[('text','纯文本'),('markdown','Markdown')], default='text')
+    reviewed_on = models.DateField('资料核对日期（非实时通关确认）', null=True, blank=True)
+    original_source = models.TextField('原始资料（仅后台）', blank=True)
+    editorial_notes = models.TextField('校订记录（仅后台）', blank=True)
     image = models.ImageField('资料图片', upload_to='resource-images/', blank=True, validators=[FileExtensionValidator(['png','jpg','jpeg','webp'])])
+    image_caption = models.CharField('图片说明', max_length=500, blank=True)
+    image_creator = models.CharField('图片作者', max_length=300, blank=True)
+    image_source = models.URLField('图片来源页', max_length=600, blank=True)
+    image_license = models.CharField('图片许可', max_length=80, blank=True)
+    image_license_url = models.URLField('许可链接', blank=True)
+    image_taken_on = models.CharField('拍摄日期', max_length=40, blank=True)
     author = models.CharField('作者或审核人', max_length=80, default='深圳昆腾编辑部')
     source = models.URLField('参考来源链接', blank=True)
     attachment = models.FileField('下载附件（PDF/DOCX/XLSX）', upload_to='resources/', blank=True, validators=[FileExtensionValidator(['pdf','docx','xlsx'])])
@@ -136,3 +146,13 @@ class FreightRate(models.Model):
         return {'pending':'待填写有效期','upcoming':'尚未生效', 'expired':'已过期', 'valid':'有效期内'}[self.validity]
     def __str__(self): return f'{self.origin} → {self.destination} / {self.vehicle}'
     def get_absolute_url(self): return reverse('freight-rate', args=[self.slug])
+
+class ArticleReference(models.Model):
+    article = models.ForeignKey(Article, on_delete=models.CASCADE, related_name='references')
+    title = models.CharField('来源名称', max_length=300)
+    url = models.URLField('来源链接', max_length=1000)
+    note = models.CharField('资料日期与使用范围', max_length=500, blank=True)
+    class Meta:
+        ordering = ['pk']
+        verbose_name = verbose_name_plural = '核对来源'
+    def __str__(self): return self.title

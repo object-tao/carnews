@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.utils import timezone
-from .models import SiteSettings, Route, Article, Country, ResourceType, FreightRate
+from .models import SiteSettings, Route, Article, Country, ResourceType, FreightRate, ArticleReference
 admin.site.site_header = '深圳昆腾 · 内容管理'
 admin.site.site_title = '深圳昆腾管理后台'
 @admin.register(SiteSettings)
@@ -23,18 +23,25 @@ class RouteAdmin(admin.ModelAdmin):
     search_fields = ['title','countries','country_tags__name']
     filter_horizontal = ['country_tags']
     prepopulated_fields = {'slug':('title',)}
+class ArticleReferenceInline(admin.TabularInline):
+    model = ArticleReference
+    extra = 0
+
 @admin.register(Article)
 class ArticleAdmin(admin.ModelAdmin):
-    list_display = ['title','kind','resource_type','category','published','published_at']
+    inlines = [ArticleReferenceInline]
+    list_display = ['title','kind','resource_type','category','reviewed_on','published','published_at']
     list_filter = ['kind','resource_type','countries','published','category']
     search_fields = ['title','body','location']
     filter_horizontal = ['countries','related_routes','related_resources']
     prepopulated_fields = {'slug':('title',)}
     fieldsets = [
-        ('基本内容', {'fields': ['title','slug','kind','category','resource_type','summary','body']}),
+        ('基本内容', {'fields': ['title','slug','kind','category','resource_type','summary','body_format','body']}),
         ('国家与关联资料', {'fields':['countries','related_routes','related_resources']}),
         ('口岸、车型、桥梁资料（按需填写）', {'fields':['location','specifications','access_info','requirements','restrictions']}),
-        ('来源与附件', {'fields':['image','author','source','attachment']}),
+        ('来源与附件', {'fields':['author','source','attachment','reviewed_on']}),
+        ('资料图片与署名', {'fields':['image','image_caption','image_creator','image_source','image_license','image_license_url','image_taken_on']}),
+        ('内部校订资料（不在前台显示）', {'fields':['original_source','editorial_notes'], 'classes':['collapse']}),
         ('发布设置', {'fields':['published','published_at']}),
     ]
     def save_model(self, request, obj, form, change):
