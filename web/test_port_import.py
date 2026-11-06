@@ -31,7 +31,9 @@ class PortImportTests(TestCase):
     def test_catalog_import_country_corrections_and_repeat_safety(self):
         self.import_ports(publish_reviewed=True)
         self.assertEqual(Article.objects.count(), 66)
-        self.assertEqual(Article.objects.filter(published=True).count(), 16)
+        self.assertEqual(Article.objects.filter(published=True).count(), 66)
+        call_command('publish_reviewed_ports', stdout=StringIO())
+        self.assertEqual(Article.objects.filter(published=True).count(), 66)
         self.assertEqual(Article.objects.exclude(image='').count(), 12)
         item = Article.objects.get(slug='port-0106')
         self.assertSetEqual(set(item.countries.values_list('slug', flat=True)), {'china', 'kazakhstan'})
@@ -80,8 +82,8 @@ class PortImportTests(TestCase):
         item.published = False
         item.save()
         self.assertEqual(self.client.get('/article-images/port-0102/').status_code, 404)
-        self.assertEqual(self.client.get('/articles/port-0103/').status_code, 404)
-        self.assertNotContains(self.client.get('/sitemap.xml'), '/articles/port-0103/')
+        self.assertEqual(self.client.get('/articles/port-0102/').status_code, 404)
+        self.assertNotContains(self.client.get('/sitemap.xml'), '/articles/port-0102/')
         self.assertNotContains(self.client.get('/resources/?q=PRIVATE-ORIGINAL-SENTINEL'), item.title)
 
     def test_original_is_preserved_privately(self):

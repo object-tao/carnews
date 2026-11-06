@@ -31,7 +31,8 @@ $env:DEBUG='1'
 ## 口岸资料导入
 
 `content/ports/catalog.json` 包含 66 篇资料：新疆 14、内蒙古 11、东北 22、广西 9、云南 10。
-其中 16 篇是基础事实校订与运输要点补充版，50 篇保留为待审草稿。校对日期不代表实时通关确认。
+全部 66 篇已完成基础事实校订并补充运输组织要点；2026-11-07 批次重写原有 50 篇待审稿，原先 16 篇保留。
+文章区分历史协定、规划、具体业务开通和当次受理；校对日期不代表实时通关确认，未确认开放或复关的通道明确标注资料边界。
 12 张实景资料图存放在 `content/ports/images/`；作者、许可、来源与历史照片说明见同目录的 `photo_manifest.json`。
 照片不代表当前设施或开放状况，使用时保留署名及许可链接。Markdown 文稿与图片分别适用各自的许可，不改变图片原有 CC 许可。
 
@@ -39,13 +40,18 @@ $env:DEBUG='1'
 $env:DEBUG='1'
 .\.venv\Scripts\python.exe manage.py import_ports --dry-run
 .\.venv\Scripts\python.exe manage.py import_ports --publish-reviewed --original-dir 'C:\Users\Administrator\WorkBuddy\2026-11-06-14-40-25\陆路口岸系列'
+.\.venv\Scripts\python.exe manage.py publish_reviewed_ports --dry-run
+.\.venv\Scripts\python.exe manage.py publish_reviewed_ports
 ```
 
 省略 `--publish-reviewed` 时全部导入为草稿；它仅控制本次新建记录，不更改已存在记录的发布状态。
 命令可重复执行，按 `port-编号` 跳过已有记录，不覆盖管理员修改，也不重复复制照片。
+`publish_reviewed_ports` 专门升级本次 50 篇旧草稿：按 `review-20261107.json` 校验旧稿与新稿的内容摘要，再在同一事务中替换正文和来源、设置发布时间。
+旧稿或来源在导入后被修改、曾经发布而又撤回、或记录缺失时，命令在写入前停止，需先核对对应记录；不会强行覆盖。
+已带本次或更晚校订日期的记录保留管理员后续编辑与发布选择。原稿、图片、附件、国家和线路关联均不改动。
 `--original-dir` 可省略；提供时完整原文保存至后台“内部校订资料”，不进入前台或站内搜索。
 未经逐项核实的原稿不能批量发布；后台编辑入口为“资讯与资源”，筛选资料类型“口岸介绍”和发布状态。
-部署脚本在数据库备份及迁移后执行导入，仍保留现有管理员编辑；此改动本身不启用 ECS 自动部署。
+部署脚本在数据库备份及迁移后依次执行导入及本次校订升级；新环境直接导入 66 篇校订稿，已有环境升级仍符合基线的 50 篇草稿。此改动本身不启用 ECS 自动部署。
 
 ## 大件运输专题
 
