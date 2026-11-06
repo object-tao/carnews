@@ -24,11 +24,15 @@ def route(request, slug):
 def articles(request, kind):
     if kind not in ['news','resources']: raise Http404
     items = public_articles().filter(kind=kind).select_related('resource_type').prefetch_related('countries')
-    categories = sorted(set(items.values_list('category',flat=True)))
     q = request.GET.get('q','').strip()[:100]
     category = request.GET.get('category','')
     country = request.GET.get('country','')
     resource_type = request.GET.get('type','') if kind == 'resources' else ''
+    category_items = items.filter(resource_type__slug=resource_type) if resource_type and resource_type != 'routes' else items
+    categories = sorted(set(category_items.values_list('category',flat=True)))
+    knowledge_guide = None
+    if resource_type == 'knowledge' and not (q or category or country):
+        knowledge_guide = public_articles().filter(slug='heavy-haul-handbook', kind='resources', resource_type__slug='knowledge').first()
     route_items = Route.objects.filter(published=True).prefetch_related('country_tags')
     if q:
         items = items.filter(Q(title__icontains=q)|Q(body__icontains=q)|Q(summary__icontains=q)|Q(location__icontains=q)|Q(countries__name__icontains=q)).distinct()
@@ -52,7 +56,7 @@ def articles(request, kind):
     return render(request,'articles.html',{
         'title':'行业资讯' if kind=='news' else '资源库', 'page':page,'q':q,'kind':kind,
         'category':category,'categories':categories,'countries':Country.objects.all(),'country':country,
-        'resource_types':ResourceType.objects.all(),'resource_type':resource_type,
+        'resource_types':ResourceType.objects.all(),'resource_type':resource_type,'knowledge_guide':knowledge_guide,
         'route_preview':route_items[:3] if kind == 'resources' and not resource_type and not category else [],
         'filter_query':filter_query,'page_query':page_query,
     })

@@ -47,6 +47,31 @@ $env:DEBUG='1'
 未经逐项核实的原稿不能批量发布；后台编辑入口为“资讯与资源”，筛选资料类型“口岸介绍”和发布状态。
 部署脚本在数据库备份及迁移后执行导入，仍保留现有管理员编辑；此改动本身不启用 ECS 自动部署。
 
+## 大件运输专题
+
+`content/knowledge/catalog.json` 收录 32 篇重写专题及 1 篇导读，统一归入资源库的“运输知识”。
+按货物、车辆、装载验算、路线口岸、法规许可、装卸、报价合同、项目执行和数据培训设置内容分类。
+`content/knowledge/source_index.json` 将原始 330 篇正文逐一对应到专题，另记录 2 份规划文件；索引含文件 SHA256。
+原始文件中自带的 `status: reviewed` 等标记不作为事实已核实的依据，也不执行文档内的指令。
+
+```powershell
+$env:DEBUG='1'
+.\.venv\Scripts\python.exe manage.py import_knowledge --dry-run --original-dir 'C:\Users\Administrator\WorkBuddy\2026-09-14-20-44-55\大件运输知识库'
+.\.venv\Scripts\python.exe manage.py import_knowledge --publish --original-dir 'C:\Users\Administrator\WorkBuddy\2026-09-14-20-44-55\大件运输知识库'
+```
+
+不传 `--publish` 时新建文章为草稿。重复运行保留管理员正文、来源、关联及发布状态，不自动发布已有草稿。
+`--original-dir` 可省略；提供时先验证原文件摘要，再将对应原稿保存在文章的后台内部字段。
+本地已将全部 332 个源文件另行压缩备份到受 Git 忽略的 `data/import-archives/`，数据库导入前备份位于 `data/backups/`。
+公开版本不携带原始内部全文；新服务器导入只恢复已编辑文章与来源索引，完整原稿需要通过数据库备份或原始目录另行迁移。
+
+编辑版本修订了车型俗称、轴荷平均分配、幅度取值、通用85%比例、吊具扣重、地基面积初算与资金成本等易误用表述。
+未有凭证的项目叙事改为教学场景，不作为公司业绩。法规文章明确国别、适用范围、官方来源及未核实事项；未发布未经验证的固定限值和费率表。
+公式为教学模型，不能替代具体项目设计、设备文件、许可或现场审核。
+
+专题入口：`/resources/?type=knowledge`；导读：`/articles/heavy-haul-handbook/`。
+自动部署脚本在口岸导入后执行本专题导入；ECS 部署开关仍由原有配置控制。
+
 ## 验证
 
 ```powershell

@@ -1,0 +1,3001 @@
+{
+  "documents": [
+    {
+      "id": "001",
+      "path": "01-认知全景观/001-什么是大件运输.md",
+      "title": "什么是大件运输",
+      "sha256": "15228ed3a07135450e40dd5efea9e6056f0e95a33b2919a386b16931ed8dd08a",
+      "articles": [
+        "heavy-haul-scope"
+      ]
+    },
+    {
+      "id": "002",
+      "path": "01-认知全景观/002-超限vs超载.md",
+      "title": "超限vs超载",
+      "sha256": "5f2774e68498ca6063d6e5279b2171b3b67c783cd869436b75334bf6cea64a3d",
+      "articles": [
+        "heavy-haul-scope"
+      ]
+    },
+    {
+      "id": "003",
+      "path": "01-认知全景观/003-产业链全角色图鉴.md",
+      "title": "产业链全角色图鉴",
+      "sha256": "da490e173a68eb5496593cea97bf7b8d4f151880829f38774896f86f3fabad9f",
+      "articles": [
+        "heavy-haul-scope"
+      ]
+    },
+    {
+      "id": "004",
+      "path": "01-认知全景观/004-全流程拆解.md",
+      "title": "全流程拆解",
+      "sha256": "37894e6a6393b0ab28c94ce2a1e4f9ba43427e7224c1f4bc941e32a202b4651b",
+      "articles": [
+        "heavy-haul-scope"
+      ]
+    },
+    {
+      "id": "005",
+      "path": "01-认知全景观/005-运输方式比选.md",
+      "title": "运输方式比选",
+      "sha256": "41579516ebd9bb6bfb3051bdaac0c1b23a0a1a8053b5d6b271cab45db9db6e8f",
+      "articles": [
+        "heavy-haul-scope"
+      ]
+    },
+    {
+      "id": "006",
+      "path": "01-认知全景观/006-中亚市场全景.md",
+      "title": "中亚市场全景",
+      "sha256": "bd0712f685b6325b8c72bbfbc7fbf0d66839c489451418ae182acac9911f5acf",
+      "articles": [
+        "heavy-haul-scope"
+      ]
+    },
+    {
+      "id": "007",
+      "path": "01-认知全景观/007-口岸经济带与通道格局.md",
+      "title": "口岸经济带与通道格局",
+      "sha256": "c0461be0594e9dfcdcaf21e9caed96884245f4ec01b2d4b7701e52f7371fa9ab",
+      "articles": [
+        "heavy-haul-scope"
+      ]
+    },
+    {
+      "id": "008",
+      "path": "01-认知全景观/008-公司类型与业务边界.md",
+      "title": "公司类型与业务边界",
+      "sha256": "3269c01fa0d0c17109873f305d5c619cdce04820ddfc5492ffafeb8b5cc95b62",
+      "articles": [
+        "heavy-haul-scope"
+      ]
+    },
+    {
+      "id": "009",
+      "path": "01-认知全景观/009-十大误区与踩坑实录.md",
+      "title": "十大误区与踩坑实录",
+      "sha256": "7997904b21c16d431dd78765c55eb9c9a7481ef8be07c95b2ab3997d8580fc77",
+      "articles": [
+        "heavy-haul-scope"
+      ]
+    },
+    {
+      "id": "010",
+      "path": "01-认知全景观/010-核心术语第一课.md",
+      "title": "核心术语第一课",
+      "sha256": "358e97172fdfaad162e030b37aedd5d214994f20b6e5bbc96cf9a8cacdc18f4c",
+      "articles": [
+        "heavy-haul-scope"
+      ]
+    },
+    {
+      "id": "011",
+      "path": "01-认知全景观/011-AI与大件运输.md",
+      "title": "AI与大件运输",
+      "sha256": "a0eb5a2ea94ccc45f8d5affc0a45e6d3fcd523574a3129d1ef3c00aa9e2bdd86",
+      "articles": [
+        "heavy-haul-data-and-ai"
+      ]
+    },
+    {
+      "id": "012",
+      "path": "01-认知全景观/012-知识库使用指南.md",
+      "title": "知识库使用指南",
+      "sha256": "a4b766efe2ec0139c8c6d6e71524d9b69c062057cc63b3ec5313127009db1280",
+      "articles": [
+        "heavy-haul-scope"
+      ]
+    },
+    {
+      "id": "013",
+      "path": "02-车型车辆库/013-车型分类总表.md",
+      "title": "车型分类总表",
+      "sha256": "0c57fbccd23e7be16141ffc3c7ad4034e740aebf02ecc8fd9f553af6cc374252",
+      "articles": [
+        "heavy-haul-vehicle-selection"
+      ]
+    },
+    {
+      "id": "014",
+      "path": "02-车型车辆库/014-核心选型规则.md",
+      "title": "核心选型规则",
+      "sha256": "80000084494f3746852019b2a0a782a2ed6dec5a1c381c0f344a447c742a483b",
+      "articles": [
+        "heavy-haul-vehicle-selection"
+      ]
+    },
+    {
+      "id": "015",
+      "path": "02-车型车辆库/015-租车自有与联营.md",
+      "title": "租车自有与联营",
+      "sha256": "4e1ab24f8ed6dffc403d64df34d9cb4dbc1274d78cc7ad3c566b9352b2327568",
+      "articles": [
+        "heavy-haul-vehicle-selection"
+      ]
+    },
+    {
+      "id": "016",
+      "path": "02-车型车辆库/016-普通平板车.md",
+      "title": "普通平板车",
+      "sha256": "5e0f72917a53d29a070edce3c520e4da834d2bc57e82239fbf5e810944d3fbfc",
+      "articles": [
+        "heavy-haul-vehicle-selection"
+      ]
+    },
+    {
+      "id": "017",
+      "path": "02-车型车辆库/017-低平板车.md",
+      "title": "低平板车",
+      "sha256": "30f6d38926126566757ba7e6b69bdf2af0b2d313b82cc723aa665242dbef12f9",
+      "articles": [
+        "heavy-haul-vehicle-selection"
+      ]
+    },
+    {
+      "id": "018",
+      "path": "02-车型车辆库/018-三线六轴低平板.md",
+      "title": "三线六轴低平板",
+      "sha256": "ffee917b8f9ffdb025e6fc44c5465e458c58af231c5e8b36819ef9c1ed3dc640",
+      "articles": [
+        "heavy-haul-vehicle-selection"
+      ]
+    },
+    {
+      "id": "019",
+      "path": "02-车型车辆库/019-爬梯车与上下板.md",
+      "title": "爬梯车与上下板",
+      "sha256": "bbd31a1a0147fad1450250de2ac068d4254bdea1714071d115e072e71dc2f9a8",
+      "articles": [
+        "heavy-haul-vehicle-selection"
+      ]
+    },
+    {
+      "id": "020",
+      "path": "02-车型车辆库/020-可拆鹅颈板.md",
+      "title": "可拆鹅颈板",
+      "sha256": "89c5e04f47692b39eba4d8f7ee66ee8812f0a861a2cc449c0bbe8358aa3a47b6",
+      "articles": [
+        "heavy-haul-vehicle-selection"
+      ]
+    },
+    {
+      "id": "021",
+      "path": "02-车型车辆库/021-伸缩板车.md",
+      "title": "伸缩板车",
+      "sha256": "6e58a44fb8ca9f4ed8bd6f055370dc053a6e33b42ca0d97478595431d654bccd",
+      "articles": [
+        "heavy-haul-vehicle-selection"
+      ]
+    },
+    {
+      "id": "022",
+      "path": "02-车型车辆库/022-凹槽板结构与适用.md",
+      "title": "凹槽板结构与适用",
+      "sha256": "074ff39e44cd1844900246db3ed96ecf7d2cd147b5ffb4a6b3bf612c52ed2827",
+      "articles": [
+        "heavy-haul-vehicle-selection"
+      ]
+    },
+    {
+      "id": "023",
+      "path": "02-车型车辆库/023-凹槽板装载计算.md",
+      "title": "凹槽板装载计算",
+      "sha256": "c98203e9c0a78e165f3284c367d2401a007d1652a3c8cce9c5f4559b849242d2",
+      "articles": [
+        "heavy-haul-vehicle-selection"
+      ]
+    },
+    {
+      "id": "024",
+      "path": "02-车型车辆库/024-液压模块车原理.md",
+      "title": "液压模块车原理",
+      "sha256": "76d49b854f77bfb8c4ea01df6c455abc17b6692085838fb4a2ffdadc285a30ba",
+      "articles": [
+        "heavy-haul-modular-transport"
+      ]
+    },
+    {
+      "id": "025",
+      "path": "02-车型车辆库/025-液压模块车4至6轴线.md",
+      "title": "液压模块车4至6轴线",
+      "sha256": "375067efe693151f90ddc7aec38d91befb0b99bcbd4dfcbdbec9cced881d81ab",
+      "articles": [
+        "heavy-haul-modular-transport"
+      ]
+    },
+    {
+      "id": "026",
+      "path": "02-车型车辆库/026-液压模块车8至12轴线.md",
+      "title": "液压模块车8至12轴线",
+      "sha256": "25c2b799dcf18a44f130c8e4b0eb20a90e2c1e1357ea8b1a6422422d3e991b5c",
+      "articles": [
+        "heavy-haul-modular-transport"
+      ]
+    },
+    {
+      "id": "027",
+      "path": "02-车型车辆库/027-组合轴线与多板拼车.md",
+      "title": "组合轴线与多板拼车",
+      "sha256": "fd80519a37afcfad5478ca60573edb15c2cbbcac11a14f6e0a448435530a4119",
+      "articles": [
+        "heavy-haul-modular-transport"
+      ]
+    },
+    {
+      "id": "028",
+      "path": "02-车型车辆库/028-液压凹槽梁.md",
+      "title": "液压凹槽梁",
+      "sha256": "9166e7253366211dba2127d62db86edf014ffdbb7dfecf7a22c3d03e2d7573fd",
+      "articles": [
+        "heavy-haul-modular-transport"
+      ]
+    },
+    {
+      "id": "029",
+      "path": "02-车型车辆库/029-桥式运输车.md",
+      "title": "桥式运输车",
+      "sha256": "0ae076f9b021edb0bac729b336d93fe2bbea90e860a028b2271882e6632bf770",
+      "articles": [
+        "heavy-haul-modular-transport"
+      ]
+    },
+    {
+      "id": "030",
+      "path": "02-车型车辆库/030-SPMT模块化运输车.md",
+      "title": "SPMT模块化运输车",
+      "sha256": "e51bb4c453aff4b81db8f64ce262442635095afe4ef0743b4d3f16cd35af8bcd",
+      "articles": [
+        "heavy-haul-modular-transport"
+      ]
+    },
+    {
+      "id": "031",
+      "path": "02-车型车辆库/031-SPMT组合与操控.md",
+      "title": "SPMT组合与操控",
+      "sha256": "d07e37ed68078f787af7d457de57752766dc4b33b10ee74b0081423a3d58fc96",
+      "articles": [
+        "heavy-haul-modular-transport"
+      ]
+    },
+    {
+      "id": "032",
+      "path": "02-车型车辆库/032-叶片伸缩车.md",
+      "title": "叶片伸缩车",
+      "sha256": "9ea96df7845d0c33abb980c88dec491a41265e408e9159ec708354968c4bcbc9",
+      "articles": [
+        "heavy-haul-wind-components"
+      ]
+    },
+    {
+      "id": "033",
+      "path": "02-车型车辆库/033-叶片举升车.md",
+      "title": "叶片举升车",
+      "sha256": "ea32989111d13cd74b7ef938bfde89d48d1cd769602e249824dca72b7e941ee1",
+      "articles": [
+        "heavy-haul-wind-components"
+      ]
+    },
+    {
+      "id": "034",
+      "path": "02-车型车辆库/034-塔筒运输车.md",
+      "title": "塔筒运输车",
+      "sha256": "e43dd2cf6996f465ecb277cdebe58cb8a7cfd3bdabf8063e6146ed6400a85dfc",
+      "articles": [
+        "heavy-haul-wind-components"
+      ]
+    },
+    {
+      "id": "035",
+      "path": "02-车型车辆库/035-机舱运输车.md",
+      "title": "机舱运输车",
+      "sha256": "2d4fca00aee763890fce9806d72f827232b58d9a68ee18e3d67cd608c96e497b",
+      "articles": [
+        "heavy-haul-wind-components"
+      ]
+    },
+    {
+      "id": "036",
+      "path": "02-车型车辆库/036-牵引车头选配.md",
+      "title": "牵引车头选配",
+      "sha256": "c29c7e8d97e80a07a5e08d23ec1c2c570d5213a19a05d412dd8f9c225a3ac8e5",
+      "articles": [
+        "heavy-haul-vehicle-selection"
+      ]
+    },
+    {
+      "id": "037",
+      "path": "02-车型车辆库/037-牵引结构对比.md",
+      "title": "牵引结构对比",
+      "sha256": "37be4a5f52d955ab76e6876be69254fe50f8d387886ba12d59f229c635e83c18",
+      "articles": [
+        "heavy-haul-vehicle-selection"
+      ]
+    },
+    {
+      "id": "038",
+      "path": "02-车型车辆库/038-轴荷计算入门.md",
+      "title": "轴荷计算入门",
+      "sha256": "95d0bccb848db27674613dc0afa4b85c3ae41ee5ce7b558cde63dcac2c790108",
+      "articles": [
+        "heavy-haul-axle-loads"
+      ]
+    },
+    {
+      "id": "039",
+      "path": "02-车型车辆库/039-板面高度与净空核算.md",
+      "title": "板面高度与净空核算",
+      "sha256": "0caad09b853810204ad9feee1f720d04127c5788180be95314f5cebd02758d4a",
+      "articles": [
+        "heavy-haul-clearance-and-swept-path"
+      ]
+    },
+    {
+      "id": "040",
+      "path": "02-车型车辆库/040-转弯半径与扫空区域.md",
+      "title": "转弯半径与扫空区域",
+      "sha256": "6930e02241251d50b6a3dadf72f499b55a3c6a2e737e8dcd289250e55c79f10f",
+      "articles": [
+        "heavy-haul-clearance-and-swept-path"
+      ]
+    },
+    {
+      "id": "041",
+      "path": "02-车型车辆库/041-轮胎规格与接地比压.md",
+      "title": "轮胎规格与接地比压",
+      "sha256": "19fbccd033ef3196039a06c6e69f18d67f8c464175e87dd073a588b72a6d1111",
+      "articles": [
+        "heavy-haul-vehicle-selection"
+      ]
+    },
+    {
+      "id": "042",
+      "path": "02-车型车辆库/042-车辆合规档案.md",
+      "title": "车辆合规档案",
+      "sha256": "4f36b9f4ba8202acd76b7dbb27e4f050e69c83114d832e95d0bc4efef6c5e99c",
+      "articles": [
+        "heavy-haul-vehicle-selection"
+      ]
+    },
+    {
+      "id": "043",
+      "path": "02-车型车辆库/043-板车配件详解.md",
+      "title": "板车配件详解",
+      "sha256": "c4294ba9fe4452128fc602fc40fac3a653e1104ec6a0c7da967f2c0cfc2027eb",
+      "articles": [
+        "heavy-haul-vehicle-selection"
+      ]
+    },
+    {
+      "id": "044",
+      "path": "02-车型车辆库/044-车型库字段标准.md",
+      "title": "车型库字段标准",
+      "sha256": "a088d47ee78a9c035d7bd0ec51aa36cc4356bfde35c637ce97386ebc82ea9d23",
+      "articles": [
+        "heavy-haul-vehicle-selection"
+      ]
+    },
+    {
+      "id": "045",
+      "path": "02-车型车辆库/045-车型选型决策树.md",
+      "title": "车型选型决策树",
+      "sha256": "6534dbfcb8921a97e14333ac07bf13761e9bc075252989eb909d78b53c0cdf78",
+      "articles": [
+        "heavy-haul-vehicle-selection"
+      ]
+    },
+    {
+      "id": "046",
+      "path": "03-货物设备库/046-货物分类总表与编码.md",
+      "title": "货物分类总表与编码",
+      "sha256": "0ec99698b80c380b507b39877fb43b69771a7c8ce6f64f06e6a6ec5429d39545",
+      "articles": [
+        "heavy-haul-cargo-data"
+      ]
+    },
+    {
+      "id": "047",
+      "path": "03-货物设备库/047-询价必问12参数.md",
+      "title": "询价必问12参数",
+      "sha256": "d8a0b69904451acaf1201fd63ed942c4b7c25cae2ae9739b53191ed72bb4d30d",
+      "articles": [
+        "heavy-haul-cargo-data"
+      ]
+    },
+    {
+      "id": "048",
+      "path": "03-货物设备库/048-挖掘机运输方案.md",
+      "title": "挖掘机运输方案",
+      "sha256": "c3c758e90f6e26301a82b343f7a7fbf9cba530c976b70c0dd928679e18ecea3f",
+      "articles": [
+        "heavy-haul-construction-machinery"
+      ]
+    },
+    {
+      "id": "049",
+      "path": "03-货物设备库/049-装载机与推土机.md",
+      "title": "装载机与推土机",
+      "sha256": "f699e9803d87788a8e25098fdd45d84e7c78c61c907030095805b6936772fa72",
+      "articles": [
+        "heavy-haul-construction-machinery"
+      ]
+    },
+    {
+      "id": "050",
+      "path": "03-货物设备库/050-压路机与摊铺机.md",
+      "title": "压路机与摊铺机",
+      "sha256": "4441c888647bcaa75f5bfe7e5010af22301bba1766c5b2e80d84f8c7f3de4688",
+      "articles": [
+        "heavy-haul-construction-machinery"
+      ]
+    },
+    {
+      "id": "051",
+      "path": "03-货物设备库/051-汽车起重机.md",
+      "title": "汽车起重机",
+      "sha256": "c8b95eadf737e06d8cb3aca5648ae044f63647f54c436f8a4c59d7f673e91e73",
+      "articles": [
+        "heavy-haul-construction-machinery"
+      ]
+    },
+    {
+      "id": "052",
+      "path": "03-货物设备库/052-履带起重机.md",
+      "title": "履带起重机",
+      "sha256": "51eb2fc982064cbbfec701a6fcb7cbc2f1c104d24ac30f3ca4e3605d4dec04f7",
+      "articles": [
+        "heavy-haul-construction-machinery"
+      ]
+    },
+    {
+      "id": "053",
+      "path": "03-货物设备库/053-旋挖钻机.md",
+      "title": "旋挖钻机",
+      "sha256": "d0ea25d2d015009d0e4f681646b0fe5fd6125aa4f8b7b8fdd1abe8eec4d42265",
+      "articles": [
+        "heavy-haul-construction-machinery"
+      ]
+    },
+    {
+      "id": "054",
+      "path": "03-货物设备库/054-盾构机分件运输.md",
+      "title": "盾构机分件运输",
+      "sha256": "f01c33f94ac0e06369e81beb203ce6c53b0f0a2f89a07a9d77b8695b7de4e0f1",
+      "articles": [
+        "heavy-haul-construction-machinery"
+      ]
+    },
+    {
+      "id": "055",
+      "path": "03-货物设备库/055-电力变压器全解.md",
+      "title": "电力变压器全解",
+      "sha256": "c17bff5887ba3fd66da65b50860399ab8e42f7febb047fc7d004074bf3859d3f",
+      "articles": [
+        "heavy-haul-power-equipment"
+      ]
+    },
+    {
+      "id": "056",
+      "path": "03-货物设备库/056-电抗器与GIS设备.md",
+      "title": "电抗器与GIS设备",
+      "sha256": "41567695891d9ca5d09c6462b0029400e66f2495e632ebdb9872399aa67bc79e",
+      "articles": [
+        "heavy-haul-power-equipment"
+      ]
+    },
+    {
+      "id": "057",
+      "path": "03-货物设备库/057-发电机组.md",
+      "title": "发电机组",
+      "sha256": "68d2e4fa872ce1fdde377b8cb68d32a7498715da9eb95e9f05c176218dbd698b",
+      "articles": [
+        "heavy-haul-power-equipment"
+      ]
+    },
+    {
+      "id": "058",
+      "path": "03-货物设备库/058-风电叶片.md",
+      "title": "风电叶片",
+      "sha256": "617d578c90e7e16dec7fa0c20560f66500e6fa7a9587dc51f251bfad239c4f7b",
+      "articles": [
+        "heavy-haul-wind-components"
+      ]
+    },
+    {
+      "id": "059",
+      "path": "03-货物设备库/059-风电主机与轮毂.md",
+      "title": "风电主机与轮毂",
+      "sha256": "0aaa33f2705ff2587350b8de8d82918208d1fbcf6e19dccbe6555206c74cdce2",
+      "articles": [
+        "heavy-haul-wind-components"
+      ]
+    },
+    {
+      "id": "060",
+      "path": "03-货物设备库/060-风电塔筒.md",
+      "title": "风电塔筒",
+      "sha256": "f1bdf30af794f6c7a324ed1bdc3d54a7f7d0549efc6bc7cb648d6e456a319f06",
+      "articles": [
+        "heavy-haul-wind-components"
+      ]
+    },
+    {
+      "id": "061",
+      "path": "03-货物设备库/061-光伏逆变器与储能柜.md",
+      "title": "光伏逆变器与储能柜",
+      "sha256": "0ecf53951762b3874268806b559b9eab7e3b820f5ec957d5436724751662e9af",
+      "articles": [
+        "heavy-haul-power-equipment"
+      ]
+    },
+    {
+      "id": "062",
+      "path": "03-货物设备库/062-压力容器.md",
+      "title": "压力容器",
+      "sha256": "b85c2a470a3daf5544187243dd706ddac5dc02d324052dabdf4ddd1e14566c43",
+      "articles": [
+        "heavy-haul-vessels-and-structures"
+      ]
+    },
+    {
+      "id": "063",
+      "path": "03-货物设备库/063-反应釜与塔器.md",
+      "title": "反应釜与塔器",
+      "sha256": "93c837eb41a8d6413c7cf1a3581184c181238372b0d17b8ee13c30ae5c4d9b89",
+      "articles": [
+        "heavy-haul-vessels-and-structures"
+      ]
+    },
+    {
+      "id": "064",
+      "path": "03-货物设备库/064-储罐与罐体.md",
+      "title": "储罐与罐体",
+      "sha256": "3fd0487fc1012d714e516942d73c9526e5f9f491b137a2251b2205e79d7a59c8",
+      "articles": [
+        "heavy-haul-vessels-and-structures"
+      ]
+    },
+    {
+      "id": "065",
+      "path": "03-货物设备库/065-换热器.md",
+      "title": "换热器",
+      "sha256": "9824593b7e97c4592ee09c0c80d79d076bb00a39f98ce6c9c0f284868f4337c7",
+      "articles": [
+        "heavy-haul-vessels-and-structures"
+      ]
+    },
+    {
+      "id": "066",
+      "path": "03-货物设备库/066-工业锅炉.md",
+      "title": "工业锅炉",
+      "sha256": "bc46c83a53f4b3a5bdeab146e65d5cdefbddedd80c051ac60dee913f525a0f13",
+      "articles": [
+        "heavy-haul-vessels-and-structures"
+      ]
+    },
+    {
+      "id": "067",
+      "path": "03-货物设备库/067-钢箱梁与桥梁段.md",
+      "title": "钢箱梁与桥梁段",
+      "sha256": "6161bd694a02b47f3d2379bc65eafa7e92e3303e4fd6ca60a3f41fbe508437e6",
+      "articles": [
+        "heavy-haul-vessels-and-structures"
+      ]
+    },
+    {
+      "id": "068",
+      "path": "03-货物设备库/068-预制混凝土梁.md",
+      "title": "预制混凝土梁",
+      "sha256": "2a9b5ad72c49cc8725f5e2d62b026a3275ed0a5d17617541ea76e1a3752be52c",
+      "articles": [
+        "heavy-haul-vessels-and-structures"
+      ]
+    },
+    {
+      "id": "069",
+      "path": "03-货物设备库/069-门式刚架与钢结构.md",
+      "title": "门式刚架与钢结构",
+      "sha256": "1608bfea8837d6b0a8c923d2c8d71015e34aedddbca6cc5b63b455a00b252b95",
+      "articles": [
+        "heavy-haul-vessels-and-structures"
+      ]
+    },
+    {
+      "id": "070",
+      "path": "03-货物设备库/070-球磨机与磨机.md",
+      "title": "球磨机与磨机",
+      "sha256": "15728fa8a7bdf6ae5669263814d9d8a3ca3bb5cd68b676dbdab960b3aef2cc25",
+      "articles": [
+        "heavy-haul-construction-machinery"
+      ]
+    },
+    {
+      "id": "071",
+      "path": "03-货物设备库/071-破碎机与筛分设备.md",
+      "title": "破碎机与筛分设备",
+      "sha256": "fd666154c540dfecfdbf9261978300a97188b7ef1b505797bd486b46c2b89830",
+      "articles": [
+        "heavy-haul-construction-machinery"
+      ]
+    },
+    {
+      "id": "072",
+      "path": "03-货物设备库/072-矿用自卸车.md",
+      "title": "矿用自卸车",
+      "sha256": "a84adf57a4fb0be7d89d5db7d9bc66ff590e0e2207002857ac433084353acb98",
+      "articles": [
+        "heavy-haul-construction-machinery"
+      ]
+    },
+    {
+      "id": "073",
+      "path": "03-货物设备库/073-货物属性标注规范.md",
+      "title": "货物属性标注规范",
+      "sha256": "eef67a349726c766faa8402e7ad2a644ac79133b7a469eda53a31e9498765629",
+      "articles": [
+        "heavy-haul-cargo-data"
+      ]
+    },
+    {
+      "id": "074",
+      "path": "03-货物设备库/074-货物库字段标准.md",
+      "title": "货物库字段标准",
+      "sha256": "9bf61f35230cc308e999e9edc758975b6d3e8387f91e079e9510c974f88a4d98",
+      "articles": [
+        "heavy-haul-cargo-data"
+      ]
+    },
+    {
+      "id": "075",
+      "path": "03-货物设备库/075-货物车型匹配表.md",
+      "title": "货物车型匹配表",
+      "sha256": "e02a769fd744e15eb6268ed41e93e0e849b99fddfc71897a1bfb87e1ea7cf97d",
+      "articles": [
+        "heavy-haul-cargo-data"
+      ]
+    },
+    {
+      "id": "076",
+      "path": "04-装载配载库/076-装载规则总纲.md",
+      "title": "装载规则总纲",
+      "sha256": "7f9d0d8005e345041e0493d5e84f8fca3b98783d13460a250913bc85ac161e91",
+      "articles": [
+        "heavy-haul-cargo-securing"
+      ]
+    },
+    {
+      "id": "077",
+      "path": "04-装载配载库/077-重心原理.md",
+      "title": "重心原理",
+      "sha256": "d2e5ade71e8f4ac3116e3e6e167c7bed1efa06c258f4d58e242e5e7f7ad9e5c6",
+      "articles": [
+        "heavy-haul-axle-loads"
+      ]
+    },
+    {
+      "id": "078",
+      "path": "04-装载配载库/078-车辆承载中心.md",
+      "title": "车辆承载中心",
+      "sha256": "ecd9bf30c9590e17767c9c9ec6e55f1767c20633fdf63d8adaf05a9e64f9e290",
+      "articles": [
+        "heavy-haul-axle-loads"
+      ]
+    },
+    {
+      "id": "079",
+      "path": "04-装载配载库/079-前后轴荷分配.md",
+      "title": "前后轴荷分配",
+      "sha256": "796000f70f1ea2f2995a2e14b37726103c491f8d7a692c1c6f398be3b1722784",
+      "articles": [
+        "heavy-haul-axle-loads"
+      ]
+    },
+    {
+      "id": "080",
+      "path": "04-装载配载库/080-左右偏载控制.md",
+      "title": "左右偏载控制",
+      "sha256": "f5b91a4d05bc7439218ac69d2d982e4eebb848ee5b6db07336f7305e1c4908e3",
+      "articles": [
+        "heavy-haul-axle-loads"
+      ]
+    },
+    {
+      "id": "081",
+      "path": "04-装载配载库/081-支撑位置设计.md",
+      "title": "支撑位置设计",
+      "sha256": "f1dd0ce1204da3bbd9f962bad7f99fff694d70308151084052ea9e2b00c0f215",
+      "articles": [
+        "heavy-haul-cargo-securing"
+      ]
+    },
+    {
+      "id": "082",
+      "path": "04-装载配载库/082-垫木布置.md",
+      "title": "垫木布置",
+      "sha256": "b5c6d932c8d63c544a49c3e415ac49674b42d99b5cf70756d19d303a07914f5c",
+      "articles": [
+        "heavy-haul-cargo-securing"
+      ]
+    },
+    {
+      "id": "083",
+      "path": "04-装载配载库/083-绑扎总论.md",
+      "title": "绑扎总论",
+      "sha256": "c468bb5499183ec9c86cb16ad0312b7ecaf51a42b5451db42b818dcfad9dfac3",
+      "articles": [
+        "heavy-haul-cargo-securing"
+      ]
+    },
+    {
+      "id": "084",
+      "path": "04-装载配载库/084-链条规格选择.md",
+      "title": "链条规格选择",
+      "sha256": "7933d4309bb3f866bbe91b7ceca6ed88792cc7013b8afdf9c87eb2afd7476798",
+      "articles": [
+        "heavy-haul-cargo-securing"
+      ]
+    },
+    {
+      "id": "085",
+      "path": "04-装载配载库/085-钢丝绳与卸扣.md",
+      "title": "钢丝绳与卸扣",
+      "sha256": "8349bb7c46b58047239d7c64e82ed1849a965859464280f1b09ba5e25ee8c532",
+      "articles": [
+        "heavy-haul-cargo-securing"
+      ]
+    },
+    {
+      "id": "086",
+      "path": "04-装载配载库/086-吊装带辅助固定.md",
+      "title": "吊装带辅助固定",
+      "sha256": "991812c2f26179ba159278c593c2c634326034b9de31ae1c8a37d5b00ec77f8c",
+      "articles": [
+        "heavy-haul-cargo-securing"
+      ]
+    },
+    {
+      "id": "087",
+      "path": "04-装载配载库/087-防滑垫与摩擦系数.md",
+      "title": "防滑垫与摩擦系数",
+      "sha256": "0d7721418912684f025465c5051f3b51950b91fc52e46a8b74b6127a72eff9dc",
+      "articles": [
+        "heavy-haul-cargo-securing"
+      ]
+    },
+    {
+      "id": "088",
+      "path": "04-装载配载库/088-装载方向决策.md",
+      "title": "装载方向决策",
+      "sha256": "24a3759c22e7fcfc954ac726ad2752c01cbd51b263c92ac7cc863b635ec14b5e",
+      "articles": [
+        "heavy-haul-clearance-and-swept-path"
+      ]
+    },
+    {
+      "id": "089",
+      "path": "04-装载配载库/089-工程机械自行上下板.md",
+      "title": "工程机械自行上下板",
+      "sha256": "734024c648792e7c7da82eda002fc361098ef59634a7bc988db42ad742dec9cf",
+      "articles": [
+        "heavy-haul-loading-and-skidding"
+      ]
+    },
+    {
+      "id": "090",
+      "path": "04-装载配载库/090-爬梯与跳板搭设规范.md",
+      "title": "爬梯与跳板搭设规范",
+      "sha256": "ca3cc0fea46b09088890618cdf08331c2dcb4faab7c3775e5c2b23e6b430bed0",
+      "articles": [
+        "heavy-haul-loading-and-skidding"
+      ]
+    },
+    {
+      "id": "091",
+      "path": "04-装载配载库/091-顶升与滑移装卸.md",
+      "title": "顶升与滑移装卸",
+      "sha256": "24a5031da3740029f0a91e099e7bfa546ba2ff6699522d962ed8cd4d27a152a5",
+      "articles": [
+        "heavy-haul-loading-and-skidding"
+      ]
+    },
+    {
+      "id": "092",
+      "path": "04-装载配载库/092-圆形货物装载.md",
+      "title": "圆形货物装载",
+      "sha256": "4bd0e679b2813ad3ed18f2de42c31e0a3f18bf066c40b8bfad6ffea7deb5695e",
+      "articles": [
+        "heavy-haul-clearance-and-swept-path"
+      ]
+    },
+    {
+      "id": "093",
+      "path": "04-装载配载库/093-细长货物装载.md",
+      "title": "细长货物装载",
+      "sha256": "6c7e0879ab8ec5f554f613027abbe0a443ee257e6e4df9115dd89b24aad9f73c",
+      "articles": [
+        "heavy-haul-clearance-and-swept-path"
+      ]
+    },
+    {
+      "id": "094",
+      "path": "04-装载配载库/094-超高货物装载.md",
+      "title": "超高货物装载",
+      "sha256": "44fe4e2b156636bf9049a05f95054d6b75cc078ceb2cb19f329515fa3000db4b",
+      "articles": [
+        "heavy-haul-clearance-and-swept-path"
+      ]
+    },
+    {
+      "id": "095",
+      "path": "04-装载配载库/095-装载验算全案例80吨挖掘机.md",
+      "title": "装载验算全案例80吨挖掘机",
+      "sha256": "933a9f680a04e78c032d9f66754fc75cab4ef8ef6bfe2b7d616e9d6b0d6eee6a",
+      "articles": [
+        "heavy-haul-axle-loads"
+      ]
+    },
+    {
+      "id": "096",
+      "path": "04-装载配载库/096-装载验算全案例120吨变压器.md",
+      "title": "装载验算全案例120吨变压器",
+      "sha256": "1b5cd87efd894027c0fbc4a9853b2da8b44329181b74bf0076bee654136b231c",
+      "articles": [
+        "heavy-haul-axle-loads"
+      ]
+    },
+    {
+      "id": "097",
+      "path": "04-装载配载库/097-常见装载错误Top10.md",
+      "title": "常见装载错误Top10",
+      "sha256": "ec74cef387a211430267bb41aeb3864ae94416b040931397a470ac1295aef653",
+      "articles": [
+        "heavy-haul-cargo-securing"
+      ]
+    },
+    {
+      "id": "098",
+      "path": "04-装载配载库/098-装载检查表.md",
+      "title": "装载检查表",
+      "sha256": "df9db6cee247a86fcec3724e655ca0d2577e2246a022fb0a782711c7e6b759f6",
+      "articles": [
+        "heavy-haul-cargo-securing"
+      ]
+    },
+    {
+      "id": "099",
+      "path": "04-装载配载库/099-装载规则结构化字段标准.md",
+      "title": "装载规则结构化字段标准",
+      "sha256": "71df7a01ebda77705f3a1b3777737a9709a68acbc027928a80d549f6e21f6b16",
+      "articles": [
+        "heavy-haul-cargo-securing"
+      ]
+    },
+    {
+      "id": "100",
+      "path": "04-装载配载库/100-装载判断引擎.md",
+      "title": "装载判断引擎",
+      "sha256": "6dd9cbd6bf4e437cb012c7e51d90affd13c7bfd69dbf34dc7556502159dc1183",
+      "articles": [
+        "heavy-haul-data-and-ai"
+      ]
+    },
+    {
+      "id": "101",
+      "path": "05-道路路线库/101-线路档案总纲.md",
+      "title": "线路档案总纲",
+      "sha256": "b806899ec917fb6b60df66837f46433420fd23af24a84fb16bb087768f584aff",
+      "articles": [
+        "heavy-haul-route-survey"
+      ]
+    },
+    {
+      "id": "102",
+      "path": "05-道路路线库/102-路线勘察SOP.md",
+      "title": "路线勘察SOP",
+      "sha256": "296fb9988c864eb45a014fab7540de6f2a33abc66012cbcec3f0fcaedc3d5d88",
+      "articles": [
+        "heavy-haul-route-survey"
+      ]
+    },
+    {
+      "id": "103",
+      "path": "05-道路路线库/103-障碍物清单.md",
+      "title": "障碍物清单",
+      "sha256": "8da02bda7d17cfef69d6cb23974e91914adc18e72432088779860da388cc6bbd",
+      "articles": [
+        "heavy-haul-route-survey"
+      ]
+    },
+    {
+      "id": "104",
+      "path": "05-道路路线库/104-桥梁承载判定.md",
+      "title": "桥梁承载判定",
+      "sha256": "89708965622155b1e9df08f0bfb53c9f104c0426d94a0e9bf3c3e0313d1f31ce",
+      "articles": [
+        "heavy-haul-route-survey"
+      ]
+    },
+    {
+      "id": "105",
+      "path": "05-道路路线库/105-隧道与涵洞.md",
+      "title": "隧道与涵洞",
+      "sha256": "d8254e1bc4f84f19b1f7465a2cf391c3a477ed0c4c71c230700657f993d7cad3",
+      "articles": [
+        "heavy-haul-route-survey"
+      ]
+    },
+    {
+      "id": "106",
+      "path": "05-道路路线库/106-转弯半径核查.md",
+      "title": "转弯半径核查",
+      "sha256": "061acfcdf78812da6677d2cda5df3a227728a5c0deb11276ec6aaf63b4542852",
+      "articles": [
+        "heavy-haul-route-survey"
+      ]
+    },
+    {
+      "id": "107",
+      "path": "05-道路路线库/107-坡度与爬坡.md",
+      "title": "坡度与爬坡",
+      "sha256": "d82e313d32b7467086182f610c4a9118d6d423b61216e14ecb39b12f80b10812",
+      "articles": [
+        "heavy-haul-route-survey"
+      ]
+    },
+    {
+      "id": "108",
+      "path": "05-道路路线库/108-电线与通信线.md",
+      "title": "电线与通信线",
+      "sha256": "463a64fc1aad5145577fd2df6e0b25759250f8d5c2b863446cecafa57d605504",
+      "articles": [
+        "heavy-haul-route-survey"
+      ]
+    },
+    {
+      "id": "109",
+      "path": "05-道路路线库/109-冬季与季节性限制.md",
+      "title": "冬季与季节性限制",
+      "sha256": "21acd57fc0b33da5e31735c95d4db830978efafd9bec20a4afac022151f4de2c",
+      "articles": [
+        "heavy-haul-route-survey"
+      ]
+    },
+    {
+      "id": "110",
+      "path": "05-道路路线库/110-施工路段与临时管制.md",
+      "title": "施工路段与临时管制",
+      "sha256": "be281ef72d345be2f196ac7cc2487eb96d71212670202cf6bce7dfe89cadd32f",
+      "articles": [
+        "heavy-haul-route-survey"
+      ]
+    },
+    {
+      "id": "111",
+      "path": "05-道路路线库/111-G30连霍高速新疆段.md",
+      "title": "G30连霍高速新疆段",
+      "sha256": "febc74fccece4aedae5f8c411a34fd0b5cf431bc077caebc39abddd1666af738",
+      "articles": [
+        "heavy-haul-international-corridors"
+      ]
+    },
+    {
+      "id": "112",
+      "path": "05-道路路线库/112-新疆国省道大件通行.md",
+      "title": "新疆国省道大件通行",
+      "sha256": "92a0634b90e3a2ac3bfab12208814059d7b43eae05139fc6dbc08a34bdc8c732",
+      "articles": [
+        "heavy-haul-international-corridors"
+      ]
+    },
+    {
+      "id": "113",
+      "path": "05-道路路线库/113-线路档案霍尔果斯塔什干.md",
+      "title": "线路档案霍尔果斯塔什干",
+      "sha256": "eec73c6c4ccb6862c6b7c277c5e7e796457c82eeaa6c628285247328420e8892",
+      "articles": [
+        "heavy-haul-international-corridors"
+      ]
+    },
+    {
+      "id": "114",
+      "path": "05-道路路线库/114-线路档案阿拉山口阿拉木图.md",
+      "title": "线路档案阿拉山口阿拉木图",
+      "sha256": "843ca59b474b627b5bebf53fab485fe19494a6f85826ff0f5b3e101237a19737",
+      "articles": [
+        "heavy-haul-international-corridors"
+      ]
+    },
+    {
+      "id": "115",
+      "path": "05-道路路线库/115-线路档案巴克图巴甫洛达尔.md",
+      "title": "线路档案巴克图巴甫洛达尔",
+      "sha256": "5bc1f2693b1b0dd23ded4256dba8415dfe9554a91fca80dbb8cac12f034041b3",
+      "articles": [
+        "heavy-haul-international-corridors"
+      ]
+    },
+    {
+      "id": "116",
+      "path": "05-道路路线库/116-线路档案吉木乃乌斯季卡缅.md",
+      "title": "线路档案吉木乃乌斯季卡缅",
+      "sha256": "2c0212840f0eeb6324f1ecdef5dd7d02016bf07eea3d561adc4541130d7cf1c2",
+      "articles": [
+        "heavy-haul-international-corridors"
+      ]
+    },
+    {
+      "id": "117",
+      "path": "05-道路路线库/117-线路档案伊尔克什坦塔什干.md",
+      "title": "线路档案伊尔克什坦塔什干",
+      "sha256": "4cc46b62a57152f470d698153bb79d4556664debd93d039f4642a26350cae830",
+      "articles": [
+        "heavy-haul-international-corridors"
+      ]
+    },
+    {
+      "id": "118",
+      "path": "05-道路路线库/118-线路档案吐尔尕特比什凯克.md",
+      "title": "线路档案吐尔尕特比什凯克",
+      "sha256": "df91510900ef430e7f4470bea6acb23f54930fda2a1aabdf733fe1981c1311b6",
+      "articles": [
+        "heavy-haul-international-corridors"
+      ]
+    },
+    {
+      "id": "119",
+      "path": "05-道路路线库/119-线路档案满洲里赤塔.md",
+      "title": "线路档案满洲里赤塔",
+      "sha256": "5c8d38ea429bc18e56a8be5de058f03f9bf44e4c7c82489241fb58f9cb5b86ab",
+      "articles": [
+        "heavy-haul-international-corridors"
+      ]
+    },
+    {
+      "id": "120",
+      "path": "05-道路路线库/120-线路档案绥芬河符拉迪沃斯托克.md",
+      "title": "线路档案绥芬河符拉迪沃斯托克",
+      "sha256": "616d98b910fa4322e7f1e79229dffeda7bd8e5b2ab36fdc4ce119c9e9c5c60eb",
+      "articles": [
+        "heavy-haul-international-corridors"
+      ]
+    },
+    {
+      "id": "121",
+      "path": "05-道路路线库/121-线路档案二连浩特乌兰巴托.md",
+      "title": "线路档案二连浩特乌兰巴托",
+      "sha256": "722d62603661f4af7702e4a97c358bd27d7d552fd70f819b444c613128582e2f",
+      "articles": [
+        "heavy-haul-international-corridors"
+      ]
+    },
+    {
+      "id": "122",
+      "path": "05-道路路线库/122-线路档案哈萨克西线.md",
+      "title": "线路档案哈萨克西线",
+      "sha256": "44f7805cc022f830ab3454e23a7b21d2c149bad7047271e73a56b40f55887523",
+      "articles": [
+        "heavy-haul-international-corridors"
+      ]
+    },
+    {
+      "id": "123",
+      "path": "05-道路路线库/123-线路档案俄欧亚走廊.md",
+      "title": "线路档案俄欧亚走廊",
+      "sha256": "5c1b3e4cf4c87ffe5f03ada56c9c3088af208584f8a249067158be69a8b3d0e9",
+      "articles": [
+        "heavy-haul-international-corridors"
+      ]
+    },
+    {
+      "id": "124",
+      "path": "05-道路路线库/124-第三国过境许可.md",
+      "title": "第三国过境许可",
+      "sha256": "ac08cb543cf4c52cb4d951fbae8f22ceef0c9260d4443505051b20a43812433a",
+      "articles": [
+        "heavy-haul-international-corridors"
+      ]
+    },
+    {
+      "id": "125",
+      "path": "05-道路路线库/125-线路比选三维打分.md",
+      "title": "线路比选三维打分",
+      "sha256": "9a5e13a6b252d9a42f9d5538bd19cd30c32abe997f7020d443eeffc1216bf9dc",
+      "articles": [
+        "heavy-haul-route-survey"
+      ]
+    },
+    {
+      "id": "126",
+      "path": "05-道路路线库/126-线路档案字段标准.md",
+      "title": "线路档案字段标准",
+      "sha256": "d452b8343bf128f488efdfd0528700132018f67a91d0088154525758bd923157",
+      "articles": [
+        "heavy-haul-route-survey"
+      ]
+    },
+    {
+      "id": "127",
+      "path": "05-道路路线库/127-线路风险评级模型.md",
+      "title": "线路风险评级模型",
+      "sha256": "1981cdbd32b9b54aae5d934e3deb87acacf2b700ab2014029af63e52e8f6872f",
+      "articles": [
+        "heavy-haul-route-survey"
+      ]
+    },
+    {
+      "id": "128",
+      "path": "05-道路路线库/128-导航与测距工具.md",
+      "title": "导航与测距工具",
+      "sha256": "ce110f456a97aff6d188a62283d41e57af7ee573f455dda2c5c137ee6d52ee0a",
+      "articles": [
+        "heavy-haul-route-survey"
+      ]
+    },
+    {
+      "id": "129",
+      "path": "05-道路路线库/129-无人机勘察.md",
+      "title": "无人机勘察",
+      "sha256": "8d6503c9f02d08b8659ecdf5548620d984625cce9c743957f71bb35ad40207e6",
+      "articles": [
+        "heavy-haul-route-survey"
+      ]
+    },
+    {
+      "id": "130",
+      "path": "05-道路路线库/130-五库联动查询.md",
+      "title": "五库联动查询",
+      "sha256": "ec8442733e1309ed4fbab4f0c811398cc614c1a8d26570143af25c59391e38c4",
+      "articles": [
+        "heavy-haul-data-and-ai"
+      ]
+    },
+    {
+      "id": "131",
+      "path": "06-超限法规库/131-超限认定四维判定框架.md",
+      "title": "超限认定四维判定框架",
+      "sha256": "f51bbdb2f84f30f1f2ad60d3415c29a2d6ccda9d54a51a72a9a8e17405f25d7a",
+      "articles": [
+        "heavy-haul-china-permits"
+      ]
+    },
+    {
+      "id": "132",
+      "path": "06-超限法规库/132-各国超限标准对比总表.md",
+      "title": "各国超限标准对比总表",
+      "sha256": "4700b865168629bb84b3cfaf363cde280a0c60e0a17c1f52054b7354a1cee046",
+      "articles": [
+        "heavy-haul-china-permits"
+      ]
+    },
+    {
+      "id": "133",
+      "path": "06-超限法规库/133-中国GB1589与外廓尺寸.md",
+      "title": "中国GB1589与外廓尺寸",
+      "sha256": "7fded130aee77e998fd4bb915eda626765d8e3aa7f6264f3f1dc74fb6d83829c",
+      "articles": [
+        "heavy-haul-china-permits"
+      ]
+    },
+    {
+      "id": "134",
+      "path": "06-超限法规库/134-中国超限认定标准.md",
+      "title": "中国超限认定标准",
+      "sha256": "ba639bbfef0ff37f0a189b51368b4c353349e93e01d11a9074d902a095acf631",
+      "articles": [
+        "heavy-haul-china-permits"
+      ]
+    },
+    {
+      "id": "135",
+      "path": "06-超限法规库/135-中国轴荷与称重规则.md",
+      "title": "中国轴荷与称重规则",
+      "sha256": "4c46e3925f062137e22757a8ba1b8df78b0c419b096b2c6b3c656ff97d0a16a1",
+      "articles": [
+        "heavy-haul-china-permits"
+      ]
+    },
+    {
+      "id": "136",
+      "path": "06-超限法规库/136-中国大件通行证办理全流程.md",
+      "title": "中国大件通行证办理全流程",
+      "sha256": "068fdb86520f45d25b3380603be3ae8c27b9a87be9817e1c6cff59732a4adfe9",
+      "articles": [
+        "heavy-haul-china-permits"
+      ]
+    },
+    {
+      "id": "137",
+      "path": "06-超限法规库/137-中国护送要求与资质.md",
+      "title": "中国护送要求与资质",
+      "sha256": "74e1e5dde54d3bb553a98ebb540d726a70b2f67fdb51fa3a7cd63c10f6ad9055",
+      "articles": [
+        "heavy-haul-china-permits"
+      ]
+    },
+    {
+      "id": "138",
+      "path": "06-超限法规库/138-中国跨省联审与省际差异.md",
+      "title": "中国跨省联审与省际差异",
+      "sha256": "92be4e13ec9212a114ce174ccd777da87021d5d57fd42d0b12938730fc82632a",
+      "articles": [
+        "heavy-haul-china-permits"
+      ]
+    },
+    {
+      "id": "139",
+      "path": "06-超限法规库/139-中国超限处罚标准.md",
+      "title": "中国超限处罚标准",
+      "sha256": "c0dd14efcd2ae7cac5d6932130cf833ea93b3fde97cba7f5a880f938b0f87901",
+      "articles": [
+        "heavy-haul-china-permits"
+      ]
+    },
+    {
+      "id": "140",
+      "path": "06-超限法规库/140-中国高速通行与卡口预检.md",
+      "title": "中国高速通行与卡口预检",
+      "sha256": "2d8a80271f4d2ec2b732287716fe1a67e7575d54e7340d467fd49acc4cfac6dc",
+      "articles": [
+        "heavy-haul-china-permits"
+      ]
+    },
+    {
+      "id": "141",
+      "path": "06-超限法规库/141-哈萨克斯坦限值总表.md",
+      "title": "哈萨克斯坦限值总表",
+      "sha256": "2a25438760ea1f7cca3b6123044c85edf5a48457b0d3101f25c27ebbdbed8f56",
+      "articles": [
+        "heavy-haul-kazakhstan-permits"
+      ]
+    },
+    {
+      "id": "142",
+      "path": "06-超限法规库/142-哈萨克斯坦超宽分级与许可.md",
+      "title": "哈萨克斯坦超宽分级与许可",
+      "sha256": "70a8ec97b4918125238d20120c97f3c3cee5b6985789f53cd1c2ffbd8d52db57",
+      "articles": [
+        "heavy-haul-kazakhstan-permits"
+      ]
+    },
+    {
+      "id": "143",
+      "path": "06-超限法规库/143-哈萨克斯坦超高三维认定.md",
+      "title": "哈萨克斯坦超高三维认定",
+      "sha256": "f135af2c547a7e09101a23c765341c7f34e00fcae97a92efc743c911e626c21b",
+      "articles": [
+        "heavy-haul-kazakhstan-permits"
+      ]
+    },
+    {
+      "id": "144",
+      "path": "06-超限法规库/144-哈萨克斯坦许可流程与时效.md",
+      "title": "哈萨克斯坦许可流程与时效",
+      "sha256": "f7321f93d60b54cfd542544b34a0134ccf9785b3770d4cf21c1510d0837e71dd",
+      "articles": [
+        "heavy-haul-kazakhstan-permits"
+      ]
+    },
+    {
+      "id": "145",
+      "path": "06-超限法规库/145-哈萨克斯坦护送与警车要求.md",
+      "title": "哈萨克斯坦护送与警车要求",
+      "sha256": "a25a09db428c578e1dda612b0ffc642733ecd7de56496ed01879c36b40366839",
+      "articles": [
+        "heavy-haul-kazakhstan-permits"
+      ]
+    },
+    {
+      "id": "146",
+      "path": "06-超限法规库/146-哈萨克斯坦罚款与路检.md",
+      "title": "哈萨克斯坦罚款与路检",
+      "sha256": "d7926243a0a084334d00ce6ba34a66fe84f2c91d7b2aeaae2f316168147c3563",
+      "articles": [
+        "heavy-haul-kazakhstan-permits"
+      ]
+    },
+    {
+      "id": "147",
+      "path": "06-超限法规库/147-乌兹别克斯坦认定标准与限值.md",
+      "title": "乌兹别克斯坦认定标准与限值",
+      "sha256": "9eeee285b8643467fefba78083a3bced5f5abc6f9d7e9745b5c7afc4317359fd",
+      "articles": [
+        "heavy-haul-central-asia-verification"
+      ]
+    },
+    {
+      "id": "148",
+      "path": "06-超限法规库/148-乌兹别克斯坦许可流程与审批链条.md",
+      "title": "乌兹别克斯坦许可流程与审批链条",
+      "sha256": "9b5ac550e75adce532cd991f355d7db051c2e47c3b00d51f0388f3feb43c44b3",
+      "articles": [
+        "heavy-haul-central-asia-verification"
+      ]
+    },
+    {
+      "id": "149",
+      "path": "06-超限法规库/149-乌兹别克斯坦护送与夜间规定.md",
+      "title": "乌兹别克斯坦护送与夜间规定",
+      "sha256": "330e477258286c4e35c5fdd0438ffdfa525e7eec55bd56e073d4ca00a3e68953",
+      "articles": [
+        "heavy-haul-central-asia-verification"
+      ]
+    },
+    {
+      "id": "150",
+      "path": "06-超限法规库/150-乌兹别克斯坦罚款与检查站实操.md",
+      "title": "乌兹别克斯坦罚款与检查站实操",
+      "sha256": "a5dd2cb8b74a96ce791d702b1ae93369fd0b45e96e1597d3f3991fc70f561231",
+      "articles": [
+        "heavy-haul-central-asia-verification"
+      ]
+    },
+    {
+      "id": "151",
+      "path": "06-超限法规库/151-俄罗斯限值与轴荷总览.md",
+      "title": "俄罗斯限值与轴荷总览",
+      "sha256": "f64006f3f2ffa1430a05d8737cb7089d0da6300ad6e3a1242b26eb541a04b690",
+      "articles": [
+        "heavy-haul-russia-belarus"
+      ]
+    },
+    {
+      "id": "152",
+      "path": "06-超限法规库/152-俄罗斯特殊运输许可全流程.md",
+      "title": "俄罗斯特殊运输许可全流程",
+      "sha256": "cddf9e877b5d55b51083b46dd13ac9546cfce466c936276f5000f08d7aa116aa",
+      "articles": [
+        "heavy-haul-russia-belarus"
+      ]
+    },
+    {
+      "id": "153",
+      "path": "06-超限法规库/153-俄罗斯联邦道与州道权限.md",
+      "title": "俄罗斯联邦道与州道权限",
+      "sha256": "560a2729a035492433acab427de927d8547f87f2f88a021734971923b3076f34",
+      "articles": [
+        "heavy-haul-russia-belarus"
+      ]
+    },
+    {
+      "id": "154",
+      "path": "06-超限法规库/154-俄罗斯护送警车与夜间限制.md",
+      "title": "俄罗斯护送警车与夜间限制",
+      "sha256": "144be5ece0764c022c956b496b68ddf29084478ea5dc1a9b4857814e5ef5c6fd",
+      "articles": [
+        "heavy-haul-russia-belarus"
+      ]
+    },
+    {
+      "id": "155",
+      "path": "06-超限法规库/155-俄罗斯罚款体系与扣车风险.md",
+      "title": "俄罗斯罚款体系与扣车风险",
+      "sha256": "7a0bc46fe774fb46ea9267bf858422ee7a935e5526d7e7f2294160ab9cdc70b3",
+      "articles": [
+        "heavy-haul-russia-belarus"
+      ]
+    },
+    {
+      "id": "156",
+      "path": "06-超限法规库/156-吉尔吉斯超限认定与许可.md",
+      "title": "吉尔吉斯超限认定与许可",
+      "sha256": "8380cda8727a3aebea247e41486214ffac5ecf0aa2d749da191dc52c44f62a77",
+      "articles": [
+        "heavy-haul-central-asia-verification"
+      ]
+    },
+    {
+      "id": "157",
+      "path": "06-超限法规库/157-吉尔吉斯口岸与道路实操.md",
+      "title": "吉尔吉斯口岸与道路实操",
+      "sha256": "0afd281a1fb1c7f0be5fac1c40a5f41707fbe385f516e1953f6f32862505f61c",
+      "articles": [
+        "heavy-haul-central-asia-verification"
+      ]
+    },
+    {
+      "id": "158",
+      "path": "06-超限法规库/158-塔吉克超限认定与许可.md",
+      "title": "塔吉克超限认定与许可",
+      "sha256": "529d547db6f3d50df6915e1cc45471f8511a37d89cd0844d75a06b324f567e19",
+      "articles": [
+        "heavy-haul-central-asia-verification"
+      ]
+    },
+    {
+      "id": "159",
+      "path": "06-超限法规库/159-塔吉克山区道路特殊限制.md",
+      "title": "塔吉克山区道路特殊限制",
+      "sha256": "02e765d966214e75d8b24cee33b76720953bb0e10a331142330db212428489b4",
+      "articles": [
+        "heavy-haul-central-asia-verification"
+      ]
+    },
+    {
+      "id": "160",
+      "path": "06-超限法规库/160-白俄罗斯超限与EAEU过境.md",
+      "title": "白俄罗斯超限与EAEU过境",
+      "sha256": "92f0f32ed9429529fae167347d6576da18a178136275288b52f40e732a3c2ef2",
+      "articles": [
+        "heavy-haul-russia-belarus"
+      ]
+    },
+    {
+      "id": "161",
+      "path": "06-超限法规库/161-蒙古超限与中蒙通道.md",
+      "title": "蒙古超限与中蒙通道",
+      "sha256": "47a86455c3fe9686b1d9c8470abedf2922397e0e4e47a2c2358cf796ff15351c",
+      "articles": [
+        "heavy-haul-other-jurisdictions"
+      ]
+    },
+    {
+      "id": "162",
+      "path": "06-超限法规库/162-欧盟EAEU对比速览.md",
+      "title": "欧盟EAEU对比速览",
+      "sha256": "3c1430d6a7e9e6fdcfdb4454d3e4c08af651d8b8eab09f5ad07f53a13d84ebc6",
+      "articles": [
+        "heavy-haul-other-jurisdictions"
+      ]
+    },
+    {
+      "id": "163",
+      "path": "06-超限法规库/163-季节性限制合总.md",
+      "title": "季节性限制合总",
+      "sha256": "67ebf5d3ff3996491710ae4e5c27ca65a23b81ef9f1e781245e3e828288e0f69",
+      "articles": [
+        "heavy-haul-fees-and-rule-versions"
+      ]
+    },
+    {
+      "id": "164",
+      "path": "06-超限法规库/164-法规库结构化字段标准.md",
+      "title": "法规库结构化字段标准",
+      "sha256": "4776d87398f1676db5d88dc380a26c1b9550323104e8c952b5033bf47b45edce",
+      "articles": [
+        "heavy-haul-fees-and-rule-versions",
+        "heavy-haul-data-and-ai"
+      ]
+    },
+    {
+      "id": "165",
+      "path": "06-超限法规库/165-法规判定引擎.md",
+      "title": "法规判定引擎",
+      "sha256": "c7c9c94a89965886daa357a5f5d5fc0c89325aa4b88d382bc2471715a109c444",
+      "articles": [
+        "heavy-haul-fees-and-rule-versions",
+        "heavy-haul-data-and-ai"
+      ]
+    },
+    {
+      "id": "166",
+      "path": "07-超限费计算库/166-大件费用总账.md",
+      "title": "大件费用总账",
+      "sha256": "457e7947e828832b1aa739dbe69b4e91ba737eab52255cc85e8681e616fa03cd",
+      "articles": [
+        "heavy-haul-fees-and-rule-versions"
+      ]
+    },
+    {
+      "id": "167",
+      "path": "07-超限费计算库/167-超限费三构成.md",
+      "title": "超限费三构成",
+      "sha256": "ab13c36dfceb526b52e7b7f2a810708093b30893fb574acb7f4cce5a981e3370",
+      "articles": [
+        "heavy-haul-fees-and-rule-versions"
+      ]
+    },
+    {
+      "id": "168",
+      "path": "07-超限费计算库/168-中国超限赔偿费计算.md",
+      "title": "中国超限赔偿费计算",
+      "sha256": "34bbf69b0d65e217da7be51b5b1ba58dfb708dd87470837cfdf4a5f66f71924c",
+      "articles": [
+        "heavy-haul-fees-and-rule-versions"
+      ]
+    },
+    {
+      "id": "169",
+      "path": "07-超限费计算库/169-中国通行证费用时效.md",
+      "title": "中国通行证费用时效",
+      "sha256": "06a746d5d82b8386d1da547d56afb6798df3bb1c1098a47b4c47ba973277d696",
+      "articles": [
+        "heavy-haul-fees-and-rule-versions"
+      ]
+    },
+    {
+      "id": "170",
+      "path": "07-超限费计算库/170-哈萨克斯坦超限费计算.md",
+      "title": "哈萨克斯坦超限费计算",
+      "sha256": "171ac108addb75ea34390c78285388ab3e62984c07af5cf56e31b7d84a321695",
+      "articles": [
+        "heavy-haul-kazakhstan-permits"
+      ]
+    },
+    {
+      "id": "171",
+      "path": "07-超限费计算库/171-哈萨克斯坦许可与代办.md",
+      "title": "哈萨克斯坦许可与代办",
+      "sha256": "f34201892afd38552a747fc3056ea9c26983f7fc2077df068a5aa8bc3b263e8b",
+      "articles": [
+        "heavy-haul-kazakhstan-permits"
+      ]
+    },
+    {
+      "id": "172",
+      "path": "07-超限费计算库/172-乌兹别克斯坦费用规则.md",
+      "title": "乌兹别克斯坦费用规则",
+      "sha256": "4de425742124df03369cb0e235493879c2dcd43ab8b9a24762138bd6ceed19b1",
+      "articles": [
+        "heavy-haul-central-asia-verification"
+      ]
+    },
+    {
+      "id": "173",
+      "path": "07-超限费计算库/173-俄罗斯超限费与道路使用费.md",
+      "title": "俄罗斯超限费与道路使用费",
+      "sha256": "75209088310830c930c7cbe542661c1726f81436bee723d8235136fb0d28a3af",
+      "articles": [
+        "heavy-haul-russia-belarus"
+      ]
+    },
+    {
+      "id": "174",
+      "path": "07-超限费计算库/174-吉塔费用速览.md",
+      "title": "吉塔费用速览",
+      "sha256": "261a38e0e19937e39d07686adcff1f8b529b20c7bb6f30e1dd571a9b08b25b7b",
+      "articles": [
+        "heavy-haul-central-asia-verification"
+      ]
+    },
+    {
+      "id": "175",
+      "path": "07-超限费计算库/175-护送费计价与行情.md",
+      "title": "护送费计价与行情",
+      "sha256": "51f6ebd11f973f2a9956339c8d80aca496fa261f753dd252da609a0349921797",
+      "articles": [
+        "heavy-haul-fees-and-rule-versions"
+      ]
+    },
+    {
+      "id": "176",
+      "path": "07-超限费计算库/176-警车开道费.md",
+      "title": "警车开道费",
+      "sha256": "abc6aa1ad34ffd48ae4fff688c5b4a976c414b570c7ebeb9c953c81156dca056",
+      "articles": [
+        "heavy-haul-fees-and-rule-versions"
+      ]
+    },
+    {
+      "id": "177",
+      "path": "07-超限费计算库/177-线路勘察费.md",
+      "title": "线路勘察费",
+      "sha256": "c3687a4938b7c8e874c2fe70b1aa498c191aa992e3ca58e8e36b8d42e0b72081",
+      "articles": [
+        "heavy-haul-fees-and-rule-versions"
+      ]
+    },
+    {
+      "id": "178",
+      "path": "07-超限费计算库/178-桥梁加固与临时措施费.md",
+      "title": "桥梁加固与临时措施费",
+      "sha256": "21df64a525349e714ce8c4581f7af32b9e3ae98f64f607e76339522b8e736b07",
+      "articles": [
+        "heavy-haul-fees-and-rule-versions"
+      ]
+    },
+    {
+      "id": "179",
+      "path": "07-超限费计算库/179-等待费与滞留费.md",
+      "title": "等待费与滞留费",
+      "sha256": "59912add6fb6342ceb8dfd639d3ffaa3a784fe3ed7ac2a77dddbeaace1f4230b",
+      "articles": [
+        "heavy-haul-fees-and-rule-versions"
+      ]
+    },
+    {
+      "id": "180",
+      "path": "07-超限费计算库/180-汇率支付跨境结算.md",
+      "title": "汇率支付跨境结算",
+      "sha256": "f2a9ec92a4e89ed505f5544411dddc313282ee30458f296172fd3a1243f645bb",
+      "articles": [
+        "heavy-haul-fees-and-rule-versions",
+        "heavy-haul-margin-and-capital"
+      ]
+    },
+    {
+      "id": "181",
+      "path": "07-超限费计算库/181-费用规则字段标准.md",
+      "title": "费用规则字段标准",
+      "sha256": "046febb9fbc8953c71707f3b9532379f9398ec889f752e7fa00fa5ad70ada8ca",
+      "articles": [
+        "heavy-haul-fees-and-rule-versions",
+        "heavy-haul-data-and-ai"
+      ]
+    },
+    {
+      "id": "182",
+      "path": "07-超限费计算库/182-费用计算引擎设计.md",
+      "title": "费用计算引擎设计",
+      "sha256": "e0b7a9c212b616941856acf3eef718b3fd8cf804c8d8bcee7ec78f99705b5131",
+      "articles": [
+        "heavy-haul-fees-and-rule-versions",
+        "heavy-haul-data-and-ai"
+      ]
+    },
+    {
+      "id": "183",
+      "path": "07-超限费计算库/183-政策变更追踪机制.md",
+      "title": "政策变更追踪机制",
+      "sha256": "253254ed0f0c788e310e5558ab4a8d7f783d132f005dd2c5c79a02f58043ff9a",
+      "articles": [
+        "heavy-haul-fees-and-rule-versions",
+        "heavy-haul-data-and-ai"
+      ]
+    },
+    {
+      "id": "184",
+      "path": "07-超限费计算库/184-算例80吨变压器霍尔果斯阿拉木图.md",
+      "title": "算例80吨变压器霍尔果斯阿拉木图",
+      "sha256": "75534a15854a6bff4a26b71000d0026e91a3f9f058633a87d08f12eb808fb651",
+      "articles": [
+        "heavy-haul-project-costing"
+      ]
+    },
+    {
+      "id": "185",
+      "path": "07-超限费计算库/185-算例风电叶片塔什干.md",
+      "title": "算例风电叶片塔什干",
+      "sha256": "721d253a3e165670cc0c9c8fed024528415dfdc89279afae34e9f55b4f7f2836",
+      "articles": [
+        "heavy-haul-project-costing"
+      ]
+    },
+    {
+      "id": "186",
+      "path": "08-口岸边境库/186-口岸库总纲12项指标.md",
+      "title": "口岸库总纲12项指标",
+      "sha256": "a1fd092b1e45d400160ade8499086e4d0353e5527dd9973b95d5ea5284fc8c9b",
+      "articles": [
+        "heavy-haul-border-handover"
+      ]
+    },
+    {
+      "id": "187",
+      "path": "08-口岸边境库/187-口岸换装四大模式.md",
+      "title": "口岸换装四大模式",
+      "sha256": "8fde52c503b77332ba8156f369b26ccd739df72d3a91f1a92c16afaae70c201a",
+      "articles": [
+        "heavy-haul-border-handover"
+      ]
+    },
+    {
+      "id": "188",
+      "path": "08-口岸边境库/188-霍尔果斯大件全档案.md",
+      "title": "霍尔果斯大件全档案",
+      "sha256": "ab6c700d0867c093aa1c136ad2695639ff926f25ec736f7ab2cdc0fface10ffa",
+      "articles": [
+        "heavy-haul-border-handover"
+      ]
+    },
+    {
+      "id": "189",
+      "path": "08-口岸边境库/189-霍尔果斯换装实操.md",
+      "title": "霍尔果斯换装实操",
+      "sha256": "e52e8f642547211deb797feaa18f124363f7f19e25d618023e713564ac3ac4f7",
+      "articles": [
+        "heavy-haul-border-handover"
+      ]
+    },
+    {
+      "id": "190",
+      "path": "08-口岸边境库/190-阿拉山口双通道.md",
+      "title": "阿拉山口双通道",
+      "sha256": "e0030e4f03dff4f13c290a3d61e5b11fe85790a05d10525acc7e4a833653964f",
+      "articles": [
+        "heavy-haul-border-handover"
+      ]
+    },
+    {
+      "id": "191",
+      "path": "08-口岸边境库/191-巴克图塔城通道.md",
+      "title": "巴克图塔城通道",
+      "sha256": "3821c82f52f19898b878196ebe8768bdb31e97be8fd954c3a30072733025ae3b",
+      "articles": [
+        "heavy-haul-border-handover"
+      ]
+    },
+    {
+      "id": "192",
+      "path": "08-口岸边境库/192-吉木乃北疆通道.md",
+      "title": "吉木乃北疆通道",
+      "sha256": "689a49675fbf3c03576f9ce80b9955743827d6427f0c8b23395e1a574723743b",
+      "articles": [
+        "heavy-haul-border-handover"
+      ]
+    },
+    {
+      "id": "193",
+      "path": "08-口岸边境库/193-吐尔尕特与伊尔克什坦.md",
+      "title": "吐尔尕特与伊尔克什坦",
+      "sha256": "c03a0ee8dfb770e51c66e7f870162340c359302f52c0efd0c6867a354b999d1e",
+      "articles": [
+        "heavy-haul-border-handover"
+      ]
+    },
+    {
+      "id": "194",
+      "path": "08-口岸边境库/194-红其拉甫中巴走廊.md",
+      "title": "红其拉甫中巴走廊",
+      "sha256": "81e3c39edc520f4c878e90ca638bd0fc79c3b7560d0cea7790cfb40bad68a79d",
+      "articles": [
+        "heavy-haul-border-handover"
+      ]
+    },
+    {
+      "id": "195",
+      "path": "08-口岸边境库/195-都拉塔与木扎尔特.md",
+      "title": "都拉塔与木扎尔特",
+      "sha256": "2188fb6cbd70232e0801742dd03aeb73a4b8e2ada258561a85a1d93cda1e2b36",
+      "articles": [
+        "heavy-haul-border-handover"
+      ]
+    },
+    {
+      "id": "196",
+      "path": "08-口岸边境库/196-满洲里中俄第一口岸.md",
+      "title": "满洲里中俄第一口岸",
+      "sha256": "2fc7021a737a5d86eda7d62c50330f5aaf5cb283c74256bfdd3fafd1753c8381",
+      "articles": [
+        "heavy-haul-border-handover"
+      ]
+    },
+    {
+      "id": "197",
+      "path": "08-口岸边境库/197-绥芬河与东宁.md",
+      "title": "绥芬河与东宁",
+      "sha256": "a4ba2862d20bf45c44de8b33ae0348d9a51f031996903c441a2513b12f5b9f1d",
+      "articles": [
+        "heavy-haul-border-handover"
+      ]
+    },
+    {
+      "id": "198",
+      "path": "08-口岸边境库/198-二连浩特中蒙通道.md",
+      "title": "二连浩特中蒙通道",
+      "sha256": "b63b3299edd01c81bd61af4f76c7bf1d16acfd8d630956571bf2f3f518bc4f12",
+      "articles": [
+        "heavy-haul-border-handover"
+      ]
+    },
+    {
+      "id": "199",
+      "path": "08-口岸边境库/199-多斯特克换装衔接.md",
+      "title": "多斯特克换装衔接",
+      "sha256": "b484821f6228f01fedb9b32c91696b02793ccf3e60ef33eba6282da1827af5f6",
+      "articles": [
+        "heavy-haul-border-handover"
+      ]
+    },
+    {
+      "id": "200",
+      "path": "08-口岸边境库/200-阿腾科里对接实务.md",
+      "title": "阿腾科里对接实务",
+      "sha256": "099dadccc22ac1296e7635f72de74d9d70d9916bda28e162cd1dd1ecddc480e1",
+      "articles": [
+        "heavy-haul-border-handover"
+      ]
+    },
+    {
+      "id": "201",
+      "path": "08-口岸边境库/201-哈萨克口岸对比表.md",
+      "title": "哈萨克口岸对比表",
+      "sha256": "a21e7c51df6af336f1e8a59678e89867509fc40ec1e039856daee32bc45f3187",
+      "articles": [
+        "heavy-haul-border-handover"
+      ]
+    },
+    {
+      "id": "202",
+      "path": "08-口岸边境库/202-口岸报关与转关单证.md",
+      "title": "口岸报关与转关单证",
+      "sha256": "6af1195cf7323319e5d9c69f499dc439adbab23906470ee46459e2ba1919a3cd",
+      "articles": [
+        "heavy-haul-border-handover"
+      ]
+    },
+    {
+      "id": "203",
+      "path": "08-口岸边境库/203-口岸旺季时效管理.md",
+      "title": "口岸旺季时效管理",
+      "sha256": "83fb69057d7b96dafa0c39f8be17ba390dc142adc305576341c3048c64c1742a",
+      "articles": [
+        "heavy-haul-border-handover"
+      ]
+    },
+    {
+      "id": "204",
+      "path": "08-口岸边境库/204-口岸库字段标准.md",
+      "title": "口岸库字段标准",
+      "sha256": "a9f59aeb75523cc8757cfd92158011955bcb934e5ae04b5d4a17cde93f5133e4",
+      "articles": [
+        "heavy-haul-border-handover",
+        "heavy-haul-data-and-ai"
+      ]
+    },
+    {
+      "id": "205",
+      "path": "08-口岸边境库/205-口岸比选决策引擎.md",
+      "title": "口岸比选决策引擎",
+      "sha256": "4e12757974de0436a7a817e0a67fb03b6243ecd461428e168ebb3096e628d712",
+      "articles": [
+        "heavy-haul-border-handover",
+        "heavy-haul-data-and-ai"
+      ]
+    },
+    {
+      "id": "206",
+      "path": "09-吊装卸货库/206-吊装总纲推导链.md",
+      "title": "吊装总纲推导链",
+      "sha256": "99eb0fbcc99e854ac252b2ae0ecb881407a7397abacb73c9b241b9b99f287d4b",
+      "articles": [
+        "heavy-haul-crane-load-charts"
+      ]
+    },
+    {
+      "id": "207",
+      "path": "09-吊装卸货库/207-吊车类型图鉴.md",
+      "title": "吊车类型图鉴",
+      "sha256": "6830bbd22e31e773aa05fc1b3654c063d2d3705e81f97045d6210fac43e4e604",
+      "articles": [
+        "heavy-haul-crane-load-charts"
+      ]
+    },
+    {
+      "id": "208",
+      "path": "09-吊装卸货库/208-吊车吨位三角关系.md",
+      "title": "吊车吨位三角关系",
+      "sha256": "210f41f8a5126b003318ae8f4ae66c7c22465ce418932fc4f95193aec02976ab",
+      "articles": [
+        "heavy-haul-crane-load-charts"
+      ]
+    },
+    {
+      "id": "209",
+      "path": "09-吊装卸货库/209-吊装半径与载荷表.md",
+      "title": "吊装半径与载荷表",
+      "sha256": "48721fbf07836efffa77fe25f6a7bb54c0c2b84dfa47801789e18c39199e0c8d",
+      "articles": [
+        "heavy-haul-crane-load-charts"
+      ]
+    },
+    {
+      "id": "210",
+      "path": "09-吊装卸货库/210-双机抬吊.md",
+      "title": "双机抬吊",
+      "sha256": "be11f94edfcf8b72a6595aa6ccb9aaa1a4ac96dcfb5fbf905ede5ed8180c3053",
+      "articles": [
+        "heavy-haul-tandem-lifting"
+      ]
+    },
+    {
+      "id": "211",
+      "path": "09-吊装卸货库/211-吊点确认.md",
+      "title": "吊点确认",
+      "sha256": "9898aeedd0ce8ce1858c69e7672874cc47b53dbba538d281bd8be572fa52b879",
+      "articles": [
+        "heavy-haul-crane-load-charts"
+      ]
+    },
+    {
+      "id": "212",
+      "path": "09-吊装卸货库/212-吊具四件套.md",
+      "title": "吊具四件套",
+      "sha256": "e625a2f38d7a0214a9ad19119d1ad8676ecad5e3fc8854b7619c61e38350c62c",
+      "articles": [
+        "heavy-haul-crane-load-charts"
+      ]
+    },
+    {
+      "id": "213",
+      "path": "09-吊装卸货库/213-卸货场地要求.md",
+      "title": "卸货场地要求",
+      "sha256": "0088245167ec5918fa89b9ebf88529b367b20f47b7e6799e80c17ebe02489504",
+      "articles": [
+        "heavy-haul-ground-bearing"
+      ]
+    },
+    {
+      "id": "214",
+      "path": "09-吊装卸货库/214-地面承载力判定.md",
+      "title": "地面承载力判定",
+      "sha256": "ae88677f83aed98691950967a6bdff824a5b53fc843fdaa6dcfdd5bafc42d5b9",
+      "articles": [
+        "heavy-haul-ground-bearing"
+      ]
+    },
+    {
+      "id": "215",
+      "path": "09-吊装卸货库/215-支腿垫板计算.md",
+      "title": "支腿垫板计算",
+      "sha256": "4e52c4803808faa3eab548e933596441869636389cf0dde8e4fffd6f6a2768ce",
+      "articles": [
+        "heavy-haul-ground-bearing"
+      ]
+    },
+    {
+      "id": "216",
+      "path": "09-吊装卸货库/216-软地基处理实操.md",
+      "title": "软地基处理实操",
+      "sha256": "a585117f0f097daec1f59dc80c6d899a73288dbf27ab2dcb69351cfa1e65fe65",
+      "articles": [
+        "heavy-haul-ground-bearing"
+      ]
+    },
+    {
+      "id": "217",
+      "path": "09-吊装卸货库/217-口岸吊装与预约.md",
+      "title": "口岸吊装与预约",
+      "sha256": "112f67b6a773111c7ba0b34b583373a557f7370f1b33663743ddcd5633aab0b6",
+      "articles": [
+        "heavy-haul-tandem-lifting"
+      ]
+    },
+    {
+      "id": "218",
+      "path": "09-吊装卸货库/218-无吊机三件套.md",
+      "title": "无吊机三件套",
+      "sha256": "9dbe7750c21248975a138c6cb97852165922f9fc5f9336860343cd691962dee8",
+      "articles": [
+        "heavy-haul-loading-and-skidding"
+      ]
+    },
+    {
+      "id": "219",
+      "path": "09-吊装卸货库/219-装卸安全规范.md",
+      "title": "装卸安全规范",
+      "sha256": "dd25331e6ef8bb2c8d74b2d7fbb3a7cc6f93f029345251c11fb3dc82bc07b5aa",
+      "articles": [
+        "heavy-haul-tandem-lifting"
+      ]
+    },
+    {
+      "id": "220",
+      "path": "09-吊装卸货库/220-吊装费计价模式.md",
+      "title": "吊装费计价模式",
+      "sha256": "8b4ce446f1d69ea9023fadca8308c9c2e3b29dd34a455c9c2a2dbe99153bb3c6",
+      "articles": [
+        "heavy-haul-project-costing"
+      ]
+    },
+    {
+      "id": "221",
+      "path": "09-吊装卸货库/221-算例变压器换装吊装.md",
+      "title": "算例变压器换装吊装",
+      "sha256": "edca1b46c149bd6f9b883b6b76959ffec5e2d52249ac070ccc99896a66134c36",
+      "articles": [
+        "heavy-haul-tandem-lifting"
+      ]
+    },
+    {
+      "id": "222",
+      "path": "09-吊装卸货库/222-算例40吨罐体装车.md",
+      "title": "算例40吨罐体装车",
+      "sha256": "953fc30277724fe39ff2b420401334608ed7871580be7f92c531b1003b6727a8",
+      "articles": [
+        "heavy-haul-tandem-lifting"
+      ]
+    },
+    {
+      "id": "223",
+      "path": "09-吊装卸货库/223-吊装事故复盘清单.md",
+      "title": "吊装事故复盘清单",
+      "sha256": "4258f4ed46a6a8e698ef278c4c472a1488de3ef1c67db6de27a99176f9b4227e",
+      "articles": [
+        "heavy-haul-tandem-lifting"
+      ]
+    },
+    {
+      "id": "224",
+      "path": "09-吊装卸货库/224-吊装库字段标准.md",
+      "title": "吊装库字段标准",
+      "sha256": "65f575c1e18a62215d0047ab3ef5cdabbfa348717fd62eb8dc5858903b0358ef",
+      "articles": [
+        "heavy-haul-tandem-lifting",
+        "heavy-haul-data-and-ai"
+      ]
+    },
+    {
+      "id": "225",
+      "path": "09-吊装卸货库/225-吊装推荐引擎.md",
+      "title": "吊装推荐引擎",
+      "sha256": "34fa4ee90ba21f53fb3f8a42fcc6958a04d1495266b2e74ae6eb74228a4d2baa",
+      "articles": [
+        "heavy-haul-tandem-lifting",
+        "heavy-haul-data-and-ai"
+      ]
+    },
+    {
+      "id": "226",
+      "path": "10-运输方案模板库/226-运输方案标准结构.md",
+      "title": "运输方案标准结构",
+      "sha256": "062640a3f9a4d1957d3d093c9a09442d744822f8dc47f141a9d09346a34e2020",
+      "articles": [
+        "heavy-haul-transport-plan"
+      ]
+    },
+    {
+      "id": "227",
+      "path": "10-运输方案模板库/227-变压器方案110kV霍尔果斯.md",
+      "title": "变压器方案110kV霍尔果斯",
+      "sha256": "f9a1fd0e85e8cb6d3608fb10ad0b4534cdb077da5378392ebffef3a8e110b75c",
+      "articles": [
+        "heavy-haul-power-equipment"
+      ]
+    },
+    {
+      "id": "228",
+      "path": "10-运输方案模板库/228-变压器方案220kV联运.md",
+      "title": "变压器方案220kV联运",
+      "sha256": "c982165318e8228ad40b36cf038833a2e371325656e0be6d25b3a55bb1dcbe95",
+      "articles": [
+        "heavy-haul-power-equipment"
+      ]
+    },
+    {
+      "id": "229",
+      "path": "10-运输方案模板库/229-风电叶片方案模板.md",
+      "title": "风电叶片方案模板",
+      "sha256": "3385e0b0b2fa2f5e75254b98e1696116da702fa8f0f876d26f52b61d00257edb",
+      "articles": [
+        "heavy-haul-wind-components"
+      ]
+    },
+    {
+      "id": "230",
+      "path": "10-运输方案模板库/230-风电塔筒方案模板.md",
+      "title": "风电塔筒方案模板",
+      "sha256": "762b1edb3d145fda84419d3a28f13519bb7e42ce7085becaa6c055c462f0fa73",
+      "articles": [
+        "heavy-haul-wind-components"
+      ]
+    },
+    {
+      "id": "231",
+      "path": "10-运输方案模板库/231-挖掘机方案出境版.md",
+      "title": "挖掘机方案出境版",
+      "sha256": "fc81b52a64d6f31dc8a6524cea8c995f1a5973027bbcfb18ac421e1d81cc05b4",
+      "articles": [
+        "heavy-haul-construction-machinery"
+      ]
+    },
+    {
+      "id": "232",
+      "path": "10-运输方案模板库/232-旋挖钻机方案模板.md",
+      "title": "旋挖钻机方案模板",
+      "sha256": "75d6a04593369fcb84481de9eb880ab3d35c9661b90a99dff3254bfe27e73afe",
+      "articles": [
+        "heavy-haul-construction-machinery"
+      ]
+    },
+    {
+      "id": "233",
+      "path": "10-运输方案模板库/233-汽车吊转场方案模板.md",
+      "title": "汽车吊转场方案模板",
+      "sha256": "89cd8a357128789e371f6b6a8fc2b2e8e6038be09ba24ba529e1a049c8ccd767",
+      "articles": [
+        "heavy-haul-construction-machinery"
+      ]
+    },
+    {
+      "id": "234",
+      "path": "10-运输方案模板库/234-履带吊拆解方案模板.md",
+      "title": "履带吊拆解方案模板",
+      "sha256": "055fe641ff275767792ffb337416f692d94862f9a6ab5e11ab918f6f90ab74d6",
+      "articles": [
+        "heavy-haul-construction-machinery"
+      ]
+    },
+    {
+      "id": "235",
+      "path": "10-运输方案模板库/235-压力容器方案模板.md",
+      "title": "压力容器方案模板",
+      "sha256": "893a64b07723d7292a91dc945a1789bccd7dcc82a41b5445b8b18fc7253b5376",
+      "articles": [
+        "heavy-haul-vessels-and-structures"
+      ]
+    },
+    {
+      "id": "236",
+      "path": "10-运输方案模板库/236-超高罐体方案模板.md",
+      "title": "超高罐体方案模板",
+      "sha256": "08f046b12e04d4e64e085fdcd8f120c827f32653531ec49eec30b8e0afc40c19",
+      "articles": [
+        "heavy-haul-vessels-and-structures"
+      ]
+    },
+    {
+      "id": "237",
+      "path": "10-运输方案模板库/237-钢箱梁方案模板.md",
+      "title": "钢箱梁方案模板",
+      "sha256": "6322d9aaa7a4fb199b615bfee3eb7378d198f524733b627e3a582e48e8e45087",
+      "articles": [
+        "heavy-haul-vessels-and-structures"
+      ]
+    },
+    {
+      "id": "238",
+      "path": "10-运输方案模板库/238-盾构机分件方案模板.md",
+      "title": "盾构机分件方案模板",
+      "sha256": "c23ab19ad262ed7ef68166425111acea5411dede63bf82a78206a02f8f1f9fcc",
+      "articles": [
+        "heavy-haul-construction-machinery"
+      ]
+    },
+    {
+      "id": "239",
+      "path": "10-运输方案模板库/239-发电机组方案模板.md",
+      "title": "发电机组方案模板",
+      "sha256": "513adb62a5eacfcd1ae67f737b2cc7d9912fde6c90c777db4af5097cd601f8ef",
+      "articles": [
+        "heavy-haul-power-equipment"
+      ]
+    },
+    {
+      "id": "240",
+      "path": "10-运输方案模板库/240-球磨机方案模板.md",
+      "title": "球磨机方案模板",
+      "sha256": "1e4efb16da1a599143974ca51fecaede74a876ba163975d4e9cedabfd45a94ab",
+      "articles": [
+        "heavy-haul-construction-machinery"
+      ]
+    },
+    {
+      "id": "241",
+      "path": "10-运输方案模板库/241-储能柜逆变器方案模板.md",
+      "title": "储能柜逆变器方案模板",
+      "sha256": "b313769cecfaf5ede6d3164eecb2cad5be29203995055d8199929fc2d815b4d0",
+      "articles": [
+        "heavy-haul-power-equipment"
+      ]
+    },
+    {
+      "id": "242",
+      "path": "10-运输方案模板库/242-人员配置与分工表.md",
+      "title": "人员配置与分工表",
+      "sha256": "1a36a353031f91a108b0978b15f71350eed3565feda91f6d981639ea8acf9f8f",
+      "articles": [
+        "heavy-haul-transport-plan"
+      ]
+    },
+    {
+      "id": "243",
+      "path": "10-运输方案模板库/243-应急预案编写要点.md",
+      "title": "应急预案编写要点",
+      "sha256": "a306d8948e18e9ae471cd92abde51799f417550f7ffe4ca61b09b7b0d36bc14c",
+      "articles": [
+        "heavy-haul-transport-plan"
+      ]
+    },
+    {
+      "id": "244",
+      "path": "10-运输方案模板库/244-方案报价页制作.md",
+      "title": "方案报价页制作",
+      "sha256": "9da325bb2a2e01e26b4b15333b886bd6dd6e563d87222c0695c576c681e452a4",
+      "articles": [
+        "heavy-haul-project-costing"
+      ]
+    },
+    {
+      "id": "245",
+      "path": "10-运输方案模板库/245-方案自动生成逻辑.md",
+      "title": "方案自动生成逻辑",
+      "sha256": "e507e1b0aacdc8a9b0f4a871a25bf0c80f3f36f2570122cac0a8a8059c1edd7e",
+      "articles": [
+        "heavy-haul-transport-plan",
+        "heavy-haul-data-and-ai"
+      ]
+    },
+    {
+      "id": "246",
+      "path": "11-历史案例库/246-案例库总纲与20字段.md",
+      "title": "案例库总纲与20字段",
+      "sha256": "298c654438148c52655c3fe47cdae59c13dc4d73861d683d01571d8b46f9be55",
+      "articles": [
+        "heavy-haul-teaching-cases"
+      ]
+    },
+    {
+      "id": "247",
+      "path": "11-历史案例库/247-案例脱敏规范.md",
+      "title": "案例脱敏规范",
+      "sha256": "fe4694679db0f25732fa4ed24ce42679a49d0e0be2cb08493d3206c1a142d97d",
+      "articles": [
+        "heavy-haul-teaching-cases"
+      ]
+    },
+    {
+      "id": "248",
+      "path": "11-历史案例库/248-案例80吨变压器霍尔果斯阿拉木图.md",
+      "title": "案例80吨变压器霍尔果斯阿拉木图",
+      "sha256": "3819c67e997ab8adedf0c10305ff090b02dadddcd03ea8890920d7f0e69d927c",
+      "articles": [
+        "heavy-haul-teaching-cases"
+      ]
+    },
+    {
+      "id": "249",
+      "path": "11-历史案例库/249-案例120吨变压器奇姆肯特.md",
+      "title": "案例120吨变压器奇姆肯特",
+      "sha256": "2e967d1247aa5fb6db7ecc01f71b2ce2d918bcec2b5cfbcd07f951234ce08760",
+      "articles": [
+        "heavy-haul-teaching-cases"
+      ]
+    },
+    {
+      "id": "250",
+      "path": "11-历史案例库/250-案例75米风电叶片国内段.md",
+      "title": "案例75米风电叶片国内段",
+      "sha256": "0e09d1cecef17884b81c247f36d20d8ee3ff17462d85b81ba3fb7398f892750e",
+      "articles": [
+        "heavy-haul-teaching-cases"
+      ]
+    },
+    {
+      "id": "251",
+      "path": "11-历史案例库/251-案例90吨旋挖钻机塔什干.md",
+      "title": "案例90吨旋挖钻机塔什干",
+      "sha256": "39249359c33beb795c6c44de9e16c4afd57a16141ff2bc426fd474dca2af4f8b",
+      "articles": [
+        "heavy-haul-teaching-cases"
+      ]
+    },
+    {
+      "id": "252",
+      "path": "11-历史案例库/252-案例60吨压力容器换装实录.md",
+      "title": "案例60吨压力容器换装实录",
+      "sha256": "72b336ead03113cb95b6414857306c99809b0b344694884ecd45df6a063c8512",
+      "articles": [
+        "heavy-haul-teaching-cases"
+      ]
+    },
+    {
+      "id": "253",
+      "path": "11-历史案例库/253-案例盾构机分批出境项目.md",
+      "title": "案例盾构机分批出境项目",
+      "sha256": "3d5cbdde4eaf2e88239a6767264c540e7b1526be8bd5d63ddc59e3c390d05021",
+      "articles": [
+        "heavy-haul-teaching-cases"
+      ]
+    },
+    {
+      "id": "254",
+      "path": "11-历史案例库/254-案例钢箱梁超宽运输与护送.md",
+      "title": "案例钢箱梁超宽运输与护送",
+      "sha256": "da124474d6c8644b9638e3abbf00e687ea0efc75414a3f898a17a29d815d1c80",
+      "articles": [
+        "heavy-haul-teaching-cases"
+      ]
+    },
+    {
+      "id": "255",
+      "path": "11-历史案例库/255-案例失败桥梁卡壳与绕行.md",
+      "title": "案例失败桥梁卡壳与绕行",
+      "sha256": "f222e29569a758d9d9886e6ff88ea5494910eb9d1be72eeab7c57d61249274b7",
+      "articles": [
+        "heavy-haul-teaching-cases"
+      ]
+    },
+    {
+      "id": "256",
+      "path": "11-历史案例库/256-案例口岸滞留15天复盘.md",
+      "title": "案例口岸滞留15天复盘",
+      "sha256": "2c83e0c1039609f070833a31dd62d9782841f96bda923921890a6d329598f361",
+      "articles": [
+        "heavy-haul-teaching-cases"
+      ]
+    },
+    {
+      "id": "257",
+      "path": "11-历史案例库/257-案例许可证卡壳30天记录.md",
+      "title": "案例许可证卡壳30天记录",
+      "sha256": "a6dc1b18e5cd77e98dda35c3606b00e39acd86b52d57f513d6738d140eea48bf",
+      "articles": [
+        "heavy-haul-teaching-cases"
+      ]
+    },
+    {
+      "id": "258",
+      "path": "11-历史案例库/258-案例报价亏损复盘.md",
+      "title": "案例报价亏损复盘",
+      "sha256": "7224dba81b1fa352612b1944f5ba4448f52075487cef9f65b1bec8db25479c3e",
+      "articles": [
+        "heavy-haul-teaching-cases"
+      ]
+    },
+    {
+      "id": "259",
+      "path": "11-历史案例库/259-案例相似度匹配.md",
+      "title": "案例相似度匹配",
+      "sha256": "7586449631d9b0993d6c6b67fcdf5c12e02f946d4ea760fdc3fec606fc5dbee8",
+      "articles": [
+        "heavy-haul-teaching-cases",
+        "heavy-haul-data-and-ai"
+      ]
+    },
+    {
+      "id": "260",
+      "path": "11-历史案例库/260-案例回填机制SOP.md",
+      "title": "案例回填机制SOP",
+      "sha256": "064c2ec5523b1d1bf057858779525234785461bfe1ad714e2dad9c65398e1a9d",
+      "articles": [
+        "heavy-haul-teaching-cases",
+        "heavy-haul-data-and-ai"
+      ]
+    },
+    {
+      "id": "261",
+      "path": "12-供应商异常库/261-供应商分类与评估维度.md",
+      "title": "供应商分类与评估维度",
+      "sha256": "fd6b3ce592beb09c3610884b8f26b5103d7fe50ab412729d288419b073be58e1",
+      "articles": [
+        "heavy-haul-supplier-assessment"
+      ]
+    },
+    {
+      "id": "262",
+      "path": "12-供应商异常库/262-供应商档案标准.md",
+      "title": "供应商档案标准",
+      "sha256": "d291ad9f7e55b7c024c2ed19a4f7f89906293328b649560f6c615c11b733bb5e",
+      "articles": [
+        "heavy-haul-supplier-assessment"
+      ]
+    },
+    {
+      "id": "263",
+      "path": "12-供应商异常库/263-大件车队资源评估.md",
+      "title": "大件车队资源评估",
+      "sha256": "12c695ea349d4ec83d5ab6f786ac463edb1346994bbd0ee7812184a139e04441",
+      "articles": [
+        "heavy-haul-supplier-assessment"
+      ]
+    },
+    {
+      "id": "264",
+      "path": "12-供应商异常库/264-吊装公司资源评估.md",
+      "title": "吊装公司资源评估",
+      "sha256": "15f0e47582ca322aca1af4b6c7251cae207cdcaff4e1542b9ff077014c42efe9",
+      "articles": [
+        "heavy-haul-supplier-assessment"
+      ]
+    },
+    {
+      "id": "265",
+      "path": "12-供应商异常库/265-护送公司资质判断.md",
+      "title": "护送公司资质判断",
+      "sha256": "1567b96c85bff5630ee721c780d9cf2d54102da25ecc756ccf59d638e192e906",
+      "articles": [
+        "heavy-haul-supplier-assessment"
+      ]
+    },
+    {
+      "id": "266",
+      "path": "12-供应商异常库/266-线路勘察服务商.md",
+      "title": "线路勘察服务商",
+      "sha256": "abcfbe2288dcae6d4412c37886bbe6ab63e1bc9b0e2071aaca4af7a9810708d8",
+      "articles": [
+        "heavy-haul-supplier-assessment"
+      ]
+    },
+    {
+      "id": "267",
+      "path": "12-供应商异常库/267-报关行与口岸代理评估.md",
+      "title": "报关行与口岸代理评估",
+      "sha256": "8c49ab85601cc9b69807922386ff10bc9069a1e95351eab23411d311c668be1d",
+      "articles": [
+        "heavy-haul-supplier-assessment"
+      ]
+    },
+    {
+      "id": "268",
+      "path": "12-供应商异常库/268-口岸装卸仓储资源.md",
+      "title": "口岸装卸仓储资源",
+      "sha256": "b14c13a7fa9d22b7a6b621542750c1a0d5e4c0cae35a6a066d5918cc7459d6f2",
+      "articles": [
+        "heavy-haul-supplier-assessment"
+      ]
+    },
+    {
+      "id": "269",
+      "path": "12-供应商异常库/269-维修救援资源网络.md",
+      "title": "维修救援资源网络",
+      "sha256": "feeb8c3c657d6f6914d65abbda01caf198178bf5eb9989898e11529bf10fa7d6",
+      "articles": [
+        "heavy-haul-supplier-assessment"
+      ]
+    },
+    {
+      "id": "270",
+      "path": "12-供应商异常库/270-供应商考察背调SOP.md",
+      "title": "供应商考察背调SOP",
+      "sha256": "0c548e669fc5c46db20e21f0cd9a0bd2daa5657c5fdd81b30000e03b13b0c493",
+      "articles": [
+        "heavy-haul-supplier-assessment"
+      ]
+    },
+    {
+      "id": "271",
+      "path": "12-供应商异常库/271-异常库总纲.md",
+      "title": "异常库总纲",
+      "sha256": "a1449ec566655715f88da9ac0efc21575c84a2075cacbfc7f97274f5d8847141",
+      "articles": [
+        "heavy-haul-exceptions"
+      ]
+    },
+    {
+      "id": "272",
+      "path": "12-供应商异常库/272-车辆故障48小时处置.md",
+      "title": "车辆故障48小时处置",
+      "sha256": "8c21b90690fb9bbd197494dfb8cf3deae310e07d10127d49c28aff08d3483ee6",
+      "articles": [
+        "heavy-haul-exceptions"
+      ]
+    },
+    {
+      "id": "273",
+      "path": "12-供应商异常库/273-爆胎与轴断.md",
+      "title": "爆胎与轴断",
+      "sha256": "fa51341b0bfef33579e636a84f991ce5096a10f750bfbb5717dae39815ff437b",
+      "articles": [
+        "heavy-haul-exceptions"
+      ]
+    },
+    {
+      "id": "274",
+      "path": "12-供应商异常库/274-道路封闭改线决策.md",
+      "title": "道路封闭改线决策",
+      "sha256": "235349c5ba382a2ab0850964bb6a37430b8160150b92ce626068b0acd2463291",
+      "articles": [
+        "heavy-haul-exceptions"
+      ]
+    },
+    {
+      "id": "275",
+      "path": "12-供应商异常库/275-桥梁无法通过处置.md",
+      "title": "桥梁无法通过处置",
+      "sha256": "c121ca214e4903ac14b4e9ac4db344c97ec4904fea876d38733e10dfed4a742e",
+      "articles": [
+        "heavy-haul-exceptions"
+      ]
+    },
+    {
+      "id": "276",
+      "path": "12-供应商异常库/276-尺寸测量错误处置.md",
+      "title": "尺寸测量错误处置",
+      "sha256": "8b3c282f9dbb9069ec2dcb5bed1d9aaf04ec738c76095709be844db976dd2aaf",
+      "articles": [
+        "heavy-haul-exceptions"
+      ]
+    },
+    {
+      "id": "277",
+      "path": "12-供应商异常库/277-许可证错误处置.md",
+      "title": "许可证错误处置",
+      "sha256": "ebd38ad7d8d57f835bb12c2971083cba30d4f00dae3f1bab935907911ab609b9",
+      "articles": [
+        "heavy-haul-exceptions"
+      ]
+    },
+    {
+      "id": "278",
+      "path": "12-供应商异常库/278-海关查验异常.md",
+      "title": "海关查验异常",
+      "sha256": "2429f190aea0804c705a571f09e637a73be502a7c77c01dc002eb78962ba40cf",
+      "articles": [
+        "heavy-haul-exceptions"
+      ]
+    },
+    {
+      "id": "279",
+      "path": "12-供应商异常库/279-货物损伤定责理赔.md",
+      "title": "货物损伤定责理赔",
+      "sha256": "cba20fbfa03ed454c10f52fc4968c048500f7946d932f0c70d0260deb0ee92ad",
+      "articles": [
+        "heavy-haul-exceptions"
+      ]
+    },
+    {
+      "id": "280",
+      "path": "12-供应商异常库/280-司机违规与行为管理.md",
+      "title": "司机违规与行为管理",
+      "sha256": "425b87a1eed9d888f986d609ab3a782e26ca0a81afa4775df34b1daa937846eb",
+      "articles": [
+        "heavy-haul-exceptions"
+      ]
+    },
+    {
+      "id": "281",
+      "path": "12-供应商异常库/281-吊装事故三剧本.md",
+      "title": "吊装事故三剧本",
+      "sha256": "5bc08712d8c383cba38c4e263c4d1d422aa4e356c516338da7c64e3aa89dbddb",
+      "articles": [
+        "heavy-haul-exceptions"
+      ]
+    },
+    {
+      "id": "282",
+      "path": "12-供应商异常库/282-恶劣天气停运标准.md",
+      "title": "恶劣天气停运标准",
+      "sha256": "debce5db67f54f25f197e32a5abfbafdbb40438ec2cf7d05171e4dc415092512",
+      "articles": [
+        "heavy-haul-exceptions"
+      ]
+    },
+    {
+      "id": "283",
+      "path": "12-供应商异常库/283-口岸拥堵异常.md",
+      "title": "口岸拥堵异常",
+      "sha256": "c7ff49160f973c5a94260b6b2239c2edfe73b776e2b7cfbafa59fa99e937bce1",
+      "articles": [
+        "heavy-haul-exceptions"
+      ]
+    },
+    {
+      "id": "284",
+      "path": "12-供应商异常库/284-异常复盘模板.md",
+      "title": "异常复盘模板",
+      "sha256": "c9518212e1ea6ad9640f7850b8810429d6ae9cdab9fe8bcb79f823e6979cda91",
+      "articles": [
+        "heavy-haul-exceptions"
+      ]
+    },
+    {
+      "id": "285",
+      "path": "12-供应商异常库/285-异常库结构化Agent.md",
+      "title": "异常库结构化Agent",
+      "sha256": "72df8f9284a27baf2a60864187f456d3c90ae332a6bdfdf953b3e6d08cc097cc",
+      "articles": [
+        "heavy-haul-data-and-ai"
+      ]
+    },
+    {
+      "id": "286",
+      "path": "13-报价知识库/286-大件报价总结构.md",
+      "title": "大件报价总结构",
+      "sha256": "cceef6f5b2a1491bbf2189415e25c76c976504601626131b61d659946664ed84",
+      "articles": [
+        "heavy-haul-project-costing"
+      ]
+    },
+    {
+      "id": "287",
+      "path": "13-报价知识库/287-国内段运输成本测算.md",
+      "title": "国内段运输成本测算",
+      "sha256": "bdd2b209f4d053dc555c2f71b1556f3f7929f75bdad506f0edf52b059a5ed2ec",
+      "articles": [
+        "heavy-haul-project-costing"
+      ]
+    },
+    {
+      "id": "288",
+      "path": "13-报价知识库/288-口岸换装与装卸成本.md",
+      "title": "口岸换装与装卸成本",
+      "sha256": "f30f9be83eaaf7c4da507a853a1c3802761216c4d0b48a33f92fc88e7cffe679",
+      "articles": [
+        "heavy-haul-project-costing"
+      ]
+    },
+    {
+      "id": "289",
+      "path": "13-报价知识库/289-国际段运输计价.md",
+      "title": "国际段运输计价",
+      "sha256": "9d0f0f5ee6d4d68708795ae7b5e588068b6008c5baf24d9a9a3b4bd78acfb5db",
+      "articles": [
+        "heavy-haul-project-costing"
+      ]
+    },
+    {
+      "id": "290",
+      "path": "13-报价知识库/290-超限证与道路费成本项.md",
+      "title": "超限证与道路费成本项",
+      "sha256": "54d63954d354409d01e12d6a843c26705440f75b7d87d687ba3a6ca2329f44ce",
+      "articles": [
+        "heavy-haul-project-costing"
+      ]
+    },
+    {
+      "id": "291",
+      "path": "13-报价知识库/291-护送与警车成本项.md",
+      "title": "护送与警车成本项",
+      "sha256": "0ffc25501c308eabc081977932623ef4e3cd9d79e9266bdfdaa734c8958a1028",
+      "articles": [
+        "heavy-haul-project-costing"
+      ]
+    },
+    {
+      "id": "292",
+      "path": "13-报价知识库/292-吊装成本项.md",
+      "title": "吊装成本项",
+      "sha256": "38a29d04af76cb38ab2fcf9d56ed8297bb2379dd47bd8ccbf080fbc98d9a583d",
+      "articles": [
+        "heavy-haul-project-costing"
+      ]
+    },
+    {
+      "id": "293",
+      "path": "13-报价知识库/293-报关转关成本项.md",
+      "title": "报关转关成本项",
+      "sha256": "221030e60e376900a0a9f83191019ace42db6b91a6660036146bc2feb2c50456",
+      "articles": [
+        "heavy-haul-project-costing"
+      ]
+    },
+    {
+      "id": "294",
+      "path": "13-报价知识库/294-杂费与风险金.md",
+      "title": "杂费与风险金",
+      "sha256": "376d9e4ac630af9d5533948ac739063b1d3009e7cf41cf6781dac74a3e1963ca",
+      "articles": [
+        "heavy-haul-project-costing"
+      ]
+    },
+    {
+      "id": "295",
+      "path": "13-报价知识库/295-利润率设定.md",
+      "title": "利润率设定",
+      "sha256": "6c01f66584726b6feaa5c04d7e7c640893a49b9b1c6d56d70c6521745c33c20c",
+      "articles": [
+        "heavy-haul-margin-and-capital"
+      ]
+    },
+    {
+      "id": "296",
+      "path": "13-报价知识库/296-报价单模板中文版.md",
+      "title": "报价单模板中文版",
+      "sha256": "8e959ffd9d4aab10b593596e8df4bbc202e28a4c3c0deb58a638367355e29ad2",
+      "articles": [
+        "heavy-haul-project-costing"
+      ]
+    },
+    {
+      "id": "297",
+      "path": "13-报价知识库/297-报价单模板外文版.md",
+      "title": "报价单模板外文版",
+      "sha256": "20c32a4f1a6f849bbf32435a1b1e92c6a9869340b01a9a31e3ad549ab07b5c54",
+      "articles": [
+        "heavy-haul-project-costing"
+      ]
+    },
+    {
+      "id": "298",
+      "path": "13-报价知识库/298-议价让步阶梯.md",
+      "title": "议价让步阶梯",
+      "sha256": "f148e86db32e73a44e623318ec1ff0ebc84087f7e15034a9b4aac8e167d67dc2",
+      "articles": [
+        "heavy-haul-project-costing"
+      ]
+    },
+    {
+      "id": "299",
+      "path": "13-报价知识库/299-报价复盘.md",
+      "title": "报价复盘",
+      "sha256": "cfe1886da51672a8b17e568f8aa1b3e3b9d208a3adb9896b765368d7f230001d",
+      "articles": [
+        "heavy-haul-project-costing"
+      ]
+    },
+    {
+      "id": "300",
+      "path": "13-报价知识库/300-AI报价引擎.md",
+      "title": "AI报价引擎",
+      "sha256": "c9259c3d6f82cb764c59d1a2f46b346ea3128763568c9b2becb328bc886bd997",
+      "articles": [
+        "heavy-haul-data-and-ai"
+      ]
+    },
+    {
+      "id": "301",
+      "path": "14-术语SOP培训库/301-术语词典车辆轴线类.md",
+      "title": "术语词典车辆轴线类",
+      "sha256": "7e625442c8f0cd2132602c4f6ff5c9e3f494135a7335252b159f47499cb25b5e",
+      "articles": [
+        "heavy-haul-glossary-and-training"
+      ]
+    },
+    {
+      "id": "302",
+      "path": "14-术语SOP培训库/302-术语词典装载吊装类.md",
+      "title": "术语词典装载吊装类",
+      "sha256": "5a2b95bc03a626b4e9b373cb2dcd3a6075b513903b64e66ed706c974514cc682",
+      "articles": [
+        "heavy-haul-glossary-and-training"
+      ]
+    },
+    {
+      "id": "303",
+      "path": "14-术语SOP培训库/303-术语词典法规证件类.md",
+      "title": "术语词典法规证件类",
+      "sha256": "302005337b110f332498b62e8910543cc5c7668244668c7b720c83707f9a6b7c",
+      "articles": [
+        "heavy-haul-glossary-and-training"
+      ]
+    },
+    {
+      "id": "304",
+      "path": "14-术语SOP培训库/304-术语词典口岸海关类.md",
+      "title": "术语词典口岸海关类",
+      "sha256": "ba9652a0021dfac19d4a2e2634504cd210fb2ef60e9d2214422ffdbad832e58a",
+      "articles": [
+        "heavy-haul-glossary-and-training"
+      ]
+    },
+    {
+      "id": "305",
+      "path": "14-术语SOP培训库/305-术语词典俄哈乌语对照.md",
+      "title": "术语词典俄哈乌语对照",
+      "sha256": "d97aef0d5751e7e8aa1cfbff40d5172a105c7221b15de8cbe6e831e3a49ef2d6",
+      "articles": [
+        "heavy-haul-glossary-and-training"
+      ]
+    },
+    {
+      "id": "306",
+      "path": "14-术语SOP培训库/306-询价SOP.md",
+      "title": "询价SOP",
+      "sha256": "71502ae956c33b8273a3ac557c5243a99c6a5ec7c9731da8cc46501351116e35",
+      "articles": [
+        "heavy-haul-transport-plan"
+      ]
+    },
+    {
+      "id": "307",
+      "path": "14-术语SOP培训库/307-验货SOP.md",
+      "title": "验货SOP",
+      "sha256": "94a5deedf6aff8c3e12ec6c1272a843104206b8c00a428d291e217ae56bd10f8",
+      "articles": [
+        "heavy-haul-cargo-data"
+      ]
+    },
+    {
+      "id": "308",
+      "path": "14-术语SOP培训库/308-测量SOP.md",
+      "title": "测量SOP",
+      "sha256": "6c93c9daddb3913efebc752ecccd93a869b3aa916f7a5a9090eefb3d36c588cf",
+      "articles": [
+        "heavy-haul-cargo-data"
+      ]
+    },
+    {
+      "id": "309",
+      "path": "14-术语SOP培训库/309-装车SOP.md",
+      "title": "装车SOP",
+      "sha256": "8196dc346760c3db23124c403b67437a47f790e3a050f7267e32a1270dcc0714",
+      "articles": [
+        "heavy-haul-transport-plan"
+      ]
+    },
+    {
+      "id": "310",
+      "path": "14-术语SOP培训库/310-许可证SOP.md",
+      "title": "许可证SOP",
+      "sha256": "2a07eaf97b200f362ac80401d291bebe0e5c9c2fcf22a4966e1fb5363bf7c495",
+      "articles": [
+        "heavy-haul-transport-plan"
+      ]
+    },
+    {
+      "id": "311",
+      "path": "14-术语SOP培训库/311-口岸SOP.md",
+      "title": "口岸SOP",
+      "sha256": "a79172fca327428bcb2b483c5d28d47cec7f0e9a4684e23d9a36c82ffd6e29f2",
+      "articles": [
+        "heavy-haul-transport-plan"
+      ]
+    },
+    {
+      "id": "312",
+      "path": "14-术语SOP培训库/312-在途管理SOP.md",
+      "title": "在途管理SOP",
+      "sha256": "99539c18ae7ec6d2c55e535d1c2a6980c58689e889669ed98d2112ee379ddb71",
+      "articles": [
+        "heavy-haul-transport-plan"
+      ]
+    },
+    {
+      "id": "313",
+      "path": "14-术语SOP培训库/313-交付SOP.md",
+      "title": "交付SOP",
+      "sha256": "218778b738a11640186edd177a65cc510d00a0d645bcfeb7e966af42c60ec556",
+      "articles": [
+        "heavy-haul-transport-plan"
+      ]
+    },
+    {
+      "id": "314",
+      "path": "14-术语SOP培训库/314-异常处理SOP.md",
+      "title": "异常处理SOP",
+      "sha256": "f166c7bfbe53903d69ed1b550981e4c58e79c5667314078e3c2284836f94b761",
+      "articles": [
+        "heavy-haul-exceptions"
+      ]
+    },
+    {
+      "id": "315",
+      "path": "14-术语SOP培训库/315-新员工七天培训.md",
+      "title": "新员工七天培训",
+      "sha256": "e2ea2a8c3cabf223df1067bca515a6abb5610dafdcdd933f52b0f3a181465e50",
+      "articles": [
+        "heavy-haul-glossary-and-training"
+      ]
+    },
+    {
+      "id": "316",
+      "path": "14-术语SOP培训库/316-业务员培训课程.md",
+      "title": "业务员培训课程",
+      "sha256": "fc0e7cd50f33b50081a75c07ef7cc787fa0466141a457bfc81b2dc18a9c17804",
+      "articles": [
+        "heavy-haul-glossary-and-training"
+      ]
+    },
+    {
+      "id": "317",
+      "path": "14-术语SOP培训库/317-调度培训课程.md",
+      "title": "调度培训课程",
+      "sha256": "239183e6a078ab310c4a93612f86ca111bb303455e7bf47386f9d21c5a04fafb",
+      "articles": [
+        "heavy-haul-glossary-and-training"
+      ]
+    },
+    {
+      "id": "318",
+      "path": "14-术语SOP培训库/318-现场操作培训课程.md",
+      "title": "现场操作培训课程",
+      "sha256": "50ac69ec7b16e7fcf4f10910183957604eb2d4734fea448a88a9d2d7908401b3",
+      "articles": [
+        "heavy-haul-glossary-and-training"
+      ]
+    },
+    {
+      "id": "319",
+      "path": "14-术语SOP培训库/319-单证培训课程.md",
+      "title": "单证培训课程",
+      "sha256": "f44ae296a4dfa76a5d7f7b803b1c6b17d8335202f9accdc615c7876db4305967",
+      "articles": [
+        "heavy-haul-glossary-and-training"
+      ]
+    },
+    {
+      "id": "320",
+      "path": "14-术语SOP培训库/320-安全培训十条铁律.md",
+      "title": "安全培训十条铁律",
+      "sha256": "d5bee427dd16e5ad1bce32c4a7fcff2bd6a06c6f2fa4b016d5d664d5d6d56921",
+      "articles": [
+        "heavy-haul-glossary-and-training"
+      ]
+    },
+    {
+      "id": "321",
+      "path": "14-术语SOP培训库/321-考核题库基础篇.md",
+      "title": "考核题库基础篇",
+      "sha256": "353a05905fed94e34bd976ac79a518aae41572684a3a01c5be401fdaed568962",
+      "articles": [
+        "heavy-haul-glossary-and-training"
+      ]
+    },
+    {
+      "id": "322",
+      "path": "14-术语SOP培训库/322-考核题库执行篇.md",
+      "title": "考核题库执行篇",
+      "sha256": "c47b1859e60e7cbfd43d3d63dabaa53d26f8aee8a546d5a4a4afdcaaf313eafe",
+      "articles": [
+        "heavy-haul-glossary-and-training"
+      ]
+    },
+    {
+      "id": "323",
+      "path": "14-术语SOP培训库/323-考核题库报价体系篇.md",
+      "title": "考核题库报价体系篇",
+      "sha256": "5b6d85f8ecea0aec7266c532167f589f99f4e8402e93efea28dc470d141aece7",
+      "articles": [
+        "heavy-haul-glossary-and-training"
+      ]
+    },
+    {
+      "id": "324",
+      "path": "14-术语SOP培训库/324-客户教育内容包.md",
+      "title": "客户教育内容包",
+      "sha256": "15dcf1de01909bdba61e96b5db58ac54536d5d04fa39d4acc49ca54bb7253fc5",
+      "articles": [
+        "heavy-haul-glossary-and-training"
+      ]
+    },
+    {
+      "id": "325",
+      "path": "14-术语SOP培训库/325-销售话术库20问.md",
+      "title": "销售话术库20问",
+      "sha256": "fadbb8166976272b65d60db6055f0e747c69eccf6548529973fba160a0305041",
+      "articles": [
+        "heavy-haul-glossary-and-training"
+      ]
+    },
+    {
+      "id": "326",
+      "path": "14-术语SOP培训库/326-客户异议应对.md",
+      "title": "客户异议应对",
+      "sha256": "e52188c6280c258fee90832df12eab509268bb641d80dfc079678f06f525e5cc",
+      "articles": [
+        "heavy-haul-glossary-and-training"
+      ]
+    },
+    {
+      "id": "327",
+      "path": "14-术语SOP培训库/327-术语库字段标准.md",
+      "title": "术语库字段标准",
+      "sha256": "60283a7ca3fcef14bacd4de64f95c666ec097d91e400e8bd76eb371404d009e7",
+      "articles": [
+        "heavy-haul-data-and-ai"
+      ]
+    },
+    {
+      "id": "328",
+      "path": "14-术语SOP培训库/328-SOP库结构化.md",
+      "title": "SOP库结构化",
+      "sha256": "37a22b0d3567568830e38ea96c04d147bc805a4e83cca537c8d077dbbb5b09b9",
+      "articles": [
+        "heavy-haul-data-and-ai"
+      ]
+    },
+    {
+      "id": "329",
+      "path": "14-术语SOP培训库/329-培训体系联动设计.md",
+      "title": "培训体系联动设计",
+      "sha256": "e05d802b5b40054e9929e2a8833b78b43695058fd896d663f05e85405ed4e172",
+      "articles": [
+        "heavy-haul-data-and-ai"
+      ]
+    },
+    {
+      "id": "330",
+      "path": "14-术语SOP培训库/330-结语持续运营机制.md",
+      "title": "结语持续运营机制",
+      "sha256": "2fcac9973e64c5d94d6db584cd68835f08361d640a3df28bbfd1d5b83bfba0ee",
+      "articles": [
+        "heavy-haul-data-and-ai"
+      ]
+    }
+  ],
+  "planning_documents": [
+    {
+      "id": "plan-目录规划",
+      "path": "00-总规划/目录规划.md",
+      "title": "目录规划",
+      "sha256": "566acece3ac8fd6ab55a70a16bf4cc6223dfab6147b91ff0bd8dfa20c6233301"
+    },
+    {
+      "id": "plan-车辆分类树",
+      "path": "00-总规划/车辆分类树.md",
+      "title": "车辆分类树",
+      "sha256": "87a96babdfaade7c358f8c3a74be55e26cb0ea6ce3556333e8216221002fa3be"
+    }
+  ]
+}

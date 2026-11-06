@@ -23,6 +23,7 @@ fi
 docker compose run --rm web python manage.py migrate --noinput
 docker compose run --rm web python manage.py seed_content
 docker compose run --rm web python manage.py import_ports --publish-reviewed
+docker compose run --rm web python manage.py import_knowledge --publish
 docker compose up -d --no-deps web
 for i in $(seq 1 30); do
     container="$(docker compose ps -q web)"
