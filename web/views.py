@@ -33,6 +33,9 @@ def articles(request, kind):
     knowledge_guide = None
     if resource_type == 'knowledge' and not (q or category or country):
         knowledge_guide = public_articles().filter(slug='heavy-haul-handbook', kind='resources', resource_type__slug='knowledge').first()
+    vehicle_guide = None
+    if resource_type == 'vehicles' and not (q or category or country):
+        vehicle_guide = public_articles().filter(slug='vehicle-handbook', kind='resources', resource_type__slug='vehicles').first()
     route_items = Route.objects.filter(published=True).prefetch_related('country_tags')
     if q:
         items = items.filter(Q(title__icontains=q)|Q(body__icontains=q)|Q(summary__icontains=q)|Q(location__icontains=q)|Q(countries__name__icontains=q)).distinct()
@@ -57,6 +60,7 @@ def articles(request, kind):
         'title':'行业资讯' if kind=='news' else '资源库', 'page':page,'q':q,'kind':kind,
         'category':category,'categories':categories,'countries':Country.objects.all(),'country':country,
         'resource_types':ResourceType.objects.all(),'resource_type':resource_type,'knowledge_guide':knowledge_guide,
+        'vehicle_guide':vehicle_guide,
         'route_preview':route_items[:3] if kind == 'resources' and not resource_type and not category else [],
         'filter_query':filter_query,'page_query':page_query,
     })

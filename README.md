@@ -72,6 +72,29 @@ $env:DEBUG='1'
 专题入口：`/resources/?type=knowledge`；导读：`/articles/heavy-haul-handbook/`。
 自动部署脚本在口岸导入后执行本专题导入；ECS 部署开关仍由原有配置控制。
 
+## 车型介绍
+
+`content/vehicles/catalog.json` 收录19篇车型文章、1篇选型总览、1篇装载测算指南及11项权威参考来源。
+覆盖原目录的21篇Markdown和1份图片总览HTML，索引逐项记录SHA256；19张原PNG在`content/vehicles/images/`中保持字节一致。
+原图和图片总览明确标注AI生成，前台列表与详情均保留这一说明，不能当作实车照片、自有车队或承载能力证明。
+
+```powershell
+$env:DEBUG='1'
+.\.venv\Scripts\python.exe manage.py import_vehicles --dry-run --original-dir 'C:\Users\Administrator\WorkBuddy\2026-11-06-14-40-25\车型系列'
+.\.venv\Scripts\python.exe manage.py import_vehicles --publish --original-dir 'C:\Users\Administrator\WorkBuddy\2026-11-06-14-40-25\车型系列'
+```
+
+默认新建为草稿，`--publish`仅发布本次新文章。重复导入保留现有正文、图片、来源与管理员发布状态。
+文章与图片在写入前校验；事务失败会回滚新记录并清理本次新增媒体，不删除既有媒体。
+完整原目录另存于D盘本地`data/import-archives/vehicles-*`，原文可选导入后台私有字段，不公开检索。
+新服务器不需要原目录即可导入公开内容与19张图；私有原文通过原目录或数据库备份另行迁移。
+
+本次修正了车型名称与轴线口径、统一100吨/200方假设、Jumbo容积矛盾、Mega容积计算、整数排布与计费重口径。
+车辆和数值示例不表示公司现有可订车配置；型号、载荷、道路、口岸及装卸条件需对应实际项目确认。
+后台“资讯与资源”可按资料类型“车型介绍”筛选，维护正文、原稿、参考来源及“图片性质与使用说明”。
+入口：`/resources/?type=vehicles`；导读：`/articles/vehicle-handbook/`；测算：`/articles/vehicle-loading-calculation/`。
+部署脚本增加重复安全的车型导入步骤，继续使用原有ECS部署开关。
+
 ## 验证
 
 ```powershell

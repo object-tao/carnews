@@ -40,7 +40,7 @@ class ArticleAdmin(admin.ModelAdmin):
         ('国家与关联资料', {'fields':['countries','related_routes','related_resources']}),
         ('口岸、车型、桥梁资料（按需填写）', {'fields':['location','specifications','access_info','requirements','restrictions']}),
         ('来源与附件', {'fields':['author','source','attachment','reviewed_on']}),
-        ('资料图片与署名', {'fields':['image','image_caption','image_creator','image_source','image_license','image_license_url','image_taken_on']}),
+        ('资料图片与署名', {'fields':['image','image_caption','image_note','image_creator','image_source','image_license','image_license_url','image_taken_on']}),
         ('内部校订资料（不在前台显示）', {'fields':['original_source','editorial_notes'], 'classes':['collapse']}),
         ('发布设置', {'fields':['published','published_at']}),
     ]

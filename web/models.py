@@ -83,6 +83,7 @@ class Article(models.Model):
     editorial_notes = models.TextField('校订记录（仅后台）', blank=True)
     image = models.ImageField('资料图片', upload_to='resource-images/', blank=True, validators=[FileExtensionValidator(['png','jpg','jpeg','webp'])])
     image_caption = models.CharField('图片说明', max_length=500, blank=True)
+    image_note = models.TextField('图片性质与使用说明', blank=True)
     image_creator = models.CharField('图片作者', max_length=300, blank=True)
     image_source = models.URLField('图片来源页', max_length=600, blank=True)
     image_license = models.CharField('图片许可', max_length=80, blank=True)

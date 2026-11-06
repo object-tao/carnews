@@ -85,6 +85,7 @@ class Command(BaseCommand):
                     photo = item.get('photo')
                     if photo:
                         article.image_caption = photo['caption']
+                        article.image_note = '历史实景资料图，不代表当前设施或通关状态；使用 Commons 缩略版本，未改动图像内容。'
                         article.image_creator = photo['creator']
                         article.image_source = photo['source']
                         article.image_license = photo['license']
