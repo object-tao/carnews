@@ -12,7 +12,7 @@ services:
       - no-new-privileges:true
     cap_drop: [ALL]
     healthcheck:
-      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen(urllib.request.Request('http://127.0.0.1:8000/healthz/',headers={'Host':'truck.diwuzhou.cn','X-Forwarded-Proto':'https'}),timeout=5)"]
+      test: ["CMD", "python", "-c", "import os,urllib.request,urllib.parse; urllib.request.urlopen(urllib.request.Request('http://127.0.0.1:8000/healthz/',headers={'Host':urllib.parse.urlsplit(os.environ['SITE_URL']).hostname,'X-Forwarded-Proto':'https'}),timeout=5)"]
       interval: 20s
       timeout: 7s
       retries: 3

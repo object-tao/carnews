@@ -1,0 +1,27 @@
+[Unit]
+Description=Shenzhen Kunteng road freight website
+After=network.target
+
+[Service]
+Type=simple
+User=kunteng-web
+Group=kunteng-web
+WorkingDirectory=/opt/kunteng-truck/current
+EnvironmentFile=/opt/kunteng-truck/shared/app.env
+Environment=PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+ExecStart=/opt/kunteng-truck/current/.venv/bin/gunicorn config.wsgi:application --bind 127.0.0.1:18086 --workers 2 --timeout 60 --max-requests 1000 --max-requests-jitter 50 --access-logfile -
+Restart=on-failure
+RestartSec=5
+UMask=0027
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/kunteng-truck/shared/data
+MemoryHigh=384M
+MemoryMax=512M
+TasksMax=64
+CPUWeight=50
+
+[Install]
+WantedBy=multi-user.target

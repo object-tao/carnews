@@ -1,5 +1,10 @@
 # 阿里云 ECS 部署与 CI/CD
 
+## 2026-11-07 原生部署
+
+本次目标域名按用户最新要求调整为 `struck.diwuzhou.cn`。已核对服务器为 Ubuntu 22.04，现有站点采用 Nginx/systemd，未安装 Docker，因此实际部署采用独立 Python 3.13、Gunicorn 与 systemd。
+当前流程见 [原生部署说明](NATIVE.md)。`deploy.yml` 通过专用受限 SSH 账号传送已经通过 CI 的源代码归档；下方 Docker 方案仅作可选参考，不是该服务器正在使用的发布方式。
+
 ## 当前边界
 
 网站与多式联运系统共用 ECS。本目录只提供独立服务方案，不替换已有配置、不重启已有应用。必须先确认 OS、Docker Compose 版本、现有反向代理、端口和资源。若不是 Linux + Docker，应按实际环境调整后再执行。
@@ -43,7 +48,7 @@ export APP_IMAGE=$(cat .current-image)
 docker compose exec web python manage.py createsuperuser
 ```
 
-先验证 `curl -H 'Host: truck.diwuzhou.cn' -H 'X-Forwarded-Proto: https' http://127.0.0.1:18086/healthz/`。
+先验证 `curl -H 'Host: struck.diwuzhou.cn' -H 'X-Forwarded-Proto: https' http://127.0.0.1:18086/healthz/`。
 
 ## 3. 接入现有 Nginx
 

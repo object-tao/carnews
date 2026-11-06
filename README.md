@@ -2,6 +2,8 @@
 
 Django 5.2 LTS · 中文官网与管理员内容后台 · GitHub Actions · 阿里云 ECS
 
+正式站点使用 `https://struck.diwuzhou.cn/`，部署采用独立 Python/Gunicorn/systemd。运行与发布流程见 [原生部署说明](deploy/NATIVE.md)。
+
 ## 本地开发（Windows）
 
 工作目录：`D:\CodexSessionArchive\carnews`。虚拟环境、数据库、缓存均放在 D 盘。

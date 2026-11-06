@@ -1,0 +1,15 @@
+[Unit]
+Description=Back up Kunteng website database and media
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=/usr/bin/python3 /usr/local/lib/kunteng-backup.py
+UMask=0077
+Nice=10
+IOSchedulingClass=idle
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/kunteng-truck/backups

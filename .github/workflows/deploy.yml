@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       commit_sha:
-        description: Full 40-character commit SHA with a successful image workflow
+        description: Full 40-character commit SHA with a successful validation workflow
         required: true
   workflow_run:
     workflows: [Validate and publish image]
@@ -21,26 +21,40 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     steps:
-      - name: Connect and release
+      - name: Validate release commit
+        id: release
         env:
-          ECS_HOST: ${{ secrets.ECS_HOST }}
-          ECS_USER: ${{ secrets.ECS_USER }}
-          ECS_PORT: ${{ secrets.ECS_PORT }}
-          SSH_KEY: ${{ secrets.ECS_SSH_KEY }}
-          KNOWN_HOSTS: ${{ secrets.ECS_KNOWN_HOSTS }}
           RELEASE_SHA: ${{ inputs.commit_sha || github.event.workflow_run.head_sha }}
           GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
           set -Eeuo pipefail
           [[ "$RELEASE_SHA" =~ ^[a-f0-9]{40}$ ]]
-          # Only deploy a SHA that completed the trusted image workflow on main.
           result=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/ci.yml/runs?head_sha=$RELEASE_SHA&branch=main&event=push&status=success" --jq '.total_count')
           test "$result" -gt 0
+          echo "sha=$RELEASE_SHA" >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.release.outputs.sha }}
+          persist-credentials: false
+      - name: Prepare tested source
+        env:
+          RELEASE_SHA: ${{ steps.release.outputs.sha }}
+        run: git archive --format=tar.gz --output=release.tar.gz "$RELEASE_SHA"
+      - name: Release through restricted SSH account
+        env:
+          ECS_HOST: ${{ secrets.ECS_HOST }}
+          ECS_USER: ${{ secrets.ECS_USER }}
+          ECS_PORT: ${{ secrets.ECS_PORT }}
+          SSH_KEY: ${{ secrets.ECS_SSH_KEY }}
+          KNOWN_HOSTS: ${{ secrets.ECS_KNOWN_HOSTS }}
+          RELEASE_SHA: ${{ steps.release.outputs.sha }}
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          umask 077
           mkdir -p ~/.ssh
-          chmod 700 ~/.ssh
           trap 'rm -f ~/.ssh/kunteng_key' EXIT
           printf '%s\n' "$SSH_KEY" > ~/.ssh/kunteng_key
-          chmod 600 ~/.ssh/kunteng_key
           printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts
-          ssh -i ~/.ssh/kunteng_key -o BatchMode=yes -o StrictHostKeyChecking=yes -p "${ECS_PORT:-22}" "$ECS_USER@$ECS_HOST" "bash /opt/kunteng-truck/deploy/release.sh ghcr.io/object-tao/carnews:$RELEASE_SHA"
+          ssh -T -i ~/.ssh/kunteng_key -o BatchMode=yes -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes -p "${ECS_PORT:-22}" "$ECS_USER@$ECS_HOST" "deploy $RELEASE_SHA" < release.tar.gz
