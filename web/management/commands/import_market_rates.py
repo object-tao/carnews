@@ -22,7 +22,7 @@ class Command(BaseCommand):
     def handle(self,*args,**options):
         try:
             entry=json.loads(options['catalog'].read_text(encoding='utf-8'))
-            date.fromisoformat(entry['quote_date'])
+            quote_date=date.fromisoformat(entry['quote_date'])
             if entry['currency'] != 'USD' or entry['origin'] != '新疆霍尔果斯':
                 raise ValueError('Unconfirmed currency or origin')
             if len(entry['rows']) != 21 or len(entry['vehicles']) != 10 or len({r['city'] for r in entry['rows']}) != 21:
@@ -38,7 +38,7 @@ class Command(BaseCommand):
                         raise ValueError('Published price missing from article')
             if any(word in entry['body'] for word in ['司机','税点','1.05','5%','source_total','莫斯科','明斯克','圣彼得堡','叶卡捷琳堡']):
                 raise ValueError('Internal breakdown or excluded city in article')
-            article=Article(title=entry['title'],slug=entry['slug'],kind='news',category='参考运价',summary=entry['summary'],body=entry['body'],body_format='markdown',seo_title=entry['seo_title'],seo_keywords=entry['seo_keywords'],editorial_notes=entry['editorial_notes'])
+            article=Article(title=entry['title'],slug=entry['slug'],kind='news',category='参考运价',quote_date=quote_date,summary=entry['summary'],body=entry['body'],body_format='markdown',seo_title=entry['seo_title'],seo_keywords=entry['seo_keywords'],editorial_notes=entry['editorial_notes'])
             article.full_clean(validate_unique=False)
         except (OSError,KeyError,TypeError,ValueError,InvalidOperation) as exc:
             raise CommandError(f'Invalid market report: {exc}') from exc

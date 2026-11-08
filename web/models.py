@@ -80,6 +80,7 @@ class Article(models.Model):
     seo_keywords = models.CharField('主题关键词', max_length=500, blank=True, default='', help_text='用中文或英文逗号分隔，填写与正文一致的国家、城市、车型等主题。')
     body = models.TextField('正文', help_text='可选纯文本或 Markdown；支持标题、表格和列表。')
     body_format = models.CharField('正文格式', max_length=12, choices=[('text','纯文本'),('markdown','Markdown')], default='text')
+    quote_date = models.DateField('报价日期', null=True, blank=True, help_text='参考运价文章对应的市场报价日期，用于列表显示和排序，与实际发布时间分开。')
     reviewed_on = models.DateField('资料核对日期（非实时通关确认）', null=True, blank=True)
     evidence_level = models.CharField('研究资料依据程度', max_length=1, blank=True, default='', choices=[('A','有直接依据（局部）'),('B','依据不完整'),('C','直接依据待补')], help_text='表示已收集资料的覆盖程度，不代表现行法规已全面核实；国别研究资料会在前台显示此标识。')
     original_source = models.TextField('原始资料（仅后台）', blank=True)

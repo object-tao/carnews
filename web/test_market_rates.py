@@ -1,7 +1,7 @@
 from decimal import Decimal
 from io import StringIO
 import json
-from datetime import timedelta
+from datetime import date, timedelta
 
 from django.conf import settings
 from django.core.management import call_command
@@ -36,6 +36,7 @@ class MarketReportTests(TestCase):
     def test_public_placement_metadata_search_and_privacy(self):
         self.load(publish=True)
         item=Article.objects.get(slug=self.entry['slug'])
+        self.assertEqual(item.quote_date,date(2026,11,4))
         self.assertEqual(item.original_source,'')
         self.assertEqual(item.countries.count(),3)
         listing=self.client.get('/prices/')
@@ -94,3 +95,50 @@ class MarketReportTests(TestCase):
         self.assertContains(response,'status=reports')
         response=self.client.get('/prices/?status=reports&report_page=2')
         self.assertEqual(len(response.context['report_page']),1)
+
+    def test_quote_date_orders_all_pages_and_filters_despite_reverse_import_order(self):
+        from web.models import Country
+        country,_=Country.objects.get_or_create(slug='kazakhstan',defaults={'name':'哈萨克斯坦'})
+        now=timezone.now()
+        dates=[date(2026,11,4),date(2026,11,2),*[date(2026,10,day) for day in [30,27,24,22,19,15,13,12,10,8,6,4]]]
+        expected=[]
+        for number,quote_date in enumerate(dates):
+            article=Article.objects.create(title='霍尔果斯报价 '+str(quote_date),slug='dated-'+str(number),kind='news',category='参考运价',summary='霍尔果斯',body='x',quote_date=quote_date,published=True,published_at=now-timedelta(days=14-number))
+            article.countries.add(country)
+            expected.append(article.pk)
+        undated=Article.objects.create(title='日期待补',slug='undated',kind='news',category='参考运价',summary='霍尔果斯',body='x',published=True,published_at=now)
+        undated.countries.add(country)
+        expected.append(undated.pk)
+        Article.objects.create(title='未来发布',slug='scheduled-report',kind='news',category='参考运价',summary='霍尔果斯',body='x',quote_date=date(2026,12,1),published=True,published_at=now+timedelta(days=1))
+        for query in ['', 'status=reports&country=kazakhstan&q=霍尔果斯']:
+            first=self.client.get('/prices/?'+query)
+            second=self.client.get('/prices/?'+query+'&report_page=2')
+            actual=[item.pk for response in [first,second] for item in response.context['report_page']]
+            self.assertEqual(actual,expected)
+            self.assertContains(first,'<time datetime="2026-11-04">报价 2026.11.04</time>',html=True)
+            self.assertContains(second,'报价日期待补充')
+            self.assertNotContains(first,'未来发布')
+        detail=self.client.get('/articles/dated-0/')
+        self.assertContains(detail,'报价日期 2026-11-04')
+        schema=json.loads(detail.content.decode().split('<script type="application/ld+json">')[1].split('</script>')[0])
+        self.assertEqual(schema['datePublished'],(now-timedelta(days=14)).isoformat())
+
+    def test_date_backfill_corrects_confirmed_report_without_changing_prices_or_other_news(self):
+        import importlib
+        from django.apps import apps
+        from django.db import connection
+        migration=importlib.import_module('web.migrations.0009_article_quote_date')
+        old=Article.objects.create(title='霍尔果斯至中亚整车参考运价（2026年11月5日）',slug=self.entry['slug'],kind='news',category='参考运价',summary='2026年11月5日',seo_title='报价2026-11-05',body='日期2026年11月5日\n| 阿拉木图 | 5,569.20 |',published_at=timezone.now())
+        historical=Article.objects.create(title='历史报价（2026年10月4日）',slug='old-quote',kind='news',category='参考运价',summary='x',body='unaltered')
+        news=Article.objects.create(title='行业新闻（2026年11月5日）',slug='normal-news',kind='news',category='行业新闻',summary='x',body='x')
+        published_at=old.published_at
+        migration.backfill_quote_dates(apps,connection.schema_editor())
+        old.refresh_from_db(); historical.refresh_from_db(); news.refresh_from_db()
+        self.assertEqual(old.quote_date,date(2026,11,4))
+        self.assertEqual(old.published_at,published_at)
+        self.assertIn('2026年11月4日',old.title)
+        self.assertIn('| 阿拉木图 | 5,569.20 |',old.body)
+        self.assertEqual(old.slug,self.entry['slug'])
+        self.assertEqual(historical.quote_date,date(2026,10,4))
+        self.assertEqual(historical.body,'unaltered')
+        self.assertIsNone(news.quote_date)

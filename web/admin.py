@@ -30,7 +30,7 @@ class ArticleReferenceInline(admin.TabularInline):
 @admin.register(Article)
 class ArticleAdmin(admin.ModelAdmin):
     inlines = [ArticleReferenceInline]
-    list_display = ['title','kind','resource_type','category','evidence_level','reviewed_on','published','published_at']
+    list_display = ['title','kind','resource_type','category','quote_date','evidence_level','reviewed_on','published','published_at']
     list_filter = ['kind','resource_type','countries','evidence_level','published','category']
     search_fields = ['title','body','location']
     filter_horizontal = ['countries','related_routes','related_resources']
@@ -38,6 +38,7 @@ class ArticleAdmin(admin.ModelAdmin):
     fieldsets = [
         ('基本内容', {'fields': ['title','slug','kind','category','resource_type','summary','body_format','body']}),
         ('搜索与内容主题', {'fields':['seo_title','seo_keywords']}),
+        ('市场运价文章', {'fields':['quote_date']}),
         ('国家与关联资料', {'fields':['countries','related_routes','related_resources']}),
         ('口岸、车型、桥梁资料（按需填写）', {'fields':['location','specifications','access_info','requirements','restrictions']}),
         ('来源与附件', {'fields':['author','source','attachment','reviewed_on','evidence_level']}),

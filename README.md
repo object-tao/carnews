@@ -149,6 +149,10 @@ ECS发布程序自动导入，并从 `DATA_DIR/private-imports/loading-rules-sou
 
 ## 验证
 
+市场运价文章使用独立的“报价日期”字段，`/prices/` 按该日期从新到旧分页，卡片也显示该日期；未填写日期的文章排在最后。实际发布时间继续用于定时发布和文章结构化数据。管理员可在“资讯与资源 → 市场运价文章”维护报价日期，内容导入须填写 `quote_date`。
+
+2026年11月5日那篇报价已按用户确认更正为11月4日；保留原网址和 `content/market-rates/2026-11-05.json` 文件名以兼容既有链接和导入入口，文件内的标题、正文及 `quote_date` 均为更正后的日期。
+
 ```powershell
 $env:DEBUG='1'
 .\.venv\Scripts\python.exe manage.py test

@@ -2,7 +2,7 @@ import json
 import re
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, JsonResponse, FileResponse, Http404
-from django.db.models import Q
+from django.db.models import F, Q
 from django.core.paginator import Paginator
 from django.utils import timezone
 from django.conf import settings
@@ -105,7 +105,7 @@ def public_rates():
 
 def freight_rates(request):
     items = public_rates()
-    reports = public_articles().filter(kind='news', category='参考运价').prefetch_related('countries')
+    reports = public_articles().filter(kind='news', category='参考运价').prefetch_related('countries').order_by(F('quote_date').desc(nulls_last=True), '-published_at', '-pk')
     q = request.GET.get('q','').strip()[:100]
     country = request.GET.get('country','')
     status = request.GET.get('status','')
