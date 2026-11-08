@@ -37,6 +37,7 @@ class ArticleAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug':('title',)}
     fieldsets = [
         ('基本内容', {'fields': ['title','slug','kind','category','resource_type','summary','body_format','body']}),
+        ('搜索与内容主题', {'fields':['seo_title','seo_keywords']}),
         ('国家与关联资料', {'fields':['countries','related_routes','related_resources']}),
         ('口岸、车型、桥梁资料（按需填写）', {'fields':['location','specifications','access_info','requirements','restrictions']}),
         ('来源与附件', {'fields':['author','source','attachment','reviewed_on','evidence_level']}),

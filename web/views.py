@@ -1,4 +1,5 @@
 import json
+import re
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, JsonResponse, FileResponse, Http404
 from django.db.models import Q
@@ -24,6 +25,7 @@ def route(request, slug):
 def articles(request, kind):
     if kind not in ['news','resources']: raise Http404
     items = public_articles().filter(kind=kind).select_related('resource_type').prefetch_related('countries')
+    if kind == 'news': items = items.exclude(category='参考运价')
     q = request.GET.get('q','').strip()[:100]
     category = request.GET.get('category','')
     country = request.GET.get('country','')
@@ -77,8 +79,10 @@ def articles(request, kind):
     })
 def article(request,slug):
     item=get_object_or_404(public_articles(),slug=slug)
-    schema={'@context':'https://schema.org','@type':'Article','headline':item.title,'description':item.summary,'datePublished':item.published_at.isoformat(),'dateModified':item.updated_at.isoformat(),'author':{'@type':'Organization','name':item.author},'mainEntityOfPage':settings.SITE_URL+item.get_absolute_url()}
-    return render(request,'article.html',{'title':item.title,'description':item.summary,'item':item,'related_resources':item.related_resources.filter(published=True,published_at__lte=timezone.now()),'related_routes':item.related_routes.filter(published=True),'schema':json.dumps(schema,ensure_ascii=False).replace(chr(60),chr(92)+'u003c')})
+    keywords=list(dict.fromkeys(word.strip() for word in re.split('[,，]',item.seo_keywords) if word.strip()))
+    schema={'@context':'https://schema.org','@type':'Article','headline':item.title,'description':item.summary,'datePublished':item.published_at.isoformat(),'dateModified':item.updated_at.isoformat(),'author':{'@type':'Organization','name':item.author},'mainEntityOfPage':settings.SITE_URL+item.get_absolute_url(),'inLanguage':'zh-CN','articleSection':item.category}
+    if keywords: schema['keywords']=keywords
+    return render(request,'article.html',{'title':item.seo_title or item.title,'description':item.summary,'keywords':', '.join(keywords),'is_article':True,'item':item,'related_resources':item.related_resources.filter(published=True,published_at__lte=timezone.now()),'related_routes':item.related_routes.filter(published=True),'schema':json.dumps(schema,ensure_ascii=False).replace(chr(60),chr(92)+'u003c')})
 def download(request,slug):
     item=get_object_or_404(public_articles(),slug=slug)
     if not item.attachment: raise Http404
@@ -101,18 +105,27 @@ def public_rates():
 
 def freight_rates(request):
     items = public_rates()
+    reports = public_articles().filter(kind='news', category='参考运价').prefetch_related('countries')
     q = request.GET.get('q','').strip()[:100]
     country = request.GET.get('country','')
     status = request.GET.get('status','')
     today = timezone.localdate()
-    if q: items = items.filter(Q(origin__icontains=q)|Q(destination__icontains=q)|Q(vehicle__icontains=q)|Q(cargo__icontains=q)|Q(route__title__icontains=q))
-    if country: items = items.filter(route__country_tags__slug=country)
+    if q:
+        items = items.filter(Q(origin__icontains=q)|Q(destination__icontains=q)|Q(vehicle__icontains=q)|Q(cargo__icontains=q)|Q(route__title__icontains=q))
+        reports = reports.filter(Q(title__icontains=q)|Q(summary__icontains=q)|Q(body__icontains=q))
+    if country:
+        items = items.filter(route__country_tags__slug=country)
+        reports = reports.filter(countries__slug=country)
     if status == 'valid': items = items.filter(valid_from__lte=today, valid_until__gte=today)
     elif status == 'expired': items = items.filter(valid_until__lt=today)
     elif status == 'upcoming': items = items.filter(valid_from__gt=today)
+    if status in ['valid','expired','upcoming']: reports = reports.none()
+    elif status == 'reports': items = items.none()
     params = request.GET.copy()
     params.pop('page',None)
-    return render(request,'rates.html',{'title':'参考运价','page':Paginator(items,9).get_page(request.GET.get('page')),'q':q,'country':country,'countries':Country.objects.all(),'status':status,'page_query':params.urlencode()})
+    report_params = request.GET.copy()
+    report_params.pop('report_page',None)
+    return render(request,'rates.html',{'title':'参考运价','page':Paginator(items,9).get_page(request.GET.get('page')),'report_page':Paginator(reports,9).get_page(request.GET.get('report_page')),'q':q,'country':country,'countries':Country.objects.all(),'status':status,'page_query':params.urlencode(),'report_page_query':report_params.urlencode()})
 
 def freight_rate(request,slug):
     item = get_object_or_404(public_rates(),slug=slug)

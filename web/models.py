@@ -76,6 +76,8 @@ class Article(models.Model):
     requirements = models.TextField('单证与操作要求', blank=True)
     restrictions = models.TextField('限制条件与注意事项', blank=True)
     summary = models.CharField('摘要', max_length=300)
+    seo_title = models.CharField('SEO标题', max_length=180, blank=True, default='', help_text='留空使用文章标题；摘要用于搜索描述。')
+    seo_keywords = models.CharField('主题关键词', max_length=500, blank=True, default='', help_text='用中文或英文逗号分隔，填写与正文一致的国家、城市、车型等主题。')
     body = models.TextField('正文', help_text='可选纯文本或 Markdown；支持标题、表格和列表。')
     body_format = models.CharField('正文格式', max_length=12, choices=[('text','纯文本'),('markdown','Markdown')], default='text')
     reviewed_on = models.DateField('资料核对日期（非实时通关确认）', null=True, blank=True)

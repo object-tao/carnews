@@ -42,3 +42,12 @@
 .evidence-C{background:#fff0ec;color:#87382a;border-color:#d38c7d}
 .guide-actions{display:flex;flex-direction:column;gap:12px;flex-shrink:0}
 @media(max-width:700px){.evidence-notice{padding:18px}.evidence-notice strong{font-size:17px}.guide-actions{width:100%}.guide-actions .button{justify-content:center}}
+
+.market-reports{margin-bottom:40px}.market-reports>h2{margin-bottom:12px}
+
+.market-report table{font-variant-numeric:tabular-nums}
+.market-report td:first-child{position:sticky;left:0;background:#fafaf7}
+.market-report th:first-child{position:sticky;left:0;background:#eef1f5}
+.table-scroll-hint{display:none}
+@media(min-width:900px){.market-report table{display:table;width:100%}}
+@media(max-width:700px){.table-scroll-hint{display:block;font-size:13px;color:#617087}}

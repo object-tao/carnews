@@ -26,4 +26,5 @@ loading_originals=settings.DATA_DIR/'private-imports/loading-rules-source-202611
 call_command('import_loading_rules',publish=True,original_dir=loading_originals if loading_originals.is_dir() else None)
 country_originals=settings.DATA_DIR/'private-imports/country-rules-source-20261108'
 call_command('import_country_rules',publish=True,original_dir=country_originals if country_originals.is_dir() else None)
+call_command('import_market_rates',publish=True)
 call_command('collectstatic',interactive=False)
