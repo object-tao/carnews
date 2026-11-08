@@ -34,7 +34,7 @@ jobs:
           result=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/ci.yml/runs?head_sha=$RELEASE_SHA&branch=main&event=push" --jq '[.workflow_runs[] | select(.head_sha == env.RELEASE_SHA and .head_branch == "main" and .event == "push" and .status == "completed" and .conclusion == "success")] | length')
           test "$result" -gt 0
           echo "sha=$RELEASE_SHA" >> "$GITHUB_OUTPUT"
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ steps.release.outputs.sha }}
           persist-credentials: false
