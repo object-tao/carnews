@@ -109,6 +109,27 @@ $env:DEBUG='1'
 入口：`/resources/?type=vehicles`；导读：`/articles/vehicle-handbook/`；测算：`/articles/vehicle-loading-calculation/`。
 部署脚本增加重复安全的车型导入步骤，继续使用原有ECS部署开关。
 
+## 桥梁介绍与桥涵节点库
+
+`content/bridges/catalog.json` 收录72篇节点文章及1篇核验导读，分为中国出境、中亚、东南亚、俄罗斯、欧洲和高加索六组，支持国家、分类与关键词组合筛选。
+内容区分公路、铁路、轮渡和建设项目；修正桥名、线路归属及过时建设状态，不沿用原稿无出处的固定限高、限载、速度或时效，也不将初筛资料当作工程验算或通行许可。
+每篇附参考来源与核对范围，后台仍可维护正文、关联国家和线路。
+
+73篇原稿与74张原PNG完整保存于D盘私有归档 `data/private/bridge-source-20261108/`。
+网站使用73张保持完整构图的WebP配图，另1张备选图只归档。原图总览明确说明AI生成，列表、详情及导读均保留“AI生成，非现场实拍”；图中结构和地形不是实测依据。
+`content/bridges/source_index.json` 保存原稿与原图、显示版的SHA256对应关系，公开仓库不携带原始内部全文。
+
+```powershell
+$env:DEBUG='1'
+.\.venv\Scripts\python.exe manage.py import_bridges --dry-run --original-dir 'data/private/bridge-source-20261108'
+.\.venv\Scripts\python.exe manage.py import_bridges --publish --original-dir 'data/private/bridge-source-20261108'
+```
+
+默认仅新建草稿；`--publish`仅发布新文章。导入前核验原稿和图片摘要、图片格式与AI说明，失败回滚新增记录及媒体。
+已有文章的正文、图片、发布状态、私有原稿和管理员修改均保留。`--original-dir`可省略；提供时全文仅存后台“内部校订资料”，不进入前台或搜索。
+原生ECS部署自动从持久化目录 `DATA_DIR/private-imports/bridge-source-20261108` 读取私有原稿（存在时），再执行重复安全的导入。
+入口：`/resources/?type=bridges`；导读：`/articles/bridge-handbook/`。
+
 ## 验证
 
 ```powershell

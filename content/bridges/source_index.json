@@ -1,0 +1,890 @@
+{
+  "version": 1,
+  "documents": [
+    {
+      "id": "00",
+      "path": "00-总规划与节点目录.md",
+      "sha256": "4e272f785146ab6f7ccc6b484efbc172ff8adddd511caa2ef86eedbc658ffe6a"
+    },
+    {
+      "id": "0101",
+      "path": "01-中国境内出境通道/0101-果子沟大桥.md",
+      "sha256": "7efbf36d877e83fd902b91458d3ebaaefb591245fb69f2da80c5aefaa8931e50"
+    },
+    {
+      "id": "0102",
+      "path": "01-中国境内出境通道/0102-乌鞘岭隧道群.md",
+      "sha256": "dff4aa81e5ed7e5595a5a567269c4c52abfa882ffc9e0e9b3f5ab16e997d6907"
+    },
+    {
+      "id": "0103",
+      "path": "01-中国境内出境通道/0103-霍尔果斯河大桥.md",
+      "sha256": "c07b9719c4384dd2d7aa0f4c4eaabcb632263c8d22fc3d83f1e4cdb3ea3347b3"
+    },
+    {
+      "id": "0104",
+      "path": "01-中国境内出境通道/0104-阿拉山口口岸通道桥涵.md",
+      "sha256": "3b9ee746db08b0e7e6a1e3042cb95161966404e8ae555266c83d824ffd158a4d"
+    },
+    {
+      "id": "0105",
+      "path": "01-中国境内出境通道/0105-巴克图口岸通道.md",
+      "sha256": "37c3f5b0103d4626cdcb49b23865e826766f99be49cde7a251ee8c811ac8a933"
+    },
+    {
+      "id": "0106",
+      "path": "01-中国境内出境通道/0106-吉木乃口岸通道.md",
+      "sha256": "9df374f414af76ba23afcb5328d5d445e245647f2d1603728d5a5d614ff1251c"
+    },
+    {
+      "id": "0107",
+      "path": "01-中国境内出境通道/0107-吐尔尕特山口路段.md",
+      "sha256": "75ea9aa5bff915406f2a584bc8a599b8fae21a87760229253a78c14c511c16f7"
+    },
+    {
+      "id": "0108",
+      "path": "01-中国境内出境通道/0108-伊尔克什坦口岸路段.md",
+      "sha256": "50120bde36c13afc41b38440847619bc156e92fba5eb787b807092162760e94a"
+    },
+    {
+      "id": "0109",
+      "path": "01-中国境内出境通道/0109-卡拉苏口岸路段.md",
+      "sha256": "bded186f60db2e867e9514b04e133992d0dd68558248cd9017e999252244c911"
+    },
+    {
+      "id": "0110",
+      "path": "01-中国境内出境通道/0110-北仑河大桥.md",
+      "sha256": "14fe1bcd86c616c799103f5e41edab9ea384e500eaded078d156dc76bf08d1b5"
+    },
+    {
+      "id": "0111",
+      "path": "01-中国境内出境通道/0111-南溪河公路桥与中越铁路大桥.md",
+      "sha256": "81be4b9d6be9dfcaaf947b4dcf5240520014dc6790680c7014591decdb814561"
+    },
+    {
+      "id": "0112",
+      "path": "01-中国境内出境通道/0112-中老铁路友谊隧道.md",
+      "sha256": "ebcafc293cc01fc57ff436b2d8666f3ca6724ff62bb3a92fe4fa99a1bbe5a067"
+    },
+    {
+      "id": "0113",
+      "path": "01-中国境内出境通道/0113-小磨高速桥隧群.md",
+      "sha256": "63ae0dc48184a9a30cc4e767f3da40b2faf17c1ad0df0c6e7b761d19469026c4"
+    },
+    {
+      "id": "0114",
+      "path": "01-中国境内出境通道/0114-黑河—布拉戈维申斯克黑龙江公路大桥.md",
+      "sha256": "c29f38349dab8e797e53deac7a0d1c9e3a1204862dee02a19136c12a76766f4c"
+    },
+    {
+      "id": "0115",
+      "path": "01-中国境内出境通道/0115-同江—下列宁斯阔耶黑龙江铁路大桥.md",
+      "sha256": "57ddc3cdb347575141b0fd68468aea849e47f5f2e4847b125623cc126b3142ac"
+    },
+    {
+      "id": "0116",
+      "path": "01-中国境内出境通道/0116-瑞丽江桥与姐告大桥.md",
+      "sha256": "0a70e74726d2a25605d1cf9cc8f498d8e312e74a7e0a8840515efbd1490d52d7"
+    },
+    {
+      "id": "0201",
+      "path": "02-中亚走廊/0201-库尔岱山口.md",
+      "sha256": "d94c3175bdd4e57e40960894299c43e8000d301595a3e52819cac8534ea52aa0"
+    },
+    {
+      "id": "0202",
+      "path": "02-中亚走廊/0202-卡普恰盖伊犁河大桥.md",
+      "sha256": "f185a46ce67e78582f1db49f0c256de3b3c843b5a3d5d639abe8bfde2558ecdd"
+    },
+    {
+      "id": "0203",
+      "path": "02-中亚走廊/0203-塔拉兹河桥群.md",
+      "sha256": "49a7475aed79ccb1688dacd7bb48987feb687a7790ab749dfc07f766bca3d049"
+    },
+    {
+      "id": "0204",
+      "path": "02-中亚走廊/0204-希姆肯特—塔什干边境通道.md",
+      "sha256": "1817b71aa030e9725a5e99d58590eda4dbadfb6e2b2f210e314a7789f9ff3413"
+    },
+    {
+      "id": "0205",
+      "path": "02-中亚走廊/0205-锡尔河大桥.md",
+      "sha256": "4a0f769d31f85a5fb083373074ef3d5c737b2c93c1f1143d52dd98647366bd69"
+    },
+    {
+      "id": "0206",
+      "path": "02-中亚走廊/0206-卡姆奇克隧道.md",
+      "sha256": "92bd2d8edb1d0e8b47aa6915002f96e07cb834968d6fc2894ee12bee812b588a"
+    },
+    {
+      "id": "0207",
+      "path": "02-中亚走廊/0207-Too-Ashuu隧道.md",
+      "sha256": "05068253dd0d26dcdbaab1fe7044fe744babb2921c18f7dcfb80885e428a9ff9"
+    },
+    {
+      "id": "0208",
+      "path": "02-中亚走廊/0208-苏萨米尔山谷与Dolon山口.md",
+      "sha256": "f8f813a77d675ff9c99ffb64c08d89a162cdb90e522304cfb990627b3859a4e1"
+    },
+    {
+      "id": "0209",
+      "path": "02-中亚走廊/0209-塔尔迪克山口.md",
+      "sha256": "ac7e8c46daba7bd159c1184f7fa9380bfc9ebcf775f43254a580c51739d52110"
+    },
+    {
+      "id": "0210",
+      "path": "02-中亚走廊/0210-安佐布隧道.md",
+      "sha256": "cbad7b145ca3587890ade221ecb92e4526ac889370e7322cd6d55feea8af3ace"
+    },
+    {
+      "id": "0211",
+      "path": "02-中亚走廊/0211-沙赫里斯坦隧道.md",
+      "sha256": "3a5931db0a6ed728849831cdf95f4938ae50ff8fc3374cfc675e87b4fc19c25a"
+    },
+    {
+      "id": "0212",
+      "path": "02-中亚走廊/0212-杜尚别—铁尔梅兹干线桥涵.md",
+      "sha256": "229c96b43cb32eb1faa78d9536e2f960e57aa3a07a12e32cbcf88fc151e7a1e5"
+    },
+    {
+      "id": "0213",
+      "path": "02-中亚走廊/0213-中吉乌铁路隧道群.md",
+      "sha256": "90eef011f41e741ff803c3e0583e00f374c8bf5a3bbeeaec5755c1a3e9a16f4a"
+    },
+    {
+      "id": "0214",
+      "path": "02-中亚走廊/0214-阿克套—别伊涅乌桥涵.md",
+      "sha256": "7974c6b9c311afceab82e9849c8a4e39f3093996580359ed7391e3419c5e5ae2"
+    },
+    {
+      "id": "0301",
+      "path": "03-东南亚通道/0301-元江特大桥.md",
+      "sha256": "b2a7a4a9fc2157b3d88a84b87ffa1d3ead2387ebb52d75cb18b8703576e4784f"
+    },
+    {
+      "id": "0302",
+      "path": "03-东南亚通道/0302-橄榄坝澜沧江大桥.md",
+      "sha256": "fa90fc5c21280a77a9b622448faf273cfa5e81216b63a630fe72eb47dfaa519f"
+    },
+    {
+      "id": "0303",
+      "path": "03-东南亚通道/0303-磨丁—琅勃拉邦13号公路山区段.md",
+      "sha256": "a98b597b328917a548140783625df9e69c9802c44b4f65cfa26d7c4a0bc7a6ed"
+    },
+    {
+      "id": "0304",
+      "path": "03-东南亚通道/0304-琅勃拉邦—万象13号公路桥涵.md",
+      "sha256": "07d9ccba69dd53564324258c21638d1e29ec19b32f36103d3b5d3d4ffdd20ac7"
+    },
+    {
+      "id": "0305",
+      "path": "03-东南亚通道/0305-第一湄公河友谊大桥.md",
+      "sha256": "abc820b292854bc4fc2d4a652b3d0164e5692e026ea94448f004f5f7a266c06c"
+    },
+    {
+      "id": "0306",
+      "path": "03-东南亚通道/0306-第二友谊大桥.md",
+      "sha256": "a4f68892b4f0b9fbdc8996ae78a70c8ffe377813f07c2ac1f6d159bc023ce3d1"
+    },
+    {
+      "id": "0307",
+      "path": "03-东南亚通道/0307-第三友谊大桥.md",
+      "sha256": "d1efd98c8bc1783defef4d0f94deb405b3eb2a62102718ecf1fa52ac20b8f6ef"
+    },
+    {
+      "id": "0308",
+      "path": "03-东南亚通道/0308-第四友谊大桥.md",
+      "sha256": "dd2c297585a8429a2810a97a87ebc47ecb51f1e04aec98f1fe6eb045991d6aab"
+    },
+    {
+      "id": "0309",
+      "path": "03-东南亚通道/0309-曼谷—廊开干线桥涵.md",
+      "sha256": "cb4e6942bc6179fdf3edb1172362b2b655a889fd765a9f04285f3302503870c0"
+    },
+    {
+      "id": "0310",
+      "path": "03-东南亚通道/0310-沙道—黑木山口岸通道.md",
+      "sha256": "540a531c06beab5d73534e39269fd0df7ec8c809282c8da8f27babf7d30c3808"
+    },
+    {
+      "id": "0311",
+      "path": "03-东南亚通道/0311-木姐—曼德勒路线桥涵.md",
+      "sha256": "62bec60a4cb30e8c7696d43f60a6eac45e63c1d619536726eb46e944de401ccf"
+    },
+    {
+      "id": "0312",
+      "path": "03-东南亚通道/0312-巴域—木牌口岸通道.md",
+      "sha256": "d0fea7550d52c7690211564894ff05a5576f4ff6617437716e4a856dbdca2c53"
+    },
+    {
+      "id": "0401",
+      "path": "04-俄罗斯通道/0401-后贝加尔斯克—赤塔A350.md",
+      "sha256": "3921fea0e40989efb941c6d8a7e1194645400475db40c878c0cc38140715db51"
+    },
+    {
+      "id": "0402",
+      "path": "04-俄罗斯通道/0402-赤塔—伊尔库茨克R258.md",
+      "sha256": "b7c1ea0aba05978c8a0483451900db8a625104fc09bafa09d508d87cf9b799cd"
+    },
+    {
+      "id": "0403",
+      "path": "04-俄罗斯通道/0403-克拉斯诺亚尔斯克叶尼塞河大桥.md",
+      "sha256": "a659c1ec21a0433479dc1341c1e67978afcb1916fdf62e7965af67255ad72752"
+    },
+    {
+      "id": "0404",
+      "path": "04-俄罗斯通道/0404-新西伯利亚鄂毕河大桥.md",
+      "sha256": "48c2a81805129b4821f4522d72fca2a49b87d92af8052bd3872ec63d32b2a954"
+    },
+    {
+      "id": "0405",
+      "path": "04-俄罗斯通道/0405-鄂木斯克额尔齐斯河大桥.md",
+      "sha256": "ec747abca2f04969fecf02c6e2b9b0c864252ee4d14ea51b2a18796f798b24a4"
+    },
+    {
+      "id": "0406",
+      "path": "04-俄罗斯通道/0406-车里雅宾斯克—叶卡捷琳堡乌拉尔段.md",
+      "sha256": "ced5988b6ce6bd8f911e335671d36da91583a4d497805a67c57dc4ed893ce287"
+    },
+    {
+      "id": "0407",
+      "path": "04-俄罗斯通道/0407-喀山伏尔加河大桥.md",
+      "sha256": "3bce18492cda2d66d69673f43f286d7568091f182d576aba0a965802bd0620a4"
+    },
+    {
+      "id": "0408",
+      "path": "04-俄罗斯通道/0408-莫斯科环城公路与外环.md",
+      "sha256": "4cdb9e37d56583f39109d82bee3740a8f6ad88857923aa5c735a48d32936fcc7"
+    },
+    {
+      "id": "0409",
+      "path": "04-俄罗斯通道/0409-哈巴罗夫斯克阿穆尔河大桥.md",
+      "sha256": "c3ee816974d3b6b7a29ab96e31a88b3ebebe1c653d21bf72aaca2368301dba14"
+    },
+    {
+      "id": "0410",
+      "path": "04-俄罗斯通道/0410-西伯利亚大铁路与贝阿铁路桥涵限制.md",
+      "sha256": "5cad04a39c85465a8c0f9b6a589aac8a58b534ca5a12d091e6ebeb6422fe885f"
+    },
+    {
+      "id": "0501",
+      "path": "05-欧洲通道/0501-布格河大桥.md",
+      "sha256": "61137537d47762f9f16f99de88e170ed903edf1a4074c6772af441480607d1b2"
+    },
+    {
+      "id": "0502",
+      "path": "05-欧洲通道/0502-奥得河大桥.md",
+      "sha256": "35cecd0326fe8f810f0e55d69fa243968bc5cf9a37cd7d4abde334c36ac8fd7c"
+    },
+    {
+      "id": "0503",
+      "path": "05-欧洲通道/0503-维斯瓦河桥群.md",
+      "sha256": "2a0aeb046f6afa078190e2e55dddd77ca3f0e28bdff1971bd027be5446373909"
+    },
+    {
+      "id": "0504",
+      "path": "05-欧洲通道/0504-德国A2A4高速桥涵净空体系.md",
+      "sha256": "c2251e30ae0d5a4103c9f91608ea16a9a88541ae730b0793b36612df583104d3"
+    },
+    {
+      "id": "0505",
+      "path": "05-欧洲通道/0505-鹿特丹安特卫普港口腹地桥涵.md",
+      "sha256": "56f24635db519edcf92f345df0e70dc439269144cbddacbcad006c398f8dd8a6"
+    },
+    {
+      "id": "0506",
+      "path": "05-欧洲通道/0506-布伦纳隧道.md",
+      "sha256": "f90b3daed91ad605f58f10dfdb5a31f5d46079a4f138d7a4dc5fa76595af9698"
+    },
+    {
+      "id": "0507",
+      "path": "05-欧洲通道/0507-圣哥达公路隧道.md",
+      "sha256": "c6e2c41968af453ec781ac80065fd723d293427564089ba4b8a0e58874fd3435"
+    },
+    {
+      "id": "0508",
+      "path": "05-欧洲通道/0508-亚武兹苏丹塞利姆大桥.md",
+      "sha256": "bde771e413a52aee755d402a2e59fa7bab715ad26814e646a7cb1a180eec5e78"
+    },
+    {
+      "id": "0509",
+      "path": "05-欧洲通道/0509-巴库第比利斯卡尔斯铁路.md",
+      "sha256": "a3ed8d55fd20a25d621106cd0690a8534df1d833b68fc01025ebedf241d1f676"
+    },
+    {
+      "id": "0510",
+      "path": "05-欧洲通道/0510-里海轮渡.md",
+      "sha256": "9d3f8703b4b8519b1e43a67fe3e525ab960957df759995670ee6de66b15bf5d0"
+    },
+    {
+      "id": "0601",
+      "path": "06-高加索通道/0601-上拉尔斯-达里亚利峡谷.md",
+      "sha256": "b736355a1af1fd28867726a2653958fd1e57d56a958c7a9d23e8f1c7c3e0edee"
+    },
+    {
+      "id": "0602",
+      "path": "06-高加索通道/0602-古多里山口.md",
+      "sha256": "f7861ea09205b085b0fc9799e536f63d17e9c49a96c47a049aa2564a03ebea5f"
+    },
+    {
+      "id": "0603",
+      "path": "06-高加索通道/0603-里科季山口隧道群.md",
+      "sha256": "256f79681bdf2b289bbb414f95972f0dbcaa15cd642e476ee7e9a9beb9ea6920"
+    },
+    {
+      "id": "0604",
+      "path": "06-高加索通道/0604-第比利斯—巴统E60E70桥涵.md",
+      "sha256": "45c9a36fadaae8bf95c0fe01c63ce31614527a2e93d0f0652a2d93ba43a9f069"
+    },
+    {
+      "id": "0605",
+      "path": "06-高加索通道/0605-红桥口岸.md",
+      "sha256": "9116818b571ee01be2546955ade54ff32db38342052759f1676388be4564da23"
+    },
+    {
+      "id": "0606",
+      "path": "06-高加索通道/0606-库拉河桥群.md",
+      "sha256": "eb2716f69360264eb884a4e5ebb0eb97ca57432fd00241db4bbe2fd3d3d3527a"
+    },
+    {
+      "id": "0607",
+      "path": "06-高加索通道/0607-巴格拉塔申—萨达赫洛桥.md",
+      "sha256": "1a433b94849d708e0eeba05158fc23991c6397d810c7fcc58cdfb31e012a9a98"
+    },
+    {
+      "id": "0608",
+      "path": "06-高加索通道/0608-萨尔皮·蒂尔克格聚口岸.md",
+      "sha256": "1ada3405db6fc1c88ff0cdd60261a14344799eafaf16fb66f26e0a363d28e11d"
+    },
+    {
+      "id": "0609",
+      "path": "06-高加索通道/0609-努尔杜兹口岸路段.md",
+      "sha256": "5fc47060b0b5785eb0b59e005f9647c0fa51a8ee8b5fd4df02e8c27f821cc72b"
+    },
+    {
+      "id": "0610",
+      "path": "06-高加索通道/0610-赞格祖尔走廊.md",
+      "sha256": "651aada81246a3e9a126726a533823412212fa1af13f4cfc7d8ff1a5a1349400"
+    }
+  ],
+  "images": [
+    {
+      "article": "bridge-0101",
+      "source_file": "images/0101-果子沟大桥.png",
+      "source_sha256": "ec2e860cd31af413f9bd2f010991152ee48b67535b5bfb456934af54e80ae888",
+      "display_file": "images/0101.webp",
+      "display_sha256": "bb897795261d35fa4507b67ca8a28a7c02ab58f733c3b366e7e03837d4b13d59"
+    },
+    {
+      "article": "bridge-0102",
+      "source_file": "images/0102-乌鞘岭隧道群.png",
+      "source_sha256": "0f5442d8d8bfccfa4d5c337c5036c374551d0ed6e4fd22004a859141ce4a8684",
+      "display_file": "images/0102.webp",
+      "display_sha256": "bdf591f30f98af21b1219f809e452f3b1e94431d4790b5e9090577283b843383"
+    },
+    {
+      "article": "bridge-0103",
+      "source_file": "images/0103-霍尔果斯河大桥.png",
+      "source_sha256": "0c2686c2229c404289047ef1d559210c2ba55908e7f48bb1a29b57d5652c9750",
+      "display_file": "images/0103.webp",
+      "display_sha256": "dcc256902e3deea3444412717d70247f877e53ebb3bbb1caaf94a7bdcb3452f5"
+    },
+    {
+      "article": "bridge-0104",
+      "source_file": "images/0104-阿拉山口口岸通道桥涵.png",
+      "source_sha256": "8649d3c2dde27f7f5540943801f59aba9a329d83beb5f3ff2cd0f6d9361db0f9",
+      "display_file": "images/0104.webp",
+      "display_sha256": "49158546d19f1b362aebefd4119fd3e371b2452735636bbf0b19d7b0a784742d"
+    },
+    {
+      "article": "bridge-0105",
+      "source_file": "images/0105-巴克图口岸通道.png",
+      "source_sha256": "dd73f0de96ba22f7fd8cc98754e95f295de6b2d63d06126db9b4ee6a5a674021",
+      "display_file": "images/0105.webp",
+      "display_sha256": "0d11b0b0799dd6b81d1b3f6d585f49afe484b7d4e7eabb65279a67f3f8d99acf"
+    },
+    {
+      "article": "bridge-0106",
+      "source_file": "images/0106-吉木乃口岸通道.png",
+      "source_sha256": "b77ce68e786bdd45fa1f3400140e6e29907dacb2eb8540ca3150ef03ff767f6f",
+      "display_file": "images/0106.webp",
+      "display_sha256": "2bf097d908b8de5bb210aa26e60046f33ad2b110b0af924fafe335a6a45d4995"
+    },
+    {
+      "article": "bridge-0107",
+      "source_file": "images/0107-吐尔尕特山口路段.png",
+      "source_sha256": "174431cfa48c4f64563aa699e4a32be2bb8573348a4e6371347feb9322726f21",
+      "display_file": "images/0107.webp",
+      "display_sha256": "dd54d2bead34b9d7b719d65bd60741a8d0fe63c98495da03f2c30407f76ac250"
+    },
+    {
+      "article": "bridge-0108",
+      "source_file": "images/0108-伊尔克什坦口岸路段.png",
+      "source_sha256": "79543f2b4fef83663d4e4cacfa638cb949726e245b8b3777dc2d3746b227c7a9",
+      "display_file": "images/0108.webp",
+      "display_sha256": "f0b44cd0f26a2a9833614477412ab88fced5b1e2245829256a5295fba2d319bb"
+    },
+    {
+      "article": "bridge-0109",
+      "source_file": "images/0109-卡拉苏口岸路段.png",
+      "source_sha256": "1dbdb416dcf73141e7661252fbbd60bd31e1ac64270da6181c1e6f91abb0ff02",
+      "display_file": "images/0109.webp",
+      "display_sha256": "d0df1a704ec658aadc2c145a603a9eba30abb3d58369885844dca0ce5fcb5088"
+    },
+    {
+      "article": "bridge-0110",
+      "source_file": "images/0110-北仑河大桥.png",
+      "source_sha256": "228498b8990e5974515e286d2e07333082ae4a424820665267f4bbe75fa89f22",
+      "display_file": "images/0110.webp",
+      "display_sha256": "82161bff4397120ff13c64d31ff8084871ad8a55d3aa88496efdee8952ff8e2a"
+    },
+    {
+      "article": "bridge-0111",
+      "source_file": "images/0111-南溪河公路桥与中越铁路大桥.png",
+      "source_sha256": "7b31eac890ac6a300e969b2dfea577a09cc482b0577e9884d60a69a6faa6d809",
+      "display_file": "images/0111.webp",
+      "display_sha256": "5cd029119df393e41c39721421a6574baca9312fcfead50c111ab16ffdbdc1bd"
+    },
+    {
+      "article": "bridge-0112",
+      "source_file": "images/0112-中老铁路友谊隧道.png",
+      "source_sha256": "3304d32948d643d14ee7d162c4daed15a52d94403120c01f9328bc3fb588772b",
+      "display_file": "images/0112.webp",
+      "display_sha256": "28dfc782615c64eeee6d33cf9cbfdaa80cd9975425b317e056f97ebd30a2dbfc"
+    },
+    {
+      "article": "bridge-0113",
+      "source_file": "images/0113-小磨高速桥隧群.png",
+      "source_sha256": "efa9f55c0bc20ad0889c69fdec512100732f5d0a9061a3fad700c78961a2a727",
+      "display_file": "images/0113.webp",
+      "display_sha256": "ead7a45c356c410da8f76fd109f78c40686a111c9bbbfba694a37793ecf1de32"
+    },
+    {
+      "article": "bridge-0114",
+      "source_file": "images/0114-黑河—布拉戈维申斯克黑龙江公路大桥.png",
+      "source_sha256": "0c8eaf562edc6432c820f2eac54d057c7f1ee5845ea9a573a1271d86b9de3542",
+      "display_file": "images/0114.webp",
+      "display_sha256": "02c29babde6dcae30668f171a24dbd424cfe944895d89238a523976a86fcef2c"
+    },
+    {
+      "article": "bridge-0115",
+      "source_file": "images/0115-同江—下列宁斯阔耶黑龙江铁路大桥.png",
+      "source_sha256": "354a82a3e3b33fc4b2aa8549f31c48555484ae67c42df64397deb235e4ee6612",
+      "display_file": "images/0115.webp",
+      "display_sha256": "44f5ccac0baf6160e33e3de26a4c30932fbd27747e0817c992da6f83dc07121f"
+    },
+    {
+      "article": "bridge-0116",
+      "source_file": "images/0116-瑞丽江桥与姐告大桥.png",
+      "source_sha256": "60f17a3fb5a5bc9473ed4c85bd47225a6301ab301f9f1f59b97dd624e33926cb",
+      "display_file": "images/0116.webp",
+      "display_sha256": "f05326feb25b1843061d66c5e076724cc1d2dd93d9e3c365b5efb16e3d5e2a79"
+    },
+    {
+      "article": "bridge-0201",
+      "source_file": "images/0201-库尔岱山口.png",
+      "source_sha256": "ae91d8024d73296ef96b006f4c00546bbfcbe32e4cb518199c7e5adda1adcb86",
+      "display_file": "images/0201.webp",
+      "display_sha256": "b0fe32bf5566e2c8e148fecebb2db40b5ac0120a0879befbd4a93fbc6ac811ed"
+    },
+    {
+      "article": "bridge-0202",
+      "source_file": "images/0202-卡普恰盖伊犁河大桥.png",
+      "source_sha256": "bc350e50919c46f877dbdc7987b3d5af7934bad912f741e39f678271a45cd3cf",
+      "display_file": "images/0202.webp",
+      "display_sha256": "ff7d44c0134b1743cb13cd3bbe5a2db9f33a8c8e70e37d622b2a5c1ab4c19891"
+    },
+    {
+      "article": "bridge-0203",
+      "source_file": "images/0203-塔拉兹河桥群.png",
+      "source_sha256": "9a1dd1b522c44744fa7e7461a918d036512c3f272fb05132a93060f11f812df4",
+      "display_file": "images/0203.webp",
+      "display_sha256": "0c0900f27d8d198ce4b83d5276db6646f611ff35ca72ecaa3b7447d740adf846"
+    },
+    {
+      "article": "bridge-0204",
+      "source_file": "images/0204-希姆肯特—塔什干边境通道.png",
+      "source_sha256": "6adbf4811c0dfa478991b8b28e30a34beb35a8a67894591e3c5c5db9f6bb96ee",
+      "display_file": "images/0204.webp",
+      "display_sha256": "5c9a45912283611530b3d94792a94b8278fb0b4e79d3829084ec5390ab3a1b67"
+    },
+    {
+      "article": "bridge-0205",
+      "source_file": "images/0205-锡尔河大桥.png",
+      "source_sha256": "eb96c89c4b4d8a4024564fb0d1724cc594be884ac76315deb739a0d2872f9747",
+      "display_file": "images/0205.webp",
+      "display_sha256": "72417f57ca404c92b09dce5beffa861edc6971f67805ba841e638e95f60b408b"
+    },
+    {
+      "article": "bridge-0206",
+      "source_file": "images/0206-卡姆奇克隧道.png",
+      "source_sha256": "9cf51805d2e738b6110ef6e6f5ed2a6b4d1ec339d99eab84adbf0812f3fd6530",
+      "display_file": "images/0206.webp",
+      "display_sha256": "def4b55a6f87801bf6776127035e8b96fcc59ea8712d82b13e36a062a6b91c7c"
+    },
+    {
+      "article": "bridge-0207",
+      "source_file": "images/0207-Too-Ashuu隧道.png",
+      "source_sha256": "02c415a2b9189b2ae4ef6a696e1263c2bfbb261f92eee581ec39c0857dc5e3e0",
+      "display_file": "images/0207.webp",
+      "display_sha256": "314195031c2d2007ad93cb5e0fd9a90e9b6597f7e3d502277621ea38fa676bc7"
+    },
+    {
+      "article": "bridge-0208",
+      "source_file": "images/0208-苏萨米尔山谷与Dolon山口.png",
+      "source_sha256": "143e5513bf038f39b8d2927f9d534b9febb21fe1940184fc006f5659e32e2c93",
+      "display_file": "images/0208.webp",
+      "display_sha256": "cbb54eb9b56278d01660be795f7a065d3a700449e344b92c3c668cffe59bfd2c"
+    },
+    {
+      "article": "bridge-0209",
+      "source_file": "images/0209-塔尔迪克山口.png",
+      "source_sha256": "16e897cf7b3b74bd27176ffca16239533186fe73fe6f597372dc35bac3b51a3e",
+      "display_file": "images/0209.webp",
+      "display_sha256": "c012453451c78352e78ec3ca23f59067c43604f5ffcf913c3f879edb57014ac7"
+    },
+    {
+      "article": "bridge-0210",
+      "source_file": "images/0210-安佐布隧道.png",
+      "source_sha256": "ce67b6904b79a78494ead21c4fd53ccd60ffc4b61b98cd0ba1f60aded95fbd58",
+      "display_file": "images/0210.webp",
+      "display_sha256": "650758e8d82766ab6bb2426a7dbf975cd49e36f89b415ae09efccd8f46b7bda7"
+    },
+    {
+      "article": "bridge-0211",
+      "source_file": "images/0211-沙赫里斯坦隧道.png",
+      "source_sha256": "89ce1218ab6a42edb33049fdc581405f35d64f18d3df8478c6c9844a68ce9ba9",
+      "display_file": "images/0211.webp",
+      "display_sha256": "74576ef98831d02915f5ce28df12f9c2002b602beeb057a49ccade448eaa4a20"
+    },
+    {
+      "article": "bridge-0212",
+      "source_file": "images/0212-杜尚别—铁尔梅兹干线桥涵.png",
+      "source_sha256": "6804eaf4eac9bce755103ffe31b8a81de9f244dc9e5184e0d12668c96bb04900",
+      "display_file": "images/0212.webp",
+      "display_sha256": "e35e9ef3fcb943f63418c6571f0fec97dc85baae558c8eee96cc18b37163fa83"
+    },
+    {
+      "article": "bridge-0213",
+      "source_file": "images/0213-中吉乌铁路隧道群.png",
+      "source_sha256": "20e2f3075f7c27a1e7244be8586eacb4599701e2dfad432442ab452c606945af",
+      "display_file": "images/0213.webp",
+      "display_sha256": "6742a9568a1fe7d3bde0bf7c2a1beb56a7bf9e11e97c833de94cea5573f235c2"
+    },
+    {
+      "article": "bridge-0214",
+      "source_file": "images/0214-阿克套—别伊涅乌桥涵.png",
+      "source_sha256": "3d8b5b9f55dd243a300438fc62b77cad61c6838b28d9e7f0da75a404b6f39838",
+      "display_file": "images/0214.webp",
+      "display_sha256": "130b31c99384114505d0d2893ad4152706efe2d15259d848d11fbfa72fa2e017"
+    },
+    {
+      "article": "bridge-0301",
+      "source_file": "images/0301-元江特大桥.png",
+      "source_sha256": "dd98060edf682c6c089ca8cbc59c3c1e86a64b2919467359b9a60f66928847f4",
+      "display_file": "images/0301.webp",
+      "display_sha256": "464c247ba10aad8cb481874f5b69415b8d10c96c4b865ba22df063ed5f69e18d"
+    },
+    {
+      "article": "bridge-0302",
+      "source_file": "images/0302-橄榄坝澜沧江大桥.png",
+      "source_sha256": "b7e87fb392a2a8a65cb6793b3bbdd31ec414173c726a7589429a43c2c17f049e",
+      "display_file": "images/0302.webp",
+      "display_sha256": "5acf5f6671587b27098c24d00a7d51113ac018419c4b20ec3d56b88b87f85a7b"
+    },
+    {
+      "article": "bridge-0303",
+      "source_file": "images/0303-磨丁—琅勃拉邦13号公路山区段.png",
+      "source_sha256": "5facc708df4be8b1e0babaa6373ee7b85223b65d8ef666bf0b91e04620cf74c3",
+      "display_file": "images/0303.webp",
+      "display_sha256": "c65608186b0a5b285eb074236ac67dd2f56c58e48f1875c5566e3a189e0262f1"
+    },
+    {
+      "article": "bridge-0304",
+      "source_file": "images/0304-琅勃拉邦—万象13号公路桥涵.png",
+      "source_sha256": "808650d61e960a6949db0cb9cfe957f160a5b68ca7bed8d46d31bfdccdf30fb1",
+      "display_file": "images/0304.webp",
+      "display_sha256": "b80c87d2891bda97f20c4e1f87e21ccbff441eeacd2c2651f7f1b31e3e77c877"
+    },
+    {
+      "article": "bridge-0305",
+      "source_file": "images/0305-第一湄公河友谊大桥.png",
+      "source_sha256": "d3e1830cbe5eaad9deb1b28b02c5ade54a8f51152f1c759d798e555adb25db32",
+      "display_file": "images/0305.webp",
+      "display_sha256": "057f9594263398fdbdc77837e5368b2cb19ffbee74d6b4c61c2e29438a3c4661"
+    },
+    {
+      "article": "bridge-0306",
+      "source_file": "images/0306-第二友谊大桥.png",
+      "source_sha256": "70e849ff331dabbc2fc3cbebf4a1b0c0186fc3272bc5586e6d0d8e62aa43eaa8",
+      "display_file": "images/0306.webp",
+      "display_sha256": "13f6077fdf33341adb434c0e55432ab9d558d613839fe14d6f428cc2c3802f9d"
+    },
+    {
+      "article": "bridge-0307",
+      "source_file": "images/0307-第三友谊大桥.png",
+      "source_sha256": "a7366311f904fb06686d4998a49a8903e48e5e796453100f506038d2864eccde",
+      "display_file": "images/0307.webp",
+      "display_sha256": "d674ab0ac4bd40c621a85d56f5e5771843b56f555d709074374d304c370cbb21"
+    },
+    {
+      "article": "bridge-0308",
+      "source_file": "images/0308-第四友谊大桥.png",
+      "source_sha256": "cf74f25c6b736f9e650f5eeda8e64544fe7c89dbc682d426e06b5792585d3390",
+      "display_file": "images/0308.webp",
+      "display_sha256": "d1656af2bd5f4c31bff1f66ac619681f441ee4072cbfc0ab29468e1254604325"
+    },
+    {
+      "article": "bridge-0309",
+      "source_file": "images/0309-曼谷—廊开干线桥涵.png",
+      "source_sha256": "585447b8e93d8ab5efb712fd826ab1c85ae4934896af467d24fc5bdb802f1ec6",
+      "display_file": "images/0309.webp",
+      "display_sha256": "15f3097153cb9ff383a0b4a33ed6b14ed60cb08d3e9ae42eb64b8ebbf3209c63"
+    },
+    {
+      "article": "bridge-0310",
+      "source_file": "images/0310-沙道—黑木山口岸通道.png",
+      "source_sha256": "50ef6d0466c05ea836a159ca3a17c4c5ed1534347690b98b88884bf2d5892bb0",
+      "display_file": "images/0310.webp",
+      "display_sha256": "3e3dc3f4365e8198fd5f61a50014f12ee645c1a4775a7dda2ce3ad1cfbb9297d"
+    },
+    {
+      "article": "bridge-0311",
+      "source_file": "images/0311-木姐—曼德勒路线桥涵.png",
+      "source_sha256": "9d5139aa8c757c76f68be69dba4910560c7604f4b13f8eb3df1141a489f3c495",
+      "display_file": "images/0311.webp",
+      "display_sha256": "e4fbe7235aff3f5ef53855bc812eb30e9a9a17bac07fcf24b1bbf5514ffb98d8"
+    },
+    {
+      "article": "bridge-0312",
+      "source_file": "images/0312-巴域—木牌口岸通道.png",
+      "source_sha256": "7e9a724a774dfdf6b4b6bc81271061044de55f1306719489731bdea1b135b55e",
+      "display_file": "images/0312.webp",
+      "display_sha256": "707c72f3d15d05bed27f8821a1108ef3431ee2137e2b400f5eb7def8a87fff25"
+    },
+    {
+      "article": "bridge-0401",
+      "source_file": "images/0401-后贝加尔斯克—赤塔A350.png",
+      "source_sha256": "1401779fb8ad1a2a5e85edb203f281a31372d8d836da977f7fdd8ae6e419c331",
+      "display_file": "images/0401.webp",
+      "display_sha256": "b0090f9a2a72f4b42122b7b5bbdc98d8991e607ff9ccc90a58ce008eabfbc0cc"
+    },
+    {
+      "article": "bridge-0402",
+      "source_file": "images/0402-赤塔—伊尔库茨克R258.png",
+      "source_sha256": "f17292674ae1985a251b8b1b7ac71ed907cdd1c9a17c4cc0f4f29a5de806d17f",
+      "display_file": "images/0402.webp",
+      "display_sha256": "291257358f3f18284194423f288c368fedd5d5c46a69d072f64606fd19abd3f9"
+    },
+    {
+      "article": "bridge-0403",
+      "source_file": "images/0403-克拉斯诺亚尔斯克叶尼塞河大桥.png",
+      "source_sha256": "61b6b23cfaacca430637f235e763454dd5982b7cf423db24a9e005c642c7e8d7",
+      "display_file": "images/0403.webp",
+      "display_sha256": "74194bbea2b60c7a9366d131525eb9bc792c6e8c1bc8e26013744d9f2ee9a0b7"
+    },
+    {
+      "article": "bridge-0404",
+      "source_file": "images/0404-新西伯利亚鄂毕河大桥.png",
+      "source_sha256": "6e4b2580c18f5d135486b081fd712ae200b2238b6faa9a65c25f8a9e76a7b10b",
+      "display_file": "images/0404.webp",
+      "display_sha256": "85b65bf35e4167269135bbe3f192afcc8d418ad40ae4ce0876bb580eadde425f"
+    },
+    {
+      "article": "bridge-0405",
+      "source_file": "images/0405-鄂木斯克额尔齐斯河大桥.png",
+      "source_sha256": "937527ebef01518d0eb50d79d9a245f18364bc42a1dfbaed89cfdb05e9e25441",
+      "display_file": "images/0405.webp",
+      "display_sha256": "aa8a349328bbb6e4fdc9d03167126fbc7c237b37f14d728de381457d41c18b77"
+    },
+    {
+      "article": "bridge-0406",
+      "source_file": "images/0406-车里雅宾斯克—叶卡捷琳堡乌拉尔段.png",
+      "source_sha256": "8e9e4d40cff2bdb81807dc3f95174ec371393cc75ea76724ffe507969d8e979e",
+      "display_file": "images/0406.webp",
+      "display_sha256": "e9121a8391879c9969c079c19dcb9de74ed6c50ce59be2c4dea9eecdff5dba3b"
+    },
+    {
+      "article": "bridge-0407",
+      "source_file": "images/0407-喀山伏尔加河大桥.png",
+      "source_sha256": "022c09e1d0c3a82168419171d98e3e59d4093554b08dfb00f9d364e314b63d6a",
+      "display_file": "images/0407.webp",
+      "display_sha256": "74c4ac8fe72c7762fde95a299ce1005eddaf188d07d87c8902401bfea6d903c1"
+    },
+    {
+      "article": "bridge-0408",
+      "source_file": "images/0408-莫斯科环城公路与外环.png",
+      "source_sha256": "2d732284e4af01a46e586b623070513cd7bd5221318616b9803d39ce24a4061b",
+      "display_file": "images/0408.webp",
+      "display_sha256": "5b3dccee7f09918b32d610fb87e886235fa851c95ad788a0335f4254b915e4e5"
+    },
+    {
+      "article": "bridge-0409",
+      "source_file": "images/0409-哈巴罗夫斯克阿穆尔河大桥.png",
+      "source_sha256": "37f40d4f01f7bd161975bfd1251999c7ac34dd6c58b958c15ad784a1d6e603a0",
+      "display_file": "images/0409.webp",
+      "display_sha256": "aed3460e938880d27e1425adf17d2f50e0655987d0a1b197f19af6df7cfd7407"
+    },
+    {
+      "article": "bridge-0410",
+      "source_file": "images/0410-西伯利亚大铁路与贝阿铁路桥涵限制.png",
+      "source_sha256": "fbf8e7cb1a71f81f162e79a3a23180266607ead5584985f9a17311b3b8ea94ae",
+      "display_file": "images/0410.webp",
+      "display_sha256": "66168846e7d415a0c6cb374b1d2fe676173394e53a196fdc11c2a863e3f108fb"
+    },
+    {
+      "article": "bridge-0501",
+      "source_file": "images/0501-布格河大桥.png",
+      "source_sha256": "0144fd6c2e5199ec779bcd3d6fed2b247786ee3f1de43cb2211e4d7fb261b6c0",
+      "display_file": "images/0501.webp",
+      "display_sha256": "ba4f2bcdd63a06d910a8be6a78af9b7a8b57878995d0c42ac0e2971324e00282"
+    },
+    {
+      "article": "bridge-0502",
+      "source_file": "images/0502-奥得河大桥.png",
+      "source_sha256": "145edaf7ce283a91a881068e7ae2056c950088192d85ac3ecb3d9cf2aaa845a0",
+      "display_file": "images/0502.webp",
+      "display_sha256": "67740de4409ddd860abc034933e629a509551588b81ed980a35b06377944ed5f"
+    },
+    {
+      "article": "bridge-0503",
+      "source_file": "images/0503-维斯瓦河桥群.png",
+      "source_sha256": "ff8f1c5003b87dc065f96efeffd1754e28effcc7db542280cd919a6ffe3913a1",
+      "display_file": "images/0503.webp",
+      "display_sha256": "c65c36a98ed15d23326d51343e16bbfeaee0143825067eba119f5d407f8ee565"
+    },
+    {
+      "article": "bridge-0504",
+      "source_file": "images/0504-德国A2A4高速桥涵净空体系.png",
+      "source_sha256": "0cbb000e036fc6f7a15529f551942df332b8eb3aea4da566d4b0e38952d2a0c0",
+      "display_file": "images/0504.webp",
+      "display_sha256": "e788199cb07067bac0a50e02eafdd62b72ed3ed25fdc176faddfb66ee55145fa"
+    },
+    {
+      "article": "bridge-0505",
+      "source_file": "images/0505-鹿特丹安特卫普港口腹地桥涵.png",
+      "source_sha256": "09d59cbe6005482c721c0267e8fedb93fbbfb96bd168f89be08ff84f7da6a731",
+      "display_file": "images/0505.webp",
+      "display_sha256": "c328cd899bb91d8a3a406c22abf32a2b9027b4b3b665c25381043b3e8942da83"
+    },
+    {
+      "article": "bridge-0506",
+      "source_file": "images/0506-布伦纳隧道.png",
+      "source_sha256": "9d3bdefab86fdb50c943a583e68cde69275cd1e0735856c83afa6aa02a2145c7",
+      "display_file": "images/0506.webp",
+      "display_sha256": "72609f5d7654ff2e09afbc047ef42f866b542293f375f669bdf8f4f199a7ffd8"
+    },
+    {
+      "article": "bridge-0507",
+      "source_file": "images/0507-圣哥达公路隧道.png",
+      "source_sha256": "5da86d49c9255e624a019e7502515e457e0ff618f17f5b188a6a581c3e5e6d0f",
+      "display_file": "images/0507.webp",
+      "display_sha256": "221872808b811a39d21ee694b01d6d4f44ccd381af21ad6bdd9d9f6195404282"
+    },
+    {
+      "article": "bridge-0508",
+      "source_file": "images/0508-亚武兹苏丹塞利姆大桥.png",
+      "source_sha256": "cb956c57f21a80c8429346c5de3c8ae7293267ecd686ed20d39be7e97de25951",
+      "display_file": "images/0508.webp",
+      "display_sha256": "7e9f4c679f2b948eac30b5ee6bc3053f9a9a750eb8203e6d1e951e8c11d6cd1e"
+    },
+    {
+      "article": "bridge-0509",
+      "source_file": "images/0509-巴库第比利斯卡尔斯铁路.png",
+      "source_sha256": "0635404f244d21d96f2d9a4e138f1cc7f1d689e9c26b931609c50f85439e0e0c",
+      "display_file": "images/0509.webp",
+      "display_sha256": "a1b0aa22035b7f77968198e3df8fd12c45a16e1b1c4e28acd053e10ad123958d"
+    },
+    {
+      "article": "bridge-0510",
+      "source_file": "images/0510-里海轮渡.png",
+      "source_sha256": "da9be29fff48419dc28a52fbf2c8f1e629da83073752b9a3f8390a2b17ed8a9c",
+      "display_file": "images/0510.webp",
+      "display_sha256": "878604d46afd8ff90baaec00b104907dda0b61a889d097cf3d021a36961e9dbc"
+    },
+    {
+      "article": "bridge-0601",
+      "source_file": "images/0601-上拉尔斯峡谷明洞.png",
+      "source_sha256": "72423ee413f0719889da788e7ad122dba098af3919726ef8d9b0f27e711ca24c",
+      "display_file": "images/0601.webp",
+      "display_sha256": "fbc453b2a795bb7fef756782f628ba8ea94a55a39f6617fefb23b3e37dac8e30"
+    },
+    {
+      "article": "bridge-0602",
+      "source_file": "images/0602-古多里山口.png",
+      "source_sha256": "b4778094c3042003cd08ba9c88d884eaf225cf54cfb17569061f82ca51fce0fd",
+      "display_file": "images/0602.webp",
+      "display_sha256": "41b4a45f5bb8b5d58d72e8181ea32cf7005b92c2713508c9d0da302c66631ac0"
+    },
+    {
+      "article": "bridge-0603",
+      "source_file": "images/0603-里科季山口隧道群.png",
+      "source_sha256": "52f4d2608150e7af0eb6b6234a8d0aaaad421f28d669ebef008d5376cd9f71d9",
+      "display_file": "images/0603.webp",
+      "display_sha256": "1c3b0b1ea1877b6b2db34cad08d5e3c07611a9130f53b2af269f4088ceda6844"
+    },
+    {
+      "article": "bridge-0604",
+      "source_file": "images/0604-第比利斯—巴统E60E70桥涵.png",
+      "source_sha256": "163af53cb3a0bfcd51c389407c874d672e429ec752bedccb31afc2b7b467ed31",
+      "display_file": "images/0604.webp",
+      "display_sha256": "254c65b2598df4e615a29c93879031276d272a3a7a996ef18769dfd454177643"
+    },
+    {
+      "article": "bridge-0605",
+      "source_file": "images/0605-红桥口岸.png",
+      "source_sha256": "85a6498027991f06f51af63ea0e36685179c7762a22af3b2399acb1551d27235",
+      "display_file": "images/0605.webp",
+      "display_sha256": "66ed9bb3714b6517e9bc8686dec7b462d5798aef143ca849159f8137c1dc76c5"
+    },
+    {
+      "article": "bridge-0606",
+      "source_file": "images/0606-库拉河桥群.png",
+      "source_sha256": "b84a6ec557208c24be1a869e0170fa9e7dfce640c7f01525b4db7aba209f92ef",
+      "display_file": "images/0606.webp",
+      "display_sha256": "a45ca3861eaa61e2f904ad7131a4044d63b8b8ae80ec980ad542778f2f9cb819"
+    },
+    {
+      "article": "bridge-0607",
+      "source_file": "images/0607-巴格拉塔申—萨达赫洛桥.png",
+      "source_sha256": "6fd80667c1bb59368f500680aef789de8fcad97f93940a6bd117d06139b9fc56",
+      "display_file": "images/0607.webp",
+      "display_sha256": "67c5e9506be29a24e0601c2222511c4927193c97eee658104ad71c353b29c736"
+    },
+    {
+      "article": "bridge-0608",
+      "source_file": "images/0608-萨尔皮·蒂尔克格聚口岸.png",
+      "source_sha256": "a1ae2266c035ccb5a917104f0b4cf44fdbf6a5c0b209a2da6e14d6a74fba7792",
+      "display_file": "images/0608.webp",
+      "display_sha256": "a86e7879d45dc191b992471fd081c8e69afdbe1472e98b727f55fdc6c11ca5e5"
+    },
+    {
+      "article": "bridge-0609",
+      "source_file": "images/0609-努尔杜兹口岸路段.png",
+      "source_sha256": "e16df0d0f2f2734897c1094af81328429b0237e3988a4bd43d2aa6ce0ad107dc",
+      "display_file": "images/0609.webp",
+      "display_sha256": "adbb60a7623dead2b8d9be93888e1ce3efa2a709ad2a246e799b82eb2f0e5680"
+    },
+    {
+      "article": "bridge-0610",
+      "source_file": "images/0610-赞格祖尔走廊.png",
+      "source_sha256": "abe905cbd86512aaade770531fb32c606f5dae77d86ce6ca68a3c1721f5401df",
+      "display_file": "images/0610.webp",
+      "display_sha256": "c293422e76a69a25ff7d5ebaf8aed6378da85d1c1f2fe71c6675b6145a466311"
+    },
+    {
+      "article": "bridge-handbook",
+      "source_file": "images/00-系列封面-大件过桥.png",
+      "source_sha256": "dd14702f7b88438d70f1bcd0999fb44a540fe116a7efa8ae347396fe80351e9c",
+      "display_file": "images/00.webp",
+      "display_sha256": "2186eba220967e57bbe8019acf1130ccadc51c0712b05314f3419dacb4e0a095"
+    }
+  ],
+  "unused_images": [
+    {
+      "path": "images/extra-高海拔短跨桥备选.png",
+      "sha256": "3099a928d7f3a25075249dab87056a4b29d3115bcd611cb7bb0729af1b4e3e11",
+      "reason": "备用配图；无对应独立文稿，保留私有归档"
+    }
+  ]
+}
