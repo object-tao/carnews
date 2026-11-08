@@ -31,3 +31,14 @@
   .reading h2{font-size:23px;margin-top:30px}
   .reading h3{font-size:20px}
 }
+
+/* Evidence labels remain visible in both research listings and article text. */
+.evidence-badge{align-self:flex-start;display:inline-block;padding:5px 10px;margin:0 0 14px;border:1px solid #bacbdf;border-radius:3px;font-size:12px;font-weight:700;line-height:1.6;background:#edf3fa;color:#254369}
+.evidence-notice{border:1px solid #bacbdf;border-left:5px solid #426991;background:#edf3fa;padding:22px 24px;margin:0 0 30px;color:#254369}
+.evidence-notice strong{display:block;font-size:18px}
+.reading .evidence-notice p{font-size:15px;line-height:1.8;margin:8px 0 10px;color:inherit}
+.evidence-notice a{font-size:14px;text-decoration:underline}
+.evidence-B{background:#fff5df;color:#715009;border-color:#d6ac51}
+.evidence-C{background:#fff0ec;color:#87382a;border-color:#d38c7d}
+.guide-actions{display:flex;flex-direction:column;gap:12px;flex-shrink:0}
+@media(max-width:700px){.evidence-notice{padding:18px}.evidence-notice strong{font-size:17px}.guide-actions{width:100%}.guide-actions .button{justify-content:center}}

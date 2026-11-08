@@ -30,8 +30,8 @@ class ArticleReferenceInline(admin.TabularInline):
 @admin.register(Article)
 class ArticleAdmin(admin.ModelAdmin):
     inlines = [ArticleReferenceInline]
-    list_display = ['title','kind','resource_type','category','reviewed_on','published','published_at']
-    list_filter = ['kind','resource_type','countries','published','category']
+    list_display = ['title','kind','resource_type','category','evidence_level','reviewed_on','published','published_at']
+    list_filter = ['kind','resource_type','countries','evidence_level','published','category']
     search_fields = ['title','body','location']
     filter_horizontal = ['countries','related_routes','related_resources']
     prepopulated_fields = {'slug':('title',)}
@@ -39,7 +39,7 @@ class ArticleAdmin(admin.ModelAdmin):
         ('基本内容', {'fields': ['title','slug','kind','category','resource_type','summary','body_format','body']}),
         ('国家与关联资料', {'fields':['countries','related_routes','related_resources']}),
         ('口岸、车型、桥梁资料（按需填写）', {'fields':['location','specifications','access_info','requirements','restrictions']}),
-        ('来源与附件', {'fields':['author','source','attachment','reviewed_on']}),
+        ('来源与附件', {'fields':['author','source','attachment','reviewed_on','evidence_level']}),
         ('资料图片与署名', {'fields':['image','image_caption','image_note','image_creator','image_source','image_license','image_license_url','image_taken_on']}),
         ('内部校订资料（不在前台显示）', {'fields':['original_source','editorial_notes'], 'classes':['collapse']}),
         ('发布设置', {'fields':['published','published_at']}),

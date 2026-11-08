@@ -24,4 +24,6 @@ bridge_originals=settings.DATA_DIR/'private-imports/bridge-source-20261108'
 call_command('import_bridges',publish=True,original_dir=bridge_originals if bridge_originals.is_dir() else None)
 loading_originals=settings.DATA_DIR/'private-imports/loading-rules-source-20261108'
 call_command('import_loading_rules',publish=True,original_dir=loading_originals if loading_originals.is_dir() else None)
+country_originals=settings.DATA_DIR/'private-imports/country-rules-source-20261108'
+call_command('import_country_rules',publish=True,original_dir=country_originals if country_originals.is_dir() else None)
 call_command('collectstatic',interactive=False)

@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-08",
+  "scope": "重点来源复核；并非64国全面现行性审查",
+  "checks": [
+    {
+      "id": "UZ-S1",
+      "url": "https://lex.uz/docs/1923902",
+      "result": "发布复核已读取第342号决定的不可拆分条款及尺寸、质量附表；未作全部修订和个案通行审查。"
+    },
+    {
+      "id": "FI-S1",
+      "url": "https://elinvoimakeskus.fi/documents/d/elinvoimakeskus/special-transport-permit-conditions-5_2026_02_01_2026-pdf",
+      "result": "发布复核已读取2026-01-02许可条件第11节，保留EU/EEA车辆及具体制度范围。"
+    },
+    {
+      "id": "PL-S1",
+      "url": "https://www.gov.pl/web/gddkia/przejazdy-nienormatywne3",
+      "result": "发布复核已读取2026-07-01起地区分支受理安排及申请提交要求。"
+    },
+    {
+      "id": "HR-S1",
+      "url": "https://hrvatske-ceste.hr/en/pages/useful-information/abnormal_loads",
+      "result": "发布复核已读取道路机构特殊运输说明；具体类别仍需核对所引规则。"
+    },
+    {
+      "id": "BH-S1",
+      "url": "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=389",
+      "result": "发布复核读取官方目录的搜索收录正文；门槛为服务申请口径，直接页面访问受限。"
+    },
+    {
+      "id": "YE-S1",
+      "url": "https://yemennic.net/archives/603",
+      "result": "发布复核已读取1994年第23号法；当前修订和执行范围仍未确认。"
+    },
+    {
+      "id": "EU-S1",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:01996L0053-20190814",
+      "result": "发布复核读取96/53/EC整编文本与附录；具体适用、例外及后续修订仍按正式文件核验。"
+    },
+    {
+      "id": "EU-S2",
+      "url": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2023%2F0265%28COD%29",
+      "result": "发布复核程序页面显示等待理事会一读立场，提案不作为已经生效的限值。"
+    },
+    {
+      "id": "AE-S2",
+      "url": "https://www.wam.ae/en/article/b1q5zzy-uae-cabinet-postpones-implementation-resolution",
+      "result": "发布复核读取官方通讯社2024-02-18暂缓公告；未据此断言当前全范围执行状态。"
+    },
+    {
+      "id": "KZ-S1",
+      "url": "https://old.adilet.zan.kz/rus/docs/V1500011009",
+      "result": "本次发布复核时，Adilet全文接口未能正常读取。以下数字保留为原研究稿的条文摘录，现行全文、例外与修订状态仍须向主管机构核对。"
+    },
+    {
+      "id": "EG-S1",
+      "url": "https://traffic.moi.gov.eg/Arabic/Pages/faq.aspx",
+      "result": "本次发布复核时，交通门户拒绝返回正文。以下数字保留为原研究稿引用的官方问答摘录，条文原文、现行性和道路范围仍待再次核对。"
+    }
+  ]
+}

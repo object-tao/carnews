@@ -1,0 +1,9 @@
+{% if item.evidence_level %}
+<aside class="evidence-notice evidence-{{ item.evidence_level }}" aria-label="研究资料依据说明">
+  <strong>研究资料 · {{ item.get_evidence_level_display }}</strong>
+  {% if item.evidence_level == 'C' %}<p>尚缺本国直接规则原文，现有材料仅作背景与询证线索，不能据此确定法定限值或通行条件。请逐项补核下方待核清单。</p>
+  {% elif item.evidence_level == 'B' %}<p>现有依据包含局部、历史或背景资料，尚不足以确认全国现行规则。文中待核事项与历史参数不能作为已确认的出车条件。</p>
+  {% else %}<p>已收集直接规则、许可或道路机构资料，仅支持本文明确列出的范围；仍有条款、现行性或路线条件待核。</p>{% endif %}
+  <a href="/articles/country-heavy-haul-handbook/">查看研究范围与64国目录 →</a>
+</aside>
+{% endif %}

@@ -79,6 +79,7 @@ class Article(models.Model):
     body = models.TextField('正文', help_text='可选纯文本或 Markdown；支持标题、表格和列表。')
     body_format = models.CharField('正文格式', max_length=12, choices=[('text','纯文本'),('markdown','Markdown')], default='text')
     reviewed_on = models.DateField('资料核对日期（非实时通关确认）', null=True, blank=True)
+    evidence_level = models.CharField('研究资料依据程度', max_length=1, blank=True, default='', choices=[('A','有直接依据（局部）'),('B','依据不完整'),('C','直接依据待补')], help_text='表示已收集资料的覆盖程度，不代表现行法规已全面核实；国别研究资料会在前台显示此标识。')
     original_source = models.TextField('原始资料（仅后台）', blank=True)
     editorial_notes = models.TextField('校订记录（仅后台）', blank=True)
     image = models.ImageField('资料图片', upload_to='resource-images/', blank=True, validators=[FileExtensionValidator(['png','jpg','jpeg','webp'])])
