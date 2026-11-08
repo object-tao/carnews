@@ -106,16 +106,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0103-diagram.png",
-        "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
-        "license": "",
-        "license_url": "",
-        "taken_on": "",
-        "caption": "都拉塔口岸关系示意：中国—哈萨克斯坦。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "0a3086198783381d64833b53027b5b0b1b295455b3ce9d06eda56c56c6b183ed"
+        "kind": "photo",
+        "file": "images/0103-photo-20261107.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:%E6%96%B0%E7%96%86%E9%83%BD%E6%8B%89%E5%A1%94%E5%8F%A3%E5%B2%B8.jpg",
+        "creator": "瀔瀔",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "taken_on": "2026-05-04",
+        "caption": "都拉塔口岸国门实拍资料图。",
+        "note": "口岸实拍资料图，反映拍摄时的设施情况，不代表当前通关安排。原图未裁切或修饰。",
+        "sha256": "d52564beabeae83b641956db76249543e500f48430d66799745fb8f5c594b883"
       },
       "route": "central-asia"
     },
@@ -142,16 +142,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0104-diagram.png",
-        "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
-        "license": "",
-        "license_url": "",
-        "taken_on": "",
-        "caption": "巴克图口岸关系示意：中国—哈萨克斯坦。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "a1a22d9f863cd605d5a032aa368a21c2879b1ac55b62cf929845d2bcbd2b990f"
+        "kind": "photo",
+        "file": "images/0104-photo-20261107.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:%E5%B7%B4%E5%85%8B%E5%9B%BE%E5%8F%A3%E5%B2%B8%E5%9B%BD%E9%97%A8.jpg",
+        "creator": "HaziiDozen",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "taken_on": "2023-07-27",
+        "caption": "巴克图口岸国门实拍资料图。",
+        "note": "口岸实拍资料图，反映拍摄时的设施情况，不代表当前通关安排。原图未裁切或修饰。",
+        "sha256": "c91eeac3fb730ec4b3ad953c0c2d2dc25e3c4f3c333f64d590ffbb8345f89550"
       },
       "route": "central-asia"
     },
@@ -214,16 +214,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0106-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0106-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "木扎尔特口岸关系示意：中国—哈萨克斯坦。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "205282866b6aee89b80e9e594657a894bc8b3ca172dafa83a895c9b64379ebbc"
+        "caption": "木扎尔特口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非木扎尔特口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "763de59bb2e76caabb8f9582143e7883208cf4f968c342719a3e5704913ecdea"
       },
       "route": "central-asia"
     },
@@ -250,16 +250,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0107-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0107-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "阿黑土别克口岸关系示意：中国—哈萨克斯坦。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "01b15b1bb504ec77110253fff1ccc7f2c82e5da007397a6eb81e98925d3d7e26"
+        "caption": "阿黑土别克口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非阿黑土别克口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "fa19d4f7a2f75cf317ba5eb0bdfc55b6ebee6a923f7f2cc4612afbafd455f7ed"
       },
       "route": "central-asia"
     },
@@ -368,16 +368,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0110-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0110-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "别迭里口岸关系示意：中国—吉尔吉斯斯坦。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "2d6798b85bbf6410c8575f9054826d36611ea7fb86cc5b6d5fb49600c539ffcd"
+        "caption": "别迭里口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非别迭里口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "b1f89d2087aa30379fc84dba72d6c43c4e83c756edc0c39830345a48f0f98f2c"
       },
       "route": "central-asia"
     },
@@ -404,16 +404,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0111-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0111-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "卡拉苏口岸关系示意：中国—塔吉克斯坦。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "5d07654f0f1386496463cec507a21e954afbff063c91b36e0e151a4074ee90ed"
+        "caption": "卡拉苏口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非卡拉苏口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "c982d80b1a094a424e226a9ea584ea910f058845cdea05a8fe5857792ec0e613"
       },
       "route": "central-asia"
     },
@@ -481,16 +481,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0113-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0113-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "老爷庙口岸关系示意：中国—蒙古国。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "78f894508fc6b7fa98a1c2d88ce79b9c5a987047bcf8549996668187c07074e2"
+        "caption": "老爷庙口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非老爷庙口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "f82ad4fa7c2f87ee1dfefceda88e59051b6712204fab11fb95b9fdc697d5ecc3"
       },
       "route": null
     },
@@ -522,16 +522,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0114-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0114-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "塔克什肯口岸关系示意：中国—蒙古国。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "a611aaf84a8ab70489197289ec7bb77a56c1db63b929e91409ce8d58ad1e60b2"
+        "caption": "塔克什肯口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非塔克什肯口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "cc6bd524ff2e5d796657b7779b7e0d0068d261655950eaedd4bd2d78d394bd64"
       },
       "route": null
     },
@@ -640,16 +640,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0203-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0203-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "甘其毛都口岸关系示意：中国—蒙古国。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "326de1fc43cdb384ff24b6a587e12dc9d489d2e756479564ea6c49034cee8ea4"
+        "caption": "甘其毛都口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非甘其毛都口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "63460e4e8b69b559412bfa3d4cf5392d24879b00b1bae87b10b2b75e2967983a"
       },
       "route": null
     },
@@ -681,16 +681,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0204-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0204-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "策克口岸关系示意：中国—蒙古国。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "d5315b1862f6f71aa494f4ac5e1679a55666f387f8124d9d8900dd04c3129cf6"
+        "caption": "策克口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非策克口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "8ea67edc7734b19e24e5d4a08705ff08ca299916436eb55079e348b3d8646468"
       },
       "route": null
     },
@@ -727,16 +727,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0205-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0205-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "满都拉口岸关系示意：中国—蒙古国。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "01e0290b321ac99dfaccdbe94a80bb8e7d669782a9ec5a22028aa5b1a7a9cd8d"
+        "caption": "满都拉口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非满都拉口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "2732d75cba2ac4d5ce89a5787ec0bec352131a9d235b4abed3878d5518087385"
       },
       "route": null
     },
@@ -768,16 +768,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0206-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0206-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "珠恩嘎达布其口岸关系示意：中国—蒙古国。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "a2752a7b41a3bd966cb71baaa04142dfa8d112afb4d8104c2385f5d659b3ee2a"
+        "caption": "珠恩嘎达布其口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非珠恩嘎达布其口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "457c2db6f7541014bcd1afe410f208c7f141315d5ba248c0846cfea844d485d5"
       },
       "route": null
     },
@@ -819,16 +819,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0207-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0207-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "阿日哈沙特口岸关系示意：中国—蒙古国。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "9a26f79f5895ceee4716767be54049ce8a87ab5ce7cda774c5e1b38bdc4d8842"
+        "caption": "阿日哈沙特口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非阿日哈沙特口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "0af5b7849ac0741d16cdd9ec628541bb47b5aa9cd0e262c0a3f3ee376680aecc"
       },
       "route": null
     },
@@ -870,16 +870,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0208-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0208-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "额布都格口岸关系示意：中国—蒙古国。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "1097d9f897108435707e54bf0f88d0e5a6402b992e69cac2c982ad91cc7c3428"
+        "caption": "额布都格口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非额布都格口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "7696f1bfbc3475ef01ff754bfa82c04c091119f7d3056faa6aa5c2b7f328e938"
       },
       "route": null
     },
@@ -1203,16 +1203,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0305-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0305-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "东宁口岸关系示意：中国—俄罗斯。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "554f2bf8af1fde07014676c87c96069d9a86c95bd4cac122098cb4a8b82a926c"
+        "caption": "东宁口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非东宁口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "45c7afaaf288bd3b6e8a6ec175c3c59124d73612a54de476f364f7d818b98e58"
       },
       "route": "russia-belarus"
     },
@@ -1244,16 +1244,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0306-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0306-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "密山口岸关系示意：中国—俄罗斯。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "4418e15b94bc6b709b91c84baac2fbfb7e0eb69576de310b141bce25efa62cfd"
+        "caption": "密山口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非密山口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "1fdd32dcfec770b275be6acd3568598f39fa48f6956689f45a32f83126daffa1"
       },
       "route": "russia-belarus"
     },
@@ -1290,16 +1290,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0307-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0307-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "虎林口岸关系示意：中国—俄罗斯。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "7169cf5f0591fdcc8cb9d2fddd41b0da288e0da630f1238aff074dad24f5e819"
+        "caption": "虎林口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非虎林口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "8dd8b03d81d0ed35fc12f3ec929c71f4cba23237bf3f2071ef03d4cb0ba96d71"
       },
       "route": "russia-belarus"
     },
@@ -1331,16 +1331,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0308-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0308-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "饶河口岸关系示意：中国—俄罗斯。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "d0aed20132982081021877098e99a92e3e8f8c7030c15307d9816987c786456a"
+        "caption": "饶河口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非饶河口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "de65c6f4bdba046d78038d20d9026f7bf561669df6256f25e9f69e024550f421"
       },
       "route": "russia-belarus"
     },
@@ -1372,16 +1372,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0309-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0309-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "萝北口岸关系示意：中国—俄罗斯。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "1f96ced7a727a17dd9cc39213b30e87bb59ebad1853060d48b904ba527c15458"
+        "caption": "萝北口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非萝北口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "66df14c40e80e925268ce3aab5c30a8388c57df08d1a5b0a3f6ad7d5d7b9ed78"
       },
       "route": "russia-belarus"
     },
@@ -1413,16 +1413,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0310-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0310-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "嘉荫口岸关系示意：中国—俄罗斯。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "2b6e20ebe0c5606a2a4b7077d594d686f646db953f7c9878238738197f157598"
+        "caption": "嘉荫口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非嘉荫口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "4e0689c4b8eb01d1479bcb8a9db8d6562ac979d3827b8c8ce69ad95dd3443b8a"
       },
       "route": "russia-belarus"
     },
@@ -1454,16 +1454,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0311-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0311-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "逊克口岸关系示意：中国—俄罗斯。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "a518fab4d10cb9a5b21ee9fcfe4f1097cb7eeccc8145e73456f58310316867a0"
+        "caption": "逊克口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非逊克口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "aa1c88def664d47f8edcf4b5fc3274f012a58e2f590dafcf3f61226a529a681e"
       },
       "route": "russia-belarus"
     },
@@ -1490,16 +1490,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0312-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0312-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "呼玛口岸关系示意：中国—俄罗斯。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "21fb3676ea98bb063ca0c055d40417d7556c26e2df6560ade7e17aa0e4af48fa"
+        "caption": "呼玛口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非呼玛口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "f37990c69e82923d21fccbc16da0b0efc8c15814d19450d0d5df444593f6aa6c"
       },
       "route": "russia-belarus"
     },
@@ -1536,16 +1536,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0313-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0313-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "漠河口岸关系示意：中国—俄罗斯。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "9433bca9ace15bdc1f2a9547d8bbbf7f5efa5c1f2b87ab518556988b0e6a9a34"
+        "caption": "漠河口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非漠河口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "2b4863def48a74b973dc3e4bc0068446437b1bfcb513fb09aae22b1f44248a9e"
       },
       "route": "russia-belarus"
     },
@@ -1792,16 +1792,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0319-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0319-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "南坪口岸关系示意：中国—朝鲜。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "25d14112511c87083dba14a35e458f721d7f4b1029f853dda70e423e3c8156dd"
+        "caption": "南坪口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非南坪口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "74ec1b179783bbb0b2de911a65dbeb7253e25e7c83d7c7802ad605df66547453"
       },
       "route": null
     },
@@ -1833,16 +1833,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0320-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0320-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "临江口岸关系示意：中国—朝鲜。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "bfa8251732397febb8e3051c4b1299795f956ceead08427923d3cc8643b9b61f"
+        "caption": "临江口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非临江口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "eb4f663f3721011e3caec11246bc0b05a40a166caa6b3248d03cd8c2dcb46177"
       },
       "route": null
     },
@@ -2161,16 +2161,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0406-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0406-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "峒中口岸关系示意：中国—越南。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "81b544fd462bb6e415c6f4b4f221b79de8806eaba43449d20e002b2b4b88072f"
+        "caption": "峒中口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非峒中口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "12a6886f26f05d92705a7af09336de3e846b0b9e0359514bf3c8c07e38805cad"
       },
       "route": "southeast-asia"
     },
@@ -2202,16 +2202,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0407-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0407-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "爱店口岸关系示意：中国—越南。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "0a3bcb7c86e8cbe7f09cfb1d1c8c9f7b951ddf5a4d1445f90dd761cc953ebeda"
+        "caption": "爱店口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非爱店口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "5a01189527876e35e20928d90bfddf60382e9112d7c99a73316922c59cf19ad4"
       },
       "route": "southeast-asia"
     },
@@ -2243,16 +2243,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0408-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0408-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "平孟口岸关系示意：中国—越南。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "3d79c0a57c6b7219be23f54df51861fb4bb020fac54d486e49cfac87188d12b8"
+        "caption": "平孟口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非平孟口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "a1667a3b631b4220795dc89b0d048cdf98e4527e9ec1d430acc7aa011b494843"
       },
       "route": "southeast-asia"
     },
@@ -2284,16 +2284,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0409-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0409-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "硕龙口岸关系示意：中国—越南。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "ed0b57ade8c620f6a860cb00c5850ce6f42497b7dcc9cb22048649b88697ba81"
+        "caption": "硕龙口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非硕龙口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "9194b7b4d701bec051a0252a33ab151b87097e37f99ee0f8c99bf2a0e816fb04"
       },
       "route": "southeast-asia"
     },
@@ -2633,16 +2633,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0509-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0509-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "金水河口岸关系示意：中国—越南。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "82d0aa870a3a9c0543457221c56dbda165b0cf0e9b09a899d75035ed0d68430e"
+        "caption": "金水河口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非金水河口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "c3273f0f7fbc3e76bcdb743905a81e42b1e1fc0fa740cef8721dc75885986bc5"
       },
       "route": "southeast-asia"
     },
@@ -2674,16 +2674,16 @@
         }
       ],
       "photo": {
-        "kind": "diagram",
-        "file": "images/0510-diagram.png",
+        "kind": "ai_scene",
+        "file": "images/0510-ai-20261107.webp",
         "source": "",
-        "creator": "深圳昆腾 · 根据正文来源整理绘制",
+        "creator": "深圳昆腾 · AI生成",
         "license": "",
         "license_url": "",
         "taken_on": "",
-        "caption": "田蓬口岸关系示意：中国—越南。",
-        "note": "口岸关系示意图，非实景照片，不按比例；不表示实际路线或通关开放状态。对应点与运输方式依据正文参考来源。",
-        "sha256": "e8b46b757f5634a532d3b72d4e655b468bcb39081cb7fb87f7deef2756427390"
+        "caption": "田蓬口岸专题运输场景效果图（AI生成，非现场实拍）。",
+        "note": "AI生成的写实风格场景图，非现场实拍；并非田蓬口岸现有建筑、道路或作业现场的复原，仅用于说明运输主题。图中设施和车辆为虚构场景，不表示该口岸当前开放或可受理货运。",
+        "sha256": "9141bb04ff4f135fa4a3911d0c9cfe37dddb55cdca8719bb28859a4b0d2986b3"
       },
       "route": "southeast-asia"
     }

@@ -18,13 +18,18 @@ def validate_port_image(photo, root):
     if not path.is_relative_to(root) or not path.is_file():
         raise ValueError(f'Image missing or outside catalog directory: {photo["file"]}')
     kind = photo.get('kind', 'photo')
-    if kind not in ('photo', 'diagram'):
+    if kind not in ('photo', 'diagram', 'ai_scene'):
         raise ValueError('Unknown port illustration kind')
     required = ('creator', 'caption')
     if kind == 'photo':
         required += ('source', 'license', 'license_url')
-    elif '非实景' not in photo.get('note', '') or '不按比例' not in photo.get('note', ''):
+    elif kind == 'diagram' and ('非实景' not in photo.get('note', '') or '不按比例' not in photo.get('note', '')):
         raise ValueError('Diagrams must be explicitly identified as non-photographic and not to scale')
+    elif kind == 'ai_scene':
+        if not all(label in photo.get('note', '') and label in photo.get('caption', '') for label in ('AI生成', '非现场实拍')):
+            raise ValueError('Generated scenes must disclose AI generation in both caption and note')
+        if photo.get('taken_on') or photo.get('source'):
+            raise ValueError('Generated scenes cannot claim a photographic date or external photo source')
     if not all(photo.get(key) for key in required):
         raise ValueError('Image attribution is incomplete')
     if photo.get('sha256') and hashlib.sha256(path.read_bytes()).hexdigest() != photo['sha256']:
@@ -38,7 +43,14 @@ def validate_port_image(photo, root):
 
 
 def apply_port_image_metadata(article, photo):
+    for field, value in port_image_metadata(photo).items():
+        setattr(article, field, value)
+
+
+def port_image_metadata(photo):
+    values = {}
     for field in IMAGE_METADATA_FIELDS:
         key = field.removeprefix('image_')
         default = HISTORICAL_NOTE if key == 'note' else ''
-        setattr(article, field, photo.get(key, default))
+        values[field] = photo.get(key, default)
+    return values
