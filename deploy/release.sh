@@ -29,6 +29,7 @@ docker compose run --rm web python manage.py upgrade_port_images
 docker compose run --rm web python manage.py import_knowledge --publish
 docker compose run --rm web python manage.py import_vehicles --publish
 docker compose run --rm web python manage.py import_bridges --publish
+docker compose run --rm web python manage.py import_loading_rules --publish
 docker compose up -d --no-deps web
 for i in $(seq 1 30); do
     container="$(docker compose ps -q web)"

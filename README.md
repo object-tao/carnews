@@ -130,6 +130,23 @@ $env:DEBUG='1'
 原生ECS部署自动从持久化目录 `DATA_DIR/private-imports/bridge-source-20261108` 读取私有原稿（存在时），再执行重复安全的导入。
 入口：`/resources/?type=bridges`；导读：`/articles/bridge-handbook/`。
 
+## 大件知识：中亚配载规则
+
+资源库新增独立类型“大件知识”（`heavy-cargo`），保留原“运输知识”及其文章。
+`content/heavy-cargo/catalog.json` 收录30篇配载规则文章与1篇导读，沿用原SEO标题、摘要和文章slug，覆盖9个规则分类，并将相对Markdown链接转换为本站地址。
+内容保留算例与问答，明确31吨、44吨、5.2米、19吨等为相应场景的企业参数，不将配置值宣传为跨国通用法定限值。
+内部系统品牌、程序引用核对和规则原文不进入公共正文；完整原稿及规则快照可存后台私有字段。原目录37份文件已归档至D盘 `data/private/loading-rules-source-20261108/`，索引逐份记录SHA256。
+
+```powershell
+$env:DEBUG='1'
+.\.venv\Scripts\python.exe manage.py import_loading_rules --dry-run --original-dir 'data/private/loading-rules-source-20261108'
+.\.venv\Scripts\python.exe manage.py import_loading_rules --publish --original-dir 'data/private/loading-rules-source-20261108'
+```
+
+默认新建草稿；`--publish`只发布本次新文章。重复运行跳过已有文章，保留管理员正文、发布状态、关联和原稿。导入前核验来源摘要和内链，数据库写入使用同一事务。
+ECS发布程序自动导入，并从 `DATA_DIR/private-imports/loading-rules-source-20261108` 读取原稿（目录存在时）；无需修改配载业务系统或其规则配置。
+入口：`/resources/?type=heavy-cargo`；导读：`/articles/heavy-cargo-handbook/`。后台“资讯与资源”按资料类型“大件知识”筛选维护。
+
 ## 验证
 
 ```powershell

@@ -39,6 +39,9 @@ def articles(request, kind):
     bridge_guide = None
     if resource_type == 'bridges' and not (q or category or country):
         bridge_guide = public_articles().filter(slug='bridge-handbook', kind='resources', resource_type__slug='bridges').first()
+    heavy_cargo_guide = None
+    if resource_type == 'heavy-cargo' and not (q or category or country):
+        heavy_cargo_guide = public_articles().filter(slug='heavy-cargo-handbook', kind='resources', resource_type__slug='heavy-cargo').first()
     route_items = Route.objects.filter(published=True).prefetch_related('country_tags')
     if q:
         items = items.filter(Q(title__icontains=q)|Q(body__icontains=q)|Q(summary__icontains=q)|Q(location__icontains=q)|Q(countries__name__icontains=q)).distinct()
@@ -65,6 +68,7 @@ def articles(request, kind):
         'resource_types':ResourceType.objects.all(),'resource_type':resource_type,'knowledge_guide':knowledge_guide,
         'vehicle_guide':vehicle_guide,
         'bridge_guide':bridge_guide,
+        'heavy_cargo_guide':heavy_cargo_guide,
         'route_preview':route_items[:3] if kind == 'resources' and not resource_type and not category else [],
         'filter_query':filter_query,'page_query':page_query,
     })

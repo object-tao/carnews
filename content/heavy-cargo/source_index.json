@@ -1,0 +1,227 @@
+{
+  "version": 1,
+  "documents": [
+    {
+      "path": "文章/01-平板车重量上限.md",
+      "sha256": "f40223b2bbdb47db664cfbfc6952aa3885c997f360a97c47f40866a6749289ab",
+      "bytes": 4255,
+      "article": "flatbed-31-ton-loading-limit"
+    },
+    {
+      "path": "文章/02-不可拆分单件重量阈值.md",
+      "sha256": "3dffa2106e51b40f77b765af710cc69c3be5930008dff04219f5b294b684280d",
+      "bytes": 4252,
+      "article": "indivisible-cargo-44-ton-review"
+    },
+    {
+      "path": "文章/03-超宽提醒阈值.md",
+      "sha256": "287eb202d098b9fca6f65e7acd334bfa0fd7dbb514693ac3268143f42c2761c8",
+      "bytes": 3913,
+      "article": "cargo-width-3000mm-warning"
+    },
+    {
+      "path": "文章/04-超高提醒阈值.md",
+      "sha256": "b8a412c7597f9131290ecadb70492088034f32faf6d1f75b37cce70af37f6160",
+      "bytes": 3910,
+      "article": "cargo-height-4500mm-warning"
+    },
+    {
+      "path": "文章/05-项目批量配载最小件数.md",
+      "sha256": "ba9385ccf523194b643f021c02d59095b502d6e630e5db9aac32afab7a3d4bb9",
+      "bytes": 4016,
+      "article": "project-batch-loading-60-items"
+    },
+    {
+      "path": "文章/06-斜杠编号批量比例.md",
+      "sha256": "d5b9142a656759073e48ea646a4f1ae142dff9bc53e795a0512955377a2abf2b",
+      "bytes": 3793,
+      "article": "project-cargo-slash-number-ratio"
+    },
+    {
+      "path": "文章/07-篷布车窄货宽度阈值.md",
+      "sha256": "a157400f51f416df83aed1d31fc9637f58f1ecaefec7288acfbd1c0d186b2388",
+      "bytes": 3683,
+      "article": "tarp-narrow-cargo-1100mm"
+    },
+    {
+      "path": "文章/08-篷布车低货高度阈值.md",
+      "sha256": "9bd9825d00b870a63241ac886c9396425a82f3c32391fd967ced8b768451e5e0",
+      "bytes": 3784,
+      "article": "low-cargo-tarp-900mm"
+    },
+    {
+      "path": "文章/09-篷布车长货长度阈值.md",
+      "sha256": "0b182e56d5c2ed1abe3b51b7df9c3a920844d9a18fa7c4e0ea56030b34cb3097",
+      "bytes": 3781,
+      "article": "long-cargo-tarp-9000mm"
+    },
+    {
+      "path": "文章/10-超限车候选宽度阈值.md",
+      "sha256": "040d03d5bd8fe369d04552df4f887ee238cff6f4b1e623cd3f86efbc32b69feb",
+      "bytes": 3720,
+      "article": "oversize-vehicle-width-2500mm"
+    },
+    {
+      "path": "文章/11-超限车软方数.md",
+      "sha256": "164a5d3729a74e1f8c7fdc0b23fa36c2349c08dd68f53dc566364948bd799e6d",
+      "bytes": 3845,
+      "article": "oversize-soft-volume-200cbm"
+    },
+    {
+      "path": "文章/12-平板车软宽度.md",
+      "sha256": "22d7652031cdb4e9988530e21864c42b4ee13ee00e111d7597954a2bd547d160",
+      "bytes": 3733,
+      "article": "flatbed-soft-width-2700mm"
+    },
+    {
+      "path": "文章/13-平板车板宽.md",
+      "sha256": "8fcf105d1bcff57b08589a13e1282246a4dffe2369a923a1c2e74d7dd6a3a0a2",
+      "bytes": 3672,
+      "article": "flatbed-deck-width-2500mm"
+    },
+    {
+      "path": "文章/14-平板车成本组合长度.md",
+      "sha256": "ac162152db1c165a2f9b4139154221abc462d229a1e5bb6fe6bfea04f50986a4",
+      "bytes": 3809,
+      "article": "17m-flatbed-total-cost-consolidation"
+    },
+    {
+      "path": "文章/15-中型平板组合起始重量.md",
+      "sha256": "ab82164f3d8c38c45513098ec390d661003a6586a4b2c901529fa98a0d09d863",
+      "bytes": 3729,
+      "article": "12-ton-flatbed-seed-cargo"
+    },
+    {
+      "path": "文章/16-俄罗斯车货总高上限.md",
+      "sha256": "b42e55a3739d56b50f98f643f859cb224a1d9ddbd8bd934fd3415ef70d752a87",
+      "bytes": 3849,
+      "article": "russia-vehicle-cargo-height-5200mm"
+    },
+    {
+      "path": "文章/17-俄罗斯货物有效高度上限.md",
+      "sha256": "9a5fcfbcd074115c522e70c954054a17f4abce568c68848449947489c347197e",
+      "bytes": 3718,
+      "article": "russia-cargo-height-4200mm"
+    },
+    {
+      "path": "文章/18-俄罗斯超限车合装成本优先.md",
+      "sha256": "f09ab37811d4296fc979b43b9ccf1629dddb0cce0be0059785f10d53cc05308d",
+      "bytes": 4688,
+      "article": "russia-oversize-consolidation-total-cost"
+    },
+    {
+      "path": "文章/19-乌兹别克多件合装重量上限.md",
+      "sha256": "524a9faa027468c7d6f399ab602bd787bb8465bd289898adccabfd115fef76b6",
+      "bytes": 3967,
+      "article": "uzbekistan-multi-cargo-44-ton-limit"
+    },
+    {
+      "path": "文章/20-普通平板受力上限.md",
+      "sha256": "e4cb3c29a85ef60ab9ae161bd53180fe4d99e5e34d0df7376036291688ae7830",
+      "bytes": 3736,
+      "article": "flatbed-linear-load-4kg-per-mm"
+    },
+    {
+      "path": "文章/21-平板车横置最大占宽.md",
+      "sha256": "9a625051b79f5d69394d09bd7a3415b885ed2fcf1970e8fc5b10133ee35a26ea",
+      "bytes": 3644,
+      "article": "flatbed-rotated-width-3500mm"
+    },
+    {
+      "path": "文章/22-管材识别关键词.md",
+      "sha256": "ed0a3d659fc852e2ffda5c78bada3cf6278330b80f1d6ce9c4eef641d7d2652e",
+      "bytes": 3878,
+      "article": "pipe-cargo-keyword-classification"
+    },
+    {
+      "path": "文章/23-管材不按普通方箱计算.md",
+      "sha256": "9a9499ed91e879e78206992aeb5b723300a92a0b4797e4b01cee4702efc48faa",
+      "bytes": 3824,
+      "article": "pipe-loading-versus-box-envelope"
+    },
+    {
+      "path": "文章/24-管材无OD时处理口径.md",
+      "sha256": "c47ab734e96cd79bb70c96df534867f577f85fac9b8846acd77ec6afc2bc63c9",
+      "bytes": 3909,
+      "article": "pipe-loading-without-outer-diameter"
+    },
+    {
+      "path": "文章/25-管材每米重量规格分级.md",
+      "sha256": "077305f0550f3fd0413e63c91321482dbe3f2272d85073f511e52bc8a02a9cc0",
+      "bytes": 3716,
+      "article": "pipe-weight-per-meter-bands"
+    },
+    {
+      "path": "文章/26-管材报价稳妥单车重量区间.md",
+      "sha256": "ea84938f9d2afbac080fdd76343dc7f24181bccb1cb8aa378fff38f8322a8816",
+      "bytes": 4060,
+      "article": "pipe-quote-safe-15-30-ton"
+    },
+    {
+      "path": "文章/27-管材经过乌兹别克多件合装上限.md",
+      "sha256": "8a238c2f6f72394094f950031515d04c9cef895ea17db764ac9b3eb0ea7adf1f",
+      "bytes": 4018,
+      "article": "pipe-transit-uzbekistan-44-ton"
+    },
+    {
+      "path": "文章/28-管材优先篷布大通道.md",
+      "sha256": "d2a3159e70596ba3fde664a396021b46d09f91b41267494864e8db46875bd5e2",
+      "bytes": 3806,
+      "article": "pipe-tarp-large-channel-selection"
+    },
+    {
+      "path": "文章/29-大直径管材篷布稳妥单车重量.md",
+      "sha256": "dcb7c5adbc759f9f72cbd994afabf19fe97c48b78b5bd05b625afa660f648174",
+      "bytes": 3887,
+      "article": "large-pipe-tarp-safe-19-ton"
+    },
+    {
+      "path": "文章/30-大直径管材判定阈值.md",
+      "sha256": "83e279b1db11f35f50e56875841a344d18cb5aec90f1363ada43d73fd3a1e507",
+      "bytes": 3944,
+      "article": "large-pipe-diameter-900mm"
+    },
+    {
+      "path": "00-文章目录.md",
+      "sha256": "2ca889936fee6691fef46b28fbaf7d028929105bfe36ed23b4f47bcf0bed638f",
+      "bytes": 7132,
+      "article": "heavy-cargo-handbook"
+    },
+    {
+      "path": "01-规则分析与待核问题.md",
+      "sha256": "4fa0a40df805dfef357792afeb7be80d722cc4a7fc374225e916bea7c3933abc",
+      "bytes": 6484,
+      "article": "heavy-cargo-handbook"
+    },
+    {
+      "path": "02-SEO发布说明.md",
+      "sha256": "3f2946da3ca01180abfa2881ce199bdbef979eba8b764af20201c59ea47da21f",
+      "bytes": 3932,
+      "article": "heavy-cargo-handbook"
+    },
+    {
+      "path": "资料/交付校验记录.json",
+      "sha256": "4b1c5e114f1d60a75839ad3e64488b0decffb34f47918ed089b2a9a117329a7a",
+      "bytes": 940,
+      "article": "heavy-cargo-handbook"
+    },
+    {
+      "path": "资料/前端规则引用核对.json",
+      "sha256": "5a465ad677692bd9cabc84830b66a8ba493fbc7aa943a5fb8ab37c80b7a81a8e",
+      "bytes": 6540,
+      "article": "heavy-cargo-handbook"
+    },
+    {
+      "path": "资料/文章清单.json",
+      "sha256": "a4855e13a30bd75abbcde0aa440af1921dbd4fb4ad6d0a2d8d164efe58360d1c",
+      "bytes": 20958,
+      "article": "heavy-cargo-handbook"
+    },
+    {
+      "path": "资料/线上配载规则快照.json",
+      "sha256": "3bf34a0518be1433796a9b8cbc287d072e727218573b22bf8e34a7aef9b982f7",
+      "bytes": 16407,
+      "article": "heavy-cargo-handbook"
+    }
+  ]
+}
