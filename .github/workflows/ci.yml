@@ -24,7 +24,7 @@ jobs:
         env:
           DEBUG: '0'
           SECRET_KEY: ci-only-random-length-secret-not-a-production-credential-6938752
-          ALLOWED_HOSTS: struck.diwuzhou.cn
+          ALLOWED_HOSTS: truck.diwuzhou.cn
         run: python manage.py check --deploy --fail-level WARNING
   image:
     if: github.event_name == 'push'

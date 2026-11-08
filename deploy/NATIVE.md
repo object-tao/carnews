@@ -1,6 +1,6 @@
 # 原生部署与持续发布
 
-正式域名：`https://struck.diwuzhou.cn/`，后台：`/admin/`。阿里云 ECS 为 `39.107.139.55`。
+正式域名：`https://truck.diwuzhou.cn/`，后台：`https://truck.diwuzhou.cn/admin/`。阿里云 ECS 为 `39.107.139.55`。旧域名 `struck.diwuzhou.cn` 保留 HTTPS 301 跳转，路径和查询参数完整传递。
 本服务只监听 `127.0.0.1:18086`，由独立 Nginx 虚拟主机代理。原有 IMT 和其他站点继续使用各自服务、端口、数据库与配置。
 
 ## 目录与进程
@@ -15,7 +15,8 @@
 | 应用服务 | `kunteng-truck.service`，用户 `kunteng-web` |
 | 私有备份 | `backups/`，root 专用 |
 | 当前版本记录 | `current-release.json` |
-| Nginx 站点 | `/etc/nginx/sites-available/struck.diwuzhou.cn` |
+| Nginx 主站 | `/etc/nginx/sites-available/truck.diwuzhou.cn` |
+| 旧域名跳转 | `/etc/nginx/sites-available/struck.diwuzhou.cn` |
 
 运行环境独立安装，不替换系统 Python。版本内的依赖严格使用 `requirements.txt`，安装及应用准备命令以 `kunteng-web` 身份运行。
 原始文稿保留在后台私有字段；数据库、媒体、环境密钥和管理员凭据不进入 GitHub 或公开下载目录。
@@ -24,6 +25,8 @@
 
 域名 A 记录指向服务器后，以 `nginx-bootstrap.conf` 提供 `/.well-known/acme-challenge/`，使用已有 Certbot 账户、webroot `/var/www/letsencrypt` 为新域名单独申请证书。
 证书签发后启用 `nginx.conf`；所有 Nginx 变更先运行 `nginx -t`，再平滑 reload。生产配置始终启用 Django HTTPS 和安全 Cookie，不通过关闭安全配置来临时提供后台 HTTP 登录。
+
+从旧域名迁移时，先为 `truck` 添加指向本机的 A 记录、签发独立证书并验证新站。将 `shared/app.env` 中 `SITE_URL`、`ALLOWED_HOSTS`、`CSRF_TRUSTED_ORIGINS` 改为新域名后重启本应用，再将旧站配置替换为 `nginx-legacy-redirect.conf`。保留 `struck` 的 DNS 记录、证书及 HTTP-01 验证目录，供历史链接跳转和旧证书自动续期。切换后核对 canonical、文章结构化数据、robots.txt 和 sitemap.xml 均使用新域名。
 
 ## GitHub Actions
 
@@ -49,7 +52,7 @@ GitHub `production` 环境包含 `ECS_HOST`、`ECS_USER`、`ECS_PORT`、`ECS_SSH
 systemctl status kunteng-truck --no-pager
 systemctl list-timers kunteng-truck-backup.timer
 journalctl -u kunteng-truck -n 50 --no-pager
-curl -H 'Host: struck.diwuzhou.cn' -H 'X-Forwarded-Proto: https' http://127.0.0.1:18086/healthz/
+curl -H 'Host: truck.diwuzhou.cn' -H 'X-Forwarded-Proto: https' http://127.0.0.1:18086/healthz/
 ```
 
 后台管理员在首次部署时创建，凭据单独保存，不存在代码中的默认密码。管理员可在“网站设置”维护咨询电话、微信、二维码、备案号和公司介绍。

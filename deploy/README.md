@@ -2,7 +2,7 @@
 
 ## 2026-11-07 原生部署
 
-本次目标域名按用户最新要求调整为 `struck.diwuzhou.cn`。已核对服务器为 Ubuntu 22.04，现有站点采用 Nginx/systemd，未安装 Docker，因此实际部署采用独立 Python 3.13、Gunicorn 与 systemd。
+正式域名为 `truck.diwuzhou.cn`；早期误配的 `struck.diwuzhou.cn` 保留永久跳转。服务器为 Ubuntu 22.04，现有站点采用 Nginx/systemd，未安装 Docker，因此实际部署采用独立 Python 3.13、Gunicorn 与 systemd。
 当前流程见 [原生部署说明](NATIVE.md)。`deploy.yml` 通过专用受限 SSH 账号传送已经通过 CI 的源代码归档；下方 Docker 方案仅作可选参考，不是该服务器正在使用的发布方式。
 
 ## 当前边界
@@ -48,7 +48,7 @@ export APP_IMAGE=$(cat .current-image)
 docker compose exec web python manage.py createsuperuser
 ```
 
-先验证 `curl -H 'Host: struck.diwuzhou.cn' -H 'X-Forwarded-Proto: https' http://127.0.0.1:18086/healthz/`。
+先验证 `curl -H 'Host: truck.diwuzhou.cn' -H 'X-Forwarded-Proto: https' http://127.0.0.1:18086/healthz/`。
 
 ## 3. 接入现有 Nginx
 
