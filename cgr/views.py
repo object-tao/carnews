@@ -91,6 +91,8 @@ def report_context(request, report):
 
 def dashboard(request):
     reports = public_reports()
+    history_params = request.GET.copy()
+    history_params.pop('history_page', None)
     selected = request.GET.get('date')
     if selected:
         try:
@@ -101,7 +103,7 @@ def dashboard(request):
         report = reports.first()
     context = {'title': '口岸动态：哈萨克斯坦与中国、俄罗斯及周边口岸预约',
                'description': '按国家、口岸与日期查看哈萨克斯坦口岸预约日报、可预约名额和日历，下载Excel与CSV清单。每日定时采集，保留历史快照。',
-               'history': Paginator(reports, 10).get_page(request.GET.get('history_page')), 'country_options': COUNTRIES}
+               'history': Paginator(reports, 10).get_page(request.GET.get('history_page')), 'history_query': history_params.urlencode(), 'country_options': COUNTRIES}
     if report:
         try:
             context.update(report_context(request, report))
