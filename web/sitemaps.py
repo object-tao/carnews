@@ -4,7 +4,7 @@ from .models import Route
 from .views import public_articles, public_rates
 class Pages(Sitemap):
     protocol='https'
-    def items(self): return ['home','about','contact','routes','news','resources','prices']
+    def items(self): return ['home','about','contact','routes','news','resources','prices','border-updates']
     def location(self,item): return reverse(item)
 class Routes(Sitemap):
     protocol='https'

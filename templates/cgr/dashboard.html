@@ -1,0 +1,15 @@
+{% extends 'base.html' %}{% load static %}
+{% block content %}
+<section class="page-head cgr-head"><span class="eyebrow">BORDER RESERVATION MONITOR</span><h1>口岸动态</h1><p>哈萨克斯坦与中国、俄罗斯及周边国家的口岸预约信息。按国家查名额、看日历，保留每次采集时的数据。</p></section>
+<section class="section cgr-section">
+{% include 'news-tabs.html' %}
+{% if report %}
+<div class="cgr-report-heading"><div><span class="eyebrow">{{ report.date|date:'Y.m.d' }} · 预约日报</span><h2>从国家方向，找到口岸。</h2></div><a class="text-link" href="{{ report.get_absolute_url }}">阅读本期完整报告 ↗</a></div>
+{% include 'cgr/board.html' %}
+{% else %}<div class="empty"><h2>首份口岸日报正在准备</h2><p>数据校验通过并发布后，将在这里展示预约日历及下载清单。</p></div>{% endif %}
+<section class="cgr-history" id="history"><h2>历史日报</h2><p>按报告日期倒序排列。历史报告保留当次采集快照，不能代替当前预约结果。</p>
+<div class="article-grid">{% for entry in history %}<article class="article-card"><div class="article-meta"><span>口岸动态</span><time datetime="{{ entry.date|date:'Y-m-d' }}">{{ entry.date|date:'Y.m.d' }}</time></div><h3><a href="{{ entry.get_absolute_url }}">{{ entry.article.title }}</a></h3><p>{{ entry.article.summary }}</p><a class="text-link" href="{{ entry.get_absolute_url }}">查看日报与清单 ↗</a></article>{% empty %}<p>暂无已发布日报。</p>{% endfor %}</div>
+{% if history.has_other_pages %}<nav class="pagination" aria-label="历史日报分页">{% if history.has_previous %}<a href="?history_page={{ history.previous_page_number }}#history">上一页</a>{% endif %}<span>{{ history.number }} / {{ history.paginator.num_pages }}</span>{% if history.has_next %}<a href="?history_page={{ history.next_page_number }}#history">下一页</a>{% endif %}</nav>{% endif %}
+</section></section>
+{% endblock %}
+{% block scripts %}<script src="{% static 'cgr.js' %}" defer></script>{% endblock %}

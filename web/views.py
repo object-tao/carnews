@@ -25,7 +25,7 @@ def route(request, slug):
 def articles(request, kind):
     if kind not in ['news','resources']: raise Http404
     items = public_articles().filter(kind=kind).select_related('resource_type').prefetch_related('countries')
-    if kind == 'news': items = items.exclude(category='参考运价')
+    if kind == 'news': items = items.exclude(category__in=['参考运价', '口岸动态'])
     q = request.GET.get('q','').strip()[:100]
     category = request.GET.get('category','')
     country = request.GET.get('country','')
@@ -79,6 +79,9 @@ def articles(request, kind):
     })
 def article(request,slug):
     item=get_object_or_404(public_articles(),slug=slug)
+    if hasattr(item, 'cgr_report'):
+        from cgr.views import detail
+        return detail(request, item.cgr_report)
     keywords=list(dict.fromkeys(word.strip() for word in re.split('[,，]',item.seo_keywords) if word.strip()))
     schema={'@context':'https://schema.org','@type':'Article','headline':item.title,'description':item.summary,'datePublished':item.published_at.isoformat(),'dateModified':item.updated_at.isoformat(),'author':{'@type':'Organization','name':item.author},'mainEntityOfPage':settings.SITE_URL+item.get_absolute_url(),'inLanguage':'zh-CN','articleSection':item.category}
     if keywords: schema['keywords']=keywords

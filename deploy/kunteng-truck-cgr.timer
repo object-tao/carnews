@@ -1,0 +1,11 @@
+[Unit]
+Description=Poll the configured Beijing CGR schedule and manual requests
+
+[Timer]
+OnCalendar=*-*-* *:*:00
+AccuracySec=1s
+Persistent=true
+Unit=kunteng-truck-cgr.service
+
+[Install]
+WantedBy=timers.target

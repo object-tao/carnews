@@ -49,6 +49,9 @@ class ArticleAdmin(admin.ModelAdmin):
     def save_model(self, request, obj, form, change):
         if obj.published and not obj.published_at: obj.published_at = timezone.now()
         super().save_model(request,obj,form,change)
+        if 'published' in form.changed_data and hasattr(obj, 'cgr_report'):
+            obj.cgr_report.publication_hold = not obj.published
+            obj.cgr_report.save(update_fields=['publication_hold'])
 @admin.register(FreightRate)
 class FreightRateAdmin(admin.ModelAdmin):
     list_display = ['origin','destination','vehicle','price_min','price_max','currency','valid_until','validity_label','published']

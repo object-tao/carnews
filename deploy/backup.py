@@ -31,6 +31,8 @@ def main():
                 if snapshot.exists(): package.add(snapshot,arcname='data/db.sqlite3')
                 media=ROOT/'shared/data/media'
                 if media.exists(): package.add(media,arcname='data/media')
+                cgr=ROOT/'shared/data/cgr'
+                if cgr.exists(): package.add(cgr,arcname='data/cgr')
                 for filename in ('shared/app.env','current-release.json'):
                     path=ROOT/filename
                     if path.exists(): package.add(path,arcname=filename)

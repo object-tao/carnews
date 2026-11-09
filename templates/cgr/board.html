@@ -1,0 +1,24 @@
+<div class="cgr-source-meta"><span>采集时间 <strong>{{ report.run.started_at|date:'Y-m-d H:i' }}</strong>（北京时间）</span><span>源站更新时间 {{ report.run.source_updated }}（未注明时区）</span><a href="{{ source_url }}" target="_blank" rel="noopener noreferrer">CarGoRuqsat 数据来源 ↗</a></div>
+{% if recent_failure %}<p class="cgr-notice">最近一次采集未通过校验，暂未发布新数据。当前展示 {{ report.date|date:'Y-m-d' }} 的有效快照，请留意采集时间。</p>{% elif stale %}<p class="cgr-notice">这份快照已超过 26 小时，请结合采集时间使用，并到源站确认当前名额。</p>{% endif %}
+<form class="cgr-filters" method="get" aria-label="口岸数据筛选">
+{% if request.GET.date %}<input type="hidden" name="date" value="{{ request.GET.date }}">{% endif %}{% if is_preview %}<input type="hidden" name="preview" value="1">{% endif %}
+<label>对接国家 / 地区<select name="country" id="cgr-country"><option value="">全部方向</option>{% for code,label in country_options %}<option value="{{ code }}" {% if country == code %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label>
+<label>口岸<select name="port" id="cgr-port"><option value="">全部口岸</option>{% for port in ports %}<option value="{{ port.pk }}" {% if selected_port == port.pk|stringformat:'s' %}selected{% endif %}>{{ port.name }}</option>{% endfor %}</select></label>
+<label>预约日期<input type="date" name="day" value="{{ selected_day }}"></label>
+<label>口岸名称<input name="q" value="{{ q }}" maxlength="100" placeholder="中文或俄文名称"></label>
+<button type="submit" class="button">筛选 →</button>
+</form>
+<p class="cgr-help">国家表示与哈萨克斯坦对接的国家或地区。选择俄罗斯即查看哈俄口岸；名额属于源站预约信息，不代表现场排队或通关时长。</p>
+<div class="cgr-stats"><div><strong>{{ node_count }}</strong><span>筛选内口岸 / 节点</span></div><div><strong>{{ dates|length }}</strong><span>预约日期</span></div><div><strong>{{ row_count }}</strong><span>口岸日期记录</span></div><div><strong>{{ groups|length }}</strong><span>国家 / 地区方向</span></div></div>
+<div class="cgr-downloads"><span>下载当前筛选结果</span><a href="{% url 'cgr-export' report.pk 'xlsx' %}?{{ filter_query }}">Excel 清单 ↓</a><a href="{% url 'cgr-export' report.pk 'csv' %}?{{ filter_query }}">CSV 明细 ↓</a><a href="{% url 'cgr-export' report.pk 'html' %}?{{ filter_query }}">HTML 报告 ↓</a></div>
+{% if observations %}
+<div class="cgr-legend" aria-label="预约状态图例"><span><i class="cgr-cell available">+</i>有名额</span><span><i class="cgr-cell full">0</i>名额为零</span><span><i class="cgr-cell holiday">休</i>休息日</span><span><i class="cgr-cell not_open">待</i>尚未开放</span></div>
+<p class="cgr-help">日历 {{ dates.0|date:'Y-m-d' }} 至 {{ dates|last|date:'Y-m-d' }}。可左右滑动，悬停或聚焦单元格查看名额；完整数值见下方明细。最早可约日期仅在当前筛选范围内查找。</p>
+{% for group in groups %}<section class="cgr-country-group"><h3>哈萨克斯坦 · {{ group.name }} <small>{{ group.nodes|length }} 个节点</small></h3>
+<div class="cgr-table-wrap" tabindex="0" role="region" aria-label="{{ group.name }}预约日历"><table class="cgr-calendar"><thead><tr><th scope="col">口岸 / 最早可约</th>{% for day in dates %}<th scope="col"><time datetime="{{ day|date:'Y-m-d' }}">{{ day|date:'m/d' }}</time></th>{% endfor %}</tr></thead><tbody>
+{% for node in group.nodes %}<tr><th scope="row"><strong>{{ node.checkpoint.name }}</strong><small lang="ru">{{ node.checkpoint.source_name }}</small>{% for first in node.earliest %}<small>{{ first.tier }} МРП：{% if first.day %}{{ first.day|date:'Y-m-d' }}{% else %}范围内无名额{% endif %}</small>{% empty %}<small>范围内暂无开放名额</small>{% endfor %}{% if node.info_url %}<a class="cgr-info-link" href="{{ node.info_url }}">口岸介绍 ↗</a>{% endif %}</th>
+{% for cell in node.cells %}<td><span tabindex="0" class="cgr-cell {{ cell.state }}" title="{{ cell.tooltip }}" aria-label="{{ node.checkpoint.name }} {{ cell.tooltip }}">{% if cell.state == 'available' %}+{% elif cell.state == 'full' %}0{% elif cell.state == 'holiday' %}休{% else %}待{% endif %}</span></td>{% endfor %}</tr>{% endfor %}
+</tbody></table></div></section>{% endfor %}
+<section class="cgr-details" id="details"><h3>预约明细清单</h3><p class="cgr-help">0 为源站明确的零名额；“—”表示该状态未提供名额。МРП 为源站档位单位，不是运价或吨位。</p>
+<div class="cgr-table-wrap" tabindex="0" role="region" aria-label="口岸预约明细"><table class="cgr-detail-table"><thead><tr><th>国家 / 地区</th><th>口岸</th><th>预约日期</th><th>状态</th><th>档位及剩余名额</th></tr></thead><tbody>{% for row in page %}<tr><td>{{ row.checkpoint.get_country_display }}</td><td>{{ row.checkpoint.name }}<small lang="ru">{{ row.checkpoint.source_name }}</small></td><td>{{ row.day|date:'Y-m-d' }}</td><td>{{ row.get_state_display }}</td><td>{% for tier,count in row.quotas.items %}<span class="cgr-quota">{{ tier }} МРП：<strong>{{ count }}</strong></span>{% empty %}—{% endfor %}</td></tr>{% endfor %}</tbody></table></div>{% include 'pagination.html' %}</section>
+{% else %}<div class="empty"><h3>当前筛选条件下没有记录</h3><p>请调整国家、口岸、预约日期或关键词。</p></div>{% endif %}
