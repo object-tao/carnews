@@ -59,8 +59,6 @@ def report_context(request, report):
             for tier in tiers:
                 first = next((cell for cell in cells if cell.quotas.get(tier, 0) > 0), None)
                 earliest.append({'tier': tier, 'day': first.day if first else None})
-            for cell in cells:
-                cell.tooltip = f'{cell.day} · {cell.get_state_display()} ' + ' / '.join(f'{tier} МРП: {value}' for tier, value in cell.quotas.items())
             article = checkpoint.article
             info_url = article.get_absolute_url() if article and article.published and article.published_at and article.published_at <= timezone.now() else ''
             nodes.append({'checkpoint': checkpoint, 'cells': cells, 'first': cells[0], 'earliest': earliest, 'info_url': info_url})
