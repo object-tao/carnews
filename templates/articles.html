@@ -1,5 +1,8 @@
 {% extends 'base.html' %}{% block content %}
-<section class="page-head"><span class="eyebrow">{% if kind == 'news' %}INDUSTRY NEWS{% else %}KNOWLEDGE & RESOURCES{% endif %}</span><h1>{{ title }}<em>{% if kind == 'news' %}关注行业变化，掌握运输信息。{% else %}按国家查资料，按需求找答案。{% endif %}</em></h1><p>{% if kind == 'news' %}行业新闻、政策与口岸动态；参考运价单独展示有效期与适用条件。{% else %}口岸、车型、线路、桥梁与运输知识，面向客户和同行的专业资料库。{% endif %}</p></section>
+<section class="page-head page-banner {% if kind == 'news' %}page-banner-news{% else %}page-banner-resources{% endif %}">
+  {% if kind == 'news' %}{% include 'page-banner-image.html' with banner='news' %}{% else %}{% include 'page-banner-image.html' with banner='resources' %}{% endif %}
+  <div class="page-banner-content"><span class="eyebrow">{% if kind == 'news' %}INDUSTRY NEWS{% else %}KNOWLEDGE & RESOURCES{% endif %}</span><h1>{{ title }}<em>{% if kind == 'news' %}关注行业变化，掌握运输信息。{% else %}按国家查资料，按需求找答案。{% endif %}</em></h1><p>{% if kind == 'news' %}行业新闻、政策与口岸动态；参考运价单独展示有效期与适用条件。{% else %}口岸、车型、线路、桥梁与运输知识，面向客户和同行的专业资料库。{% endif %}</p></div>
+</section>
 <section class="section">
 {% if kind == 'news' %}{% include 'news-tabs.html' %}{% else %}
 <nav class="filters resource-types" aria-label="资源类型"><a href="?{{ filter_query }}" {% if not resource_type %}class="active" aria-current="page"{% endif %}>全部资料</a>{% for t in resource_types %}<a href="?{{ filter_query }}&type={{ t.slug|urlencode }}" {% if resource_type == t.slug %}class="active" aria-current="page"{% endif %}>{{ t.name }}</a>{% endfor %}<a href="?{{ filter_query }}&type=routes" {% if resource_type == 'routes' %}class="active" aria-current="page"{% endif %}>线路介绍</a></nav>

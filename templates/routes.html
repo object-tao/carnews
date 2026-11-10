@@ -1,12 +1,12 @@
 {% extends 'base.html' %}{% load static %}{% block content %}
-<section class="page-head routes-banner">
-  <img class="routes-banner-image" src="{% static 'images/routes-banner.webp' %}" srcset="{% static 'images/routes-banner-1200.webp' %} 1200w, {% static 'images/routes-banner.webp' %} 2172w" sizes="(max-width: 700px) 840px, 100vw" width="2172" height="724" fetchpriority="high" alt="">
-  <div class="routes-banner-content">
+<section class="page-head routes-banner page-banner">
+  <img class="routes-banner-image page-banner-image" src="{% static 'images/routes-banner.webp' %}" srcset="{% static 'images/routes-banner-1200.webp' %} 1200w, {% static 'images/routes-banner.webp' %} 2172w" sizes="(max-width: 700px) 840px, 100vw" width="2172" height="724" fetchpriority="high" alt="">
+  <div class="routes-banner-content page-banner-content">
     <span class="eyebrow">OUR NETWORK / 运输线路</span>
     <h1>一车货物，<br><em>连接更广阔的市场。</em></h1>
     <p>了解服务区域，沟通具体起讫地与承运方案。</p>
   </div>
-  <small class="routes-banner-note">AI 场景示意</small>
+  <small class="routes-banner-note page-banner-note">AI 场景示意</small>
 </section>
 <section class="section"><nav class="filters" aria-label="业务区域"><a href="/routes/" {% if not region %}class="active"{% endif %}>全部区域</a>{% for key,label in regions %}<a href="?region={{ key }}" {% if region == key %}class="active"{% endif %}>{{ label }}</a>{% endfor %}</nav><div class="route-grid">{% for item in routes %}{% include 'route-card.html' %}{% empty %}<p class="empty">该区域的线路资料正在整理，请联系咨询。</p>{% endfor %}</div></section>
 {% endblock %}

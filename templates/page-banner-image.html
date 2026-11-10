@@ -1,0 +1,4 @@
+{% load static %}{% with image_base='images/'|add:banner|add:'-banner' %}
+<img class="page-banner-image" src="{% static image_base|add:'.webp' %}" srcset="{% static image_base|add:'-1200.webp' %} 1200w, {% static image_base|add:'.webp' %} 2172w" sizes="(max-width: 700px) 840px, 100vw" width="2172" height="724" fetchpriority="high" alt="">
+<small class="page-banner-note">AI 场景示意</small>
+{% endwith %}

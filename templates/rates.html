@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
-<section class="page-head"><span class="eyebrow">FREIGHT RATES / 参考运价</span><h1>看价格，也看条件。<em>按日期与车型，查阅运输参考。</em></h1><p>市场运价文章与具体线路参考报价，标明价格日期、费用范围和适用条件。</p></section>
+<section class="page-head page-banner page-banner-contact">
+  {% include "page-banner-image.html" with banner="contact" %}
+  <div class="page-banner-content"><span class="eyebrow">FREIGHT RATES / 参考运价</span><h1>看价格，也看条件。<em>按日期与车型，查阅运输参考。</em></h1><p>市场运价文章与具体线路参考报价，标明价格日期、费用范围和适用条件。</p></div>
+</section>
 <section class="section">
 {% include 'news-tabs.html' %}
 <form method="get" class="search library-search" role="search"><label for="q">搜索参考运价</label><div>

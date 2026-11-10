@@ -69,15 +69,23 @@
 .hero-art-network .art-caption strong{color:#fff}
 @media(max-width:700px){.hero-art-network{min-height:0;max-height:none;aspect-ratio:800/820}.hero-art-network .art-label{top:20px;font-size:12px}.hero-art-network .art-label small{font-size:9px}.hero-art-network .art-caption{bottom:16px;font-size:9px}.hero-art-network .art-caption strong{font-size:9px}}
 
-/* Transport routes banner keeps page copy readable over a road freight scene. */
-.routes-banner{position:relative;isolation:isolate;overflow:hidden;display:flex;align-items:center;min-height:clamp(380px,28vw,520px);background:#142743;border-bottom:0;color:#fff}
-.routes-banner-image{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:80% 50%}
-.routes-banner::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#11233ded 0%,#142743da 28%,#1427438c 46%,#14274314 68%,transparent 100%)}
-.routes-banner-content{max-width:620px}
-.routes-banner .eyebrow{color:#d9e5f1;letter-spacing:2px}
-.routes-banner h1{color:#fff;text-shadow:0 2px 20px #0c1b3033}
-.routes-banner h1 em{color:#ff91a0}
-.routes-banner p{color:#e0e8f1;font-size:15px}
-.routes-banner-note{position:absolute;right:5%;bottom:16px;color:#f1f5fa;font-size:10px;letter-spacing:.5px;text-shadow:0 1px 4px #0a1529}
-@media(max-width:1000px) and (min-width:701px){.routes-banner-content{max-width:46%}.routes-banner h1{font-size:38px}.routes-banner h1 em{font-size:.76em}.routes-banner p{font-size:14px}.routes-banner::before{background:linear-gradient(90deg,#11233df2 0%,#142743d9 27%,#14274380 48%,transparent 76%)}}
-@media(max-width:700px){.routes-banner{min-height:510px;align-items:flex-start;padding-top:36px;padding-bottom:285px}.routes-banner-image{inset:auto 0 0;height:280px;object-position:94% center}.routes-banner::before{background:linear-gradient(180deg,#142743 0%,#142743 46%,#14274355 60%,transparent 74%)}.routes-banner-content{max-width:100%}.routes-banner h1{margin:20px 0}.routes-banner p{font-size:14px;max-width:26em}.routes-banner .eyebrow{font-size:10px;letter-spacing:1.5px}.routes-banner-note{bottom:12px;font-size:9px}}
+/* Shared page banners keep copy readable over page-specific photography. */
+.page-banner{position:relative;isolation:isolate;overflow:hidden;display:flex;align-items:center;min-height:clamp(380px,28vw,520px);background:#142743;border-bottom:0;color:#fff}
+.page-banner-image{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:80% 50%}
+.page-banner::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#11233ded 0%,#142743da 28%,#1427438c 46%,#14274314 68%,transparent 100%)}
+.page-banner-content{max-width:min(52%,620px)}
+.page-banner .eyebrow{color:#d9e5f1;letter-spacing:2px}
+.page-banner h1{color:#fff;text-shadow:0 2px 20px #0c1b3033;text-wrap:balance}
+.page-banner h1 em{color:#ff91a0}
+.page-banner p{color:#e0e8f1;font-size:15px}
+.page-banner-note{position:absolute;right:5%;bottom:16px;color:#f1f5fa;font-size:10px;letter-spacing:.5px;text-shadow:0 1px 4px #0a1529}
+@media(max-width:1000px) and (min-width:701px){.page-banner-content{max-width:46%}.page-banner h1{font-size:38px}.page-banner h1 em{font-size:.76em}.page-banner p{font-size:14px}.page-banner::before{background:linear-gradient(90deg,#11233df2 0%,#142743d9 27%,#14274380 48%,transparent 76%)}}
+@media(max-width:700px){.page-banner{min-height:510px;align-items:flex-start;padding-top:36px;padding-bottom:285px}.page-banner-image{inset:auto 0 0;height:280px;object-position:94% center}.page-banner::before{background:linear-gradient(180deg,#142743 0%,#142743 46%,#14274355 60%,transparent 74%)}.page-banner-content{max-width:100%}.page-banner h1{margin:20px 0}.page-banner p{font-size:14px;max-width:26em}.page-banner .eyebrow{font-size:10px;letter-spacing:1.5px}.page-banner-note{bottom:12px;font-size:9px}}
+
+@media(max-width:700px){
+  .page-banner{--banner-picture-height:280px}
+  .page-banner-image{height:var(--banner-picture-height)}
+  .page-banner::before{background:linear-gradient(180deg,#142743 0 calc(100% - var(--banner-picture-height) + 1px),#14274355 calc(100% - var(--banner-picture-height) + 76px),transparent calc(100% - var(--banner-picture-height) + 148px))}
+  .page-banner-resources,.page-banner-contact{--banner-picture-height:240px}
+  .page-banner-news .page-banner-image{object-position:right center}
+}

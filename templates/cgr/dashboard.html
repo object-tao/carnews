@@ -1,6 +1,9 @@
 {% extends 'base.html' %}{% load static %}
 {% block content %}
-<section class="page-head cgr-head"><span class="eyebrow">BORDER RESERVATION MONITOR</span><h1>口岸动态</h1><p>哈萨克斯坦与中国、俄罗斯及周边国家的口岸预约信息。按国家查名额、看日历，保留每次采集时的数据。</p></section>
+<section class="page-head page-banner page-banner-news cgr-head">
+  {% include "page-banner-image.html" with banner="news" %}
+  <div class="page-banner-content"><span class="eyebrow">BORDER RESERVATION MONITOR</span><h1>口岸动态</h1><p>哈萨克斯坦与中国、俄罗斯及周边国家的口岸预约信息。按国家查名额、看日历，保留每次采集时的数据。</p></div>
+</section>
 <section class="section cgr-section">
 {% include 'news-tabs.html' %}
 <section class="cgr-history" id="history" aria-labelledby="cgr-history-title">
