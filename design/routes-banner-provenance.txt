@@ -1,0 +1,18 @@
+Transport routes background banner — 2026-11-10
+
+Generated with the built-in image_gen tool. The scene is illustrative, not a
+photograph of a specific road or a representation of an owned company vehicle.
+Original: work/routes-banner-original.png (archived locally, not deployed).
+Production: static/images/routes-banner.webp and routes-banner-1200.webp.
+Only WebP compression and responsive downscaling were applied after generation.
+Composition/cropping and the text readability gradient are handled in site.css.
+
+Generation prompt:
+Use case: ads-marketing
+Asset type: wide photographic background banner for the "Transport Routes" page of Quantum / Shenzhen Kunteng, an international full truck load road freight company.
+Primary request: A premium realistic scene of a modern white cab-over heavy articulated freight truck with a long dark navy semitrailer driving along a well-maintained open Eurasian highway. Evoke long-distance road freight connecting China with Central Asia and Europe, using expansive grassland and a distant mountain range, not a recognizable or invented named border checkpoint.
+Composition: Ultra-wide landscape panorama, 3:1 aspect ratio, ideally 2400 x 800. Place the COMPLETE truck in the right-hand third around x=75%, shown from a low front-left three-quarter view approaching the viewer. All tyres and full trailer must be visible, the truck wholly within the central 60% of the image height to survive a wide banner crop. The LEFT 45% is quiet dark blue atmospheric landscape and open sky with very low detail, deliberately reserved for overlaid website text; do not render the text.
+Style: high-end commercial automotive photography, physically believable vehicle geometry and road lane markings, realistic tyres and mirrors, subtle sense of motion in road surface, elegant rather than dramatic.
+Lighting: blue-hour dusk with soft natural light along the mountain ridge, cool navy atmosphere, softly illuminated white truck cab and headlights, gentle pale warm light on the far horizon. Crisp truck, restrained contrast.
+Brand-related detail: understated dark red trim on white cab, no make emblem, no lettering, no words, no logos, no watermark.
+Constraints: no extra trucks, people, buildings, flags, checkpoints or invented road signs. The scene is an AI illustration, not documentation of a real route. Keep truck and landscape natural and credible. Entire image is edge-to-edge scene, no transparent background, no border, no embedded typography.
