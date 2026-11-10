@@ -1,0 +1,23 @@
+Homepage hero artwork — 2026-11-10
+
+Truck: generated with the built-in image_gen tool; transparent background.
+Full original is archived at work/hero-truck-original.png (not deployed).
+Production: static/images/hero-truck.webp and hero-truck-960.webp.
+Only WebP compression and responsive downscaling were applied after generation.
+
+Map: static/images/hero-eurasia.svg uses actual Natural Earth 1:110m land
+coastlines with a regional equirectangular projection (no political boundaries).
+Source: https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_land.geojson
+License: public domain, https://www.naturalearthdata.com/about/terms-of-use/
+China is the illustrative origin. Destination reference points represent the
+UK, continental Europe, Russia and Central Asia. Curves show service directions,
+not navigable roads, exact routes or guaranteed transport availability.
+
+Generation prompt:
+Use case: ads-marketing
+Asset type: transparent foreground asset for an existing premium international road logistics website hero. It will be placed over an accurate navy Eurasia map.
+Primary request: One photorealistic modern heavy-duty articulated freight truck, complete tractor cab and long enclosed semitrailer, isolated on a genuinely transparent background.
+Subject: European/Chinese-style cab-over 6x4 heavy tractor with a clean pearl-white cab, restrained dark navy lower body, subtle deep red accent strip, long dark navy curtain-side semitrailer. No brand emblem, no logos, no words. Credible axles, tyres, mirrors and realistic mechanical proportions.
+Composition: horizontal 3:2 image. Dynamic front-left three-quarter view, the large cab at lower left pointing toward the viewer and slightly left; the long trailer extends to upper right. The entire truck is visible with comfortable margins; no wheels, mirrors or trailer cut off. Truck occupies about 90 percent of width. Low camera position, substantial long-distance cargo vehicle, premium automotive advertising photography.
+Lighting: soft cool daylight with controlled studio rim highlights, realistic clean painted metal, glass and textured black tyres. Must remain clearly readable on deep navy #17284c.
+Constraints: Transparent background and natural faint contact shadow only. No road, no scenery, no map, no people, no extra vehicles, no text, no watermark. A believable working heavy truck, not a futuristic concept.

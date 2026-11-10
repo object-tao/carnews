@@ -56,3 +56,15 @@
 .table-scroll-hint{display:none}
 @media(min-width:900px){.market-report table{display:table;width:100%}}
 @media(max-width:700px){.table-scroll-hint{display:block;font-size:13px;color:#617087}}
+
+/* Homepage artwork: geographic coastline and AI-generated heavy truck. */
+.hero-art-network{isolation:isolate;background:radial-gradient(ellipse at 65% 35%,#2c4767 0%,#172b4b 49%,#10213d 100%)}
+.hero-art-network::before{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(#9bb3cb0b 1px,transparent 1px),linear-gradient(90deg,#9bb3cb0b 1px,transparent 1px);background-size:52px 52px}
+.hero-scene{position:relative;width:100%;max-width:840px;aspect-ratio:800/780;margin:auto;flex-shrink:0}
+.hero-network-map{display:block;width:100%;height:auto}
+.hero-truck{position:absolute;left:6%;bottom:4%;width:88%;height:auto;filter:drop-shadow(0 18px 20px #030e2080)}
+.hero-art-network .art-label{z-index:1;top:28px;left:5%;font-size:14px;letter-spacing:1px}
+.hero-art-network .art-label small{margin-top:4px;color:#c0ccdb;letter-spacing:1.5px}
+.hero-art-network .art-caption{z-index:1;left:5%;right:5%;bottom:22px;color:#c0ccdb;font-size:10px}
+.hero-art-network .art-caption strong{color:#fff}
+@media(max-width:700px){.hero-art-network{min-height:0;max-height:none;aspect-ratio:800/820}.hero-art-network .art-label{top:20px;font-size:12px}.hero-art-network .art-label small{font-size:9px}.hero-art-network .art-caption{bottom:16px;font-size:9px}.hero-art-network .art-caption strong{font-size:9px}}
