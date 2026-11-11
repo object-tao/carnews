@@ -5,7 +5,7 @@ from tempfile import TemporaryDirectory
 from unittest.mock import patch
 from django.contrib.auth import get_user_model
 from django.core.management import call_command
-from django.test import TestCase, override_settings
+from django.test import TestCase, SimpleTestCase, override_settings
 from django.utils import timezone
 from .client import BEIJING, CATEGORIES, SourceError, normalize
 from .models import Settings, Run, Summary, Vehicle, VehicleVersion, Report
@@ -54,8 +54,9 @@ class HorgosTests(TestCase):
         self.assertIn('| 整车预约 | 10 |', article.body)
         self.assertIn('10:02:00', article.body)
         rendered = self.client.get(article.get_absolute_url())
-        self.assertContains(rendered, '<td>整车预约</td>', html=True)
-        self.assertContains(rendered, '<td>跨境电商（清单模式）</td>', html=True)
+        self.assertContains(rendered, '<dt>整车预约</dt>', html=True)
+        self.assertContains(rendered, '<dt>跨境电商（清单模式）</dt>', html=True)
+        self.assertContains(rendered, 'horgos-metric-release')
         for url in [article.get_absolute_url(), '/news/border-updates/', '/sitemap.xml']:
             response = self.client.get(url)
             self.assertEqual(response.status_code, 200)
@@ -166,3 +167,22 @@ class HorgosTests(TestCase):
         response = self.client.get('/news/border-updates/?source=horgos&country=cn')
         self.assertContains(response, Report.objects.get().article.title)
         self.assertNotContains(self.client.get('/news/border-updates/?source=cgr'), Report.objects.get().article.title)
+
+
+class BreakdownTests(SimpleTestCase):
+    def test_shares_only_when_parts_match_the_same_group_total(self):
+        from .presentation import breakdown
+        matched = breakdown([('自驾', 164), ('笼车', 566)], 730)
+        self.assertTrue(matched['show_shares'])
+        self.assertEqual([row['share'] for row in matched['items']], ['22.5', '77.5'])
+        mismatch = breakdown([('自驾', 164), ('笼车', 566)], 731)
+        self.assertFalse(mismatch['consistent'])
+        self.assertFalse(mismatch['show_shares'])
+        self.assertTrue(all(row['share'] == '' for row in mismatch['items']))
+
+    def test_zero_group_keeps_real_zero_values_without_inventing_shares(self):
+        from .presentation import breakdown
+        result = breakdown([('自驾', 0), ('笼车', 0)], 0)
+        self.assertTrue(result['empty'])
+        self.assertFalse(result['show_shares'])
+        self.assertEqual([row['value'] for row in result['items']], ['0', '0'])

@@ -85,7 +85,15 @@ def article(request,slug):
     keywords=list(dict.fromkeys(word.strip() for word in re.split('[,，]',item.seo_keywords) if word.strip()))
     schema={'@context':'https://schema.org','@type':'Article','headline':item.title,'description':item.summary,'datePublished':item.published_at.isoformat(),'dateModified':item.updated_at.isoformat(),'author':{'@type':'Organization','name':item.author},'mainEntityOfPage':settings.SITE_URL+item.get_absolute_url(),'inLanguage':'zh-CN','articleSection':item.category}
     if keywords: schema['keywords']=keywords
-    return render(request,'article.html',{'title':item.seo_title or item.title,'description':item.summary,'keywords':', '.join(keywords),'is_article':True,'item':item,'related_resources':item.related_resources.filter(published=True,published_at__lte=timezone.now()),'related_routes':item.related_routes.filter(published=True),'schema':json.dumps(schema,ensure_ascii=False).replace(chr(60),chr(92)+'u003c')})
+    context={'title':item.seo_title or item.title,'description':item.summary,'keywords':', '.join(keywords),'is_article':True,'item':item,'related_resources':item.related_resources.filter(published=True,published_at__lte=timezone.now()),'related_routes':item.related_routes.filter(published=True)}
+    template='article.html'
+    if hasattr(item, 'horgos_report'):
+        from horgos.presentation import report_context
+        context.update(report_context(item.horgos_report))
+        template='horgos/report.html'
+        schema['citation']=item.source
+    context['schema']=json.dumps(schema,ensure_ascii=False).replace(chr(60),chr(92)+'u003c')
+    return render(request,template,context)
 def download(request,slug):
     item=get_object_or_404(public_articles(),slug=slug)
     if not item.attachment: raise Http404
