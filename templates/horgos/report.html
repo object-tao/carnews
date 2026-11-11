@@ -37,7 +37,7 @@
   </div>
   <section class="horgos-method" aria-labelledby="horgos-method-title">
     <div><span class="horgos-overline">ABOUT THE DATA</span><h2 id="horgos-method-title">统计口径与数据来源</h2><p>本期采集：北京时间 <strong>{{ run.started_at|date:'Y-m-d H:i:s' }}—{{ run.finished_at|date:'H:i:s' }}</strong>。</p><p>所有数字均来自本轮源接口，表示截至采集时点的当日统计；全天最终数据以源站后续更新为准。</p><p>数据来源：中国电子口岸。</p></div>
-    <ul><li>“整车”“重车”“自驾”“笼车”等名称沿用源站分类。整车出境类型与重车货类属于不同分组，同名项目分别展示。</li><li>车辆汇总直接采用源站统计，不用采集到的逐条明细数量推算总量。明细接口每类最多返回最近 1000 条，已采明细不代表完整通行历史。</li><li>本报告不据此推算排队车辆数、等待时间或通关承诺。</li></ul>
+    <ul><li>“整车”“重车”“自驾”“笼车”等名称沿用源站分类。整车出境类型与重车货类属于不同分组，同名项目分别展示。</li><li>本报告不据此推算排队车辆数、等待时间或通关承诺。</li></ul>
   </section>
   {% if related_resources %}<section class="horgos-related"><h2>相关口岸资料</h2><ul>{% for resource in related_resources %}<li><a href="{{ resource.get_absolute_url }}">{{ resource.title }} <span aria-hidden="true">↗</span></a></li>{% endfor %}</ul></section>{% endif %}
   <a class="text-link horgos-back" href="{% url 'border-updates' %}">查看其他口岸日报 →</a>
