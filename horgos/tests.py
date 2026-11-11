@@ -16,7 +16,7 @@ def fixture(now):
     current = now.astimezone(BEIJING)
     row = {'reservation': 'PRIVATE-RESERVATION-123', 'org': 'PRIVATE-COMPANY-XYZ', 'status': '已放行', 'time': current.strftime('%Y-%m-%d %H:%M')}
     old = {**row, 'reservation': 'YESTERDAY-ROW', 'time': (current-timedelta(days=1)).strftime('%Y-%m-%d %H:%M')}
-    return {'commercial': {'info': [row, row.copy(), old]}, 'heavy': {'info': [{**row, 'reservation': 'HEAVY-456'}]},
+    return {'commercial': {'flag': 1, 'info': [row, row.copy(), old]}, 'heavy': {'flag': 1, 'info': [{**row, 'reservation': 'HEAVY-456'}]},
             'totals': {'commercialNum': 10, 'commercialReleaseNum': 8, 'heavyNum': 20, 'heavyReleaseNum': 18},
             'car_types': {'commercialNumRelease': 5, 'longCarNumRelease': 3},
             'categories': {'info': [{'type': key, 'num': i} for i, key in enumerate(CATEGORIES)]}}
@@ -101,6 +101,8 @@ class HorgosTests(TestCase):
         data = deepcopy(self.payload); data['categories']['info'].pop(); variants.append(data)
         data = deepcopy(self.payload); data['commercial']['info'][1]['org'] = 'conflicting'; variants.append(data)
         data = deepcopy(self.payload); data['heavy']['info'][0]['time'] = '2026-11-11'; variants.append(data)
+        data = deepcopy(self.payload); data['heavy'] = {'flag': 0, 'info': []}; variants.append(data)
+        data = deepcopy(self.payload); del data['commercial']['flag']; variants.append(data)
         for data in variants:
             with self.subTest(data=data), self.assertRaises(SourceError): normalize(data, self.now, self.now)
         data = deepcopy(self.payload); data['totals']['heavyNum'] = 0

@@ -86,6 +86,8 @@ def normalize(payload, started_at, finished_at):
     summary['categories'] = groups
     details, skipped, limit_hit = {}, 0, False
     for kind in ['commercial', 'heavy']:
+        if payload[kind].get('flag') not in (1, '1'):
+            raise SourceError('车辆明细接口未返回成功标记，暂停发布')
         rows = payload[kind].get('info')
         if not isinstance(rows, list) or len(rows) > 1000: raise SourceError('车辆明细结构异常')
         limit_hit |= len(rows) == 1000
