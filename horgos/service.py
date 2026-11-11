@@ -26,10 +26,14 @@ def due(config, now):
     return 'scheduled', None
 
 
+def report_title(day):
+    return f'霍尔果斯口岸【{day:%Y年%m月%d日}】放行报告'
+
+
 def publish(run, auto_publish):
     from web.models import Article, Country
     counts = run.summary.counts
-    title = f'霍尔果斯口岸车辆预约与放行日报（{run.date:%Y年%m月%d日}）'
+    title = report_title(run.date)
     summary = f'{run.date:%Y年%m月%d日}霍尔果斯口岸车辆预约、放行与货类汇总，数据截至北京时间{run.finished_at.astimezone(BEIJING):%H:%M}，采用本轮源接口统计。'
     body = [f'## 本期概况\n\n本期为 **{run.date:%Y年%m月%d日}** 霍尔果斯口岸车辆数据汇总。',
             f'采集区间：北京时间 **{run.started_at.astimezone(BEIJING):%H:%M:%S}—{run.finished_at.astimezone(BEIJING):%H:%M:%S}**。以下汇总均来自这一轮源接口请求，代表截至采集时点的统计，不是完整全天最终结算。',
