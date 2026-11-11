@@ -3,6 +3,7 @@ from django.db import transaction
 from django.utils import timezone
 from django.urls import reverse
 from django.utils.html import format_html
+from .client import BEIJING
 from .models import Settings, Run, Summary, Vehicle, VehicleVersion, Report
 from cgr.admin import ReadOnlyAdmin
 
@@ -34,11 +35,17 @@ class VehicleAdmin(ReadOnlyAdmin):
 
 @admin.register(VehicleVersion)
 class VersionAdmin(ReadOnlyAdmin):
-    list_display = ['vehicle', 'company', 'status', 'first_seen', 'last_seen']
+    list_display = ['vehicle', 'company', 'status', 'business_time', 'first_seen', 'last_seen']
     list_filter = ['vehicle__kind', 'status', 'vehicle__occurred_at', 'runs__date']
     search_fields = ['vehicle__number', 'company']
     list_select_related = ['vehicle']
-    readonly_fields = [f.name for f in VehicleVersion._meta.fields]
+    ordering = ['-vehicle__occurred_at', '-pk']
+    readonly_fields = [f.name for f in VehicleVersion._meta.fields] + ['business_time']
+    fields = ['vehicle', 'company', 'status', 'business_time', 'first_seen', 'last_seen', 'fingerprint']
+
+    @admin.display(description='接口业务时间（北京时间）', ordering='vehicle__occurred_at')
+    def business_time(self, obj):
+        return timezone.localtime(obj.vehicle.occurred_at, BEIJING).strftime('%Y-%m-%d %H:%M:%S')
 
     def lookup_allowed(self, lookup, value, request=None):
         if lookup == 'runs__id__exact': return str(value).isdigit()
