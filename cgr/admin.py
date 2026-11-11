@@ -51,16 +51,25 @@ class CollectionRunAdmin(ReadOnlyAdmin):
     list_display = ['id', 'report_date', 'started_at', 'finished_at', 'trigger', 'status', 'row_count']
     list_filter = ['status', 'trigger', 'report_date']
     search_fields = ['message', 'source_hash']
-    readonly_fields = [field.name for field in CollectionRun._meta.fields]
+    readonly_fields = [field.name for field in CollectionRun._meta.fields] + ['records_link']
+    exclude = ['observations']
+
+    @admin.display(description='本轮明细')
+    def records_link(self, obj):
+        return format_html('<a href="{}?runs__id__exact={}">查看本轮明细</a>', reverse('admin:cgr_observation_changelist'), obj.pk)
 
 
 @admin.register(Observation)
 class ObservationAdmin(ReadOnlyAdmin):
-    list_display = ['checkpoint', 'day', 'state', 'quotas', 'level', 'run']
+    list_display = ['checkpoint', 'day', 'state', 'quotas', 'level', 'last_seen', 'first_run']
     list_filter = ['checkpoint__country', 'state', 'day']
     search_fields = ['checkpoint__name', 'checkpoint__source_name']
-    list_select_related = ['checkpoint', 'run']
+    list_select_related = ['checkpoint', 'first_run']
     readonly_fields = [field.name for field in Observation._meta.fields]
+
+    def lookup_allowed(self, lookup, value, request=None):
+        if lookup == 'runs__id__exact': return str(value).isdigit()
+        return super().lookup_allowed(lookup, value, request)
 
 
 @admin.register(DailyReport)

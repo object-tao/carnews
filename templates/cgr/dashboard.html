@@ -2,20 +2,20 @@
 {% block content %}
 <section class="page-head page-banner page-banner-news cgr-head">
   {% include "page-banner-image.html" with banner="news" %}
-  <div class="page-banner-content"><span class="eyebrow">BORDER RESERVATION MONITOR</span><h1>口岸动态</h1><p>哈萨克斯坦与中国、俄罗斯及周边国家的口岸预约信息。按国家查名额、看日历，保留每次采集时的数据。</p></div>
+  <div class="page-banner-content"><span class="eyebrow">BORDER RESERVATION MONITOR</span><h1>口岸动态</h1><p>霍尔果斯车辆预约与放行、哈萨克斯坦与周边国家口岸预约概况。按国家与日期，查阅每日汇总报告。</p></div>
 </section>
 <section class="section cgr-section">
 {% include 'news-tabs.html' %}
+<form method="get" class="search library-search" role="search"><label for="border-q">查找口岸日报</label><div>
+<input id="border-q" name="q" value="{{ q }}" maxlength="100" placeholder="口岸或报告关键词">
+<select name="country" aria-label="国家筛选"><option value="">全部国家 / 地区</option>{% for code,label in country_options %}<option value="{{ code }}" {% if country == code %}selected{% endif %}>{{ label }}</option>{% endfor %}</select>
+<select name="source" aria-label="数据来源"><option value="">全部口岸数据</option><option value="horgos" {% if source == 'horgos' %}selected{% endif %}>霍尔果斯车辆统计</option><option value="cgr" {% if source == 'cgr' %}selected{% endif %}>哈萨克斯坦预约统计</option></select>
+<input type="date" name="date" value="{{ selected_date }}" aria-label="报告日期"><button class="button" type="submit">查询 →</button>
+</div></form>
 <section class="cgr-history" id="history" aria-labelledby="cgr-history-title">
 <div class="cgr-history-heading"><h2 id="cgr-history-title">口岸日报文章</h2><span>共 {{ history.paginator.count }} 篇</span></div>
-<p>按报告日期从新到旧排列，点击标题查看当日完整报告、预约日历及下载清单。</p>
-<ol class="cgr-title-list">{% for entry in history %}<li><a href="{{ entry.get_absolute_url }}"><time datetime="{{ entry.date|date:'Y-m-d' }}">{{ entry.date|date:'Y-m-d' }}</time><span class="cgr-title-text">{{ entry.article.title }}{% if forloop.first and history.number == 1 %}<span class="cgr-latest-label">最新</span>{% endif %}</span><span class="cgr-title-arrow" aria-hidden="true">↗</span></a></li>{% empty %}<li class="cgr-title-empty">暂无已发布日报；每日采集校验通过后，文章将自动出现在这里。</li>{% endfor %}</ol>
+<p>按报告日期从新到旧排列；每篇文章注明来源、实际采集时间与统计口径。</p>
+<ol class="cgr-title-list">{% for entry in history %}<li><a href="{{ entry.get_absolute_url }}"><time datetime="{{ entry.report_date|date:'Y-m-d' }}">{{ entry.report_date|date:'Y-m-d' }}</time><span class="cgr-title-text">{{ entry.title }}{% if forloop.first and history.number == 1 %}<span class="cgr-latest-label">最新</span>{% endif %}</span><span class="cgr-title-arrow" aria-hidden="true">↗</span></a></li>{% empty %}<li class="cgr-title-empty">暂无匹配的已发布日报，可调整筛选条件。</li>{% endfor %}</ol>
 {% if history.has_other_pages %}<nav class="pagination" aria-label="日报文章列表分页">{% if history.has_previous %}<a href="?{% if history_query %}{{ history_query }}&{% endif %}history_page={{ history.previous_page_number }}#history">上一页</a>{% endif %}<span>{{ history.number }} / {{ history.paginator.num_pages }}</span>{% if history.has_next %}<a href="?{% if history_query %}{{ history_query }}&{% endif %}history_page={{ history.next_page_number }}#history">下一页</a>{% endif %}</nav>{% endif %}
-</section>
-{% if report %}
-<div class="cgr-report-heading"><div><span class="eyebrow">{{ report.date|date:'Y.m.d' }} · 预约日报</span><h2>从国家方向，找到口岸。</h2></div><a class="text-link" href="{{ report.get_absolute_url }}">阅读本期完整报告 ↗</a></div>
-{% include 'cgr/board.html' %}
-{% else %}<div class="empty"><h2>首份口岸日报正在准备</h2><p>数据校验通过并发布后，将在这里展示预约日历及下载清单。</p></div>{% endif %}
-</section>
+</section></section>
 {% endblock %}
-{% block scripts %}<script src="{% static 'cgr.js' %}" defer></script>{% endblock %}

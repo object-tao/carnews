@@ -1,0 +1,22 @@
+[Unit]
+Description=Kunteng Horgos current-day vehicle collection
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=kunteng-web
+Group=kunteng-web
+WorkingDirectory=/opt/kunteng-truck/current
+EnvironmentFile=/opt/kunteng-truck/shared/app.env
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/opt/kunteng-truck/current/.venv/bin/python manage.py collect_horgos --scheduled
+TimeoutStartSec=8min
+UMask=0077
+Nice=10
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/kunteng-truck/shared/data

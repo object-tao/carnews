@@ -1,0 +1,11 @@
+[Unit]
+Description=Poll Horgos Beijing 23:50 schedule and manual requests
+
+[Timer]
+OnCalendar=*-*-* *:*:15
+AccuracySec=1s
+Persistent=true
+Unit=kunteng-truck-horgos.service
+
+[Install]
+WantedBy=timers.target

@@ -53,6 +53,7 @@ class CollectionRun(models.Model):
     raw_path = models.CharField('原始页面私有归档', max_length=250, blank=True)
     row_count = models.PositiveIntegerField('口岸日期记录数', default=0)
     message = models.TextField('运行记录', blank=True)
+    observations = models.ManyToManyField('Observation', related_name='runs', blank=True)
 
     class Meta:
         verbose_name = verbose_name_plural = '采集运行日志'
@@ -65,7 +66,9 @@ class CollectionRun(models.Model):
 
 class Observation(models.Model):
     STATES = [('available', '有可预约名额'), ('full', '名额为零'), ('holiday', '源站标注休息日'), ('not_open', '尚未开放预约')]
-    run = models.ForeignKey(CollectionRun, on_delete=models.CASCADE, related_name='observations')
+    first_run = models.ForeignKey(CollectionRun, on_delete=models.PROTECT, related_name='first_observations')
+    fingerprint = models.CharField(max_length=64, unique=True, editable=False)
+    last_seen = models.DateTimeField('最近采集确认', default=timezone.now)
     checkpoint = models.ForeignKey(Checkpoint, verbose_name='口岸', on_delete=models.PROTECT)
     day = models.DateField('预约日期（源站日历）')
     state = models.CharField('预约状态', max_length=16, choices=STATES)
@@ -75,7 +78,6 @@ class Observation(models.Model):
     class Meta:
         verbose_name = verbose_name_plural = '口岸预约明细'
         ordering = ['checkpoint_id', 'day']
-        constraints = [models.UniqueConstraint(fields=['run', 'checkpoint', 'day'], name='cgr_unique_observation')]
 
 
 class DailyReport(models.Model):

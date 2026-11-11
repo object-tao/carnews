@@ -119,6 +119,39 @@ class CollectionTests(TestCase):
         self.assertIn('51 项名额发生变化', report.article.body)
         self.assertEqual(report.article.published_at, first.started_at)
 
+    def test_unchanged_cells_reused_with_exact_run_membership(self):
+        first = self.run_collection()
+        second = self.run_collection()
+        self.assertEqual(Observation.objects.count(), 204)
+        self.assertEqual(set(first.observations.values_list('pk', flat=True)), set(second.observations.values_list('pk', flat=True)))
+        changed = collect(html=self.html.replace('МРП: 12', 'МРП: 13'), now=self.now+timedelta(seconds=1))
+        self.assertEqual(Observation.objects.count(), 255)
+        self.assertEqual(changed.observations.count(), 204)
+        self.assertEqual(first.observations.count(), 204)
+
+    def test_live_fetch_crossing_midnight_does_not_publish(self):
+        started = self.now.astimezone(BEIJING).replace(hour=23, minute=59)
+        with patch('cgr.service.fetch_source', return_value=self.html), patch('cgr.service.timezone.now', return_value=started+timedelta(minutes=2)):
+            run = collect(now=started)
+        self.assertEqual(run.status, 'failed')
+        self.assertFalse(DailyReport.objects.exists())
+
+    def test_private_details_require_staff_and_both_permissions(self):
+        from django.contrib.auth.models import Permission
+        self.run_collection()
+        report = DailyReport.objects.get()
+        user = get_user_model().objects.create_user('limited', password='test-only')
+        view_report = Permission.objects.get(content_type__app_label='cgr', codename='view_dailyreport')
+        view_rows = Permission.objects.get(content_type__app_label='cgr', codename='view_observation')
+        user.user_permissions.set([view_report, view_rows])
+        self.client.force_login(user)
+        url = f'/border-reports/{report.pk}/export/csv/?preview=1'
+        self.assertEqual(self.client.get(url).status_code, 404)
+        user.is_staff = True; user.save(); user.user_permissions.remove(view_rows)
+        self.assertEqual(self.client.get(url).status_code, 404)
+        user.user_permissions.add(view_rows)
+        self.assertEqual(self.client.get(url).status_code, 200)
+
     def test_partial_source_does_not_replace_previous_valid_report(self):
         first = self.run_collection()
         report = DailyReport.objects.get()
@@ -180,19 +213,28 @@ class CollectionTests(TestCase):
     def test_filters_exports_metadata_and_port_aliases(self):
         self.run_collection()
         report = DailyReport.objects.get()
-        response = self.client.get('/news/border-updates/?country=ru')
-        self.assertEqual(response.status_code, 200)
+        for url in ['/news/border-updates/', report.get_absolute_url()]:
+            response = self.client.get(url)
+            self.assertEqual(response.status_code, 200)
+            self.assertNotContains(response, 'cgr-calendar')
+            self.assertNotContains(response, 'cgr-detail-table')
+            self.assertNotContains(response, '/export/')
+        for fmt in ['csv', 'xlsx', 'html']:
+            self.assertEqual(self.client.get(f'/border-reports/{report.pk}/export/{fmt}/').status_code, 404)
+            self.assertEqual(self.client.get(f'/border-reports/{report.pk}/export/{fmt}/?preview=1').status_code, 404)
+        self.assertEqual(self.client.get('/news/border-updates/?country=invalid').status_code, 400)
+        user = get_user_model().objects.create_superuser('detail-admin', password='test-only')
+        self.client.force_login(user)
+        response = self.client.get(f'/border-reports/{report.pk}/preview/?preview=1&country=ru')
         self.assertEqual(response.context['node_count'], 30)
         self.assertEqual(response.context['ports'].count(), 30)
         self.assertEqual(response.context['row_count'], 120)
         for alias, corrected in [('波基图', '巴克图'), ('杜拉特', '都拉塔')]:
-            response = self.client.get('/news/border-updates/', {'q': alias})
+            response = self.client.get(f'/border-reports/{report.pk}/preview/', {'preview':'1', 'q': alias})
             self.assertEqual(response.context['node_count'], 1)
             self.assertIn(corrected, response.context['groups'][0]['nodes'][0]['checkpoint'].name)
-        self.assertEqual(self.client.get('/news/border-updates/?country=invalid').status_code, 400)
-        self.assertEqual(self.client.get('/news/border-updates/?day=bad-date').status_code, 400)
-        self.assertEqual(self.client.get('/news/border-updates/?port=1e100').status_code, 400)
-        csv_response = self.client.get(f'/border-reports/{report.pk}/export/csv/?country=ru')
+        self.assertEqual(self.client.get(f'/border-reports/{report.pk}/preview/?preview=1&day=bad-date').status_code, 400)
+        csv_response = self.client.get(f'/border-reports/{report.pk}/export/csv/?preview=1&country=ru')
         rows = list(csv.reader(StringIO(csv_response.content.decode('utf-8-sig'))))
         self.assertEqual(len(rows), 181)  # 30 ports * (2 quoted days * 2 tiers + 2 non-quoted days).
         self.assertEqual({r[3] for r in rows[1:]}, {'俄罗斯'})

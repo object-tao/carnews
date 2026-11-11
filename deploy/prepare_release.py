@@ -14,6 +14,7 @@ from django.conf import settings
 call_command('check',deploy=True,fail_level='WARNING')
 call_command('migrate',interactive=False)
 call_command('seed_cgr')
+call_command('refresh_border_reports')
 call_command('seed_content')
 call_command('import_ports',publish_reviewed=True)
 call_command('publish_reviewed_ports')

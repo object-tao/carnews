@@ -17,7 +17,8 @@ def public_reports():
 
 
 def may_preview(request):
-    return request.GET.get('preview') == '1' and request.user.has_perm('cgr.view_dailyreport')
+    return (request.GET.get('preview') == '1' and request.user.is_active and request.user.is_staff
+            and request.user.has_perm('cgr.view_dailyreport') and request.user.has_perm('cgr.view_observation'))
 
 
 def filtered_observations(request, report):
@@ -64,7 +65,7 @@ def report_context(request, report):
             nodes.append({'checkpoint': checkpoint, 'cells': cells, 'first': cells[0], 'earliest': earliest, 'info_url': info_url})
         if nodes:
             grouped.append({'code': code, 'name': label, 'nodes': nodes})
-    ports = Checkpoint.objects.filter(observation__run=report.run).distinct()
+    ports = Checkpoint.objects.filter(observation__runs=report.run).distinct()
     if request.GET.get('country'):
         ports = ports.filter(country=request.GET['country'])
     parameters = request.GET.copy()
@@ -90,33 +91,43 @@ def report_context(request, report):
 
 
 def dashboard(request):
-    reports = public_reports()
-    history_params = request.GET.copy()
-    history_params.pop('history_page', None)
-    selected = request.GET.get('date')
+    from web.models import Article
+    from django.db.models.functions import Coalesce
+    countries = [('cn', '中国'), ('kz', '哈萨克斯坦')] + [(key, label) for key, label in COUNTRIES if key != 'cn']
+    country = request.GET.get('country', '')
+    source = request.GET.get('source', '')
+    selected = request.GET.get('date', '')
+    q = request.GET.get('q', '').strip()[:100]
+    if country and country not in dict(countries) or source not in ['', 'horgos', 'cgr']:
+        return HttpResponseBadRequest('筛选参数无效。')
+    articles = Article.objects.filter(published=True, published_at__lte=timezone.now()).filter(
+        Q(cgr_report__run__status='success') | Q(horgos_report__run__status='success'))
+    if source == 'horgos': articles = articles.filter(horgos_report__isnull=False)
+    if source == 'cgr': articles = articles.filter(cgr_report__isnull=False)
+    if country: articles = articles.filter(countries__name=dict(countries)[country])
+    if q: articles = articles.filter(Q(title__icontains=q) | Q(summary__icontains=q))
+    articles = articles.annotate(report_date=Coalesce('cgr_report__date', 'horgos_report__date'))
     if selected:
-        try:
-            report = get_object_or_404(reports, date=date.fromisoformat(selected))
-        except ValueError:
-            return HttpResponseBadRequest('报告日期格式应为 YYYY-MM-DD。')
-    else:
-        report = reports.first()
-    context = {'title': '口岸动态：哈萨克斯坦与中国、俄罗斯及周边口岸预约',
-               'description': '按国家、口岸与日期查看哈萨克斯坦口岸预约日报、可预约名额和日历，下载Excel与CSV清单。每日定时采集，保留历史快照。',
-               'history': Paginator(reports, 10).get_page(request.GET.get('history_page')), 'history_query': history_params.urlencode(), 'country_options': COUNTRIES}
-    if report:
-        try:
-            context.update(report_context(request, report))
-        except ValueError:
-            return HttpResponseBadRequest('筛选参数无效，请核对国家、口岸与预约日期。')
-    return render(request, 'cgr/dashboard.html', context)
+        try: articles = articles.filter(report_date=date.fromisoformat(selected))
+        except ValueError: return HttpResponseBadRequest('报告日期格式应为 YYYY-MM-DD。')
+    articles = articles.distinct().order_by('-report_date', '-published_at', '-pk')
+    params = request.GET.copy()
+    params.pop('history_page', None)
+    return render(request, 'cgr/dashboard.html', {
+        'title': '口岸动态：霍尔果斯车辆与哈萨克斯坦口岸预约日报',
+        'description': '按国家、来源和日期查阅口岸每日汇总文章，了解霍尔果斯车辆预约与放行、哈萨克斯坦口岸预约概况。',
+        'history': Paginator(articles, 10).get_page(request.GET.get('history_page')),
+        'history_query': params.urlencode(), 'country_options': countries,
+        'country': country, 'source': source, 'selected_date': selected, 'q': q,
+    })
 
 
 def detail(request, report):
-    try:
-        context = report_context(request, report)
-    except ValueError:
-        return HttpResponseBadRequest('筛选参数无效，请核对国家、口岸与预约日期。')
+    context = {'report': report, 'item': report.article, 'is_preview': False,
+               'related_resources': report.article.related_resources.filter(published=True, published_at__lte=timezone.now())}
+    if may_preview(request):
+        try: context.update(report_context(request, report))
+        except ValueError: return HttpResponseBadRequest('筛选参数无效。')
     item = report.article
     schema = {'@context': 'https://schema.org', '@type': 'Article', 'headline': item.title,
               'description': item.summary, 'datePublished': item.published_at.isoformat() if item.published_at else None,
@@ -140,8 +151,9 @@ def preview(request, pk):
 
 
 def export(request, pk, format):
+    if not may_preview(request): raise Http404
     from .exports import make_export
-    reports = DailyReport.objects.select_related('article', 'run').filter(run__status='success') if may_preview(request) else public_reports()
+    reports = DailyReport.objects.select_related('article', 'run').filter(run__status='success')
     report = get_object_or_404(reports, pk=pk)
     if format not in ('csv', 'xlsx', 'html'):
         raise Http404
