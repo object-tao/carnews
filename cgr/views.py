@@ -123,11 +123,10 @@ def dashboard(request):
 
 
 def detail(request, report):
-    context = {'report': report, 'item': report.article, 'is_preview': False,
-               'related_resources': report.article.related_resources.filter(published=True, published_at__lte=timezone.now())}
-    if may_preview(request):
-        try: context.update(report_context(request, report))
-        except ValueError: return HttpResponseBadRequest('筛选参数无效。')
+    if not may_preview(request) and not public_reports().filter(pk=report.pk).exists():
+        raise Http404
+    try: context = report_context(request, report)
+    except ValueError: return HttpResponseBadRequest('筛选参数无效。')
     item = report.article
     schema = {'@context': 'https://schema.org', '@type': 'Article', 'headline': item.title,
               'description': item.summary, 'datePublished': item.published_at.isoformat() if item.published_at else None,

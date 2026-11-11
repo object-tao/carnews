@@ -57,11 +57,13 @@ class HorgosTests(TestCase):
         self.assertContains(rendered, '<dt>整车预约</dt>', html=True)
         self.assertContains(rendered, '<dt>跨境电商（清单模式）</dt>', html=True)
         self.assertContains(rendered, 'horgos-metric-release')
-        for url in [article.get_absolute_url(), '/news/border-updates/', '/sitemap.xml']:
+        for url in [article.get_absolute_url(), article.get_absolute_url()+'?preview=1&format=csv&details=1', '/news/border-updates/', '/sitemap.xml']:
             response = self.client.get(url)
             self.assertEqual(response.status_code, 200)
             self.assertNotContains(response, 'PRIVATE-COMPANY-XYZ')
             self.assertNotContains(response, 'PRIVATE-RESERVATION-123')
+            self.assertNotContains(response, 'cgr-detail-table')
+            self.assertNotContains(response, '/export/')
         self.assertContains(self.client.get('/sitemap.xml'), article.get_absolute_url())
         self.assertNotContains(self.client.get(article.get_absolute_url()), 'YESTERDAY-ROW')
         self.assertEqual(self.client.get('/admin/horgos/vehicle/').status_code, 302)

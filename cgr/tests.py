@@ -136,7 +136,7 @@ class CollectionTests(TestCase):
         self.assertEqual(run.status, 'failed')
         self.assertFalse(DailyReport.objects.exists())
 
-    def test_private_details_require_staff_and_both_permissions(self):
+    def test_private_exports_require_staff_and_both_permissions(self):
         from django.contrib.auth.models import Permission
         self.run_collection()
         report = DailyReport.objects.get()
@@ -213,27 +213,36 @@ class CollectionTests(TestCase):
     def test_filters_exports_metadata_and_port_aliases(self):
         self.run_collection()
         report = DailyReport.objects.get()
-        for url in ['/news/border-updates/', report.get_absolute_url()]:
-            response = self.client.get(url)
-            self.assertEqual(response.status_code, 200)
-            self.assertNotContains(response, 'cgr-calendar')
-            self.assertNotContains(response, 'cgr-detail-table')
-            self.assertNotContains(response, '/export/')
+        index = self.client.get('/news/border-updates/')
+        self.assertNotContains(index, 'cgr-calendar')
+        response = self.client.get(report.get_absolute_url())
+        self.assertContains(response, 'cgr-calendar')
+        self.assertContains(response, 'cgr-detail-table')
+        self.assertContains(response, 'cgr-slot no-quota')
+        self.assertContains(response, '休息日')
+        self.assertContains(response, '未开放预约')
+        self.assertNotContains(response, '/export/')
+        self.assertEqual(response.context['row_count'], 204)
+        page_two = self.client.get(report.get_absolute_url(), {'page': 2})
+        self.assertEqual(page_two.context['page'].number, 2)
+        self.assertEqual(len(page_two.context['page']), 100)
         for fmt in ['csv', 'xlsx', 'html']:
             self.assertEqual(self.client.get(f'/border-reports/{report.pk}/export/{fmt}/').status_code, 404)
             self.assertEqual(self.client.get(f'/border-reports/{report.pk}/export/{fmt}/?preview=1').status_code, 404)
         self.assertEqual(self.client.get('/news/border-updates/?country=invalid').status_code, 400)
-        user = get_user_model().objects.create_superuser('detail-admin', password='test-only')
-        self.client.force_login(user)
-        response = self.client.get(f'/border-reports/{report.pk}/preview/?preview=1&country=ru')
+        response = self.client.get(report.get_absolute_url(), {'country':'ru'})
         self.assertEqual(response.context['node_count'], 30)
         self.assertEqual(response.context['ports'].count(), 30)
         self.assertEqual(response.context['row_count'], 120)
         for alias, corrected in [('波基图', '巴克图'), ('杜拉特', '都拉塔')]:
-            response = self.client.get(f'/border-reports/{report.pk}/preview/', {'preview':'1', 'q': alias})
+            response = self.client.get(report.get_absolute_url(), {'q': alias})
             self.assertEqual(response.context['node_count'], 1)
             self.assertIn(corrected, response.context['groups'][0]['nodes'][0]['checkpoint'].name)
-        self.assertEqual(self.client.get(f'/border-reports/{report.pk}/preview/?preview=1&day=bad-date').status_code, 400)
+        self.assertEqual(self.client.get(report.get_absolute_url(), {'day':'bad-date'}).status_code, 400)
+        selected_day = self.client.get(report.get_absolute_url(), {'day':str(self.day)})
+        self.assertEqual(selected_day.context['row_count'], 51)
+        user = get_user_model().objects.create_superuser('detail-admin', password='test-only')
+        self.client.force_login(user)
         csv_response = self.client.get(f'/border-reports/{report.pk}/export/csv/?preview=1&country=ru')
         rows = list(csv.reader(StringIO(csv_response.content.decode('utf-8-sig'))))
         self.assertEqual(len(rows), 181)  # 30 ports * (2 quoted days * 2 tiers + 2 non-quoted days).
@@ -246,6 +255,17 @@ class CollectionTests(TestCase):
         self.assertEqual(schema['articleSection'], '口岸动态')
         self.assertContains(self.client.get('/sitemap.xml'), report.get_absolute_url())
         self.assertContains(self.client.get('/news/'), '/news/border-updates/')
+
+    def test_public_calendar_requires_current_publication_and_validated_run(self):
+        self.run_collection()
+        report = DailyReport.objects.get()
+        report.article.published_at = timezone.now()+timedelta(days=1)
+        report.article.save(update_fields=['published_at'])
+        self.assertEqual(self.client.get(report.get_absolute_url()+'?preview=1').status_code, 404)
+        report.article.published_at = self.now
+        report.article.save(update_fields=['published_at'])
+        CollectionRun.objects.filter(pk=report.run_id).update(status='failed')
+        self.assertEqual(self.client.get(report.get_absolute_url()).status_code, 404)
 
     def test_csv_xlsx_html_escape_text_and_preserve_numeric_zero_and_null(self):
         self.run_collection()

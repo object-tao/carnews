@@ -10,7 +10,7 @@
 </form>
 <p class="cgr-help">国家表示与哈萨克斯坦对接的国家或地区。选择俄罗斯即查看哈俄口岸；名额属于源站预约信息，不代表现场排队或通关时长。</p>
 <div class="cgr-stats"><div><strong>{{ node_count }}</strong><span>筛选内口岸 / 节点</span></div><div><strong>{{ dates|length }}</strong><span>预约日期</span></div><div><strong>{{ row_count }}</strong><span>口岸日期记录</span></div><div><strong>{{ groups|length }}</strong><span>国家 / 地区方向</span></div></div>
-<div class="cgr-downloads"><span>下载当前筛选结果</span><a href="{% url 'cgr-export' report.pk 'xlsx' %}?{{ filter_query }}">Excel 清单 ↓</a><a href="{% url 'cgr-export' report.pk 'csv' %}?{{ filter_query }}">CSV 明细 ↓</a><a href="{% url 'cgr-export' report.pk 'html' %}?{{ filter_query }}">HTML 报告 ↓</a></div>
+{% if is_preview %}<div class="cgr-downloads"><span>下载当前筛选结果</span><a href="{% url 'cgr-export' report.pk 'xlsx' %}?{{ filter_query }}">Excel 清单 ↓</a><a href="{% url 'cgr-export' report.pk 'csv' %}?{{ filter_query }}">CSV 明细 ↓</a><a href="{% url 'cgr-export' report.pk 'html' %}?{{ filter_query }}">HTML 报告 ↓</a></div>{% endif %}
 {% if observations %}
 <div class="cgr-legend" aria-label="预约状态说明"><span class="available">绿色数字：剩余名额</span><span class="full">0：该档位暂无名额</span><span class="holiday">休息日</span><span class="not_open">未开放预约</span></div>
 <p class="cgr-help">日历 {{ dates.0|date:'Y-m-d' }} 至 {{ dates|last|date:'Y-m-d' }}。每格直接列出各 МРП 档位的剩余名额（个），无需悬停。可左右滑动查看后续日期。最早可约日期仅在当前筛选范围内查找。</p>
