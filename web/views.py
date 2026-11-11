@@ -91,7 +91,7 @@ def article(request,slug):
         from horgos.presentation import report_context
         context.update(report_context(item.horgos_report))
         template='horgos/report.html'
-        schema['citation']=item.source
+        schema['citation']='中国电子口岸'
     context['schema']=json.dumps(schema,ensure_ascii=False).replace(chr(60),chr(92)+'u003c')
     return render(request,template,context)
 def download(request,slug):

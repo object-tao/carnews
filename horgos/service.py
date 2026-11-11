@@ -42,7 +42,7 @@ def publish(run, auto_publish):
     body += ['\n## 货类统计\n\n| 源站货类 | 数量 |\n| --- | ---: |']
     body[-1] += '\n' + '\n'.join(f'| {name} | {counts["categories"][name]} |' for name in CATEGORIES)
     body += ['\n## 统计口径与使用说明\n\n- “整车”“重车”“自驾”“笼车”沿用源站分类；不同分类之间可能存在包含关系，不将各行简单相加。\n- 源站当日汇总与逐条明细是不同接口，本报告直接采用汇总接口，未用明细条数推算总量。\n- 明细接口每类最多提供最近 1000 条，因此已采明细不代表完整通行历史；本轮只归档北京时间当日业务记录。\n- 本报告不据此推算排队人数、等待时长或通关承诺。',
-             f'数据来源：[霍尔果斯口岸数据接口]({SOURCE_URL}/postNumNow)。按实际采集日期和时点标注，历史报告保留各自统计口径。']
+             '数据来源：中国电子口岸。按实际采集日期和时点标注，历史报告保留各自统计口径。']
     defaults = dict(title=title, seo_title=title, summary=summary, body='\n\n'.join(body), body_format='markdown',
                     kind='news', category='口岸动态', source=SOURCE_URL+'/postNumNow',
                     seo_keywords='霍尔果斯口岸,霍尔果斯日报,口岸车辆放行,整车预约,重车放行,口岸货类统计,中哈运输',
