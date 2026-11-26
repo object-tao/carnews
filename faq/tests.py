@@ -161,3 +161,22 @@ class FAQTests(TestCase):
             response = self.client.get(url)
             self.assertEqual(response.status_code, 200)
             response.close()
+
+    def test_country_shortcuts_count_only_public_category_content_and_reset_page(self):
+        country = Country.objects.create(name='国家快捷入口验收', slug='qa-uzbekistan')
+        item = self.question(published=True)
+        item.countries.add(country)
+        self.question(question='未关联国家的问题', published=True)
+        hidden = self.question(question='PRIVATE COUNTRY COUNT')
+        hidden.countries.add(country)
+        other = self.question(category=Category.objects.get(slug='pricing-and-fees'), published=True)
+        other.countries.add(country)
+        response = self.client.get(self.category.get_absolute_url()+'?q=询价&sort=recommended&page=2')
+        countries = response.context['countries']
+        self.assertEqual([(c.slug, c.total) for c in countries], [('qa-uzbekistan', 1)])
+        self.assertEqual(response.context['country_total'], 2)
+        self.assertIn('q=', countries[0].filter_url)
+        self.assertIn('sort=recommended', countries[0].filter_url)
+        self.assertNotIn('page=', countries[0].filter_url)
+        self.assertContains(response, 'aria-label="按国家浏览问答"')
+        self.assertContains(response, 'faq-question-countries')

@@ -26,8 +26,8 @@ def breadcrumbs(items):
 def listing(request, slug=None):
     category = get_object_or_404(Category, slug=slug, enabled=True) if slug else None
     public = Question.objects.public()
-    items = public.select_related('category')
-    if category: items = items.filter(category=category)
+    country_base = public.filter(category=category) if category else public
+    items = country_base.select_related('category').prefetch_related('countries')
     q, country = request.GET.get('q', '').strip()[:160], request.GET.get('country', '')[:80]
     sort = request.GET.get('sort', 'recent')
     if sort not in ['recent', 'recommended']: sort = 'recent'
@@ -40,7 +40,15 @@ def listing(request, slug=None):
     params.pop('page', None)
     canonical = absolute(request.path) + (f'?page={page.number}' if page.number > 1 else '')
     categories = Category.objects.filter(enabled=True).annotate(total=Count('questions', filter=Q(questions__published=True, questions__published_at__lte=timezone.now())))
-    countries = Country.objects.filter(faqs__in=public).distinct()
+    countries = list(Country.objects.annotate(total=Count('faqs', filter=Q(faqs__in=country_base), distinct=True)).filter(total__gt=0))
+    country_params = params.copy()
+    country_params.pop('country', None)
+    for item in countries:
+        country_params['country'] = item.slug
+        item.filter_url = '?' + country_params.urlencode()
+    country_params.pop('country', None)
+    all_countries_url = '?' + country_params.urlencode() if country_params else request.path
+    selected_country = next((item.name for item in countries if item.slug == country), '所选国家' if country else '全部国家')
     title = (category.seo_title or category.name + '常见问题') if category else '卡车 / 卡航 FAQ'
     description = (category.seo_description or category.description or category.name + '运输问答') if category else '按主题和国家查找国际卡车、卡航运输常见问题，了解线路、运价、车型、口岸及运输流程。'
     crumbs = [('首页', '/'), ('卡车 / 卡航 FAQ', reverse('faq-index'))]
@@ -52,6 +60,7 @@ def listing(request, slug=None):
     return render(request, 'faq/list.html', {
         'title': title, 'description': description, 'category': category, 'categories': categories,
         'countries': countries, 'q': q, 'country': country, 'sort': sort, 'page': page,
+        'all_countries_url': all_countries_url, 'country_total': country_base.count(), 'selected_country': selected_country,
         'page_query': params.urlencode(), 'canonical': canonical, 'schema': schema_json(schema),
         'noindex': bool(q or country or sort != 'recent' or not page.paginator.count),
         'featured': public.filter(featured=True).order_by('order', '-updated_at', '-pk')[:4] if not category and not q and not country and page.number == 1 else [],
