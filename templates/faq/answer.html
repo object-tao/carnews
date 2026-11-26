@@ -1,0 +1,3 @@
+<section class="faq-short-answer" aria-labelledby="faq-answer-title"><span class="eyebrow">ANSWER</span><h2 id="faq-answer-title">简明回答</h2>{{ item.short_answer|linebreaks }}</section>
+{% if item.body %}<section class="faq-explanation"><h2>详细说明</h2>{{ detail_html }}</section>{% endif %}
+{% if item.scope %}<section class="faq-scope"><h2>适用条件</h2>{{ item.scope|linebreaks }}</section>{% endif %}

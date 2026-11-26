@@ -89,3 +89,6 @@
   .page-banner-resources,.page-banner-contact{--banner-picture-height:240px}
   .page-banner-news .page-banner-image{object-position:right center}
 }
+
+/* Keep the expanded primary navigation usable on tablet widths. */
+@media(min-width:701px) and (max-width:1150px){header{height:auto;min-height:85px;flex-wrap:wrap;padding-top:15px;padding-bottom:15px}.menu{display:block;border:1px solid #cbd0d9;background:white;padding:8px 12px}#nav{display:none;width:100%;padding-top:20px;flex-wrap:wrap}#nav.open{display:flex}#nav a{padding:8px}}

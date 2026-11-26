@@ -1,0 +1,28 @@
+{% extends 'base.html' %}{% load static %}
+{% block head_meta %}{% if noindex %}<meta name="robots" content="noindex,follow">{% endif %}{% endblock %}
+{% block styles %}<link rel="stylesheet" href="{% static 'faq.css' %}">{% endblock %}
+{% block content %}
+<section class="faq-hero"><div class="faq-shell">
+  <nav class="faq-breadcrumb" aria-label="面包屑"><a href="/">首页</a><span>/</span>{% if category %}<a href="{% url 'faq-index' %}">卡车 / 卡航 FAQ</a><span>/</span><span>{{ category.name }}</span>{% else %}<span>卡车 / 卡航 FAQ</span>{% endif %}</nav>
+  <span class="eyebrow">ROAD LOGISTICS / QUESTIONS & ANSWERS</span>
+  <h1>{% if category %}{{ category.name }}{% else %}运输有疑问，<br><em>从这里找到答案。</em>{% endif %}</h1>
+  <p>{% if category %}{{ category.description|default:'了解这一主题下的运输常见问题与适用条件。' }}{% else %}卡车与卡航运输常见问题。按主题与国家，了解线路、费用、装载及通关。{% endif %}</p>
+</div></section>
+<div class="faq-shell faq-main">
+{% if not category %}<section aria-labelledby="faq-topics"><div class="faq-heading"><div><span class="eyebrow">EXPLORE BY TOPIC</span><h2 id="faq-topics">按主题查找</h2></div><p>从运输准备到交付，逐项了解。</p></div>
+  <div class="faq-category-grid">{% for cat in categories %}<a class="faq-category-card" href="{{ cat.get_absolute_url }}"><span class="faq-card-number">{{ forloop.counter|stringformat:'02d' }}</span><h3>{{ cat.name }}</h3><p>{{ cat.description }}</p><span class="faq-card-footer">{% if cat.total %}{{ cat.total }} 个问答{% else %}内容整理中{% endif %}<span aria-hidden="true">↗</span></span></a>{% endfor %}</div>
+</section>{% endif %}
+{% if featured %}<section class="faq-featured" aria-labelledby="faq-featured"><h2 id="faq-featured">推荐问题</h2><div class="faq-featured-grid">{% for item in featured %}<a href="{{ item.get_absolute_url }}"><span>Q</span><strong>{{ item.question }}</strong><span aria-hidden="true">↗</span></a>{% endfor %}</div></section>{% endif %}
+<section aria-labelledby="faq-results"><div class="faq-heading"><div><span class="eyebrow">FIND AN ANSWER</span><h2 id="faq-results">{% if category %}{{ category.name }}问答{% elif q or country %}搜索结果{% else %}最新更新{% endif %}</h2></div>{% if category %}<a class="text-link" href="{% url 'faq-index' %}">全部主题 →</a>{% endif %}</div>
+  <form method="get" class="faq-search" role="search">
+    <div class="faq-search-keyword"><label for="faq-q">问题关键词</label><input id="faq-q" name="q" value="{{ q }}" placeholder="搜索问题、车型或运输环节" maxlength="160"></div>
+    <div><label for="faq-country">适用国家</label><select id="faq-country" name="country"><option value="">全部国家</option>{% for c in countries %}<option value="{{ c.slug }}" {% if country == c.slug %}selected{% endif %}>{{ c.name }}</option>{% endfor %}</select></div>
+    <div><label for="faq-sort">排序</label><select id="faq-sort" name="sort"><option value="recent" {% if sort == 'recent' %}selected{% endif %}>最近更新</option><option value="recommended" {% if sort == 'recommended' %}selected{% endif %}>推荐优先</option></select></div>
+    <button class="button" type="submit">查找问题 ↗</button>
+  </form>
+  {% if q or country %}<p class="faq-result-count">找到 {{ page.paginator.count }} 个问题 · <a href="{{ request.path }}">清除筛选</a></p>{% endif %}
+  <div class="faq-question-list">{% for item in page %}<article class="faq-question-card"><div class="faq-question-meta"><a href="{{ item.category.get_absolute_url }}">{{ item.category.name }}</a><span>更新 <time datetime="{{ item.updated_at|date:'Y-m-d' }}">{{ item.updated_at|date:'Y.m.d' }}</time></span></div><h3><a href="{{ item.get_absolute_url }}">{{ item.question }}</a></h3><p>{{ item.short_answer|truncatechars:180 }}</p><a class="text-link" href="{{ item.get_absolute_url }}">查看完整解答 ↗</a></article>{% empty %}<div class="faq-empty"><span class="faq-empty-mark" aria-hidden="true">Q / A</span><h3>{% if q or country %}暂无匹配的问题{% else %}问答内容正在整理中{% endif %}</h3><p>{% if q or country %}可以换个关键词或清除筛选，继续查找。{% else %}这里将持续整理运输过程中的常见问题与解答。{% endif %}如有具体运输需求，欢迎与我们沟通。</p><a class="text-link" href="/contact/">咨询运输需求 →</a></div>{% endfor %}</div>
+  {% include 'pagination.html' %}
+</section></div>
+{% endblock %}
+{% block scripts %}<script type="application/ld+json">{{ schema|safe }}</script>{% endblock %}

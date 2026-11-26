@@ -1,0 +1,21 @@
+{% extends 'base.html' %}{% load static %}
+{% block head_meta %}{% if noindex %}<meta name="robots" content="noindex,nofollow">{% endif %}<meta property="og:type" content="article"><meta property="og:title" content="{{ title }}"><meta property="og:description" content="{{ description }}"><meta property="og:url" content="{{ canonical }}">{% endblock %}
+{% block styles %}<link rel="stylesheet" href="{% static 'faq.css' %}">{% endblock %}
+{% block content %}
+<section class="faq-detail-head"><div class="faq-shell faq-reading-width">
+  <nav class="faq-breadcrumb" aria-label="面包屑"><a href="/">首页</a><span>/</span><a href="{% url 'faq-index' %}">卡车 / 卡航 FAQ</a><span>/</span><a href="{{ item.category.get_absolute_url }}">{{ item.category.name }}</a></nav>
+  {% if preview %}<p class="faq-preview-note">后台预览 · 仅有权限的管理员可见，当前预览不代表已发布。</p>{% endif %}
+  <span class="eyebrow">QUESTION / {{ item.category.name }}</span><h1>{{ item.question }}</h1>
+  <div class="faq-byline">{% if item.author %}<span>{{ item.author }}</span>{% endif %}{% if item.published_at %}<span>发布 <time datetime="{{ item.published_at|date:'c' }}">{{ item.published_at|date:'Y-m-d' }}</time></span>{% endif %}<span>更新 <time datetime="{{ item.updated_at|date:'c' }}">{{ item.updated_at|date:'Y-m-d' }}</time></span>{% if item.reviewer %}<span>审核：{{ item.reviewer }}</span>{% endif %}{% if item.reviewed_on %}<span>内容核对：{{ item.reviewed_on|date:'Y-m-d' }}</span>{% endif %}</div>
+</div></section>
+<article class="faq-shell faq-reading-width faq-detail prose">
+  {% if item.countries.all %}<div class="country-tags" aria-label="适用国家">{% for c in item.countries.all %}<a href="{% url 'faq-index' %}?country={{ c.slug }}">{{ c.name }}</a>{% endfor %}</div>{% endif %}
+  <div class="faq-answer-content">{{ answer_html|safe }}</div>
+  {% if item.image %}<figure class="faq-figure"><img src="{% url 'faq-image' item.slug %}{% if preview %}?preview=1{% endif %}" alt="{{ item.image_caption|default:item.question }}" loading="lazy">{% if item.image_caption %}<figcaption>{{ item.image_caption }}</figcaption>{% endif %}</figure>{% endif %}
+  {% if references %}<section class="faq-references"><h2>参考来源</h2><ol>{% for ref in references %}<li><a href="{{ ref.url }}" target="_blank" rel="noopener noreferrer">{{ ref.title }} ↗</a>{% if ref.note %}<p>{{ ref.note }}</p>{% endif %}</li>{% endfor %}</ol></section>{% endif %}
+  {% if related_routes or related_resources %}<section class="faq-related"><h2>相关运输资料</h2><ul>{% for route in related_routes %}<li><a href="{{ route.get_absolute_url }}">{{ route.title }} →</a></li>{% endfor %}{% for resource in related_resources %}<li><a href="{{ resource.get_absolute_url }}">{{ resource.title }} →</a></li>{% endfor %}</ul></section>{% endif %}
+  {% if related_questions %}<section class="faq-related"><h2>相关问题</h2><ul>{% for question in related_questions %}<li><a href="{{ question.get_absolute_url }}">{{ question.question }} →</a></li>{% endfor %}</ul></section>{% endif %}
+  <a class="text-link" href="{{ item.category.get_absolute_url }}">返回{{ item.category.name }} →</a>
+</article>
+{% endblock %}
+{% block scripts %}{% if not preview %}<script type="application/ld+json">{{ schema|safe }}</script>{% endif %}{% endblock %}
